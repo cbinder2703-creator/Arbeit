@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import { ALL_INTERESTS } from '../data'
 import { actions, useStore } from '../store'
 import type { Gender, Theme } from '../types'
@@ -33,6 +33,7 @@ export function MyProfile() {
   const theme = useStore((s) => s.theme)
   const filters = useStore((s) => s.filters)
   const file = useRef<HTMLInputElement>(null)
+  const [confirmReset, setConfirmReset] = useState(false)
 
   const toggle = <T,>(arr: T[], v: T) => (arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v])
 
@@ -99,9 +100,14 @@ export function MyProfile() {
         ))}
       </div>
 
-      <button className="btn ghost danger" onClick={() => { if (confirm('Alle Swipes, Matches und Chats zurücksetzen?')) actions.reset() }}>
-        Demo-Daten zurücksetzen
-      </button>
+      {confirmReset ? (
+        <div className="sheet-actions">
+          <button className="btn ghost" onClick={() => setConfirmReset(false)}>Abbrechen</button>
+          <button className="btn ghost danger" style={{ marginTop: 0 }} onClick={() => { actions.reset(); setConfirmReset(false) }}>Ja, alles löschen</button>
+        </div>
+      ) : (
+        <button className="btn ghost danger" onClick={() => setConfirmReset(true)}>Demo-Daten zurücksetzen</button>
+      )}
     </section>
   )
 }

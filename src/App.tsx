@@ -14,8 +14,9 @@ type Tab = 'discover' | 'nearby' | 'matches' | 'me'
 
 function useRoute(): [Tab, string | null, (path: string) => void] {
   const parse = () => {
-    const [tab = 'discover', id = null] = location.hash.replace(/^#\/?/, '').split('/')
-    return [(['discover', 'nearby', 'matches', 'me'].includes(tab) ? tab : 'discover') as Tab, id || null] as [Tab, string | null]
+    const m = location.hash.replace(/^#\/?/, '').match(/^([a-z]+)(?:[-/](.+))?$/)
+    const tab = m?.[1] ?? 'discover'
+    return [(['discover', 'nearby', 'matches', 'me'].includes(tab) ? tab : 'discover') as Tab, m?.[2] ?? null] as [Tab, string | null]
   }
   const [route, setRoute] = useState(parse)
   useEffect(() => {
@@ -23,7 +24,8 @@ function useRoute(): [Tab, string | null, (path: string) => void] {
     window.addEventListener('hashchange', on)
     return () => window.removeEventListener('hashchange', on)
   }, [])
-  return [route[0], route[1], (path) => { location.hash = `#/${path}` }]
+  // Einfache Hash-Namen (#matches-p12), damit Links auch in eingebetteten Ansichten funktionieren
+  return [route[0], route[1], (path) => { location.hash = `#${path.replace('/', '-')}` }]
 }
 
 export function App() {
