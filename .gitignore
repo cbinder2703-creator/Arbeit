@@ -1,0 +1,7 @@
+node_modules
+dist
+release
+ios
+android
+.DS_Store
+*.log
