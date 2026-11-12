@@ -8,21 +8,8 @@ import { FeedbackSheet } from '@/ui/FeedbackSheet';
 import { Button } from '@/ui/Button';
 import { ChapterChip } from '@/ui/ChapterChip';
 import { playSound } from '@/ui/sound';
-
-type Seg = { kind: 'text'; text: string } | { kind: 'gap'; answer: string; n: number };
-
-function parse(text: string): Seg[] {
-  const out: Seg[] = [];
-  let n = 0;
-  for (const part of text.split(/(\{\{.+?\}\})/g)) {
-    const m = part.match(/^\{\{(.+?)\}\}$/);
-    if (m) out.push({ kind: 'gap', answer: m[1], n: n++ });
-    else if (part) out.push({ kind: 'text', text: part });
-  }
-  return out;
-}
-
-const norm = (s: string) => s.trim().toLowerCase();
+import { evaluateGaps, groupGaps, parse } from './evaluate';
+import type { Seg } from './evaluate';
 
 export default function Game({ items, onAnswer, onFinish, onClose, score, exam }: ModeProps) {
   const [idx, setIdx] = useState(0);
@@ -40,7 +27,13 @@ export default function Game({ items, onAnswer, onFinish, onClose, score, exam }
   const used = new Set(filled.filter((x): x is number => x !== null));
   const allFilled = filled.every((x) => x !== null);
 
-  const results = filled.map((c, g) => (c === null ? false : norm(chips[c]) === norm(gaps[g].answer)));
+  const groups = useMemo(() => groupGaps(segs), [segs]);
+  // Lücken, die nur mit „und“/„oder“/Komma verbunden sind, dürfen vertauscht werden
+  const results = evaluateGaps(
+    filled.map((c) => (c === null ? null : chips[c])),
+    gaps.map((g) => g.answer),
+    groups,
+  );
   const right = results.filter(Boolean).length;
   const perfect = right === gaps.length;
 

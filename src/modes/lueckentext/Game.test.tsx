@@ -46,4 +46,16 @@ describe('Lückentext', () => {
     expect(document.querySelector('[data-state="wrong"]')).not.toBeNull();
     expect(screen.getByTestId('feedback')).toHaveAttribute('data-correct', 'false');
   });
+
+  it('„Berufsschule und Ausbildungsbetrieb“: vertauschte Reihenfolge ist auch richtig', async () => {
+    const item = pick('cloze', 1, 0)[0] as Cloze; // k1-501
+    const gaps = gapsOf(item.text);
+    const { props, reports } = makeProps([item]);
+    const user = userEvent.setup();
+    render(<Game {...props} />);
+    for (const g of [gaps[1], gaps[0], gaps[2], gaps[3]]) await user.click(chip(g));
+    await user.click(screen.getByRole('button', { name: 'Prüfen' }));
+    expect(reports[0]).toMatchObject({ correct: true, parts: { total: 4, correct: 4 } });
+    expect(screen.getByTestId('feedback')).toHaveAttribute('data-correct', 'true');
+  });
 });

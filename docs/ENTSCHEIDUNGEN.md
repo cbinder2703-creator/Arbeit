@@ -105,3 +105,7 @@ Hier steht, was unklar war und wie ich es entschieden habe (statt nachzufragen).
     (`flashcards` im Kapitel) – dann erscheint sie automatisch.
 37. **Nicht in der Abschlussprüfung** (wäre ein Hilfsmittel) und nicht im Blitz-Modus von „Wahr oder Falsch?“. Im Quiz-Blitz hält der
     Timer an, solange das Fenster offen ist. Tastenkürzel ruhen, solange ein Fenster offen ist.
+38. **Lückentext: austauschbare Lücken.** Lücken, die nur durch „und“, „oder“, Komma, „sowie“, „&“ oder „/“ verbunden sind
+    (z. B. „{{Berufsschule}} und {{Ausbildungsbetrieb}}“), dürfen in beliebiger Reihenfolge ausgefüllt werden (`src/modes/lueckentext/evaluate.ts`).
+    Gilt für alle Prüfungen automatisch. Wenn bei neuen Inhalten Reihenfolge wichtig ist, den Text so formulieren, dass dazwischen mehr als
+    ein Bindewort steht (z. B. „… nach dem …“).

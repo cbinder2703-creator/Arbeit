@@ -30,6 +30,7 @@ und diesen Prompt verwenden:
 Danach die erzeugten Fragen einmal selbst gegen das Buch prüfen.
 
 ## Regeln
+- Lückentexte: Lücken, die nur mit „und“/„oder“/Komma verbunden sind, dürfen im Spiel vertauscht werden.
 - Fakten nur aus dem Unterrichtsmaterial – nichts ergänzen oder „aktualisieren“.
 - Keine Fotos/Scans in `content/` – nur eigene Formulierungen.
 - IDs müssen innerhalb einer Prüfung eindeutig sein (der Fortschritt wird pro Prüfung gespeichert).
