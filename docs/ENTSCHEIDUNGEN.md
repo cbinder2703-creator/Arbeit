@@ -94,3 +94,5 @@ Hier steht, was unklar war und wie ich es entschieden habe (statt nachzufragen).
 34. **Impressum auf Wunsch ohne Namen und Anschrift.** Die Seite enthält nur den Hinweis auf ein privates, nicht kommerzielles
     Projekt. Ob das für die geplante Nutzung rechtlich ausreicht, habe ich nicht geprüft – bei öffentlichem Angebot mit
     „geschäftsmäßigem“ Charakter besteht in Deutschland Impressumspflicht (Name + Anschrift). Nachtragen: `src/pages/Rechtliches.tsx`.
+35. **Standard-Branch heißt `master`** (nicht `main`). Der Workflow löst bei Push auf `main` oder `master` aus; `docs/DEPLOYMENT.md`
+    spricht von `main` und meint den Standard-Branch.
