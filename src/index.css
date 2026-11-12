@@ -59,3 +59,8 @@
     scroll-behavior: auto !important;
   }
 }
+
+@keyframes confetti-fall {
+  0% { opacity: 1; transform: translateY(-20px) rotate(0deg); }
+  100% { opacity: 0; transform: translateY(105dvh) rotate(540deg); }
+}

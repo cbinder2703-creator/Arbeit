@@ -153,11 +153,14 @@ export interface GameMode {
 
 export interface ModeProps {
   pruefung: PruefungMeta;     // für Thema/Farben
-  items: ContentItem[];       // gefiltert + gemischt von der Engine
+  items: PlayItem[];          // gefiltert + gemischt von der Engine (ContentItem + chapter/shuffledSteps/chips)
   flashcards?: Flashcard[];
   charts?: Charts;
-  onAnswer: (r: { itemId: string; correct: boolean; timeMs: number }) => void;
-  onFinish: (s: { score: number; maxScore: number }) => void;
+  score: number;              // aktueller Punktestand (Engine)
+  // Antwort melden – die Engine vergibt Punkte/XP/Leitner und liefert das Punkte-Ergebnis zurück
+  onAnswer: (r: AnswerReport) => AnswerResult;   // { itemId, correct, timeMs, timeLimitMs?, parts? }
+  onFinish: (s: { score: number; maxScore: number; stat?: { key: string; value: number; label: string } }) => void;
+  onClose: () => void;        // × in der Kopfzeile
 }
 ```
 

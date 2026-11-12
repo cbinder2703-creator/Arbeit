@@ -8,6 +8,7 @@ import { Profil } from '@/pages/Profil';
 import { Impressum, Datenschutz } from '@/pages/Rechtliches';
 import { NotFound } from '@/pages/NotFound';
 import { Bald } from '@/pages/Bald';
+import { Runde } from '@/pages/Runde';
 
 export function AppRoutes() {
   return (
@@ -23,6 +24,7 @@ export function AppRoutes() {
         <Route path="modi" element={<Modi />} />
         <Route path="karten" element={<Bald title="Lernkarten" icon="layers" />} />
         <Route path="abschluss" element={<Bald title="Abschlussprüfung" icon="crown" />} />
+        <Route path="spiel/:modusId" element={<Runde />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>

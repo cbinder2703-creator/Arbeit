@@ -6,6 +6,7 @@ import { solvedPercent } from '@/engine/stats';
 import { emptyProgress } from '@/store/types';
 import { ProgressBar } from '@/ui/ProgressBar';
 import { Icon } from '@/ui/Icon';
+import { Settings } from '@/ui/Settings';
 
 export function Profil() {
   const { byPruefung, globalStreak } = useProgress();
@@ -54,6 +55,9 @@ export function Profil() {
           );
         })}
       </div>
+
+      <h2 className="mb-3 mt-8 text-xl">Einstellungen</h2>
+      <Settings />
     </div>
   );
 }

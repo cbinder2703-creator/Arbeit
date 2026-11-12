@@ -24,6 +24,8 @@ export type PlayItem = ContentItem & {
 export interface ModeResult {
   score: number;
   maxScore: number;
+  /** Bestwert, bei dem weniger besser ist (z. B. Memory: Züge) – wird als Bestwert pro Prüfung gespeichert */
+  stat?: { key: string; value: number; label: string };
 }
 
 export interface ModeProps {
