@@ -48,4 +48,24 @@ describe('Zeitstrahl', () => {
     expect(h.reports[0].correct).toBe(false);
     expect(screen.getAllByText(/gehört auf Platz/).length).toBeGreaterThan(0);
   });
+
+  it('Zeile antippen, dann „Hoch“/„Runter“ verschiebt sie (Handy ohne Ziehen)', async () => {
+    const item = pick('order', 1, 1)[0] as Order;
+    const { props } = makeProps([item]);
+    const user = userEvent.setup();
+    render(<Game {...props} />);
+    const before = texts();
+    expect(screen.getByRole('button', { name: 'Ausgewählte Zeile nach oben' })).toBeDisabled();
+    await user.click(screen.getByTestId('step-2'));
+    await user.click(screen.getByRole('button', { name: 'Ausgewählte Zeile nach oben' }));
+    let after = texts();
+    expect(after[1]).toBe(before[2]);
+    // die Auswahl bleibt an der Zeile: nochmal hoch, dann runter
+    await user.click(screen.getByRole('button', { name: 'Ausgewählte Zeile nach oben' }));
+    after = texts();
+    expect(after[0]).toBe(before[2]);
+    await user.click(screen.getByRole('button', { name: 'Ausgewählte Zeile nach unten' }));
+    expect(texts()[1]).toBe(before[2]);
+    expect(screen.getByRole('button', { name: 'Ausgewählte Zeile nach oben' })).toBeEnabled();
+  });
 });

@@ -147,7 +147,7 @@ function Board({ items, flashcards = [], onAnswer, onFinish, onClose }: ModeProp
                 data-testid={`card-${c.id}`}
                 data-pair={c.pairId}
                 data-state={isMatched ? 'matched' : up ? 'up' : 'down'}
-                className="group relative aspect-[3/4] min-h-[96px] w-full [perspective:800px] md:aspect-[4/3]"
+                className="no-select group relative aspect-[3/4] min-h-[96px] w-full [perspective:800px] md:aspect-[4/3]"
               >
                 <span
                   className="absolute inset-0 transition-transform duration-300 [transform-style:preserve-3d]"

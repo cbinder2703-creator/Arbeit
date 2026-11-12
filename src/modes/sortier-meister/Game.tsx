@@ -41,7 +41,7 @@ function Zone({
       onClick={onTap}
       aria-label={`Fach ${index + 1}: ${cat.label}, ${texts.length} Karten`}
       data-testid={`zone-${cat.id}`}
-      className="flex min-h-[150px] min-w-0 flex-col rounded-2xl border-2 border-dashed p-2.5 text-left transition"
+      className="no-select flex min-h-[150px] min-w-0 flex-col rounded-2xl border-2 border-dashed p-2.5 text-left transition"
       style={{ borderColor: color, background: isOver ? `${color}33` : `${color}12` }}
     >
       <span className="flex items-center justify-between gap-2">
@@ -81,7 +81,7 @@ function CurrentCard({
       onClick={onTap}
       aria-pressed={selected}
       data-testid="current-card"
-      className={`${shake ? 'animate-wiggle' : ''} relative z-10 min-h-[84px] w-full max-w-xs rounded-2xl bg-white px-5 py-4 text-center font-display text-xl leading-snug text-[#0B1020] shadow-xl shadow-black/40 ${
+      className={`${shake ? 'animate-wiggle' : ''} no-select relative z-10 min-h-[84px] w-full max-w-xs rounded-2xl bg-white px-5 py-4 text-center font-display text-xl leading-snug text-[#0B1020] shadow-xl shadow-black/40 ${
         selected ? 'ring-4 ring-xp' : ''
       } ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
       style={{

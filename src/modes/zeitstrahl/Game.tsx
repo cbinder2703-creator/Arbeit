@@ -22,12 +22,16 @@ function Row({
   pos,
   total,
   checked,
+  selected,
+  onSelect,
   onMove,
 }: {
   step: Step;
   pos: number;
   total: number;
   checked: boolean;
+  selected: boolean;
+  onSelect: () => void;
   onMove: (dir: -1 | 1) => void;
 }) {
   const controls = useDragControls();
@@ -41,6 +45,8 @@ function Row({
       data-testid={`step-${pos}`}
       data-state={!checked ? 'idle' : ok ? 'right' : 'wrong'}
       tabIndex={checked ? -1 : 0}
+      onClick={() => !checked && onSelect()}
+      aria-current={selected || undefined}
       aria-label={`Platz ${pos + 1} von ${total}: ${step.text}`}
       onKeyDown={(e: React.KeyboardEvent) => {
         if (checked) return;
@@ -52,13 +58,14 @@ function Row({
           onMove(1);
         }
       }}
-      className={`flex min-h-[60px] list-none items-center gap-2 rounded-2xl border-2 bg-card px-2 py-2 outline-none ${
-        !checked ? 'border-line focus-visible:border-xp' : ok ? 'border-good bg-good/10' : 'border-bad bg-bad/10'
+      className={`no-select flex min-h-[60px] list-none items-center gap-2 rounded-2xl border-2 bg-card px-2 py-2 outline-none ${
+        !checked ? (selected ? 'border-xp bg-xp/10' : 'border-line focus-visible:border-xp') : ok ? 'border-good bg-good/10' : 'border-bad bg-bad/10'
       }`}
     >
       <span
         onPointerDown={(e) => !checked && controls.start(e)}
-        className="tap grid shrink-0 cursor-grab place-items-center rounded-xl text-mute active:cursor-grabbing"
+        onContextMenu={(e) => e.preventDefault()}
+        className="tap no-select grid shrink-0 cursor-grab place-items-center rounded-xl text-mute active:cursor-grabbing"
         style={{ touchAction: 'none' }}
         aria-hidden="true"
       >
@@ -101,6 +108,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score, exam }
   if (item.type !== 'order') throw new Error('Zeitstrahl braucht order-Aufgaben');
   const [order, setOrder] = useState<Step[]>(() => toSteps(item));
   const [res, setRes] = useState<AnswerResult | null>(null);
+  const [selId, setSelId] = useState<number | null>(null);
   const start = useRef(Date.now());
   const listRef = useRef<HTMLUListElement>(null);
   const checked = res !== null;
@@ -116,7 +124,9 @@ export default function Game({ items, onAnswer, onFinish, onClose, score, exam }
     setOrder(n);
     playSound('tap');
     // Fokus bleibt an der verschobenen Zeile (Tastatur)
-    requestAnimationFrame(() => (listRef.current?.children[j] as HTMLElement | undefined)?.focus());
+    if (document.activeElement && listRef.current?.contains(document.activeElement)) {
+      requestAnimationFrame(() => (listRef.current?.children[j] as HTMLElement | undefined)?.focus());
+    }
   };
 
   const check = () => {
@@ -153,14 +163,39 @@ export default function Game({ items, onAnswer, onFinish, onClose, score, exam }
           axis="y"
           values={order}
           onReorder={(v) => !checked && setOrder(v)}
-          className="mt-4 space-y-2"
+          className="no-select mt-4 space-y-2"
           aria-label="Schritte"
         >
           {order.map((s, i) => (
-            <Row key={s.id} step={s} pos={i} total={order.length} checked={checked} onMove={(d) => move(i, d)} />
+            <Row key={s.id} step={s} pos={i} total={order.length} checked={checked} selected={selId === s.id} onSelect={() => setSelId(s.id)} onMove={(d) => move(i, d)} />
           ))}
         </Reorder.Group>
 
+        {!checked && (
+          <div className="mt-3 rounded-2xl bg-card p-3" role="group" aria-label="Ausgewählte Zeile verschieben">
+            <p className="mb-2 text-center text-xs text-mute">
+              {selId === null ? 'Tipp: Zeile antippen, dann hier verschieben – oder am Griff ziehen.' : 'Zeile ausgewählt – verschieben:'}
+            </p>
+            <div className="grid grid-cols-2 gap-2">
+              <Button
+                variant="secondary"
+                disabled={selId === null || order.findIndex((s) => s.id === selId) <= 0}
+                onClick={() => selId !== null && move(order.findIndex((s) => s.id === selId), -1)}
+                aria-label="Ausgewählte Zeile nach oben"
+              >
+                <Icon name="chevron-left" size={20} className="rotate-90" /> Hoch
+              </Button>
+              <Button
+                variant="secondary"
+                disabled={selId === null || order.findIndex((s) => s.id === selId) >= order.length - 1}
+                onClick={() => selId !== null && move(order.findIndex((s) => s.id === selId), 1)}
+                aria-label="Ausgewählte Zeile nach unten"
+              >
+                <Icon name="chevron-left" size={20} className="-rotate-90" /> Runter
+              </Button>
+            </div>
+          </div>
+        )}
         {!checked && (
           <Button variant="theme" block className="mt-5" onClick={check}>
             {exam ? 'Weiter' : 'Prüfen'}

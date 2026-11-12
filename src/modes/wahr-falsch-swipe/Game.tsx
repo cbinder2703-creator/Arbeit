@@ -147,7 +147,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
             initial={reduce ? false : { opacity: 0, scale: 0.94 }}
             animate={{ opacity: 1, scale: 1 }}
             data-testid="swipe-card"
-            className={`relative z-10 flex h-[260px] w-full cursor-grab select-none flex-col items-center justify-center overflow-hidden rounded-3xl border-2 bg-card p-6 text-center shadow-xl shadow-black/40 active:cursor-grabbing ${
+            className={`no-select relative z-10 flex h-[260px] w-full cursor-grab select-none flex-col items-center justify-center overflow-hidden rounded-3xl border-2 bg-card p-6 text-center shadow-xl shadow-black/40 active:cursor-grabbing ${
               res === null ? 'border-line' : correct ? 'border-good' : 'border-bad'
             }`}
           >

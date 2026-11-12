@@ -72,7 +72,7 @@ export default function Game({ flashcards = [], onAnswer, onFinish, onClose }: M
             aria-label={flipped ? 'Karte zurückdrehen' : 'Karte umdrehen'}
             data-testid="flashcard"
             data-flipped={flipped}
-            className="absolute inset-0 h-full w-full [perspective:1000px]"
+            className="no-select absolute inset-0 h-full w-full [perspective:1000px]"
           >
             <span
               className="absolute inset-0 transition-transform duration-300 [transform-style:preserve-3d]"
