@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import type { PanInfo } from 'framer-motion';
 import type { ModeProps } from '../types';
 import type { AnswerResult } from '@/engine/scoring';
+import { itemText } from '@/engine/describe';
 import { useSettings } from '@/store/settings';
 import { ModeFrame } from '@/ui/ModeFrame';
 import { ModeHeader } from '@/ui/ModeHeader';
@@ -116,6 +117,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
         current={idx + (res ? 1 : 0)}
         total={items.length}
         score={score}
+        lookup={blitz ? undefined : itemText(item)}
         right={blitz ? <TimerRing remainingMs={remaining} totalMs={BLITZ_MS} size={40} /> : undefined}
       />
       <div className="flex flex-1 flex-col px-4 pb-6">

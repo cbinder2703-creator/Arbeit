@@ -96,3 +96,12 @@ Hier steht, was unklar war und wie ich es entschieden habe (statt nachzufragen).
     „geschäftsmäßigem“ Charakter besteht in Deutschland Impressumspflicht (Name + Anschrift). Nachtragen: `src/pages/Rechtliches.tsx`.
 35. **Standard-Branch heißt `master`** (nicht `main`). Der Workflow löst bei Push auf `main` oder `master` aus; `docs/DEPLOYMENT.md`
     spricht von `main` und meint den Standard-Branch.
+
+## Nachschlagen (nach dem Livegang)
+
+36. **„Begriff?“-Knopf in den Spielmodi.** Er öffnet die Erklärungen aus den Lernkarten (`flashcards` in `content/`), die zum Text der aktuellen
+    Aufgabe passen (Begriff oder Kürzel wie „HwO“ kommt im Text vor), plus eine Suche über alle Begriffe der Prüfung. Es werden keine
+    eigenen Erklärungen erfunden: Gibt es keine passende Lernkarte, steht das ehrlich da. Für fehlende Begriffe die Lernkarte ergänzen
+    (`flashcards` im Kapitel) – dann erscheint sie automatisch.
+37. **Nicht in der Abschlussprüfung** (wäre ein Hilfsmittel) und nicht im Blitz-Modus von „Wahr oder Falsch?“. Im Quiz-Blitz hält der
+    Timer an, solange das Fenster offen ist. Tastenkürzel ruhen, solange ein Fenster offen ist.

@@ -29,8 +29,9 @@ export default mode;
 4. Kein Speichern, keine XP im Spiel selbst – das macht die Engine.
 5. Soll der Modus auch in der Abschlussprüfung vorkommen können, `supportsExam: true` setzen und die Prop `exam` beachten:
    kein Feedback, nach `onAnswer(...)` sofort `onFinish(...)`, Kopfzeile mit `<ModeHeader exam={exam} …/>`.
-6. Test anlegen: `src/modes/<modus-id>/Game.test.tsx` (rendert, beantwortet eine Frage richtig und eine falsch).
-7. Regel in `docs/SPIELMODI.md` ergänzen.
+6. Für „Begriff?“ in der Kopfzeile `<ModeHeader … lookup={itemText(item)} />` übergeben (`itemText` aus `@/engine/describe`).
+7. Test anlegen: `src/modes/<modus-id>/Game.test.tsx` (rendert, beantwortet eine Frage richtig und eine falsch).
+8. Regel in `docs/SPIELMODI.md` ergänzen.
 
 Fertig – die Registry findet den Modus automatisch, er erscheint in jedem Prüfungs-Spiel.
 

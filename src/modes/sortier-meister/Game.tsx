@@ -4,6 +4,7 @@ import type { DragEndEvent } from '@dnd-kit/core';
 import type { ModeProps } from '../types';
 import type { AnswerResult } from '@/engine/scoring';
 import { partsPoints } from '@/engine/scoring';
+import { itemText } from '@/engine/describe';
 import { ModeFrame } from '@/ui/ModeFrame';
 import { ModeHeader } from '@/ui/ModeHeader';
 import { FeedbackSheet } from '@/ui/FeedbackSheet';
@@ -184,7 +185,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, exam }: ModeP
 
   return (
     <ModeFrame padBottom={!!done}>
-      <ModeHeader onClose={onClose} current={Math.min(cur + (done ? 1 : 0), cards.length)} total={cards.length} score={exam ? undefined : live} exam={exam} />
+      <ModeHeader onClose={onClose} current={Math.min(cur + (done ? 1 : 0), cards.length)} total={cards.length} score={exam ? undefined : live} exam={exam} lookup={itemText(item)} />
       <DndContext sensors={sensors} onDragEnd={onDragEnd}>
         <div className="flex flex-1 flex-col px-4 pb-4">
           <ChapterChip chapter={item.chapter} />
