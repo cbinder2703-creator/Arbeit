@@ -94,7 +94,7 @@ function CurrentCard({
   );
 }
 
-export default function Game({ items, onAnswer, onFinish, onClose }: ModeProps) {
+export default function Game({ items, onAnswer, onFinish, onClose, exam }: ModeProps) {
   const item = items[0];
   if (item.type !== 'sort') throw new Error('Sortier-Meister braucht eine sort-Aufgabe');
   const cards = item.cards; // von der Engine gemischt
@@ -109,6 +109,7 @@ export default function Game({ items, onAnswer, onFinish, onClose }: ModeProps) 
   const [hint, setHint] = useState<string | null>(null);
   const [shake, setShake] = useState(0);
   const [done, setDone] = useState<AnswerResult | null>(null);
+  const [examWrong, setExamWrong] = useState(0);
   const started = useRef(Date.now());
 
   const sensors = useSensors(
@@ -123,6 +124,18 @@ export default function Game({ items, onAnswer, onFinish, onClose }: ModeProps) 
     if (done || !card) return;
     const cat = cats.find((c) => c.id === catId);
     if (!cat) return;
+    if (exam) {
+      // Prüfung: Einsortieren ist endgültig, kein Hinweis
+      const wrong = examWrong + (card.category === catId ? 0 : 1);
+      setExamWrong(wrong);
+      setPlaced((p) => ({ ...p, [catId]: [...(p[catId] ?? []), card.text] }));
+      setSelected(false);
+      if (cur + 1 >= cards.length) {
+        onAnswer({ itemId: item.id, correct: wrong === 0, timeMs: Date.now() - started.current, parts: { total: cards.length, correct: cards.length - wrong, errors: 0 } });
+        onFinish({ score: 0, maxScore: 0 });
+      } else setCur(cur + 1);
+      return;
+    }
     if (card.category === catId) {
       const ft = triedWrong ? firstTry : firstTry + 1;
       playSound('correct');
@@ -171,7 +184,7 @@ export default function Game({ items, onAnswer, onFinish, onClose }: ModeProps) 
 
   return (
     <ModeFrame padBottom={!!done}>
-      <ModeHeader onClose={onClose} current={Math.min(cur + (done ? 1 : 0), cards.length)} total={cards.length} score={live} />
+      <ModeHeader onClose={onClose} current={Math.min(cur + (done ? 1 : 0), cards.length)} total={cards.length} score={exam ? undefined : live} exam={exam} />
       <DndContext sensors={sensors} onDragEnd={onDragEnd}>
         <div className="flex flex-1 flex-col px-4 pb-4">
           <ChapterChip chapter={item.chapter} />

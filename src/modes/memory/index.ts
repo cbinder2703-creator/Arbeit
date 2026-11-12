@@ -12,6 +12,7 @@ const mode: GameMode = {
   minItems: 3,
   sessionSize: 3,
   flashcardCount: 12,
+  supportsExam: true,
   order: 6,
   Component: lazy(() => import('./Game')),
 };

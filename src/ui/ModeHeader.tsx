@@ -10,6 +10,7 @@ export function ModeHeader({
   score,
   right,
   title,
+  exam,
 }: {
   onClose: () => void;
   current: number;
@@ -17,13 +18,20 @@ export function ModeHeader({
   score?: number;
   right?: ReactNode;
   title?: string;
+  exam?: { index: number; total: number };
 }) {
+  if (exam) {
+    current = exam.index;
+    total = exam.total;
+    score = undefined;
+    title = 'Abschlussprüfung';
+  }
   return (
     <header className="flex items-center gap-2 px-2 pb-2 pt-[calc(var(--safe-top)+0.5rem)]">
       <button onClick={onClose} aria-label="Runde beenden" className="tap grid shrink-0 place-items-center rounded-xl text-mute hover:bg-card-hi hover:text-ink">
         <Icon name="x" size={24} />
       </button>
-      {title && <span className="hidden truncate font-display text-lg sm:block">{title}</span>}
+      {title && <span className={`truncate font-display text-lg ${exam ? '' : 'hidden sm:block'}`}>{title}</span>}
       <ProgressBar percent={total ? (current / total) * 100 : 0} className="flex-1" height={8} />
       <span className="w-10 shrink-0 text-center text-xs text-mute" aria-label={`Aufgabe ${current} von ${total}`}>
         {current}/{total}

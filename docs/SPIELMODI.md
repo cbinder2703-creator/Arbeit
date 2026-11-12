@@ -81,3 +81,11 @@ Auf dem PC zusätzlich Tastatur. Runde endet mit dem gemeinsamen Ergebnisbildsch
 - Die Modus-Liste einer Prüfung zeigt nur Modi, für die im gewählten Kapitel genug Items vorhanden sind (`minItems`).
 - Die Startseite eines Prüfungs-Spiels schlägt „Heute dran“ vor: das Kapitel mit den meisten fälligen Leitner-Items.
 - „Meine Prüfungen“ sortiert nach nächstem Prüfungstermin (ohne Termin ans Ende).
+
+---
+
+## Hinweise zur Umsetzung (siehe `docs/ENTSCHEIDUNGEN.md`)
+- Kündigungs-Gericht zeigt Erklärung und Paragraf direkt unter den Antworten (wie im Handy-Mockup), alle anderen Modi per Feedback-Sheet.
+- Wahr oder Falsch? im **Blitz-Modus** (Profil → Einstellungen): 60 Sekunden gesamt, kurzes Aufblitzen statt Sheet.
+- Quiz-Blitz im **Entspannt-Modus**: kein Timer, kein Zeitbonus.
+- In der Abschlussprüfung läuft jede Aufgabe im passenden Modus **ohne Feedback** (Memory als Zuordnungsliste).

@@ -24,7 +24,6 @@ export function PruefungsKachel({ pruefung, index }: { pruefung: Pruefung; index
       to={`/p/${meta.id}`}
       style={themeStyle(meta)}
       className="pattern-bg group relative block overflow-hidden rounded-xl3 bg-gradient-to-br from-p to-[var(--p-dark)] p-5 text-white shadow-lg shadow-black/30 transition active:scale-[0.99] lg:hover:-translate-y-0.5"
-      aria-label={`${meta.gameTitle} öffnen – ${meta.title}`}
     >
       <div className="flex items-start justify-between gap-3">
         <Chip className="bg-black/25 text-white">PRÜFUNG {index + 1}</Chip>

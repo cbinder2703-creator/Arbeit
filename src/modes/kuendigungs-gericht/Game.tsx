@@ -12,7 +12,7 @@ import { Icon } from '@/ui/Icon';
 import { useKeys } from '@/ui/useKeys';
 import { playSound } from '@/ui/sound';
 
-export default function Game({ items, onAnswer, onFinish, onClose, score }: ModeProps) {
+export default function Game({ items, onAnswer, onFinish, onClose, score, exam }: ModeProps) {
   const reduce = useReducedMotion();
   const [idx, setIdx] = useState(0);
   const [sel, setSel] = useState<number | null>(null);
@@ -26,6 +26,11 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
   const verdict = () => {
     if (sel === null || res) return;
     const ok = sel === item.correct;
+    if (exam) {
+      onAnswer({ itemId: item.id, correct: ok, timeMs: Date.now() - start.current });
+      onFinish({ score: 0, maxScore: 0 });
+      return;
+    }
     setRes(onAnswer({ itemId: item.id, correct: ok, timeMs: Date.now() - start.current }));
     playSound('hammer');
     setTimeout(() => playSound(ok ? 'correct' : 'wrong'), 220);
@@ -50,7 +55,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
 
   return (
     <ModeFrame>
-      <ModeHeader onClose={onClose} current={idx + (res ? 1 : 0)} total={items.length} score={score} title="Kündigungs-Gericht" />
+      <ModeHeader onClose={onClose} current={idx + (res ? 1 : 0)} total={items.length} score={score} title="Kündigungs-Gericht" exam={exam} />
       <div className="flex-1 px-4 pb-8">
         <div className="mb-3 flex items-center justify-between">
           <ChapterChip chapter={item.chapter} />
@@ -125,7 +130,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
 
         {!res ? (
           <Button variant="theme" block className="mt-5" disabled={sel === null} onClick={verdict}>
-            <Icon name="gavel" size={18} /> Urteil sprechen
+            {exam ? 'Weiter' : <><Icon name="gavel" size={18} /> Urteil sprechen</>}
           </Button>
         ) : (
           <div

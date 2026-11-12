@@ -12,6 +12,7 @@ import type { AnswerReport, ScoreState } from '@/engine/scoring';
 import { finishRound, recordAnswerFor } from '@/engine/rounds';
 import type { RoundOutcome } from '@/engine/rounds';
 import { getFortschritt } from '@/store/progress';
+import { awardBadges } from '@/engine/badges';
 import { RoundResult } from '@/ui/RoundResult';
 import type { ResultData, WrongEntry } from '@/ui/RoundResult';
 import { playSound } from '@/ui/sound';
@@ -102,6 +103,7 @@ function Runner({
       const wrongIds = [...last.entries()].filter(([, ok]) => !ok).map(([id]) => id);
       const correct = tally.current.correct;
       const totalCount = tally.current.total;
+      const badges = awardBadges(pr).map((b) => ({ id: b.id, title: b.title }));
       playSound('win');
       setResult({
         score: total,
@@ -112,9 +114,10 @@ function Runner({
         wrong: wrongEntries(wrongIds),
         statText: s.stats?.map((x) => x.label).join(' · '),
         noScore: mode.noScore,
+        badges,
       });
     },
-    [pid, mode.id, mode.noScore, chapterKey, wrongEntries],
+    [pid, pr, mode.id, mode.noScore, chapterKey, wrongEntries],
   );
 
   /** × während der Runde: bisher erspielte XP bleiben erhalten */

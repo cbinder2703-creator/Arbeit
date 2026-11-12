@@ -10,6 +10,7 @@ const mode: GameMode = {
   accepts: ['cloze'],
   minItems: 1,
   sessionSize: 3,
+  supportsExam: true,
   order: 7,
   Component: lazy(() => import('./Game')),
 };

@@ -9,6 +9,7 @@ eigenem Fortschritt und eigener Abschlussprüfung. Dafür ist **keine Code-Ände
 2. `pruefung.json` anlegen (Vorlage: `content/pruefungen/berufsbildung-arbeitswelt/pruefung.json`):
    - eigenen `gameTitle` ausdenken (z. B. „Vertrags-Arena“), eigene `color`/`accent`/`theme`
    - `examDate` eintragen, falls der Termin bekannt ist (`"JJJJ-MM-TT"`)
+   - jedes Abzeichen braucht neben `rule` (Text) eine `condition` (`typeCorrect`, `allOfType`, `item`, `finalGrade`, `level`, `streak`) – siehe Vorlage
    - `chapters` auflisten, `badges` passend zum Thema
 3. Kapiteldateien (`k1-….json`, `k2-….json` …) nach dem Schema in `docs/PLAN.md` anlegen.
    Möglichst alle Aufgabentypen mischen (mc, truefalse, sort, pairs, order, case, spot, cloze),

@@ -21,7 +21,7 @@ export function chapterStats(p: Pruefung, fort: PruefungsFortschritt, today: str
       chapterId: c.id,
       total: itemIds.length,
       solved,
-      percent: itemIds.length ? Math.round((solved / itemIds.length) * 100) : 0,
+      percent: itemIds.length ? Math.floor((solved / itemIds.length) * 100) : 0,
       due: ids.filter((id) => isDue(fort.leitner[id], today)).length,
     };
   });
@@ -33,7 +33,8 @@ export function solvedPercent(p: Pruefung, fort: PruefungsFortschritt): number {
   const total = totalItems(p);
   if (!total) return 0;
   const solved = p.chapters.flatMap((c) => c.items).filter((i) => fort.leitner[i.id]?.everCorrect).length;
-  return Math.round((solved / total) * 100);
+  // abgerundet: 100 % nur, wenn wirklich alles geschafft ist; „frei ab 60 %“ heißt mindestens 60 %
+  return Math.floor((solved / total) * 100);
 }
 
 export interface HeuteDran {

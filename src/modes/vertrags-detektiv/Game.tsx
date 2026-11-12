@@ -11,7 +11,7 @@ import { playSound } from '@/ui/sound';
 
 type Tab = 'vertrag' | 'checkliste';
 
-export default function Game({ items, checklist, onAnswer, onFinish, onClose, score }: ModeProps) {
+export default function Game({ items, checklist, onAnswer, onFinish, onClose, score, exam }: ModeProps) {
   const [idx, setIdx] = useState(0);
   const [marked, setMarked] = useState<Set<number>>(new Set());
   const [res, setRes] = useState<AnswerResult | null>(null);
@@ -44,6 +44,7 @@ export default function Game({ items, checklist, onAnswer, onFinish, onClose, sc
       timeMs: Date.now() - start.current,
       parts: { total: errorLines.length, correct: found, errors: falseMarks },
     });
+    if (exam) return onFinish({ score: 0, maxScore: 0 });
     playSound(perfect ? 'correct' : 'wrong');
     setRes(r);
     setTab('vertrag');
@@ -59,7 +60,7 @@ export default function Game({ items, checklist, onAnswer, onFinish, onClose, sc
 
   return (
     <ModeFrame padBottom={checked}>
-      <ModeHeader onClose={onClose} current={idx + (checked ? 1 : 0)} total={items.length} score={score} title="Vertrags-Detektiv" />
+      <ModeHeader onClose={onClose} current={idx + (checked ? 1 : 0)} total={items.length} score={score} title="Vertrags-Detektiv" exam={exam} />
       <div className="flex-1 px-4 pb-6">
         <ChapterChip chapter={item.chapter} />
         <h1 className="mt-2 font-display text-[24px] leading-tight">{item.title}</h1>
@@ -149,7 +150,7 @@ export default function Game({ items, checklist, onAnswer, onFinish, onClose, sc
             </ul>
             {!checked && (
               <Button variant="theme" block className="mt-5" onClick={check}>
-                <Icon name="search" size={18} /> Prüfen ({marked.size} markiert)
+                {exam ? `Weiter (${marked.size} markiert)` : <><Icon name="search" size={18} /> Prüfen ({marked.size} markiert)</>}
               </Button>
             )}
           </>

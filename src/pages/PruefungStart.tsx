@@ -14,6 +14,7 @@ import { Chip } from '@/ui/Chip';
 import { ProgressBar } from '@/ui/ProgressBar';
 import { ProgressRing } from '@/ui/ProgressRing';
 import { ModeCard } from '@/ui/ModeCard';
+import { BadgeList } from '@/ui/BadgeList';
 
 function Stat({ label, value, sub, color, bar }: { label: string; value: string; sub: string; color: string; bar?: number }) {
   return (
@@ -182,6 +183,12 @@ export function PruefungStart() {
             ))}
           </div>
         </section>
+        {meta.badges.length > 0 && (
+          <section aria-labelledby="badge-h">
+            <h2 id="badge-h" className="mb-3 text-xl">Abzeichen <span className="text-sm font-normal text-mute">{fort.badges.length} von {meta.badges.length}</span></h2>
+            <BadgeList badges={meta.badges} earned={fort.badges} />
+          </section>
+        )}
         <section className="lg:hidden">
           <Link to={`/p/${meta.id}/modi`} className="flex items-center justify-between rounded-2xl bg-card p-4 font-semibold">
             <span className="flex items-center gap-3"><Icon name="gamepad" className="text-p-accent" /> Alle {modes.length} Spielmodi</span>

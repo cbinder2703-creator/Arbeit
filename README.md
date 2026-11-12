@@ -26,3 +26,16 @@ Erstes Spiel: **„Azubi-Akademie“** – Prüfung „Berufsbildung und Arbeits
 > Lies CLAUDE.md und docs/PLAN.md. Schau dir die Grafiken in docs/grafiken/png an. Setze Phase 1 komplett um und zeig mir am Ende, wie ich die App lokal starte.
 
 4. Danach Phase für Phase weiter (Prompts unten in `docs/PLAN.md`).
+
+## Entwickeln
+
+```bash
+npm install
+npm run dev            # lokaler Server: http://localhost:5173 (auch im WLAN erreichbar)
+npm run build          # prüft Inhalte, TypeScript und baut nach dist/
+npm run preview        # Produktions-Build lokal ansehen (http://localhost:4173)
+npm run test           # Vitest
+npm run validate-content
+```
+
+Entscheidungen beim Bauen: `docs/ENTSCHEIDUNGEN.md` · offene Punkte: `docs/OFFENE-FRAGEN.md`

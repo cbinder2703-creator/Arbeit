@@ -7,7 +7,7 @@ import { Modi } from '@/pages/Modi';
 import { Profil } from '@/pages/Profil';
 import { Impressum, Datenschutz } from '@/pages/Rechtliches';
 import { NotFound } from '@/pages/NotFound';
-import { Bald } from '@/pages/Bald';
+import { Abschluss } from '@/pages/Abschluss';
 import { Karten } from '@/pages/Karten';
 import { Runde } from '@/pages/Runde';
 
@@ -24,7 +24,7 @@ export function AppRoutes() {
         <Route index element={<PruefungStart />} />
         <Route path="modi" element={<Modi />} />
         <Route path="karten" element={<Karten />} />
-        <Route path="abschluss" element={<Bald title="Abschlussprüfung" icon="crown" />} />
+        <Route path="abschluss" element={<Abschluss />} />
         <Route path="spiel/:modusId" element={<Runde />} />
       </Route>
       <Route path="*" element={<NotFound />} />

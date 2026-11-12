@@ -3,11 +3,13 @@ export function ProgressBar({
   color = 'rgb(var(--p-accent-rgb))',
   className = '',
   height = 8,
+  label = 'Fortschritt',
 }: {
   percent: number;
   color?: string;
   className?: string;
   height?: number;
+  label?: string;
 }) {
   const p = Math.max(0, Math.min(100, percent));
   return (
@@ -15,6 +17,7 @@ export function ProgressBar({
       className={`w-full overflow-hidden rounded-full bg-line ${className}`}
       style={{ height }}
       role="progressbar"
+      aria-label={label}
       aria-valuenow={Math.round(p)}
       aria-valuemin={0}
       aria-valuemax={100}

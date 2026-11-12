@@ -7,6 +7,8 @@ import { emptyProgress } from '@/store/types';
 import { ProgressBar } from '@/ui/ProgressBar';
 import { Icon } from '@/ui/Icon';
 import { Settings } from '@/ui/Settings';
+import { BadgeList } from '@/ui/BadgeList';
+import { InstallHint } from '@/ui/InstallHint';
 
 export function Profil() {
   const { byPruefung, globalStreak } = useProgress();
@@ -56,8 +58,25 @@ export function Profil() {
         })}
       </div>
 
+      {allePruefungen.some((p) => p.meta.badges.length > 0) && (
+        <>
+          <h2 className="mb-3 mt-8 text-xl">Abzeichen</h2>
+          <div className="space-y-5">
+            {allePruefungen.map((p) => (
+              <section key={p.meta.id} aria-label={`Abzeichen ${p.meta.gameTitle}`}>
+                <h3 className="mb-2 text-sm font-semibold text-mute">{p.meta.gameTitle}</h3>
+                <BadgeList badges={p.meta.badges} earned={(byPruefung[p.meta.id] ?? emptyProgress()).badges} />
+              </section>
+            ))}
+          </div>
+        </>
+      )}
+
       <h2 className="mb-3 mt-8 text-xl">Einstellungen</h2>
       <Settings />
+      <div className="mt-3">
+        <InstallHint />
+      </div>
     </div>
   );
 }

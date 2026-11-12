@@ -60,3 +60,28 @@ Hier steht, was unklar war und wie ich es entschieden habe (statt nachzufragen).
     nur die erste Bewertung pro Karte. Im Ergebnis steht „Gewusst“ statt Punkte (`noScore`).
 23. **Seite `/p/:id/karten`:** Alle Lernkarten zum Nachschlagen (nach Kapitel filterbar, Leitner-Box sichtbar) plus Knopf
     „Lernen starten“ (Modus Lernkarten).
+
+## Phase 4
+
+24. **Abschlussprüfung nutzt die vorhandenen Spielmodi.** Jede Aufgabe wird mit dem passenden Modus gezeigt (`supportsExam`,
+    Prop `exam`): ohne Feedback und ohne Zeitlimit, die Antwort wird nur festgehalten („Weiter“). Zuordnung nach Aufgabentyp
+    aus der Modus-Registry (mc/truefalse → Quiz-Blitz, sort → Sortier-Meister, case → Kündigungs-Gericht, spot →
+    Vertrags-Detektiv, cloze → Lückentext, order → Zeitstrahl, pairs → Memory als Zuordnungsliste). Ein neuer Modus mit
+    `supportsExam: true` wird automatisch berücksichtigt.
+25. **Aufgaben der Prüfung:** `finalExam.questions` Aufgaben, anteilig nach Kapitelgröße gezogen und gemischt. Mehrteilige
+    Aufgaben zählen mit Teilpunkten (Fehler ziehen ab). Note = IHK-Schlüssel auf den gerundeten Gesamtprozentwert.
+    „Bestanden“ = Note 4 oder besser. Vorzeitiges Beenden (×) wertet die Prüfung nicht.
+26. **Freischaltung:** Fortschritt wird **abgerundet** angezeigt und verglichen, damit „frei ab 60 %“ wirklich ≥ 60 % heißt und
+    100 % nur bei wirklich allem erscheint.
+27. **Fehler üben** nach der Prüfung: die falschen Aufgaben nacheinander, jede im passenden Modus mit Feedback; XP und
+    Leitner werden normal gutgeschrieben.
+28. **Höher oder tiefer?:** Fragen entstehen zur Laufzeit aus `charts` (Paare mit ≥ 10 Punkten bzw. ≥ 0,5 Std. Unterschied,
+    bei anderen Einheiten ≥ 15 % der Spannweite), reihum aus allen Diagrammen. Frage-IDs `chart:…` landen im Leitner-Speicher,
+    zählen aber nicht in Kapitel-/Prüfungsfortschritt.
+29. **Abzeichen** erscheinen auf der Prüfungs-Startseite und im Profil; neu erreichte werden im Ergebnis gezeigt.
+30. **PWA:** vite-plugin-pwa mit `autoUpdate`; alle Dateien werden vorab geladen (Inhalte stecken im JavaScript), dadurch ist die App
+    offline spielbar. Icons wurden aus einem einfachen Blitz-Symbol erzeugt – gern später durch ein eigenes Logo ersetzen
+    (`public/icon-*.png`, `public/favicon.svg`).
+31. **Impressum/Datenschutz** sind mit Platzhaltern gefüllt ([…]) und müssen vor dem Veröffentlichen mit echten Angaben
+    ausgefüllt werden (`src/pages/Rechtliches.tsx`). Das kann ich nicht für dich erfinden.
+32. **Lighthouse mobil (Produktions-Build, lokal gemessen):** Performance 93 · Barrierefreiheit 95 · Best Practices 100 · SEO 91.

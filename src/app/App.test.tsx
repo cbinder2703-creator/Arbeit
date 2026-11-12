@@ -14,7 +14,7 @@ describe('Routing + Layouts', () => {
   it('„Meine Prüfungen“ zeigt die Azubi-Akademie als Kachel + „Neue Prüfung“', () => {
     at('/');
     expect(screen.getByRole('heading', { name: 'Meine Prüfungen' })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /Azubi-Akademie öffnen/ })).toHaveAttribute('href', '/p/berufsbildung-arbeitswelt');
+    expect(screen.getByRole('link', { name: /Azubi-Akademie/ })).toHaveAttribute('href', '/p/berufsbildung-arbeitswelt');
     expect(screen.getByText('Neue Prüfung kommt bald')).toBeInTheDocument();
   });
   it('Prüfungs-Startseite: Kapitel, Heute dran, Abschlussprüfung, Thema', () => {

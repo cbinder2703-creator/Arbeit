@@ -4,6 +4,8 @@ import { shuffle } from '@/engine/shuffle';
 import { ModeFrame } from '@/ui/ModeFrame';
 import { ModeHeader } from '@/ui/ModeHeader';
 import { Icon } from '@/ui/Icon';
+import { Button } from '@/ui/Button';
+import { ChapterChip } from '@/ui/ChapterChip';
 import { playSound } from '@/ui/sound';
 
 const PAIRS = 6;
@@ -20,7 +22,7 @@ interface Card {
 /** Schriftgröße je nach Textlänge – damit auch lange Begriffe auf die kleine Karte passen */
 const sizeFor = (t: string) => (t.length <= 8 ? 16 : t.length <= 12 ? 14 : t.length <= 24 ? 13 : t.length <= 40 ? 11.5 : 10.5);
 
-export default function Game({ items, flashcards = [], onAnswer, onFinish, onClose }: ModeProps) {
+function Board({ items, flashcards = [], onAnswer, onFinish, onClose }: ModeProps) {
   const pairs = useMemo(() => {
     const list: { left: string; right: string; source: string }[] = [];
     for (const it of items) {
@@ -176,4 +178,91 @@ export default function Game({ items, flashcards = [], onAnswer, onFinish, onClo
       </div>
     </ModeFrame>
   );
+}
+
+const LINK_COLORS = ['#F97316', '#3B82F6', '#10B981', '#A855F7', '#EAB308', '#EC4899', '#06B6D4', '#84CC16'];
+
+/** Abschlussprüfung: Paare zuordnen (statt Karten umdrehen) – kein Feedback, Antwort wird nur festgehalten */
+function MatchExam({ items, onAnswer, onFinish, onClose, exam }: ModeProps) {
+  const item = items[0];
+  if (item.type !== 'pairs') throw new Error('Memory braucht pairs-Aufgaben');
+  const rights = useMemo(() => shuffle(item.pairs.map((p, i) => ({ text: p.right, pair: i }))), [item]);
+  const [selLeft, setSelLeft] = useState<number | null>(null);
+  const [links, setLinks] = useState<Record<number, number>>({}); // links-Index → rights-Index
+  const start = useRef(Date.now());
+  const linkedRights = new Set(Object.values(links));
+  const colorOfLeft = (l: number) => LINK_COLORS[l % LINK_COLORS.length];
+  const leftOfRight = (r: number) => Object.entries(links).find(([, v]) => v === r)?.[0];
+
+  const pickRight = (r: number) => {
+    if (selLeft === null) return;
+    setLinks((cur) => {
+      const n = { ...cur };
+      for (const [k, v] of Object.entries(n)) if (v === r) delete n[Number(k)];
+      n[selLeft] = r;
+      return n;
+    });
+    setSelLeft(null);
+  };
+  const done = Object.keys(links).length === item.pairs.length;
+  const commit = () => {
+    const correct = item.pairs.filter((_, l) => rights[links[l]]?.pair === l).length;
+    onAnswer({ itemId: item.id, correct: correct === item.pairs.length, timeMs: Date.now() - start.current, parts: { total: item.pairs.length, correct, errors: 0 } });
+    onFinish({ score: 0, maxScore: 0 });
+  };
+
+  return (
+    <ModeFrame>
+      <ModeHeader onClose={onClose} current={0} total={1} exam={exam} />
+      <div className="flex-1 px-4 pb-8">
+        <ChapterChip chapter={item.chapter} />
+        <h1 className="mt-2 font-display text-[22px] leading-tight">{item.question}</h1>
+        <p className="mt-1 text-sm text-mute">Links einen Begriff antippen, dann rechts die passende Erklärung.</p>
+        <div className="mt-4 grid grid-cols-2 gap-3">
+          <ul className="space-y-2" aria-label="Begriffe">
+            {item.pairs.map((p, l) => (
+              <li key={l}>
+                <button
+                  onClick={() => setSelLeft(l)}
+                  aria-pressed={selLeft === l}
+                  data-testid={`left-${l}`}
+                  className="tap flex w-full items-center gap-2 rounded-xl border-2 bg-card px-2.5 py-2 text-left text-[14px] leading-tight"
+                  style={{ borderColor: selLeft === l ? '#FACC15' : links[l] !== undefined ? colorOfLeft(l) : '#2A3352' }}
+                >
+                  {links[l] !== undefined && <span className="h-3 w-3 shrink-0 rounded-full" style={{ background: colorOfLeft(l) }} aria-hidden="true" />}
+                  <span className="min-w-0 break-words" lang="de" style={{ hyphens: 'auto' }}>{p.left}</span>
+                </button>
+              </li>
+            ))}
+          </ul>
+          <ul className="space-y-2" aria-label="Erklärungen">
+            {rights.map((r, i) => {
+              const l = leftOfRight(i);
+              return (
+                <li key={i}>
+                  <button
+                    onClick={() => pickRight(i)}
+                    disabled={selLeft === null}
+                    data-testid={`right-${i}`}
+                    className="tap flex w-full items-center gap-2 rounded-xl border-2 bg-card px-2.5 py-2 text-left text-[14px] leading-tight disabled:opacity-100"
+                    style={{ borderColor: l !== undefined ? colorOfLeft(Number(l)) : '#2A3352' }}
+                  >
+                    {l !== undefined && <span className="h-3 w-3 shrink-0 rounded-full" style={{ background: colorOfLeft(Number(l)) }} aria-hidden="true" />}
+                    <span className="min-w-0 break-words" lang="de" style={{ hyphens: 'auto' }}>{r.text}</span>
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <Button variant="theme" block className="mt-5" disabled={!done || !linkedRights.size} onClick={commit}>
+          Weiter
+        </Button>
+      </div>
+    </ModeFrame>
+  );
+}
+
+export default function Game(props: ModeProps) {
+  return props.exam ? <MatchExam {...props} /> : <Board {...props} />;
 }

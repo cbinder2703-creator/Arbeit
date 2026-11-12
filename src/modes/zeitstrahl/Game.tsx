@@ -94,7 +94,7 @@ const toSteps = (item: ModeProps['items'][number]): Step[] => {
   });
 };
 
-export default function Game({ items, onAnswer, onFinish, onClose, score }: ModeProps) {
+export default function Game({ items, onAnswer, onFinish, onClose, score, exam }: ModeProps) {
   const [idx, setIdx] = useState(0);
   const item = items[idx];
   if (item.type !== 'order') throw new Error('Zeitstrahl braucht order-Aufgaben');
@@ -125,6 +125,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
       timeMs: Date.now() - start.current,
       parts: { total: order.length, correct: right, errors: 0 },
     });
+    if (exam) return onFinish({ score: 0, maxScore: 0 });
     playSound(perfect ? 'correct' : 'wrong');
     setRes(r);
   };
@@ -139,7 +140,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
 
   return (
     <ModeFrame padBottom={checked}>
-      <ModeHeader onClose={onClose} current={idx + (checked ? 1 : 0)} total={items.length} score={score} title="Zeitstrahl" />
+      <ModeHeader onClose={onClose} current={idx + (checked ? 1 : 0)} total={items.length} score={score} title="Zeitstrahl" exam={exam} />
       <div className="flex-1 px-4 pb-6">
         <ChapterChip chapter={item.chapter} />
         <h1 className="mt-2 font-display text-[22px] leading-tight">{item.question}</h1>
@@ -161,7 +162,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
 
         {!checked && (
           <Button variant="theme" block className="mt-5" onClick={check}>
-            Prüfen
+            {exam ? 'Weiter' : 'Prüfen'}
           </Button>
         )}
       </div>

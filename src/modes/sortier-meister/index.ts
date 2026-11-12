@@ -10,6 +10,7 @@ const mode: GameMode = {
   accepts: ['sort'],
   minItems: 1,
   sessionSize: 1,
+  supportsExam: true,
   order: 3,
   Component: lazy(() => import('./Game')),
 };

@@ -11,13 +11,16 @@ import { TimerRing } from '@/ui/TimerRing';
 import { ChapterChip } from '@/ui/ChapterChip';
 import { Chip } from '@/ui/Chip';
 import { Icon } from '@/ui/Icon';
+import { Button } from '@/ui/Button';
 import { useKeys } from '@/ui/useKeys';
 import { playSound } from '@/ui/sound';
 
 const LIMIT_MS = 20_000;
 
-export default function Game({ items, onAnswer, onFinish, onClose, score }: ModeProps) {
-  const relaxed = useSettings((s) => s.relaxed);
+export default function Game({ items, onAnswer, onFinish, onClose, score, exam }: ModeProps) {
+  const relaxedSetting = useSettings((s) => s.relaxed);
+  const relaxed = relaxedSetting || !!exam;
+  const [sel, setSel] = useState<number | null>(null); // nur Abschlussprüfung
   const [idx, setIdx] = useState(0);
   const [picked, setPicked] = useState<number | null>(null); // -1 = Zeit abgelaufen
   const [res, setRes] = useState<AnswerResult | null>(null);
@@ -32,8 +35,15 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
   const correctIdx = item.type === 'mc' ? item.correct : item.type === 'truefalse' ? (item.correct ? 0 : 1) : -1;
   const question = item.type === 'mc' ? item.question : item.type === 'truefalse' ? item.statement : '';
 
+  const commit = () => {
+    if (sel === null) return;
+    onAnswer({ itemId: item.id, correct: sel === correctIdx, timeMs: Date.now() - start.current });
+    onFinish({ score: 0, maxScore: 0 });
+  };
+
   const answer = useCallback(
     (i: number) => {
+      if (exam) return setSel(i);
       if (pickedRef.current !== null) return;
       pickedRef.current = i;
       const correct = i === correctIdx;
@@ -48,7 +58,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
       setRes(r);
       setCombo(r.combo);
     },
-    [correctIdx, onAnswer, item.id, relaxed],
+    [correctIdx, onAnswer, item.id, relaxed, exam],
   );
 
   // Zeitlimit
@@ -84,6 +94,10 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
   useKeys((e) => {
     const n = Number(e.key);
     if (n >= 1 && n <= options.length) answer(n - 1);
+    if (exam && e.key === 'Enter') {
+      e.preventDefault();
+      commit();
+    }
   }, picked === null);
 
   const timedOut = picked === -1;
@@ -91,7 +105,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
 
   return (
     <ModeFrame padBottom={picked !== null}>
-      <ModeHeader onClose={onClose} current={idx + (picked !== null ? 1 : 0)} total={items.length} score={score} />
+      <ModeHeader onClose={onClose} current={idx + (picked !== null ? 1 : 0)} total={items.length} score={score} exam={exam} />
       <div className="flex flex-1 flex-col px-4 pb-6">
         <div className="mt-1 flex items-center justify-between gap-2">
           <ChapterChip chapter={item.chapter} />
@@ -115,7 +129,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
 
         <div className="mt-5 grid gap-3 md:grid-cols-2" role="group" aria-label="Antworten">
           {options.map((o, i) => {
-            const state = picked === null ? 'idle' : i === correctIdx ? 'right' : i === picked ? 'wrong' : 'dim';
+            const state = exam ? (sel === i ? 'sel' : 'idle') : picked === null ? 'idle' : i === correctIdx ? 'right' : i === picked ? 'wrong' : 'dim';
             return (
               <button
                 key={i}
@@ -129,7 +143,9 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
                       ? 'animate-wiggle border-bad bg-bad/15'
                       : state === 'dim'
                         ? 'border-line bg-card opacity-50'
-                        : 'border-line bg-card hover:border-p/60 active:scale-[0.99]'
+                        : state === 'sel'
+                          ? 'border-p bg-p/15'
+                          : 'border-line bg-card hover:border-p/60 active:scale-[0.99]'
                 }`}
               >
                 <span className="grid h-7 w-7 shrink-0 place-items-center rounded-lg bg-card-hi text-xs font-bold text-mute">{i + 1}</span>
@@ -140,6 +156,11 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
             );
           })}
         </div>
+        {exam && (
+          <Button variant="theme" block className="mt-5" disabled={sel === null} onClick={commit}>
+            Weiter
+          </Button>
+        )}
       </div>
 
       {picked !== null && res && (

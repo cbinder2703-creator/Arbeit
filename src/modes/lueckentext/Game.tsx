@@ -23,7 +23,7 @@ function parse(text: string): Seg[] {
 
 const norm = (s: string) => s.trim().toLowerCase();
 
-export default function Game({ items, onAnswer, onFinish, onClose, score }: ModeProps) {
+export default function Game({ items, onAnswer, onFinish, onClose, score, exam }: ModeProps) {
   const [idx, setIdx] = useState(0);
   const item = items[idx];
   if (item.type !== 'cloze') throw new Error('Lückentext braucht cloze-Aufgaben');
@@ -62,6 +62,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
       timeMs: Date.now() - start.current,
       parts: { total: gaps.length, correct: right, errors: 0 },
     });
+    if (exam) return onFinish({ score: 0, maxScore: 0 });
     playSound(perfect ? 'correct' : 'wrong');
     setRes(r);
   };
@@ -77,7 +78,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
 
   return (
     <ModeFrame padBottom={checked}>
-      <ModeHeader onClose={onClose} current={idx + (checked ? 1 : 0)} total={items.length} score={score} title="Lückentext" />
+      <ModeHeader onClose={onClose} current={idx + (checked ? 1 : 0)} total={items.length} score={score} title="Lückentext" exam={exam} />
       <div className="flex-1 px-4 pb-6">
         <ChapterChip chapter={item.chapter} />
         <h1 className="mt-2 font-display text-[22px] leading-tight">Setze die Wörter in die Lücken</h1>
@@ -127,7 +128,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
 
         {!checked && (
           <Button variant="theme" block className="mt-6" disabled={!allFilled} onClick={check}>
-            Prüfen
+            {exam ? 'Weiter' : 'Prüfen'}
           </Button>
         )}
       </div>

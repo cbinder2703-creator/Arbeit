@@ -41,6 +41,8 @@ export interface ModeProps {
   onAnswer: (r: AnswerReport) => AnswerResult;
   onFinish: (s: ModeResult) => void;
   onClose: () => void;
+  /** Abschlussprüfung: kein Feedback zwischendurch, Antwort nur festhalten, dann `onFinish` */
+  exam?: { index: number; total: number };
 }
 
 export interface GameMode {
@@ -60,5 +62,7 @@ export interface GameMode {
   order?: number;
   /** ohne Punkte-/XP-Druck (z. B. Lernkarten) */
   noScore?: boolean;
+  /** kann in der Abschlussprüfung eingesetzt werden (Prop `exam`) */
+  supportsExam?: boolean;
   Component: LazyExoticComponent<FC<ModeProps>>;
 }
