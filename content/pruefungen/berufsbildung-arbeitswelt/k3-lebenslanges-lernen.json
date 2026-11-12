@@ -1,0 +1,94 @@
+{
+  "id": "k3",
+  "chapter": 3,
+  "title": "Lebenslanges Lernen",
+  "subtitle": "Erasmus+, Europass, Potenzialanalyse, Fortbildung, Umschulung, Förderung",
+  "pages": "Buch S. 22–26",
+  "color": "#10B981",
+  "icon": "graduation-cap",
+  "flashcards": [
+    { "id": "k3-f01", "term": "Schlüsselqualifikationen", "definition": "Z. B. Teamfähigkeit, interkulturelles Verständnis, Belastbarkeit – verbessern die Chancen auf dem Arbeitsmarkt." },
+    { "id": "k3-f02", "term": "Erasmus+", "definition": "EU-Programm zur Unterstützung grenzüberschreitender Aus- und Weiterbildung. Rund 30 Milliarden Euro von 2021 bis 2027." },
+    { "id": "k3-f03", "term": "Erasmus+ Berufsbildung", "definition": "Fördert berufliches Lernen im Ausland – während der Ausbildung oder bis zu zwölf Monate nach dem Abschluss. Antrag stellen Projektorganisatoren (z. B. Betriebe)." },
+    { "id": "k3-f04", "term": "Europass", "definition": "Kostenloser Service der EU für Bewerbung und Jobsuche (seit 2005): Profil, Lebenslauf, Anschreiben, Bewerbungsmappen, Test digitaler Kompetenzen." },
+    { "id": "k3-f05", "term": "Europass Mobilität", "definition": "Dokumentiert Auslandslernaufenthalte." },
+    { "id": "k3-f06", "term": "Europass Zeugniserläuterungen", "definition": "Erläutern berufliche Abschlusszeugnisse." },
+    { "id": "k3-f07", "term": "Europass Diploma Supplement", "definition": "Erläutert Hochschulabschlüsse." },
+    { "id": "k3-f08", "term": "Potenzialanalyse", "definition": "Verfahren zur Ermittlung persönlicher Stärken und Schwächen für die berufliche Neuorientierung. Leitfrage: „Was kann ich?“" },
+    { "id": "k3-f09", "term": "Assessment-Center", "definition": "Assessment = Abschätzung, Bewertung. Kombination aus Tests, Planspielen und Gesprächen, 1 bis 3 Tage, in Gruppen und einzeln." },
+    { "id": "k3-f10", "term": "Meisterbrief", "definition": "Meisterprüfung nach Meisterschule (½ bis 1½ Jahre). Voraussetzung: Gesellenprüfung. In 53 Handwerken Pflicht für die Selbstständigkeit. Gleichgestellt mit Bachelor/FH." },
+    { "id": "k3-f11", "term": "Technikerschule", "definition": "Vollzeit zwei Jahre, Abschluss „Staatlich geprüfter Techniker“, z. B. Maschinenbau, Elektrotechnik, Bautechnik." },
+    { "id": "k3-f12", "term": "Betriebswirt des Handwerks (HWK)", "definition": "Weiterbildung an der Akademie des Handwerks für Gesellen oder Meister mit mehrjähriger Berufspraxis." },
+    { "id": "k3-f13", "term": "Berufliche Umschulung", "definition": "Ausbildung in einem weiteren Beruf, wenn der erlernte Beruf nicht mehr für das ganze Arbeitsleben reicht." },
+    { "id": "k3-f14", "term": "SGB III – Arbeitsförderung", "definition": "Die Bundesagentur für Arbeit fördert Ausbildung, Fortbildung und Umschulung, wenn man sie nicht selbst bezahlen kann. Antrag bei der örtlichen Agentur für Arbeit." },
+    { "id": "k3-f15", "term": "Berufsausbildungsbeihilfe (BAB)", "definition": "Unterstützung für eine Ausbildung in einem anerkannten Ausbildungsberuf (nach SGB III)." },
+    { "id": "k3-f16", "term": "AFBG – Aufstiegs-/Meister-BAföG", "definition": "Fördert Weiterbildung nach der Lehre, z. B. zum Meister, Techniker, Fachwirt. Darlehen und Zuschüsse. Zuständig: kommunales Amt für Ausbildungsförderung am Wohnort." },
+    { "id": "k3-f17", "term": "BAföG", "definition": "Ausbildung unabhängig von der sozialen und wirtschaftlichen Lage – für Schulen ab Klasse 10 und Hochschulen, nur bei Bedürftigkeit. Studierende zahlen die Hälfte zurück." }
+  ],
+  "items": [
+    { "id": "k3-001", "type": "mc", "difficulty": 2, "question": "Wie viel Geld investiert die EU von 2021 bis 2027 in Erasmus+?", "options": ["Rund 3 Milliarden €", "Rund 30 Milliarden €", "Rund 300 Millionen €", "Rund 100 Milliarden €"], "correct": 1, "explanation": "Rund 30 Milliarden Euro für den europäischen Bildungsraum.", "source": "S. 22" },
+    { "id": "k3-002", "type": "mc", "difficulty": 2, "question": "Bis wann nach dem Abschluss können Lernende bei Erasmus+ Berufsbildung ins Ausland?", "options": ["Bis zu 1 Monat", "Bis zu 12 Monate", "Bis zu 5 Jahre", "Gar nicht – nur während der Ausbildung"], "correct": 1, "explanation": "Während der Ausbildung oder bis zu zwölf Monate nach dem Abschluss.", "source": "S. 22" },
+    { "id": "k3-003", "type": "mc", "difficulty": 3, "question": "Wer stellt bei Erasmus+ Berufsbildung den Antrag?", "options": ["Der Azubi selbst", "Projektorganisatoren, z. B. Betriebe", "Die Agentur für Arbeit", "Das Finanzamt"], "correct": 1, "explanation": "Antragsteller sind die Projektorganisatoren (Betriebe etc.).", "source": "S. 22" },
+    { "id": "k3-004", "type": "mc", "difficulty": 1, "question": "Was ist Europass?", "options": ["Ein Reisepass für die EU", "Ein kostenloser EU-Service für Bewerbung und Jobsuche", "Eine Zugfahrkarte für Azubis", "Ein Sprachkurs"], "correct": 1, "explanation": "Kostenloser Service der EU für Bewerbung und Jobsuche.", "source": "S. 22" },
+    { "id": "k3-005", "type": "mc", "difficulty": 2, "question": "Welches Europass-Dokument dokumentiert Lernaufenthalte im Ausland?", "options": ["Diploma Supplement", "Europass Mobilität", "Zeugniserläuterungen", "Lebenslauf"], "correct": 1, "explanation": "Europass Mobilität dokumentiert Auslandslernaufenthalte.", "source": "S. 23" },
+    { "id": "k3-006", "type": "mc", "difficulty": 2, "question": "Seit wann gibt es den Europass?", "options": ["1995", "2005", "2015", "2021"], "correct": 1, "explanation": "Eingeführt 2005, um länderübergreifendes Lernen und Arbeiten zu erleichtern.", "source": "S. 23" },
+    { "id": "k3-007", "type": "mc", "difficulty": 1, "question": "Was ist das Ziel einer Potenzialanalyse?", "options": ["Gehalt verhandeln", "Persönliche Stärken und Schwächen ermitteln", "Den Urlaub planen", "Den Chef bewerten"], "correct": 1, "explanation": "Ermittlung der persönlichen Stärken und Schwächen – Leitfrage „Was kann ich?“", "source": "S. 23" },
+    { "id": "k3-008", "type": "mc", "difficulty": 2, "question": "Wie lange dauert ein Assessment-Center meist?", "options": ["30 Minuten", "Ein bis drei Tage", "Zwei Wochen", "Ein halbes Jahr"], "correct": 1, "explanation": "Die Bewerber durchlaufen ein bis drei Tage lang Gruppen- und Einzelübungen.", "source": "S. 23" },
+    { "id": "k3-009", "type": "mc", "difficulty": 2, "question": "Wie schnell verdoppelt sich laut Schätzungen das Wissen der Menschheit?", "options": ["Jedes Jahr", "Alle 5 bis 10 Jahre", "Alle 50 Jahre", "Alle 100 Jahre"], "correct": 1, "explanation": "Schätzungen gehen von 5 bis 10 Jahren aus – deshalb ist Fortbildung so wichtig.", "source": "S. 23" },
+    { "id": "k3-010", "type": "mc", "difficulty": 1, "question": "Was ist Voraussetzung für die Meisterprüfung?", "options": ["Abitur", "Bestandene Gesellenprüfung", "Ein Studium", "10 Jahre Berufserfahrung"], "correct": 1, "explanation": "Voraussetzung ist eine bestandene Gesellenprüfung.", "source": "S. 23" },
+    { "id": "k3-011", "type": "mc", "difficulty": 2, "question": "In wie vielen handwerklichen Berufen braucht man den Meister, um sich selbstständig zu machen?", "options": ["12", "53", "328", "In allen"], "correct": 1, "explanation": "In 53 handwerklichen Berufen ist die Meisterprüfung Voraussetzung für die Selbstständigkeit.", "source": "S. 23" },
+    { "id": "k3-012", "type": "mc", "difficulty": 2, "question": "Mit wem ist der deutsche Meisterbrief gleichgestellt?", "options": ["Mit dem Hauptschulabschluss", "Mit Absolventen von Fachhochschulen und Bachelor-Studiengängen", "Mit dem Gesellenbrief", "Mit einem Doktortitel"], "correct": 1, "explanation": "Durch die EU-Aufwertung (2007) mit FH- und Bachelor-Absolventen gleichgestellt.", "source": "S. 23" },
+    { "id": "k3-013", "type": "mc", "difficulty": 2, "question": "Welchen Titel erhält man nach bestandener Technikerschule?", "options": ["Meister", "Staatlich geprüfter Techniker", "Betriebswirt (HWK)", "Bachelor of Arts"], "correct": 1, "explanation": "„Staatlich geprüfter Techniker, Fachrichtung …“", "source": "S. 24" },
+    { "id": "k3-014", "type": "mc", "difficulty": 1, "question": "Wer fördert nach dem SGB III Fortbildung und Umschulung?", "options": ["Die Handwerkskammer", "Die Bundesagentur für Arbeit", "Die Berufsschule", "Die EU"], "correct": 1, "explanation": "Die Bundesagentur für Arbeit – Antrag bei der örtlichen Agentur für Arbeit.", "source": "S. 24" },
+    { "id": "k3-015", "type": "mc", "difficulty": 2, "question": "Wie nennt man das Aufstiegsfortbildungsförderungsgesetz (AFBG) auch?", "options": ["Meister-BAföG", "Azubi-Geld", "Erasmus+", "Kindergeld"], "correct": 0, "explanation": "AFBG = Aufstiegs-BAföG, auch Meister-BAföG genannt.", "source": "S. 25" },
+    { "id": "k3-016", "type": "mc", "difficulty": 3, "question": "Wer ist für den Antrag auf Meister-BAföG zuständig?", "options": ["Die Agentur für Arbeit", "Das kommunale Amt für Ausbildungsförderung am Wohnort", "Das Studentenwerk", "Die IHK"], "correct": 1, "explanation": "Das kommunale Amt für Ausbildungsförderung, in dessen Bezirk der Auszubildende wohnt.", "source": "S. 25" },
+    { "id": "k3-017", "type": "mc", "difficulty": 2, "question": "Ab welcher Klasse fördert das BAföG Schüler?", "options": ["Klasse 5", "Klasse 8", "Klasse 10", "Erst ab Studium"], "correct": 2, "explanation": "Allgemeinbildende und berufliche Schulen ab Klasse 10.", "source": "S. 25" },
+    { "id": "k3-018", "type": "mc", "difficulty": 2, "question": "Wie viel des BAföG müssen Studierende zurückzahlen?", "options": ["Nichts", "Die Hälfte", "Alles", "Ein Viertel"], "correct": 1, "explanation": "Für Studierende wird BAföG zu 50 % als Darlehen vergeben.", "source": "S. 25" },
+    { "id": "k3-019", "type": "mc", "difficulty": 1, "question": "Ein Korbmacher findet keine Arbeit mehr. Welcher Grund für eine Umschulung liegt vor?", "options": ["Berufsunfähigkeit", "Aussterben des erlernten Berufs", "Unzufriedenheit", "Arbeitsunfall"], "correct": 1, "explanation": "Korbmacher und Wagenbauer sind Beispiele für aussterbende Berufe.", "source": "S. 24" },
+    { "id": "k3-020", "type": "mc", "difficulty": 2, "question": "Welche Kosten zählen NICHT zu den Weiterbildungskosten nach § 83 SGB III?", "options": ["Lehrgangskosten", "Fahrkosten", "Kosten für Kinderbetreuung", "Kosten für eine Urlaubsreise"], "correct": 3, "explanation": "Gefördert: Lehrgangskosten, Fahrkosten, auswärtige Unterbringung/Verpflegung, Kinderbetreuung.", "source": "S. 26" },
+    { "id": "k3-021", "type": "mc", "difficulty": 3, "question": "Was ist laut § 81 SGB III eine Voraussetzung für die Förderung einer Weiterbildung?", "options": ["Die Agentur für Arbeit hat vor Beginn beraten", "Man ist unter 25 Jahre alt", "Man hat Abitur", "Der Chef bezahlt die Hälfte"], "correct": 0, "explanation": "Voraussetzungen: Weiterbildung notwendig, Beratung durch die Agentur vor Beginn, Maßnahme und Träger zugelassen.", "source": "S. 26" },
+
+    { "id": "k3-101", "type": "truefalse", "difficulty": 1, "statement": "Europass ist kostenpflichtig.", "correct": false, "explanation": "Falsch – Europass ist ein kostenloser Service der EU." },
+    { "id": "k3-102", "type": "truefalse", "difficulty": 2, "statement": "Eine Potenzialanalyse wird von Unternehmen auch genutzt, um bei vielen Bewerbern eine Auswahl zu treffen.", "correct": true, "explanation": "Richtig – sie dient auch dazu, eine große Bewerberzahl zu reduzieren." },
+    { "id": "k3-103", "type": "truefalse", "difficulty": 1, "statement": "Der einmal erlernte Beruf reicht heute oft nicht mehr für das ganze Arbeitsleben.", "correct": true, "explanation": "Richtig – das führt zu Fortbildung oder Umschulung." },
+    { "id": "k3-104", "type": "truefalse", "difficulty": 2, "statement": "BAföG bekommt jeder, unabhängig vom Einkommen.", "correct": false, "explanation": "Falsch – BAföG gibt es nur bei Bedürftigkeit." },
+    { "id": "k3-105", "type": "truefalse", "difficulty": 2, "statement": "Die Meisterschule dauert je nach Fachrichtung ½ bis 1½ Jahre.", "correct": true, "explanation": "Richtig." },
+    { "id": "k3-106", "type": "truefalse", "difficulty": 2, "statement": "Fördermaßnahmen nach SGB III werden immer nur als Darlehen gezahlt.", "correct": false, "explanation": "Falsch – voll, teilweise oder auch als Darlehen." },
+    { "id": "k3-107", "type": "truefalse", "difficulty": 3, "statement": "BAföG-Anträge von Studenten werden von den Studentenwerken bearbeitet.", "correct": true, "explanation": "Richtig – für Schüler und Azubis sind die kommunalen Ämter zuständig." },
+
+    { "id": "k3-201", "type": "sort", "difficulty": 2, "question": "Welche Förderung passt?", "categories": [{ "id": "afbg", "label": "AFBG (Meister-BAföG)" }, { "id": "sgb", "label": "SGB III (Agentur für Arbeit)" }, { "id": "bafoeg", "label": "BAföG" }, { "id": "erasmus", "label": "Erasmus+" }], "cards": [
+      { "text": "Geselle will die Meisterschule besuchen", "category": "afbg" },
+      { "text": "Weiterbildung zum Techniker oder Fachwirt", "category": "afbg" },
+      { "text": "Umschulung, um Arbeitslosigkeit abzuwenden", "category": "sgb" },
+      { "text": "Berufsausbildungsbeihilfe für Azubi", "category": "sgb" },
+      { "text": "Bedürftige Schülerin am Berufskolleg (Klasse 11)", "category": "bafoeg" },
+      { "text": "Bedürftiger Student an der Hochschule", "category": "bafoeg" },
+      { "text": "Azubi macht 4 Wochen Praktikum in Spanien", "category": "erasmus" }
+    ], "explanation": "Abschnitte 3.1 und 3.5." },
+
+    { "id": "k3-301", "type": "pairs", "difficulty": 2, "question": "Europass-Dokument und Zweck", "pairs": [
+      { "left": "Europass Mobilität", "right": "Dokumentiert Auslandslernaufenthalte" },
+      { "left": "Zeugniserläuterungen", "right": "Erläutern berufliche Abschlusszeugnisse" },
+      { "left": "Diploma Supplement", "right": "Erläutert Hochschulabschlüsse" },
+      { "left": "Europass-Portal", "right": "Profil, Lebenslauf und Bewerbung online" }
+    ] },
+    { "id": "k3-302", "type": "pairs", "difficulty": 2, "question": "Grund für eine Umschulung und Beispiel", "pairs": [
+      { "left": "Aussterben des Berufs", "right": "Korbmacher, Wagenbauer" },
+      { "left": "Berufsunfähigkeit", "right": "Arbeitsunfall oder Berufskrankheit" },
+      { "left": "Kenntnisse überholt", "right": "Veränderung der Arbeitswelt" },
+      { "left": "Längere Arbeitslosigkeit", "right": "Produktion wurde ins Ausland verlagert" },
+      { "left": "Unzufriedenheit", "right": "Früher erlernter Beruf gefällt nicht mehr" }
+    ] },
+    { "id": "k3-303", "type": "pairs", "difficulty": 3, "question": "Fortbildung und Abschluss", "pairs": [
+      { "left": "Meisterschule", "right": "Meisterbrief" },
+      { "left": "Technikerschule", "right": "Staatlich geprüfter Techniker" },
+      { "left": "Akademie des Handwerks", "right": "Betriebswirt des Handwerks (HWK)" }
+    ] },
+
+    { "id": "k3-401", "type": "order", "difficulty": 1, "question": "Der Weg zum Meister", "steps": ["Berufsausbildung", "Gesellenprüfung bestehen", "Meisterschule (½ bis 1½ Jahre)", "Meisterprüfung bestehen", "Meisterbrief – Selbstständigkeit möglich"], "explanation": "Abschnitt 3.3." },
+
+    { "id": "k3-501", "type": "case", "difficulty": 3, "title": "Carsten will umschulen", "situation": "Carsten hat Gerber gelernt und einige Jahre gearbeitet. Wegen der Verlagerung der Produktion ins Ausland wurde er entlassen und arbeitet seit 4½ Jahren als Bauhelfer. Nun will er sich zum Bau- und Möbeltischler umschulen lassen.", "question": "Unter welchen Voraussetzungen ist eine Förderung nach SGB III möglich?", "options": ["Gar nicht – er hat ja Arbeit", "Wenn die Umschulung notwendig ist, die Agentur für Arbeit ihn vorher beraten hat und Maßnahme und Träger zugelassen sind", "Automatisch, ohne Antrag", "Nur wenn er jünger als 25 ist"], "correct": 1, "explanation": "§ 81 SGB III: Notwendigkeit (z. B. drohende Arbeitslosigkeit abwenden), Beratung vor Beginn, zugelassene Maßnahme und Träger.", "law": "SGB III § 81", "source": "S. 26, Aufg. 11" },
+
+    { "id": "k3-601", "type": "cloze", "difficulty": 2, "text": "Die Weiterbildung zum Meister wird nach dem {{AFBG}} gefördert, auch {{Meister-BAföG}} genannt. Eine Umschulung fördert die {{Bundesagentur für Arbeit}} nach dem {{SGB III}}.", "distractors": ["Erasmus+", "BBiG", "Handwerkskammer"], "explanation": "Abschnitt 3.5." }
+  ]
+}

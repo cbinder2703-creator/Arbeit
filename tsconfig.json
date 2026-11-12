@@ -8,10 +8,15 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "isolatedModules": true,
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": false,
     "noEmit": true,
-    "types": ["vite/client"]
+    "types": ["vite/client", "vitest/globals", "@testing-library/jest-dom"],
+    "baseUrl": ".",
+    "paths": { "@/*": ["src/*"] }
   },
-  "include": ["src"]
+  "include": ["src", "scripts", "vite.config.ts", "tailwind.config.ts"]
 }

@@ -1,0 +1,109 @@
+{
+  "id": "k1",
+  "chapter": 1,
+  "title": "Formen der Berufsbildung",
+  "subtitle": "Duales System, Gesetze, Ausbildungsberufe, Schulformen, Europa",
+  "pages": "Buch S. 11–16",
+  "color": "#3B82F6",
+  "icon": "school",
+  "flashcards": [
+    { "id": "k1-f01", "term": "Duales System", "definition": "Ausbildung an zwei Lernorten: Ausbildungsbetrieb und Berufsschule teilen sich die Ausbildungsaufgabe." },
+    { "id": "k1-f02", "term": "Aufgabe des Betriebs", "definition": "Vermittlung fachtheoretischer und fachpraktischer Kenntnisse (Schwerpunkt Fachpraxis)." },
+    { "id": "k1-f03", "term": "Aufgabe der Berufsschule", "definition": "Vermittelt vorwiegend Allgemeinbildung und Fachtheorie und ergänzt die Praxis aus dem Betrieb nach berufsbezogenen Lehrplänen." },
+    { "id": "k1-f04", "term": "Handwerksordnung (HwO)", "definition": "Regelt die Berufsausbildung im Handwerk – und wer ein Handwerk ausüben darf bzw. wo ein Meister den Betrieb führen muss." },
+    { "id": "k1-f05", "term": "Berufsbildungsgesetz (BBiG)", "definition": "Regelt die Berufsausbildung für alle übrigen Wirtschaftszweige (Industrie, Handel, Dienstleistung …)." },
+    { "id": "k1-f06", "term": "Ausbildungsordnung", "definition": "Wird vom zuständigen Bundesministerium erlassen und sichert eine einheitliche Ausbildung im jeweiligen Ausbildungsberuf." },
+    { "id": "k1-f07", "term": "Ausbildungsberufsbild", "definition": "Enthält die Kenntnisse und Fertigkeiten, die vermittelt werden müssen." },
+    { "id": "k1-f08", "term": "Ausbildungsrahmenplan", "definition": "Gliedert sachlich und zeitlich, wie die Kenntnisse vermittelt werden sollen." },
+    { "id": "k1-f09", "term": "Staatlich anerkannte Ausbildungsberufe", "definition": "Rund 328 (Stand 2025). Jugendliche unter 18 dürfen nur in diesen Berufen ausgebildet werden." },
+    { "id": "k1-f10", "term": "Berufsfeld", "definition": "Gruppe verwandter Berufe (insgesamt 54). Im 1. Ausbildungsjahr (Grundstufe) wird nach gleichen Bildungsplänen unterrichtet." },
+    { "id": "k1-f11", "term": "Stufenausbildung", "definition": "Z. B. Bauberufe: Grundstufe (gemeinsam) → Fachstufe I (2. Jahr) → Fachstufe II (3. Jahr, Spezialisierung)." },
+    { "id": "k1-f12", "term": "Gesellen-/Gehilfenbrief, Facharbeiterzeugnis", "definition": "Bescheinigung der Kammer über die bestandene Abschlussprüfung." },
+    { "id": "k1-f13", "term": "Zweijährige Berufsfachschule", "definition": "Hauptschüler erhalten berufliche Grundbildung und Fachschulreife. Eine anschließende Ausbildung kann um ein Jahr verkürzt werden." },
+    { "id": "k1-f14", "term": "Berufskolleg (BK)", "definition": "Baut auf dem mittleren Bildungsabschluss auf. Mit Zusatzunterricht und Zusatzprüfung kann die Fachhochschulreife erworben werden." },
+    { "id": "k1-f15", "term": "Dreijährige Berufsfachschule", "definition": "Berufliche Vollausbildung mit vollwertigem Berufsabschluss, z. B. Berufsfachschule für Kinderpflege." },
+    { "id": "k1-f16", "term": "BIBB", "definition": "Bundesinstitut für Berufsbildung – veröffentlicht jedes Jahr das Verzeichnis der anerkannten Ausbildungsberufe." }
+  ],
+  "items": [
+    { "id": "k1-001", "type": "mc", "difficulty": 1, "question": "Welche zwei Partner bilden im dualen System aus?", "options": ["Berufsschule und Ausbildungsbetrieb", "Kammer und Ausbildungsbetrieb", "Agentur für Arbeit und Berufsschule", "Gewerkschaft und Betrieb"], "correct": 0, "explanation": "Dual = zwei Partner: Berufsschule und Ausbildungsbetrieb teilen sich die Ausbildung.", "source": "S. 11" },
+    { "id": "k1-002", "type": "mc", "difficulty": 1, "question": "Was vermittelt die Berufsschule vorwiegend?", "options": ["Nur praktische Fertigkeiten", "Allgemeinbildung und Fachtheorie", "Ausschließlich Sport und Kunst", "Nur Prüfungsvorbereitung für die Kammer"], "correct": 1, "explanation": "Die Schule vermittelt vorwiegend Allgemeinbildung und Fachtheorie.", "source": "S. 11" },
+    { "id": "k1-003", "type": "mc", "difficulty": 1, "question": "Welches Gesetz regelt die Ausbildung im Handwerk?", "options": ["Berufsbildungsgesetz (BBiG)", "Jugendarbeitsschutzgesetz (JArbSchG)", "Handwerksordnung (HwO)", "Sozialgesetzbuch III"], "correct": 2, "explanation": "Für das Handwerk gilt die Handwerksordnung (HwO), für alle übrigen Wirtschaftszweige das BBiG.", "source": "S. 11" },
+    { "id": "k1-004", "type": "mc", "difficulty": 1, "question": "Eine Ausbildung zum Industriekaufmann wird hauptsächlich geregelt durch …", "options": ["die Handwerksordnung", "das Berufsbildungsgesetz", "das Bundesurlaubsgesetz", "die Lehrlingsrolle"], "correct": 1, "explanation": "Industrie gehört nicht zum Handwerk – also gilt das Berufsbildungsgesetz (BBiG).", "source": "S. 11" },
+    { "id": "k1-005", "type": "mc", "difficulty": 2, "question": "Wer erlässt die Ausbildungsordnungen?", "options": ["Die Berufsschule", "Die Industrie- und Handelskammer", "Das zuständige Bundesministerium", "Der Ausbildungsbetrieb"], "correct": 2, "explanation": "Ausbildungsordnungen werden vom zuständigen Bundesministerium erlassen und sichern eine einheitliche Ausbildung.", "source": "S. 11" },
+    { "id": "k1-006", "type": "mc", "difficulty": 2, "question": "Was gehört NICHT zu den Mindestinhalten einer Ausbildungsordnung?", "options": ["Ausbildungsdauer", "Prüfungsanforderungen", "Höhe der Ausbildungsvergütung", "Ausbildungsrahmenplan"], "correct": 2, "explanation": "Die Vergütung steht im Ausbildungsvertrag, nicht in der Ausbildungsordnung. Mindestinhalte: Bezeichnung, Dauer, Berufsbild, Rahmenplan, Prüfungsanforderungen.", "source": "S. 12" },
+    { "id": "k1-007", "type": "mc", "difficulty": 2, "question": "Was regelt der Ausbildungsrahmenplan?", "options": ["Die sachliche und zeitliche Gliederung der Ausbildung", "Die Höhe des Urlaubs", "Die Kündigungsfristen", "Die Noten der Berufsschule"], "correct": 0, "explanation": "Der Ausbildungsrahmenplan gliedert sachlich und zeitlich, wie die Kenntnisse vermittelt werden sollen.", "source": "S. 12" },
+    { "id": "k1-008", "type": "mc", "difficulty": 2, "question": "Wie viele staatlich anerkannte Ausbildungsberufe gibt es laut Buch (Stand 2025)?", "options": ["54", "328", "1.200", "über 20.000"], "correct": 1, "explanation": "328 anerkannte Ausbildungsberufe. 54 ist die Zahl der Berufsfelder, über 20.000 die Zahl aller Berufstätigkeiten.", "source": "S. 12" },
+    { "id": "k1-009", "type": "mc", "difficulty": 2, "question": "In wie viele Berufsfelder sind die anerkannten Ausbildungsberufe eingeteilt?", "options": ["12", "54", "328", "100"], "correct": 1, "explanation": "Das BIBB hat die Ausbildungsberufe 54 Berufsfeldern zugeordnet.", "source": "S. 12" },
+    { "id": "k1-010", "type": "mc", "difficulty": 1, "question": "Jugendliche unter 18 Jahren dürfen ausgebildet werden …", "options": ["in jedem beliebigen Beruf", "nur in staatlich anerkannten Ausbildungsberufen", "nur im Handwerk", "nur mit Abitur"], "correct": 1, "explanation": "Unter 18-Jährige dürfen nur in staatlich anerkannten Ausbildungsberufen ausgebildet werden.", "source": "S. 12" },
+    { "id": "k1-011", "type": "mc", "difficulty": 1, "question": "Womit bescheinigt die Kammer die bestandene Abschlussprüfung?", "options": ["Abschlusszeugnis der Berufsschule", "Gesellen- oder Gehilfenbrief / Facharbeiterzeugnis", "Europass Mobilität", "Ausbildungsnachweis"], "correct": 1, "explanation": "Die Kammer stellt den Gesellen-/Gehilfenbrief bzw. das Facharbeiterzeugnis aus; die Schule das Abschlusszeugnis.", "source": "S. 11" },
+    { "id": "k1-012", "type": "mc", "difficulty": 2, "question": "Welches Land bildet AUCH im dualen System aus?", "options": ["Frankreich", "Italien", "Dänemark", "Belgien"], "correct": 2, "explanation": "Duales System: z. B. Dänemark, Österreich, Portugal. Belgien, Frankreich und Italien setzen auf Vollzeitschulausbildung.", "source": "S. 15" },
+    { "id": "k1-013", "type": "mc", "difficulty": 2, "question": "Welche Schulform baut auf dem mittleren Bildungsabschluss (Realschule) auf?", "options": ["Berufseinstiegsjahr", "Berufskolleg", "Zweijährige Berufsfachschule", "Berufsvorbereitungsjahr"], "correct": 1, "explanation": "Das Berufskolleg (BK) baut auf dem mittleren Bildungsabschluss auf.", "source": "S. 15" },
+    { "id": "k1-014", "type": "mc", "difficulty": 2, "question": "Was erhalten Hauptschüler an der zweijährigen Berufsfachschule?", "options": ["Abitur", "Berufliche Grundbildung und Fachschulreife", "Gesellenbrief", "Meisterbrief"], "correct": 1, "explanation": "Die zweijährige BFS vermittelt berufliche Grundbildung und die Fachschulreife.", "source": "S. 15" },
+    { "id": "k1-015", "type": "mc", "difficulty": 3, "question": "Welches Einsatzgebiet gehört zum Industriemechaniker?", "options": ["Formentechnik", "Schiffbau", "Maschinen- und Anlagenbau", "Fräsmaschinensysteme"], "correct": 2, "explanation": "Industriemechaniker: Maschinen- und Anlagenbau, Produktionstechnik, Feingerätebau, Instandhaltung.", "source": "S. 12" },
+    { "id": "k1-016", "type": "mc", "difficulty": 2, "question": "Was ist ein Nachteil des dualen Systems?", "options": ["Die Ausbildung ist praxisbezogen", "Die Ausbildungsplätze reichen häufig nicht aus", "Der Steuerzahler spart Geld", "Die Ausbildung ist abwechslungsreich"], "correct": 1, "explanation": "Nachteile: zu wenige Ausbildungsplätze, unterschiedliche Qualität, schwierige Abstimmung zwischen Betrieb und Schule.", "source": "S. 11" },
+
+    { "id": "k1-101", "type": "truefalse", "difficulty": 1, "statement": "Das duale System heißt so, weil sich zwei Partner die Ausbildungsaufgabe teilen.", "correct": true, "explanation": "Richtig – Betrieb und Berufsschule." },
+    { "id": "k1-102", "type": "truefalse", "difficulty": 1, "statement": "Eine rein schulische Ausbildung wäre für den Steuerzahler billiger als das duale System.", "correct": false, "explanation": "Falsch – sie wäre wesentlich teurer. Deshalb spart das duale System Steuergeld." },
+    { "id": "k1-103", "type": "truefalse", "difficulty": 1, "statement": "Die Qualität der Ausbildungsplätze ist in allen Betrieben gleich.", "correct": false, "explanation": "Falsch – das ist gerade ein Nachteil: Die Qualität ist unterschiedlich." },
+    { "id": "k1-104", "type": "truefalse", "difficulty": 2, "statement": "In Frankreich, Belgien und Italien findet die Ausbildung überwiegend als Vollzeitschulausbildung statt.", "correct": true, "explanation": "Richtig." },
+    { "id": "k1-105", "type": "truefalse", "difficulty": 2, "statement": "Neben den anerkannten Ausbildungsberufen gibt es in Deutschland mehr als 20.000 verschiedene Berufstätigkeiten.", "correct": true, "explanation": "Richtig." },
+    { "id": "k1-106", "type": "truefalse", "difficulty": 2, "statement": "Bei der Stufenausbildung spezialisiert man sich schon im ersten Ausbildungsjahr.", "correct": false, "explanation": "Falsch – im 1. Jahr (Grundstufe) lernen alle gemeinsam, spezialisiert wird erst in Fachstufe II (3. Jahr)." },
+    { "id": "k1-107", "type": "truefalse", "difficulty": 2, "statement": "Nach der zweijährigen Berufsfachschule kann der Betrieb die anschließende Ausbildung um ein Jahr verkürzen.", "correct": true, "explanation": "Richtig." },
+    { "id": "k1-108", "type": "truefalse", "difficulty": 2, "statement": "Die Kammern überwachen die Einhaltung der Ausbildungsordnungen.", "correct": true, "explanation": "Richtig – um eine korrekte Ausbildung sicherzustellen." },
+    { "id": "k1-109", "type": "truefalse", "difficulty": 3, "statement": "In Griechenland, Irland und den Niederlanden gibt es ein duales System wie in Deutschland.", "correct": false, "explanation": "Falsch – dort gibt es zwar Ausbildung in Betrieb und Schule, aber nicht als duales System." },
+
+    { "id": "k1-201", "type": "sort", "difficulty": 1, "question": "Vorteil oder Nachteil des dualen Systems?", "categories": [{ "id": "pro", "label": "Vorteil" }, { "id": "contra", "label": "Nachteil" }], "cards": [
+      { "text": "Ausbildung ist praxisbezogen", "category": "pro" },
+      { "text": "Steuerzahler sparen Geld", "category": "pro" },
+      { "text": "Ausbildung ist abwechslungsreicher", "category": "pro" },
+      { "text": "Ausbildungsplätze reichen häufig nicht aus", "category": "contra" },
+      { "text": "Qualität der Ausbildungsplätze ist unterschiedlich", "category": "contra" },
+      { "text": "Abstimmung zwischen Betrieb und Schule ist schwer", "category": "contra" }
+    ], "explanation": "Siehe Tabelle „Duales System“ S. 11." },
+    { "id": "k1-202", "type": "sort", "difficulty": 2, "question": "Welche Ausbildungsform hat welches Land?", "categories": [{ "id": "dual", "label": "Duales System" }, { "id": "vollzeit", "label": "Vollzeitschule" }, { "id": "beides", "label": "Betrieb + Schule, aber nicht dual" }], "cards": [
+      { "text": "Dänemark", "category": "dual" },
+      { "text": "Österreich", "category": "dual" },
+      { "text": "Portugal", "category": "dual" },
+      { "text": "Belgien", "category": "vollzeit" },
+      { "text": "Frankreich", "category": "vollzeit" },
+      { "text": "Italien", "category": "vollzeit" },
+      { "text": "Griechenland", "category": "beides" },
+      { "text": "Irland", "category": "beides" },
+      { "text": "Niederlande", "category": "beides" }
+    ], "explanation": "Abschnitt 1.3, S. 15." },
+    { "id": "k1-203", "type": "sort", "difficulty": 1, "question": "Wer ist zuständig – Betrieb oder Berufsschule?", "categories": [{ "id": "betrieb", "label": "Betrieb" }, { "id": "schule", "label": "Berufsschule" }], "cards": [
+      { "text": "Fachpraxis am Arbeitsplatz", "category": "betrieb" },
+      { "text": "Ausbildungsvergütung zahlen", "category": "betrieb" },
+      { "text": "Ausbildungsvertrag abschließen", "category": "betrieb" },
+      { "text": "Allgemeinbildung", "category": "schule" },
+      { "text": "Unterricht nach berufsbezogenen Lehrplänen", "category": "schule" },
+      { "text": "Abschlusszeugnis der Schule ausstellen", "category": "schule" }
+    ], "explanation": "Abschnitt 1.1." },
+
+    { "id": "k1-301", "type": "pairs", "difficulty": 3, "question": "Metallberuf und Einsatzgebiet", "pairs": [
+      { "left": "Anlagenmechaniker/-in", "right": "Rohrsysteme" },
+      { "left": "Industriemechaniker/-in", "right": "Produktionstechnik" },
+      { "left": "Konstruktionsmechaniker/-in", "right": "Schiffbau" },
+      { "left": "Werkzeugmechaniker/-in", "right": "Stanztechnik" },
+      { "left": "Zerspanungsmechaniker/-in", "right": "Fräsmaschinensysteme" }
+    ] },
+    { "id": "k1-302", "type": "pairs", "difficulty": 2, "question": "Schulform/Prüfung und Abschluss", "pairs": [
+      { "left": "Zweijährige Berufsfachschule", "right": "Fachschulreife" },
+      { "left": "Berufskolleg + Zusatzprüfung", "right": "Fachhochschulreife" },
+      { "left": "Dreijährige Berufsfachschule", "right": "Vollwertiger Berufsabschluss" },
+      { "left": "Kammerprüfung", "right": "Gesellen-/Gehilfenbrief" }
+    ] },
+    { "id": "k1-303", "type": "pairs", "difficulty": 2, "question": "Begriff und Bedeutung (Ausbildungsordnung)", "pairs": [
+      { "left": "Ausbildungsberufsbild", "right": "Kenntnisse und Fertigkeiten, die zu vermitteln sind" },
+      { "left": "Ausbildungsrahmenplan", "right": "Sachliche und zeitliche Gliederung" },
+      { "left": "Prüfungsanforderungen", "right": "Was in der Prüfung verlangt wird" },
+      { "left": "Ausbildungsdauer", "right": "Wie lange die Ausbildung dauert" }
+    ] },
+
+    { "id": "k1-401", "type": "order", "difficulty": 2, "question": "Bring die Stufenausbildung (z. B. Bauberufe) in die richtige Reihenfolge.", "steps": ["Grundstufe – gemeinsame Kenntnisse für alle", "Fachstufe I – für eng verwandte Berufsgruppen", "Fachstufe II – Spezialisierung nach Schwerpunkt/Einzelberuf"], "explanation": "1. Jahr Grundstufe, 2. Jahr Fachstufe I, 3. Jahr Fachstufe II." },
+    { "id": "k1-402", "type": "order", "difficulty": 1, "question": "Der Weg durch die duale Ausbildung", "steps": ["Ausbildungsvertrag mit dem Betrieb", "Lernen in Betrieb (Fachpraxis) und Berufsschule (Theorie)", "Erfolgreicher Schulbesuch und Kammerprüfung", "Abschlusszeugnis und Gesellenbrief / Facharbeiterzeugnis"], "explanation": "Siehe „Wissen kompakt“ S. 15." },
+
+    { "id": "k1-501", "type": "cloze", "difficulty": 1, "text": "Im dualen System teilen sich {{Berufsschule}} und {{Ausbildungsbetrieb}} die Ausbildung. Für das Handwerk gilt die {{Handwerksordnung}}, für alle übrigen Wirtschaftszweige das {{Berufsbildungsgesetz}}.", "distractors": ["Kammer", "Jugendarbeitsschutzgesetz", "Agentur für Arbeit"], "explanation": "Abschnitt 1.1." },
+    { "id": "k1-502", "type": "cloze", "difficulty": 2, "text": "Es gibt rund {{328}} anerkannte Ausbildungsberufe in {{54}} Berufsfeldern. Das Verzeichnis veröffentlicht jedes Jahr das {{BIBB}}.", "distractors": ["20.000", "12", "IHK"], "explanation": "S. 12." }
+  ]
+}

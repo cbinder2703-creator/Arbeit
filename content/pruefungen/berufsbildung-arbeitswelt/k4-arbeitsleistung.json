@@ -1,0 +1,120 @@
+{
+  "id": "k4",
+  "chapter": 4,
+  "title": "Einflüsse auf die Arbeitsleistung",
+  "subtitle": "Leistungsfähigkeit, Motivation, Arbeitsplatz, Arbeitszeit, Betriebsklima, Mobbing, neue Technologien",
+  "pages": "Buch S. 27–31",
+  "color": "#A855F7",
+  "icon": "activity",
+  "flashcards": [
+    { "id": "k4-f01", "term": "Leistungsfähigkeit", "definition": "Was ein Mensch leisten KANN – abhängig von Alter, Begabung, Berufsausbildung und Berufserfahrung." },
+    { "id": "k4-f02", "term": "Leistungsbereitschaft", "definition": "Was ein Mensch leisten WILL (Motivation) – z. B. Interesse, Einsatzbereitschaft, Selbstständigkeit, Verantwortungsbewusstsein." },
+    { "id": "k4-f03", "term": "Leistung und Alter", "definition": "Jüngere sind leistungsfähiger, Ältere haben mehr Berufserfahrung. Die Leistungsfähigkeit nimmt mit zunehmendem Alter ab." },
+    { "id": "k4-f04", "term": "Tagesleistungskurve", "definition": "Langsamer Anstieg am Morgen, Höchstleistung am Vormittag, Tief nach dem Mittagessen (Verdauung), leichte Zunahme am Nachmittag, Tiefpunkt nachts." },
+    { "id": "k4-f05", "term": "Wochenleistungskurve", "definition": "Tief am Wochenanfang, Höchstleistung in der Wochenmitte, gegen Ende der Woche nimmt sie wieder ab." },
+    { "id": "k4-f06", "term": "Arbeitsplatzgestaltung", "definition": "Arbeitsmittel in Griffnähe, Unfallschutz, gute Beleuchtung (schlechte Beleuchtung = häufige Unfallquelle), Helligkeit und frische Luft gegen Ermüdung." },
+    { "id": "k4-f07", "term": "Farbpsychologie", "definition": "Gelb regt geistig an (Konferenzräume), Brauntöne wirken ausgleichend (Büros, Sitzungsräume), Rot fördert die Bewegungsfreude (Montagehallen)." },
+    { "id": "k4-f08", "term": "Arbeitszeit-Gesetze", "definition": "Arbeitszeitgesetz, Bundesurlaubsgesetz und Jugendarbeitsschutzgesetz. Üblich: 5-Tage-Woche, 35–40 Stunden." },
+    { "id": "k4-f09", "term": "Gleitende Arbeitszeit", "definition": "Beschäftigte legen Beginn und Ende ihrer Arbeitszeit innerhalb gewisser Grenzen selbst fest." },
+    { "id": "k4-f10", "term": "Betriebsklima", "definition": "Gut, wenn Zuneigung und Sympathie überwiegen. Gefördert durch Ausstattung, Mitentscheidung, gerechte Bezahlung, Anerkennung, Teamgeist, gerechte Arbeitsaufteilung, soziale Leistungen." },
+    { "id": "k4-f11", "term": "Mobbing", "definition": "Von engl. mob = Pöbel: Psychoterror am Arbeitsplatz. Jeder Vierte wird im Berufsleben irgendwann Opfer. Schuld sind meist Organisation und Führung." },
+    { "id": "k4-f12", "term": "Humanisierung der Arbeitswelt", "definition": "Maßnahmen, um Stress zu vermindern und die Arbeitsleistung zu steigern – z. B. Job Rotation, Job Enrichment, Job Enlargement, Gruppenarbeit." },
+    { "id": "k4-f13", "term": "Job Rotation", "definition": "Aufgabenwechsel – soll eintöniges Arbeiten verhindern." },
+    { "id": "k4-f14", "term": "Job Enrichment", "definition": "Aufgabenbereicherung – erweitert den Entscheidungsspielraum des Einzelnen." },
+    { "id": "k4-f15", "term": "Job Enlargement", "definition": "Aufgabenerweiterung – mehrere Arbeitselemente werden zu einer größeren Aufgabe zusammengefasst." },
+    { "id": "k4-f16", "term": "Teilautonome Arbeitsgruppen", "definition": "Teams gestalten ihre Arbeitspläne in eigener Verantwortung." },
+    { "id": "k4-f17", "term": "Gefahren neuer Technologien", "definition": "Erhöhte Monotonie bei Resttätigkeiten, höhere Konzentrationsanforderungen durch Kontrolltätigkeiten, steigende Arbeitslosigkeit." }
+  ],
+  "items": [
+    { "id": "k4-001", "type": "mc", "difficulty": 1, "question": "Wann ist die Leistungsfähigkeit im Tagesverlauf am höchsten?", "options": ["Früh um 6 Uhr", "Am Vormittag", "Direkt nach dem Mittagessen", "Um Mitternacht"], "correct": 1, "explanation": "Die Höchstleistung liegt am Vormittag.", "source": "S. 27/28" },
+    { "id": "k4-002", "type": "mc", "difficulty": 1, "question": "Warum sinkt die Leistung nach dem Mittagessen?", "options": ["Weil man müde vom Weg ist", "Weil der Körper mit der Verdauung beschäftigt ist", "Weil die Pause zu kurz ist", "Weil es draußen dunkler wird"], "correct": 1, "explanation": "Der Körper ist mit der Verdauung beschäftigt.", "source": "S. 28" },
+    { "id": "k4-003", "type": "mc", "difficulty": 1, "question": "Wann ist die Leistung im Wochenverlauf am höchsten?", "options": ["Montag", "In der Wochenmitte", "Freitag", "Sonntag"], "correct": 1, "explanation": "Tief am Wochenanfang, Höchstleistung in der Wochenmitte, danach Abfall.", "source": "S. 28" },
+    { "id": "k4-004", "type": "mc", "difficulty": 2, "question": "Wann ist die Leistungsfähigkeit am geringsten?", "options": ["Vormittags und mittwochs", "Nachts und am Wochenende", "Nachmittags", "Montagvormittag"], "correct": 1, "explanation": "Nachts und am Wochenende – deshalb belasten Nacht- und Sonntagsarbeit besonders.", "source": "S. 29" },
+    { "id": "k4-005", "type": "mc", "difficulty": 2, "question": "Was trifft auf ältere Arbeitnehmer zu?", "options": ["Mehr Leistungsfähigkeit, weniger Erfahrung", "Weniger Leistungsfähigkeit, mehr Berufserfahrung", "Gleiche Leistung wie mit 20", "Keine Erfahrung"], "correct": 1, "explanation": "Jüngere sind leistungsfähiger, Ältere haben eine größere Berufserfahrung.", "source": "S. 27" },
+    { "id": "k4-006", "type": "mc", "difficulty": 1, "question": "Was ist ein anderes Wort für Leistungsbereitschaft?", "options": ["Begabung", "Motivation", "Ausbildung", "Arbeitszeit"], "correct": 1, "explanation": "Leistungsbereitschaft = Motivation. Ohne sie verkümmert jede Leistungsfähigkeit.", "source": "S. 28" },
+    { "id": "k4-007", "type": "mc", "difficulty": 2, "question": "Wodurch kann die Leistungsbereitschaft verbessert werden?", "options": ["Mehr Kontrolle", "Übertragung von Verantwortung und Mitbeteiligung an Entscheidungen", "Weniger Pausen", "Höchstleistung dauerhaft verlangen"], "correct": 1, "explanation": "Verantwortung übertragen, mitentscheiden lassen, Wünsche bei der Arbeitszuweisung berücksichtigen.", "source": "S. 28" },
+    { "id": "k4-008", "type": "mc", "difficulty": 2, "question": "Was bedeutet Job Rotation?", "options": ["Aufgabenwechsel gegen eintöniges Arbeiten", "Größerer Entscheidungsspielraum", "Arbeit im Schichtsystem", "Wechsel des Arbeitgebers"], "correct": 0, "explanation": "Job Rotation = häufiger Aufgabenwechsel.", "source": "S. 31" },
+    { "id": "k4-009", "type": "mc", "difficulty": 2, "question": "Was bedeutet Job Enrichment?", "options": ["Mehr Gehalt", "Aufgabenbereicherung – mehr Entscheidungsspielraum", "Mehrere gleichartige Aufgaben zusammenlegen", "Arbeiten im Homeoffice"], "correct": 1, "explanation": "Job Enrichment soll den Entscheidungsspielraum des Einzelnen erweitern.", "source": "S. 31" },
+    { "id": "k4-010", "type": "mc", "difficulty": 2, "question": "Was bedeutet Job Enlargement?", "options": ["Aufgabenerweiterung – mehrere Arbeitselemente zu einer größeren Aufgabe", "Längere Arbeitszeit", "Beförderung zum Chef", "Wechsel in eine andere Abteilung"], "correct": 0, "explanation": "Job Enlargement = Aufgabenerweiterung.", "source": "S. 31" },
+    { "id": "k4-011", "type": "mc", "difficulty": 1, "question": "Was ist gleitende Arbeitszeit?", "options": ["Arbeiten nur nachts", "Beginn und Ende der Arbeitszeit innerhalb gewisser Grenzen selbst festlegen", "Arbeiten ohne Pausen", "Arbeiten am Wochenende"], "correct": 1, "explanation": "Die Beschäftigten bestimmen Beginn und Ende innerhalb gewisser Grenzen selbst.", "source": "S. 29" },
+    { "id": "k4-012", "type": "mc", "difficulty": 1, "question": "Wie lang ist die wöchentliche Arbeitszeit in Deutschland meist?", "options": ["20–25 Stunden", "35–40 Stunden", "45–50 Stunden", "Über 60 Stunden"], "correct": 1, "explanation": "Meist zwischen 35 und 40 Stunden bei einer 5-Tage-Woche.", "source": "S. 29" },
+    { "id": "k4-013", "type": "mc", "difficulty": 2, "question": "Welche Farbe empfiehlt die Farbforschung für Konferenzräume?", "options": ["Rot", "Gelb", "Braun", "Schwarz"], "correct": 1, "explanation": "Gelb regt geistig an und fördert die Gesprächsbereitschaft.", "source": "S. 28/29" },
+    { "id": "k4-014", "type": "mc", "difficulty": 2, "question": "Was ist eine häufige Unfallquelle am Arbeitsplatz?", "options": ["Zu viel Licht", "Schlechte Beleuchtung", "Frische Luft", "Pflanzen im Büro"], "correct": 1, "explanation": "Schlechte Beleuchtung ist eine häufige Unfallquelle.", "source": "S. 28" },
+    { "id": "k4-015", "type": "mc", "difficulty": 1, "question": "Woher kommt das Wort „Mobbing“?", "options": ["Englisch mob = Pöbel", "Lateinisch mobilis = beweglich", "Französisch mob = Möbel", "Es ist eine Abkürzung"], "correct": 0, "explanation": "Englisch mob = Pöbel. Mobbing ist Psychoterror.", "source": "S. 30" },
+    { "id": "k4-016", "type": "mc", "difficulty": 2, "question": "Wie viele Menschen werden im Berufsleben irgendwann Opfer von Mobbing?", "options": ["Jeder Hundertste", "Jeder Zehnte", "Jeder Vierte", "Jeder Zweite"], "correct": 2, "explanation": "Jeder Vierte wird im Berufsleben irgendwann zum Opfer.", "source": "S. 30" },
+    { "id": "k4-017", "type": "mc", "difficulty": 2, "question": "Was sind typische Ursachen von Mobbing?", "options": ["Zu viel Urlaub", "Angst um den Job, Unter- oder Überforderung, unklare Vorgaben", "Gutes Betriebsklima", "Hohe Löhne"], "correct": 1, "explanation": "Ursachen: Angst um den Job, Unter- oder Überforderung, unklare Vorgaben.", "source": "S. 30" },
+    { "id": "k4-018", "type": "mc", "difficulty": 2, "question": "Was ist der Generation Z bei der Berufswahl am wichtigsten (Globus-Grafik)?", "options": ["Gute Verdienstmöglichkeiten", "Möglichkeit zur Selbstständigkeit", "Führungsverantwortung", "Positives Image des Berufs"], "correct": 0, "explanation": "Gute Verdienstmöglichkeiten (81 %), dann Work-Life-Balance (74 %) und abwechslungsreiche Tätigkeiten (71 %).", "source": "S. 28" },
+    { "id": "k4-019", "type": "mc", "difficulty": 2, "question": "Was stresst laut TK-Stressstudie 2021 am häufigsten im Job?", "options": ["Probleme mit dem Vorgesetzten", "Zu viel Arbeit und Termindruck", "Ungerechte Bezahlung", "Ständige Erreichbarkeit"], "correct": 1, "explanation": "Zu viel Arbeit und Termindruck/Hetze mit je 32 %.", "source": "S. 31" },
+    { "id": "k4-020", "type": "mc", "difficulty": 2, "question": "Was ist eine Gefahr neuer Technologien?", "options": ["Weniger Konzentration nötig", "Erhöhte Monotonie bei Resttätigkeiten", "Mehr körperlich schwere Arbeit", "Weniger Weiterbildung nötig"], "correct": 1, "explanation": "Gefahren: Monotonie bei Resttätigkeiten, mehr Konzentrationsanforderungen, steigende Arbeitslosigkeit.", "source": "S. 31" },
+    { "id": "k4-021", "type": "mc", "difficulty": 2, "question": "Was macht ein Schweißer im Karosserie-Rohbau heute oft?", "options": ["Er schweißt alles von Hand", "Er ist Anlagen- bzw. Roboterbetreuer", "Er arbeitet im Büro", "Er verkauft Autos"], "correct": 1, "explanation": "Der Schweißer im Karosserie-Rohbau ist heute Anlagen- bzw. Roboterbetreuer.", "source": "S. 31" },
+    { "id": "k4-022", "type": "mc", "difficulty": 2, "question": "Was ist laut AOK-Studie oft der Grund für einen hohen Krankenstand?", "options": ["Nur medizinische Gründe", "Eine miese Unternehmenskultur", "Zu viele Pausen", "Zu hohe Löhne"], "correct": 1, "explanation": "Nicht nur medizinische Gründe – oft eine miese Unternehmenskultur.", "source": "S. 27" },
+    { "id": "k4-023", "type": "mc", "difficulty": 3, "question": "In welchem Land arbeiteten Vollzeitbeschäftigte laut Grafik (2017) am längsten pro Woche?", "options": ["Deutschland", "Türkei", "Norwegen", "Frankreich"], "correct": 1, "explanation": "Türkei mit rund 48,5 Stunden; Norwegen am kürzesten (rund 38 Std.), Deutschland knapp 41 Std.", "source": "S. 29" },
+
+    { "id": "k4-101", "type": "truefalse", "difficulty": 1, "statement": "Wer dauernd Höchstleistungen von seinem Körper verlangt, schadet sich nicht.", "correct": false, "explanation": "Falsch – er schadet sich und „verschleißt“ seine Leistungsfähigkeit vorzeitig." },
+    { "id": "k4-102", "type": "truefalse", "difficulty": 1, "statement": "Wer sich mit seiner Firma identifiziert, fehlt seltener.", "correct": true, "explanation": "Richtig – Ergebnis der AOK-Studie." },
+    { "id": "k4-103", "type": "truefalse", "difficulty": 2, "statement": "Schuld an Mobbing sind meist Organisation und Führung im Unternehmen.", "correct": true, "explanation": "Richtig." },
+    { "id": "k4-104", "type": "truefalse", "difficulty": 2, "statement": "Durch neue Technologien steigen die körperlichen Belastungen am Arbeitsplatz.", "correct": false, "explanation": "Falsch – körperliche Beanspruchung sinkt, aber die Anforderungen an Konzentration steigen." },
+    { "id": "k4-105", "type": "truefalse", "difficulty": 1, "statement": "Roboter übernehmen körperlich schwere, monotone oder gesundheitsschädliche Arbeiten.", "correct": true, "explanation": "Richtig – ein Beitrag zur Humanisierung der Arbeitswelt." },
+    { "id": "k4-106", "type": "truefalse", "difficulty": 2, "statement": "Eintönige Fließbandarbeit wird häufig durch Gruppenarbeit ersetzt.", "correct": true, "explanation": "Richtig." },
+    { "id": "k4-107", "type": "truefalse", "difficulty": 1, "statement": "Ein gutes Betriebsklima ist nur für den Arbeitgeber wichtig.", "correct": false, "explanation": "Falsch – es ist für Arbeitnehmer genauso wichtig wie für Arbeitgeber." },
+    { "id": "k4-108", "type": "truefalse", "difficulty": 2, "statement": "Krankheiten, private Probleme oder familiäre Schwierigkeiten können die Leistungsbereitschaft vermindern.", "correct": true, "explanation": "Richtig." },
+    { "id": "k4-109", "type": "truefalse", "difficulty": 3, "statement": "Bei Mobbing verhält sich das Opfer am Ende oft so gestört, wie es ihm vorher unterstellt wurde.", "correct": true, "explanation": "Richtig – ohne Intervention folgen Krankheit, Alkoholmissbrauch, Depressionen." },
+
+    { "id": "k4-201", "type": "sort", "difficulty": 2, "question": "Leistungsfähigkeit (Können) oder Leistungsbereitschaft (Wollen)?", "categories": [{ "id": "kann", "label": "Leistungsfähigkeit" }, { "id": "will", "label": "Leistungsbereitschaft" }], "cards": [
+      { "text": "Alter", "category": "kann" },
+      { "text": "Begabung", "category": "kann" },
+      { "text": "Berufsausbildung", "category": "kann" },
+      { "text": "Berufserfahrung", "category": "kann" },
+      { "text": "Interesse an der Arbeit", "category": "will" },
+      { "text": "Einsatzbereitschaft", "category": "will" },
+      { "text": "Verantwortungsbewusstsein", "category": "will" },
+      { "text": "Hilfsbereitschaft", "category": "will" }
+    ], "explanation": "S. 27/28." },
+    { "id": "k4-202", "type": "sort", "difficulty": 1, "question": "Gut oder schlecht für das Betriebsklima?", "categories": [{ "id": "gut", "label": "Fördert" }, { "id": "schlecht", "label": "Schadet" }], "cards": [
+      { "text": "Anerkennung durch Vorgesetzte", "category": "gut" },
+      { "text": "Teamgeist", "category": "gut" },
+      { "text": "Gerechte Arbeitsaufteilung", "category": "gut" },
+      { "text": "Mitentscheidungsmöglichkeiten", "category": "gut" },
+      { "text": "Soziale Leistungen", "category": "gut" },
+      { "text": "Zu viel Kontrolle", "category": "schlecht" },
+      { "text": "Zu wenig Lob", "category": "schlecht" },
+      { "text": "Ungerechte Bezahlung", "category": "schlecht" },
+      { "text": "Fehlende Eigenverantwortung", "category": "schlecht" }
+    ], "explanation": "S. 27 (AOK-Studie) und S. 29 (Betriebsklima)." },
+
+    { "id": "k4-301", "type": "pairs", "difficulty": 2, "question": "Humanisierung der Arbeitswelt", "pairs": [
+      { "left": "Job Rotation", "right": "Aufgabenwechsel" },
+      { "left": "Job Enrichment", "right": "Aufgabenbereicherung" },
+      { "left": "Job Enlargement", "right": "Aufgabenerweiterung" },
+      { "left": "Teilautonome Gruppe", "right": "Arbeitspläne in eigener Verantwortung" },
+      { "left": "Gruppenarbeit", "right": "Ersetzt eintönige Fließbandarbeit" }
+    ] },
+    { "id": "k4-302", "type": "pairs", "difficulty": 2, "question": "Farbe und Raum", "pairs": [
+      { "left": "Gelb", "right": "Konferenzraum – regt geistig an" },
+      { "left": "Braun", "right": "Büro / Sitzungsraum – ausgleichend" },
+      { "left": "Rot", "right": "Montagehalle – Bewegungsfreude" }
+    ] },
+    { "id": "k4-303", "type": "pairs", "difficulty": 3, "question": "Früher und heute (neue Technologien)", "pairs": [
+      { "left": "Werkzeugmacher früher", "right": "Bediente die Werkzeugmaschine" },
+      { "left": "Werkzeugmacher heute", "right": "Überwacht programmierte Anlage, zuständig für Wartung" },
+      { "left": "Schweißer heute", "right": "Anlagen- bzw. Roboterbetreuer" }
+    ] },
+
+    { "id": "k4-401", "type": "order", "difficulty": 1, "question": "Leistungsverlauf eines Tages – in zeitlicher Reihenfolge", "steps": ["Morgens langsamer Anstieg (Nachtschlaf wirkt nach)", "Höchstleistung am Vormittag", "Tief nach dem Mittagessen", "Leichte Zunahme am Nachmittag", "Tiefpunkt in der Nacht"], "explanation": "Tagesleistungskurve, S. 27/28." },
+    { "id": "k4-402", "type": "order", "difficulty": 2, "question": "Wie Mobbing eskaliert", "steps": ["Harmlose Konflikte und Sticheleien", "Gerüchte, falsche Zuweisung von Aufgaben, Isolation, Drohungen", "Ohne Eingreifen: Krankheit, Alkoholmissbrauch, Depressionen", "Opfer verhält sich so gestört, wie es ihm unterstellt wurde"], "explanation": "Kasten „Mobbing-Konflikte außer Kontrolle“, S. 30." },
+
+    { "id": "k4-501", "type": "case", "difficulty": 2, "title": "Monotonie am Band", "situation": "Lena setzt seit Monaten am Fließband immer nur dieselbe Schraube ein. Sie ist gelangweilt und macht immer mehr Fehler.", "question": "Welche Maßnahme hilft am direktesten gegen die Eintönigkeit?", "options": ["Job Rotation – regelmäßiger Aufgabenwechsel", "Mehr Kontrolle durch den Vorgesetzten", "Längere Arbeitszeit", "Gar keine – das gehört dazu"], "correct": 0, "explanation": "Job Rotation soll eintöniges Arbeiten verhindern. Auch Gruppenarbeit oder Job Enlargement wären denkbar.", "source": "S. 31" },
+    { "id": "k4-502", "type": "case", "difficulty": 2, "title": "Wann die schwere Aufgabe?", "situation": "Du musst eine knifflige Prüfungsaufgabe erledigen und kannst dir den Zeitpunkt aussuchen.", "question": "Welcher Zeitpunkt ist laut Leistungskurven am besten?", "options": ["Montag, 14 Uhr", "Mittwoch, 10 Uhr", "Freitag, 13 Uhr", "Sonntag, 23 Uhr"], "correct": 1, "explanation": "Vormittag (Tageshoch) + Wochenmitte (Wochenhoch).", "source": "S. 27/28" },
+
+    { "id": "k4-601", "type": "cloze", "difficulty": 2, "text": "Was ein Mensch leisten kann, nennt man {{Leistungsfähigkeit}}; was er leisten will, nennt man {{Leistungsbereitschaft}} oder Motivation. Die Leistung ist am {{Vormittag}} am höchsten und in der {{Wochenmitte}}.", "distractors": ["Nachmittag", "Leistungsschwankung", "Montag"], "explanation": "S. 27/28." }
+  ],
+  "charts": {
+    "note": "Werte aus den Buchgrafiken abgelesen bzw. übernommen. Kurven = relative Leistung 0–100 (ungefähr).",
+    "dayCurve": { "title": "Menschliche Leistung am Tag", "unit": "Uhrzeit", "points": [[0, 30], [3, 15], [6, 40], [8, 80], [10, 100], [12, 75], [14, 50], [15, 45], [17, 65], [18, 70], [21, 50], [24, 35]] },
+    "weekCurve": { "title": "Menschliche Leistung in der Woche", "unit": "Wochentag", "points": [["Mo", 60], ["Di", 85], ["Mi", 100], ["Do", 90], ["Fr", 70], ["Sa", 45], ["So", 30]] },
+    "ageCurve": { "title": "Leistungsfähigkeit des Menschen", "unit": "Jahre", "points": [[10, 35], [20, 85], [27, 100], [40, 85], [50, 70], [60, 55], [70, 35]] },
+    "genZ": { "title": "Generation Z: Was bei der Berufswahl wichtig ist (in %)", "source": "Globus 016478, Wirtschaftsjunioren 2023", "values": [["Gute Verdienstmöglichkeiten", 81], ["Gute Work-Life-Balance", 74], ["Abwechslungsreiche Tätigkeiten", 71], ["Relevanz für die Arbeitswelt von morgen", 62], ["Positives Image des Berufs", 55], ["Gesellschaftlicher Sinn und Zweck", 55], ["Möglichkeit zu Führungsverantwortung", 50], ["Möglichkeit zur Selbstständigkeit", 40]] },
+    "stress": { "title": "Das stresst im Job (in %)", "source": "TK-Stressstudie 2021", "values": [["Zu viel Arbeit", 32], ["Termindruck/Hetze", 32], ["Unterbrechungen/Störungen", 28], ["Informationsüberflutung/E-Mails", 23], ["Ungenaue Anweisungen", 19], ["Lärm/Temperatur/Beleuchtung", 19], ["Zu wenig Handlungsspielraum", 13], ["Unzureichende Trennung Beruf/Privat", 12], ["Schlechte Stimmung im Team", 12], ["Vereinbarkeit von Beruf und Familie", 11], ["Mangelnde Anerkennung", 10], ["Ungerechte Bezahlung", 9], ["Ständig erreichbar sein müssen", 7], ["Probleme mit dem Vorgesetzten", 5]] },
+    "workHours": { "title": "Wochenarbeitszeit Vollzeit 2017 (Stunden, ca.)", "source": "Eurostat / Globus 12275", "values": [["Türkei", 48.6], ["Schweiz", 43.5], ["Island", 43.4], ["Griechenland", 42.9], ["Großbritannien", 41.2], ["Deutschland", 40.9], ["Österreich", 40.7], ["Portugal", 40.6], ["Spanien", 40.1], ["Italien", 40.0], ["Frankreich", 39.9], ["Dänemark", 38.9], ["Finnland", 38.7], ["Norwegen", 38.2]] }
+  }
+}

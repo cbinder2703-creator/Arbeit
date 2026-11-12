@@ -1,7 +1,13 @@
 node_modules
 dist
-release
-ios
-android
+dev-dist
+coverage
+vorlagen
 .DS_Store
 *.log
+.vite
+playwright-report
+test-results
+# Test-Prüfungen (nicht veröffentlichen)
+content/pruefungen/_*
+content/pruefungen/test-*
