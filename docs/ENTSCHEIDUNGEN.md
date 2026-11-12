@@ -85,3 +85,12 @@ Hier steht, was unklar war und wie ich es entschieden habe (statt nachzufragen).
 31. **Impressum/Datenschutz** sind mit Platzhaltern gefüllt ([…]) und müssen vor dem Veröffentlichen mit echten Angaben
     ausgefüllt werden (`src/pages/Rechtliches.tsx`). Das kann ich nicht für dich erfinden.
 32. **Lighthouse mobil (Produktions-Build, lokal gemessen):** Performance 93 · Barrierefreiheit 95 · Best Practices 100 · SEO 91.
+
+## Veröffentlichung
+
+33. **Hosting: GitHub Pages** statt Cloudflare Pages (nur Handy verfügbar, Repository ist öffentlich, Domain `lerndruck.de`
+    liegt bei Strato). Deployment per GitHub Actions (`.github/workflows/deploy.yml`) bei jedem Push auf `main`;
+    `public/CNAME` enthält die Domain; `404.html` ist eine Kopie von `index.html` (SPA-Fallback für `/p/…`).
+34. **Impressum auf Wunsch ohne Namen und Anschrift.** Die Seite enthält nur den Hinweis auf ein privates, nicht kommerzielles
+    Projekt. Ob das für die geplante Nutzung rechtlich ausreicht, habe ich nicht geprüft – bei öffentlichem Angebot mit
+    „geschäftsmäßigem“ Charakter besteht in Deutschland Impressumspflicht (Name + Anschrift). Nachtragen: `src/pages/Rechtliches.tsx`.
