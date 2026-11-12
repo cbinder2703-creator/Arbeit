@@ -109,3 +109,11 @@ Hier steht, was unklar war und wie ich es entschieden habe (statt nachzufragen).
     (z. B. „{{Berufsschule}} und {{Ausbildungsbetrieb}}“), dürfen in beliebiger Reihenfolge ausgefüllt werden (`src/modes/lueckentext/evaluate.ts`).
     Gilt für alle Prüfungen automatisch. Wenn bei neuen Inhalten Reihenfolge wichtig ist, den Text so formulieren, dass dazwischen mehr als
     ein Bindewort steht (z. B. „… nach dem …“).
+
+## Login und Bedienung auf dem Handy
+
+39. **Gemeinsamer Login (optional)** über GitHub-Geheimnisse `AZUBI_LOGIN_USER` / `AZUBI_LOGIN_PASS`, beim Bauen als gesalzene PBKDF2-Prüfsumme
+    eingesetzt (`src/auth/`, `docs/LOGIN.md`). Ohne Geheimnisse ist die App offen (wie bisher). Das ist bewusst nur eine Türsteher-Funktion
+    für eine statische Seite; die Grenzen stehen in `docs/LOGIN.md`.
+40. **Kein Markieren beim Ziehen/Wischen:** Spielelemente sind `user-select: none` und ohne iOS-Kontextmenü (`.no-select`, Buttons global).
+41. **Zeitstrahl am Handy:** zusätzlich zum Ziehen am Griff: Zeile antippen und mit „Hoch“/„Runter“ (große Knöpfe) verschieben.
