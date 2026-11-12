@@ -9,6 +9,8 @@ import { Icon } from '@/ui/Icon';
 import { Settings } from '@/ui/Settings';
 import { BadgeList } from '@/ui/BadgeList';
 import { InstallHint } from '@/ui/InstallHint';
+import { authRequired, logout } from '@/auth/LoginGate';
+import { Button } from '@/ui/Button';
 
 export function Profil() {
   const { byPruefung, globalStreak } = useProgress();
@@ -77,6 +79,11 @@ export function Profil() {
       <div className="mt-3">
         <InstallHint />
       </div>
+      {authRequired && (
+        <div className="mt-3">
+          <Button variant="secondary" onClick={logout}>Abmelden</Button>
+        </div>
+      )}
     </div>
   );
 }

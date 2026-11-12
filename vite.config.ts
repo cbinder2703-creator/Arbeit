@@ -3,8 +3,15 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 import { fileURLToPath } from 'node:url';
+import { makeAuthConfig } from './src/auth/hash';
+
+// Login (optional): nur wenn AZUBI_LOGIN_USER und AZUBI_LOGIN_PASS gesetzt sind. Im Code landet nur eine gesalzene Prüfsumme.
+const loginUser = process.env.AZUBI_LOGIN_USER?.trim();
+const loginPass = process.env.AZUBI_LOGIN_PASS;
+const auth = loginUser && loginPass ? await makeAuthConfig(loginUser, loginPass) : null;
 
 export default defineConfig({
+  define: { __AUTH_CONFIG__: JSON.stringify(auth) },
   plugins: [
     react(),
     VitePWA({

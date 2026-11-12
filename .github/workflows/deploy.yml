@@ -26,6 +26,10 @@ jobs:
       - run: npm ci
       # prüft Inhalte, TypeScript und baut nach dist/
       - run: npm run build
+        env:
+          # optional: Login (siehe docs/LOGIN.md). Ohne diese Geheimnisse ist die App ohne Anmeldung offen.
+          AZUBI_LOGIN_USER: ${{ secrets.AZUBI_LOGIN_USER }}
+          AZUBI_LOGIN_PASS: ${{ secrets.AZUBI_LOGIN_PASS }}
       # GitHub Pages hat keinen SPA-Fallback: unbekannte Pfade (/p/…) bekommen die App
       - run: cp dist/index.html dist/404.html
       - uses: actions/upload-pages-artifact@v3

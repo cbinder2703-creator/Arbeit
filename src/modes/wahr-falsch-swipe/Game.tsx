@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import type { PanInfo } from 'framer-motion';
 import type { ModeProps } from '../types';
 import type { AnswerResult } from '@/engine/scoring';
+import { itemText } from '@/engine/describe';
 import { useSettings } from '@/store/settings';
 import { ModeFrame } from '@/ui/ModeFrame';
 import { ModeHeader } from '@/ui/ModeHeader';
@@ -116,6 +117,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
         current={idx + (res ? 1 : 0)}
         total={items.length}
         score={score}
+        lookup={blitz ? undefined : itemText(item)}
         right={blitz ? <TimerRing remainingMs={remaining} totalMs={BLITZ_MS} size={40} /> : undefined}
       />
       <div className="flex flex-1 flex-col px-4 pb-6">
@@ -145,7 +147,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
             initial={reduce ? false : { opacity: 0, scale: 0.94 }}
             animate={{ opacity: 1, scale: 1 }}
             data-testid="swipe-card"
-            className={`relative z-10 flex h-[260px] w-full cursor-grab select-none flex-col items-center justify-center overflow-hidden rounded-3xl border-2 bg-card p-6 text-center shadow-xl shadow-black/40 active:cursor-grabbing ${
+            className={`no-select relative z-10 flex h-[260px] w-full cursor-grab select-none flex-col items-center justify-center overflow-hidden rounded-3xl border-2 bg-card p-6 text-center shadow-xl shadow-black/40 active:cursor-grabbing ${
               res === null ? 'border-line' : correct ? 'border-good' : 'border-bad'
             }`}
           >

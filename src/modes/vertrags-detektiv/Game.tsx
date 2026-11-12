@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import type { ModeProps } from '../types';
 import type { AnswerResult } from '@/engine/scoring';
+import { itemText } from '@/engine/describe';
 import { ModeFrame } from '@/ui/ModeFrame';
 import { ModeHeader } from '@/ui/ModeHeader';
 import { FeedbackSheet } from '@/ui/FeedbackSheet';
@@ -60,7 +61,7 @@ export default function Game({ items, checklist, onAnswer, onFinish, onClose, sc
 
   return (
     <ModeFrame padBottom={checked}>
-      <ModeHeader onClose={onClose} current={idx + (checked ? 1 : 0)} total={items.length} score={score} title="Vertrags-Detektiv" exam={exam} />
+      <ModeHeader onClose={onClose} current={idx + (checked ? 1 : 0)} total={items.length} score={score} title="Vertrags-Detektiv" exam={exam} lookup={itemText(item)} />
       <div className="flex-1 px-4 pb-6">
         <ChapterChip chapter={item.chapter} />
         <h1 className="mt-2 font-display text-[24px] leading-tight">{item.title}</h1>

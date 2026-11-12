@@ -39,3 +39,25 @@ export function describeItem(item: ContentItem): { title: string; answer: string
 }
 
 export const describeCard = (f: Flashcard): { title: string; answer: string } => ({ title: f.term, answer: f.definition });
+
+/** Gesamter sichtbarer Text einer Aufgabe – Grundlage für „Begriff nachschlagen“ (Lücken bleiben leer) */
+export function itemText(item: ContentItem): string {
+  switch (item.type) {
+    case 'mc':
+      return [item.question, ...item.options].join(' \n ');
+    case 'truefalse':
+      return item.statement;
+    case 'case':
+      return [item.title, item.situation, item.question, ...item.options].join(' \n ');
+    case 'sort':
+      return [item.question, ...item.categories.map((c) => c.label), ...item.cards.map((c) => c.text)].join(' \n ');
+    case 'pairs':
+      return [item.question, ...item.pairs.flatMap((p) => [p.left, p.right])].join(' \n ');
+    case 'order':
+      return [item.question, ...item.steps].join(' \n ');
+    case 'spot':
+      return [item.title, item.intro, ...item.lines.map((l) => l.text)].join(' \n ');
+    case 'cloze':
+      return item.text.replace(/\{\{.+?\}\}/g, ' … ');
+  }
+}

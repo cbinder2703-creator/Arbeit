@@ -3,6 +3,7 @@ import { Check, X } from 'lucide-react';
 import type { ModeProps } from '../types';
 import type { AnswerResult } from '@/engine/scoring';
 import { COMBO_FROM } from '@/engine/scoring';
+import { itemText } from '@/engine/describe';
 import { useSettings } from '@/store/settings';
 import { ModeFrame } from '@/ui/ModeFrame';
 import { ModeHeader } from '@/ui/ModeHeader';
@@ -27,6 +28,8 @@ export default function Game({ items, onAnswer, onFinish, onClose, score, exam }
   const [combo, setCombo] = useState(0);
   const [remaining, setRemaining] = useState(LIMIT_MS);
   const start = useRef(Date.now());
+  const pausedRef = useRef(false);
+  const pausedAt = useRef(0);
   const pickedRef = useRef<number | null>(null); // gegen Doppelantworten (Timer + Tippen)
 
   const item = items[idx];
@@ -68,6 +71,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score, exam }
     setRemaining(LIMIT_MS);
     const t = setInterval(() => {
       if (pickedRef.current !== null) return clearInterval(t);
+      if (pausedRef.current) return; // beim Nachschlagen läuft die Zeit nicht
       const left = LIMIT_MS - (Date.now() - start.current);
       if (left <= 0) {
         clearInterval(t);
@@ -105,7 +109,19 @@ export default function Game({ items, onAnswer, onFinish, onClose, score, exam }
 
   return (
     <ModeFrame padBottom={picked !== null}>
-      <ModeHeader onClose={onClose} current={idx + (picked !== null ? 1 : 0)} total={items.length} score={score} exam={exam} />
+      <ModeHeader onClose={onClose} current={idx + (picked !== null ? 1 : 0)} total={items.length} score={score}
+        exam={exam}
+        lookup={itemText(item)}
+        onLookupChange={(open) => {
+          if (open) {
+            pausedRef.current = true;
+            pausedAt.current = Date.now();
+          } else {
+            start.current += Date.now() - pausedAt.current;
+            pausedRef.current = false;
+          }
+        }}
+      />
       <div className="flex flex-1 flex-col px-4 pb-6">
         <div className="mt-1 flex items-center justify-between gap-2">
           <ChapterChip chapter={item.chapter} />

@@ -1,4 +1,7 @@
+import { useState } from 'react';
 import type { ReactNode } from 'react';
+import { useOptionalPruefung } from '@/app/pruefungContext';
+import { GlossarSheet } from './GlossarSheet';
 import { Icon } from './Icon';
 import { ProgressBar } from './ProgressBar';
 
@@ -11,6 +14,8 @@ export function ModeHeader({
   right,
   title,
   exam,
+  lookup,
+  onLookupChange,
 }: {
   onClose: () => void;
   current: number;
@@ -19,7 +24,18 @@ export function ModeHeader({
   right?: ReactNode;
   title?: string;
   exam?: { index: number; total: number };
+  /** Text der aktuellen Aufgabe → zeigt den Knopf „Begriff?“ (nicht in der Abschlussprüfung) */
+  lookup?: string;
+  /** wird beim Öffnen/Schließen aufgerufen (z. B. um einen Timer anzuhalten) */
+  onLookupChange?: (open: boolean) => void;
 }) {
+  const pr = useOptionalPruefung();
+  const [open, setOpen] = useState(false);
+  const canLookup = !!pr && lookup !== undefined && !exam;
+  const toggle = (v: boolean) => {
+    setOpen(v);
+    onLookupChange?.(v);
+  };
   if (exam) {
     current = exam.index;
     total = exam.total;
@@ -31,6 +47,15 @@ export function ModeHeader({
       <button onClick={onClose} aria-label="Runde beenden" className="tap grid shrink-0 place-items-center rounded-xl text-mute hover:bg-card-hi hover:text-ink">
         <Icon name="x" size={24} />
       </button>
+      {canLookup && (
+        <button
+          onClick={() => toggle(true)}
+          aria-label="Begriff nachschlagen"
+          className="tap inline-flex shrink-0 items-center gap-1 rounded-full bg-xp/15 px-3 text-sm font-bold text-xp hover:bg-xp/25"
+        >
+          <Icon name="lightbulb" size={18} /> Begriff?
+        </button>
+      )}
       {title && <span className={`truncate font-display text-lg ${exam ? '' : 'hidden sm:block'}`}>{title}</span>}
       <ProgressBar percent={total ? (current / total) * 100 : 0} className="flex-1" height={8} />
       <span className="w-10 shrink-0 text-center text-xs text-mute" aria-label={`Aufgabe ${current} von ${total}`}>
@@ -42,6 +67,7 @@ export function ModeHeader({
           <Icon name="star" size={16} className="fill-xp" /> {score}
         </span>
       )}
+      {open && canLookup && <GlossarSheet text={lookup!} onClose={() => toggle(false)} />}
     </header>
   );
 }

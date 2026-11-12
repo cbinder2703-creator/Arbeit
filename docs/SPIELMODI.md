@@ -89,3 +89,4 @@ Auf dem PC zusätzlich Tastatur. Runde endet mit dem gemeinsamen Ergebnisbildsch
 - Wahr oder Falsch? im **Blitz-Modus** (Profil → Einstellungen): 60 Sekunden gesamt, kurzes Aufblitzen statt Sheet.
 - Quiz-Blitz im **Entspannt-Modus**: kein Timer, kein Zeitbonus.
 - In der Abschlussprüfung läuft jede Aufgabe im passenden Modus **ohne Feedback** (Memory als Zuordnungsliste).
+- **Begriff nachschlagen:** In allen Aufgaben-Modi gibt es oben den Knopf „Begriff?“ (Glühbirne). Er zeigt passende Lernkarten und eine Suche; nicht in der Abschlussprüfung.

@@ -3,6 +3,7 @@ import { motion, useReducedMotion } from 'framer-motion';
 import { Check, X } from 'lucide-react';
 import type { ModeProps } from '../types';
 import type { AnswerResult } from '@/engine/scoring';
+import { itemText } from '@/engine/describe';
 import { ModeFrame } from '@/ui/ModeFrame';
 import { ModeHeader } from '@/ui/ModeHeader';
 import { Button } from '@/ui/Button';
@@ -55,7 +56,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score, exam }
 
   return (
     <ModeFrame>
-      <ModeHeader onClose={onClose} current={idx + (res ? 1 : 0)} total={items.length} score={score} title="Kündigungs-Gericht" exam={exam} />
+      <ModeHeader onClose={onClose} current={idx + (res ? 1 : 0)} total={items.length} score={score} title="Kündigungs-Gericht" exam={exam} lookup={itemText(item)} />
       <div className="flex-1 px-4 pb-8">
         <div className="mb-3 flex items-center justify-between">
           <ChapterChip chapter={item.chapter} />

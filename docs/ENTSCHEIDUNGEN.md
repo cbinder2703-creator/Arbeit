@@ -96,3 +96,24 @@ Hier steht, was unklar war und wie ich es entschieden habe (statt nachzufragen).
     „geschäftsmäßigem“ Charakter besteht in Deutschland Impressumspflicht (Name + Anschrift). Nachtragen: `src/pages/Rechtliches.tsx`.
 35. **Standard-Branch heißt `master`** (nicht `main`). Der Workflow löst bei Push auf `main` oder `master` aus; `docs/DEPLOYMENT.md`
     spricht von `main` und meint den Standard-Branch.
+
+## Nachschlagen (nach dem Livegang)
+
+36. **„Begriff?“-Knopf in den Spielmodi.** Er öffnet die Erklärungen aus den Lernkarten (`flashcards` in `content/`), die zum Text der aktuellen
+    Aufgabe passen (Begriff oder Kürzel wie „HwO“ kommt im Text vor), plus eine Suche über alle Begriffe der Prüfung. Es werden keine
+    eigenen Erklärungen erfunden: Gibt es keine passende Lernkarte, steht das ehrlich da. Für fehlende Begriffe die Lernkarte ergänzen
+    (`flashcards` im Kapitel) – dann erscheint sie automatisch.
+37. **Nicht in der Abschlussprüfung** (wäre ein Hilfsmittel) und nicht im Blitz-Modus von „Wahr oder Falsch?“. Im Quiz-Blitz hält der
+    Timer an, solange das Fenster offen ist. Tastenkürzel ruhen, solange ein Fenster offen ist.
+38. **Lückentext: austauschbare Lücken.** Lücken, die nur durch „und“, „oder“, Komma, „sowie“, „&“ oder „/“ verbunden sind
+    (z. B. „{{Berufsschule}} und {{Ausbildungsbetrieb}}“), dürfen in beliebiger Reihenfolge ausgefüllt werden (`src/modes/lueckentext/evaluate.ts`).
+    Gilt für alle Prüfungen automatisch. Wenn bei neuen Inhalten Reihenfolge wichtig ist, den Text so formulieren, dass dazwischen mehr als
+    ein Bindewort steht (z. B. „… nach dem …“).
+
+## Login und Bedienung auf dem Handy
+
+39. **Gemeinsamer Login (optional)** über GitHub-Geheimnisse `AZUBI_LOGIN_USER` / `AZUBI_LOGIN_PASS`, beim Bauen als gesalzene PBKDF2-Prüfsumme
+    eingesetzt (`src/auth/`, `docs/LOGIN.md`). Ohne Geheimnisse ist die App offen (wie bisher). Das ist bewusst nur eine Türsteher-Funktion
+    für eine statische Seite; die Grenzen stehen in `docs/LOGIN.md`.
+40. **Kein Markieren beim Ziehen/Wischen:** Spielelemente sind `user-select: none` und ohne iOS-Kontextmenü (`.no-select`, Buttons global).
+41. **Zeitstrahl am Handy:** zusätzlich zum Ziehen am Griff: Zeile antippen und mit „Hoch“/„Runter“ (große Knöpfe) verschieben.

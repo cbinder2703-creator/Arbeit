@@ -10,6 +10,7 @@ export function useKeys(handler: (e: KeyboardEvent) => void, enabled = true): vo
       const t = e.target as HTMLElement | null;
       if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
       if (e.ctrlKey || e.metaKey || e.altKey) return;
+      if (document.querySelector('[data-modal-open]')) return; // Dialog offen (z. B. Begriffe nachschlagen)
       ref.current(e);
     };
     window.addEventListener('keydown', fn);

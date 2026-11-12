@@ -34,6 +34,11 @@
   }
   button, a, [role='button'] {
     touch-action: manipulation;
+    -webkit-touch-callout: none;
+  }
+  button {
+    -webkit-user-select: none;
+    user-select: none;
   }
   :focus-visible {
     outline: 3px solid #facc15;
@@ -44,6 +49,13 @@
 }
 
 @layer components {
+  /* Ziehen & Wischen: kein Text markieren, kein „Kopieren“-Menü beim langen Drücken (iPhone) */
+  .no-select {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+  }
   .tap { min-height: 44px; min-width: 44px; }
   .pattern-bg { background-image: var(--p-pattern); }
   .safe-pb { padding-bottom: calc(var(--safe-bottom) + 0.75rem); }
