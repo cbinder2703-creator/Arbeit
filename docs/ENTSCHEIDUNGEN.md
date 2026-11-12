@@ -43,3 +43,20 @@ Hier steht, was unklar war und wie ich es entschieden habe (statt nachzufragen).
 16. **Sortier-Meister:** Zifferntasten 1–4 legen die Karte direkt in das n-te Fach (PC); falsche Versuche zeigen einen Hinweis,
     ohne die Lösung zu verraten.
 17. **Fehler üben** startet eine neue Runde im selben Modus nur mit den falsch beantworteten Aufgaben.
+
+## Phase 3
+
+18. **Kündigungs-Gericht:** Die Erklärung erscheint wie im Mockup (Handy-Mockup 4) direkt unter den Antworten statt als
+    Bottom-Sheet; Urteil erst nach „Urteil sprechen“ (oder Enter), damit nicht versehentlich geantwortet wird.
+19. **Vertrags-Detektiv:** Punkte nur für gefundene Fehler (100 je Fehler), −50 je zu Unrecht markierter Zeile; nicht
+    markierte korrekte Zeilen bringen keine Gratispunkte. Die Checkliste (`contractChecklist`) kommt über `ModeProps.checklist`.
+20. **Memory:** 6 Paare aus `pairs`-Aufgaben; reicht das nicht (z. B. Kapitel 2 hat nur eine Paar-Aufgabe mit 5 Paaren),
+    wird mit den Lernkarten aufgefüllt, deren Definition ≤ 70 Zeichen hat (längere passen nicht lesbar auf eine Karte).
+    Gespeichert werden Bestwerte für Züge und Zeit (weniger ist besser). Punkte: 100 je Paar-Quelle.
+21. **Lückentext / Zeitstrahl:** 3 Aufgaben pro Runde; 100 Punkte je richtiger Lücke bzw. je Schritt an der richtigen
+    Stelle, keine Minuspunkte. Zeitstrahl: Ziehen am Griff (framer-motion `Reorder`), ↑/↓ auf der fokussierten Zeile,
+    ab 768 px zusätzliche Hoch/Runter-Knöpfe.
+22. **Lernkarten:** Antworten erst nach dem Umdrehen. „Nochmal“ stellt die Karte einmal hinten an; ans Leitner-System geht
+    nur die erste Bewertung pro Karte. Im Ergebnis steht „Gewusst“ statt Punkte (`noScore`).
+23. **Seite `/p/:id/karten`:** Alle Lernkarten zum Nachschlagen (nach Kapitel filterbar, Leitner-Box sichtbar) plus Knopf
+    „Lernen starten“ (Modus Lernkarten).

@@ -156,10 +156,11 @@ export interface ModeProps {
   items: PlayItem[];          // gefiltert + gemischt von der Engine (ContentItem + chapter/shuffledSteps/chips)
   flashcards?: Flashcard[];
   charts?: Charts;
+  checklist?: Checklist;     // Vertrags-Checkliste des Kapitels (Vertrags-Detektiv)
   score: number;              // aktueller Punktestand (Engine)
   // Antwort melden – die Engine vergibt Punkte/XP/Leitner und liefert das Punkte-Ergebnis zurück
   onAnswer: (r: AnswerReport) => AnswerResult;   // { itemId, correct, timeMs, timeLimitMs?, parts? }
-  onFinish: (s: { score: number; maxScore: number; stat?: { key: string; value: number; label: string } }) => void;
+  onFinish: (s: { score: number; maxScore: number; stats?: { key: string; value: number; label: string }[] }) => void;
   onClose: () => void;        // × in der Kopfzeile
 }
 ```

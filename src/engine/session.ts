@@ -1,6 +1,6 @@
 import type { Pruefung } from '@/content/parse';
 import { gapsOf } from '@/content/parse';
-import type { Charts, ChartData, Chapter, ContentItem, Flashcard } from '@/content/schema';
+import type { Charts, Checklist, ChartData, Chapter, ContentItem, Flashcard } from '@/content/schema';
 import type { ChapterRef, GameMode, PlayItem } from '@/modes/types';
 import { isDue } from './leitner';
 import type { PruefungsFortschritt } from '@/store/types';
@@ -25,6 +25,7 @@ export interface Session {
   items: PlayItem[];
   flashcards: Flashcard[];
   charts?: Charts;
+  checklist?: Checklist;
 }
 
 const chapterRef = (c: Chapter): ChapterRef => ({ id: c.id, number: c.chapter, title: c.title, color: c.color });
@@ -137,5 +138,6 @@ export function buildSession(
   if (mode.usesCharts) {
     charts = Object.assign({}, ...chapters.map((c) => c.charts ?? {}));
   }
-  return { items, flashcards, charts };
+  const checklist = chapters.find((c) => c.contractChecklist)?.contractChecklist;
+  return { items, flashcards, charts, checklist };
 }

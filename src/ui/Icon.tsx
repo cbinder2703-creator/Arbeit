@@ -6,7 +6,7 @@ import {
   Gavel, GraduationCap, Hammer, Handshake, Heart, Home, Landmark, Languages, Layers, Lightbulb, Lock, Map,
   Pencil, Play, Plus, Rocket, Route, Scale, School, ScrollText, Search, Settings, Shield, ShoppingCart, Sparkles,
   Star, Stethoscope, Target, TrendingUp, Trophy, User, Users, Volume2, VolumeX, Wrench, X, Zap, Euro, Globe,
-  GalleryHorizontal, Info, RotateCcw, Timer, Unlock, ListOrdered, Medal, Smartphone, Download, Trash2, Eye,
+  GalleryHorizontal, GripVertical, Info, RotateCcw, Timer, Unlock, ListOrdered, Medal, Smartphone, Download, Trash2, Eye,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
@@ -22,7 +22,7 @@ const ICONS: Record<string, LucideIcon> = {
   star: Star, stethoscope: Stethoscope, target: Target, 'trending-up': TrendingUp, trophy: Trophy, user: User,
   users: Users, volume: Volume2, 'volume-off': VolumeX, wrench: Wrench, x: X, zap: Zap, euro: Euro, globe: Globe,
   'gallery-horizontal': GalleryHorizontal, info: Info, reset: RotateCcw, timer: Timer, unlock: Unlock,
-  'list-ordered': ListOrdered, medal: Medal, phone: Smartphone, download: Download, trash: Trash2, eye: Eye,
+  'list-ordered': ListOrdered, grip: GripVertical, medal: Medal, phone: Smartphone, download: Download, trash: Trash2, eye: Eye,
 };
 
 export function Icon({ name, size = 20, className, strokeWidth = 2 }: { name: string; size?: number; className?: string; strokeWidth?: number }) {

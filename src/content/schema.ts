@@ -177,6 +177,7 @@ export type PruefungMeta = z.infer<typeof pruefungSchema>;
 export type BadgeDef = z.infer<typeof badgeSchema>;
 export type BadgeCondition = z.infer<typeof badgeConditionSchema>;
 export type Charts = NonNullable<Chapter['charts']>;
+export type Checklist = NonNullable<Chapter['contractChecklist']>;
 export type ChartData = z.infer<typeof chartSchema>;
 
 export const ITEM_TYPES: ItemType[] = ['mc', 'truefalse', 'sort', 'pairs', 'order', 'case', 'spot', 'cloze'];

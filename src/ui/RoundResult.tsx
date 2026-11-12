@@ -24,6 +24,8 @@ export interface ResultData {
   statText?: string;
   badges?: { id: string; title: string }[];
   title?: string;
+  /** Modi ohne Punktedruck (Lernkarten) */
+  noScore?: boolean;
 }
 
 /** Gemeinsamer Ergebnisbildschirm der Engine: Sterne, Punkte, XP-Balken, Fehler mit Erklärung */
@@ -70,8 +72,8 @@ export function RoundResult({
 
       <div className="mt-6 grid grid-cols-2 gap-3">
         <div className="rounded-2xl bg-card p-4 text-center">
-          <div className="text-xs text-mute">Punkte</div>
-          <div className="font-display text-3xl text-xp">{data.score}</div>
+          <div className="text-xs text-mute">{data.noScore ? 'Gewusst' : 'Punkte'}</div>
+          <div className="font-display text-3xl text-xp">{data.noScore ? `${data.correct}/${data.total}` : data.score}</div>
         </div>
         <div className="rounded-2xl bg-card p-4 text-center">
           <div className="text-xs text-mute">XP</div>

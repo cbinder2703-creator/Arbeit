@@ -8,6 +8,7 @@ import { Profil } from '@/pages/Profil';
 import { Impressum, Datenschutz } from '@/pages/Rechtliches';
 import { NotFound } from '@/pages/NotFound';
 import { Bald } from '@/pages/Bald';
+import { Karten } from '@/pages/Karten';
 import { Runde } from '@/pages/Runde';
 
 export function AppRoutes() {
@@ -22,7 +23,7 @@ export function AppRoutes() {
       <Route path="p/:pruefungId" element={<PruefungRoute />}>
         <Route index element={<PruefungStart />} />
         <Route path="modi" element={<Modi />} />
-        <Route path="karten" element={<Bald title="Lernkarten" icon="layers" />} />
+        <Route path="karten" element={<Karten />} />
         <Route path="abschluss" element={<Bald title="Abschlussprüfung" icon="crown" />} />
         <Route path="spiel/:modusId" element={<Runde />} />
       </Route>

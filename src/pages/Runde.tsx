@@ -110,10 +110,11 @@ function Runner({
         stars: starsFor(correct, totalCount),
         outcome,
         wrong: wrongEntries(wrongIds),
-        statText: s.stat?.label,
+        statText: s.stats?.map((x) => x.label).join(' · '),
+        noScore: mode.noScore,
       });
     },
-    [pid, mode.id, chapterKey, wrongEntries],
+    [pid, mode.id, mode.noScore, chapterKey, wrongEntries],
   );
 
   /** × während der Runde: bisher erspielte XP bleiben erhalten */
@@ -157,6 +158,7 @@ function Runner({
         items={session.items}
         flashcards={session.flashcards}
         charts={session.charts}
+        checklist={session.checklist}
         score={score}
         onAnswer={onAnswer}
         onFinish={onFinish}

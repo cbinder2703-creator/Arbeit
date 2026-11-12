@@ -25,7 +25,7 @@ export function finishRound(pid: string, modeId: string, chapterKey: string, res
   st.addXp(pid, xp);
   if (record) {
     st.recordRound(pid, `${modeId}:${chapterKey}`, result.score);
-    if (result.stat) st.recordBestTime(pid, `${modeId}:${chapterKey}:${result.stat.key}`, result.stat.value);
+    for (const s of result.stats ?? []) st.recordBestTime(pid, `${modeId}:${chapterKey}:${s.key}`, s.value);
   }
   const after = getFortschritt(pid).xp;
   return { xp, xpBefore: before, xpAfter: after, levelBefore: levelFromXp(before).level, levelAfter: levelFromXp(after).level };

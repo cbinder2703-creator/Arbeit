@@ -1,5 +1,5 @@
 import type { FC, LazyExoticComponent } from 'react';
-import type { Charts, ContentItem, Flashcard, ItemType, PruefungMeta } from '@/content/schema';
+import type { Charts, Checklist, ContentItem, Flashcard, ItemType, PruefungMeta } from '@/content/schema';
 import type { AnswerReport, AnswerResult } from '@/engine/scoring';
 
 export type { ItemType };
@@ -24,8 +24,8 @@ export type PlayItem = ContentItem & {
 export interface ModeResult {
   score: number;
   maxScore: number;
-  /** Bestwert, bei dem weniger besser ist (z. B. Memory: Züge) – wird als Bestwert pro Prüfung gespeichert */
-  stat?: { key: string; value: number; label: string };
+  /** Bestwerte, bei denen weniger besser ist (z. B. Memory: Züge, Zeit) – werden pro Prüfung gespeichert */
+  stats?: { key: string; value: number; label: string }[];
 }
 
 export interface ModeProps {
@@ -33,6 +33,8 @@ export interface ModeProps {
   items: PlayItem[]; // gefiltert + gemischt von der Engine
   flashcards?: Flashcard[];
   charts?: Charts;
+  /** Vertrags-Checkliste des Kapitels (falls vorhanden) */
+  checklist?: Checklist;
   /** aktueller Punktestand (Engine) */
   score: number;
   /** Antwort melden – die Engine vergibt Punkte, XP, Leitner-Box und liefert das Ergebnis zurück */

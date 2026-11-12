@@ -41,3 +41,6 @@ export function makeProps(items: PlayItem[], extra: Partial<ModeProps> = {}) {
   };
   return { props, reports, onAnswer, onFinish, onClose };
 }
+
+export const cards = (n = 3, chapter = 0) => pruefung.chapters[chapter].flashcards.slice(0, n);
+export const esc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
