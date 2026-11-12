@@ -1,0 +1,73 @@
+{
+  "id": "berufsbildung-arbeitswelt",
+  "title": "Berufsbildung und Arbeitswelt",
+  "gameTitle": "Azubi-Akademie",
+  "tagline": "Vom Ausbildungsvertrag bis zur Arbeitsleistung",
+  "subject": "Gemeinschaftskunde / Wirtschaftskompetenz",
+  "pages": "Buch S. 11–31",
+  "examDate": null,
+  "color": "#F97316",
+  "accent": "#FACC15",
+  "icon": "briefcase",
+  "theme": "werkstatt",
+  "chapters": [
+    "k1-duales-system.json",
+    "k2-ausbildungsvertrag.json",
+    "k3-lebenslanges-lernen.json",
+    "k4-arbeitsleistung.json"
+  ],
+  "modes": "auto",
+  "finalExam": {
+    "title": "Abschlussprüfung",
+    "questions": 20,
+    "unlockAtPercent": 60
+  },
+  "badges": [
+    {
+      "id": "paragrafen-profi",
+      "title": "Paragrafen-Profi",
+      "rule": "10 Aufgaben vom Typ case richtig",
+      "condition": {
+        "kind": "typeCorrect",
+        "type": "case",
+        "count": 10
+      }
+    },
+    {
+      "id": "vertrags-checker",
+      "title": "Vertrags-Checker",
+      "rule": "beide spot-Aufgaben fehlerfrei",
+      "condition": {
+        "kind": "allOfType",
+        "type": "spot"
+      }
+    },
+    {
+      "id": "pflicht-kenner",
+      "title": "Pflicht-Kenner",
+      "rule": "Item k2-201 fehlerfrei sortiert",
+      "condition": {
+        "kind": "item",
+        "itemId": "k2-201"
+      }
+    },
+    {
+      "id": "pruefung-bestanden",
+      "title": "Bestanden!",
+      "rule": "Abschlussprüfung mit Note 4 oder besser",
+      "condition": {
+        "kind": "finalGrade",
+        "maxGrade": 4
+      }
+    },
+    {
+      "id": "einser-kandidat",
+      "title": "Einser-Kandidat",
+      "rule": "Abschlussprüfung mit Note 1",
+      "condition": {
+        "kind": "finalGrade",
+        "maxGrade": 1
+      }
+    }
+  ]
+}
