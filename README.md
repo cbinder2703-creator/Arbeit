@@ -31,7 +31,7 @@ Erstes Spiel: **„Azubi-Akademie“** – Prüfung „Berufsbildung und Arbeits
 
 ```bash
 npm install
-npm run dev            # lokaler Server: http://localhost:5173 (auch im WLAN erreichbar)
+npm run dev            # lokaler Server: http://localhost:5173 (auch im WLAN erreichbar); ohne Konten: VITE_CLOUD=off npm run dev
 npm run build          # prüft Inhalte, TypeScript und baut nach dist/
 npm run preview        # Produktions-Build lokal ansehen (http://localhost:4173)
 npm run test           # Vitest

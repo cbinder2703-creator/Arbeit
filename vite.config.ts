@@ -54,6 +54,7 @@ export default defineConfig({
     globals: true,
     setupFiles: ['./src/test/setup.ts'],
     css: false,
+    env: { VITE_CLOUD: 'off' }, // Tests laufen ohne Cloud (die Cloud-Tests schalten sie selbst ein)
     include: ['src/**/*.test.{ts,tsx}'],
   },
 });

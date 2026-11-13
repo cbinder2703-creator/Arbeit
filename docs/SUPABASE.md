@@ -1,7 +1,7 @@
 # Konten & Fortschritt in der Cloud (Supabase)
 
 Mit Konten registriert sich jede Person selbst (Nutzername + Passwort, **keine E-Mail**). Der Fortschritt liegt im Konto und gilt auf jedem Gerät.
-Ohne Konfiguration (leere Werte in `src/cloud/config.ts`) bleibt alles wie bisher: kein Konto, Fortschritt nur auf dem Gerät.
+Eingetragen sind die Projekt-URL und der publishable Key in `src/cloud/config.ts` (öffentliche Werte). Mit `VITE_CLOUD=off` (z. B. `VITE_CLOUD=off npm run dev`) läuft die App lokal ohne Konten, Fortschritt nur auf dem Gerät.
 
 ## Einrichten (einmalig, am Handy möglich)
 1. `supabase.com` → mit GitHub anmelden → **New project** (Name `azubiquest`, Region **Frankfurt / eu-central-1**).
