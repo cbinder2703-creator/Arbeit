@@ -34,6 +34,8 @@ export interface PruefungsFortschritt {
   daily: Record<string, DayStats>;
   /** Lernpfad: Lektionen nach ID */
   lessons: Record<string, LessonProgress>;
+  /** Zeitpunkt des letzten Zurücksetzens (für den Abgleich mit der Cloud), 0 = nie */
+  resetAt: number;
 }
 
 export const emptyProgress = (): PruefungsFortschritt => ({
@@ -51,4 +53,5 @@ export const emptyProgress = (): PruefungsFortschritt => ({
   rounds: 0,
   daily: {},
   lessons: {},
+  resetAt: 0,
 });

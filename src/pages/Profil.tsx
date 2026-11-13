@@ -11,9 +11,12 @@ import { BadgeList } from '@/ui/BadgeList';
 import { InstallHint } from '@/ui/InstallHint';
 import { authRequired, logout } from '@/auth/LoginGate';
 import { Button } from '@/ui/Button';
+import { ConfirmButton } from '@/ui/ConfirmButton';
+import { AccountSection } from '@/cloud/AccountSection';
 
 export function Profil() {
   const { byPruefung, globalStreak } = useProgress();
+  const resetPruefung = useProgress((s) => s.resetPruefung);
   const totalXp = Object.values(byPruefung).reduce((n, p) => n + p.xp, 0);
   const lvl = levelFromXp(totalXp);
 
@@ -74,10 +77,26 @@ export function Profil() {
         </>
       )}
 
+      <AccountSection />
+
       <h2 className="mb-3 mt-8 text-xl">Einstellungen</h2>
       <Settings />
       <div className="mt-3">
         <InstallHint />
+      </div>
+      <h2 className="mb-3 mt-8 text-xl">Fortschritt zurücksetzen</h2>
+      <div className="grid gap-3 md:grid-cols-2">
+        {allePruefungen.map((p) => (
+          <div key={p.meta.id} className="rounded-2xl bg-card p-4">
+            <div className="mb-2 font-display text-[17px]">{p.meta.gameTitle}</div>
+            <ConfirmButton
+              label="Zurücksetzen"
+              question={`Dein gesamter Fortschritt in „${p.meta.gameTitle}“ (XP, Level, Abzeichen, Noten, Lektionen) wird gelöscht. Das lässt sich nicht rückgängig machen.`}
+              confirmLabel="Ja, zurücksetzen"
+              onConfirm={() => resetPruefung(p.meta.id)}
+            />
+          </div>
+        ))}
       </div>
       {authRequired && (
         <div className="mt-3">
