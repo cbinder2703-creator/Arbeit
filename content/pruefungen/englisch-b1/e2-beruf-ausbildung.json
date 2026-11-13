@@ -1,0 +1,526 @@
+{
+  "id": "e2",
+  "chapter": 2,
+  "title": "Beruf & Ausbildung",
+  "subtitle": "Im Betrieb, Telefon & E-Mail, Bewerbung",
+  "pages": "3 Lektionen",
+  "color": "#F59E0B",
+  "icon": "briefcase",
+  "flashcards": [
+    {
+      "id": "e2-f01",
+      "term": "apprentice",
+      "definition": "Auszubildende/r – „I’m an apprentice electrician.“"
+    },
+    {
+      "id": "e2-f02",
+      "term": "apprenticeship",
+      "definition": "Ausbildung – „a three-year apprenticeship“"
+    },
+    {
+      "id": "e2-f03",
+      "term": "to repair",
+      "definition": "reparieren – „He repairs bikes.“"
+    },
+    {
+      "id": "e2-f04",
+      "term": "tool",
+      "definition": "Werkzeug – „Where is the right tool?“"
+    },
+    {
+      "id": "e2-f05",
+      "term": "workshop",
+      "definition": "Werkstatt – „She works in a workshop.“"
+    },
+    {
+      "id": "e2-f06",
+      "term": "shift",
+      "definition": "Schicht – „the early shift / the late shift“"
+    },
+    {
+      "id": "e2-f07",
+      "term": "boss / manager",
+      "definition": "Chef/in, Vorgesetzte/r"
+    },
+    {
+      "id": "e2-f08",
+      "term": "colleague",
+      "definition": "Kollege/Kollegin – „My colleagues are friendly.“"
+    },
+    {
+      "id": "e2-f09",
+      "term": "meeting",
+      "definition": "Besprechung, Treffen – „I’m in a meeting.“"
+    },
+    {
+      "id": "e2-f10",
+      "term": "attachment",
+      "definition": "Anhang (einer E-Mail) – „Please see the attachment.“"
+    },
+    {
+      "id": "e2-f11",
+      "term": "application",
+      "definition": "Bewerbung – „I sent my application.“"
+    },
+    {
+      "id": "e2-f12",
+      "term": "CV (curriculum vitae)",
+      "definition": "Lebenslauf – „Send me your CV.“"
+    },
+    {
+      "id": "e2-f13",
+      "term": "interview",
+      "definition": "Vorstellungsgespräch – „I have an interview on Monday.“"
+    },
+    {
+      "id": "e2-f14",
+      "term": "salary",
+      "definition": "Gehalt – „What is the salary?“"
+    }
+  ],
+  "items": [
+    {
+      "id": "e2-01",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was ist ein „apprentice“?",
+      "options": [
+        "ein Azubi",
+        "ein Chef",
+        "ein Kunde",
+        "ein Kollege"
+      ],
+      "correct": 0,
+      "explanation": "apprentice = Auszubildende/r, apprenticeship = Ausbildung."
+    },
+    {
+      "id": "e2-02",
+      "difficulty": 1,
+      "type": "translate",
+      "prompt": "Ich arbeite in einer Werkstatt.",
+      "answer": "I work in a workshop.",
+      "alt": [],
+      "extra": [
+        "am",
+        "working"
+      ]
+    },
+    {
+      "id": "e2-03",
+      "difficulty": 2,
+      "type": "cloze",
+      "text": "Right now, he {{is}} {{repairing}} a car. Every day, he {{starts}} at eight.",
+      "distractors": [
+        "repairs",
+        "are",
+        "start"
+      ],
+      "explanation": "Jetzt gerade: is + -ing. Jeden Tag: Present Simple (he starts)."
+    },
+    {
+      "id": "e2-04",
+      "difficulty": 2,
+      "type": "listen",
+      "text": "My apprentice is learning how to use the machine.",
+      "options": [
+        "My apprentice is learning how to use the machine.",
+        "My apprentice is learning how to clean the machine.",
+        "My boss is learning how to use the machine.",
+        "My apprentice is using the machine."
+      ],
+      "correct": 0,
+      "translation": "Mein Azubi lernt gerade, wie man die Maschine bedient."
+    },
+    {
+      "id": "e2-05",
+      "difficulty": 1,
+      "type": "speak",
+      "text": "I’m training to be a mechanic.",
+      "translation": "Ich mache eine Ausbildung zum Mechaniker."
+    },
+    {
+      "id": "e2-06",
+      "difficulty": 1,
+      "type": "translate",
+      "prompt": "Der Chef ist gerade in einer Besprechung.",
+      "answer": "The boss is in a meeting at the moment.",
+      "alt": [
+        "At the moment the boss is in a meeting."
+      ],
+      "extra": [
+        "are",
+        "now"
+      ]
+    },
+    {
+      "id": "e2-07",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Werkzeuge",
+      "pairs": [
+        {
+          "left": "hammer",
+          "right": "Hammer"
+        },
+        {
+          "left": "screwdriver",
+          "right": "Schraubendreher"
+        },
+        {
+          "left": "wrench",
+          "right": "Schraubenschlüssel"
+        },
+        {
+          "left": "drill",
+          "right": "Bohrmaschine"
+        },
+        {
+          "left": "ladder",
+          "right": "Leiter"
+        }
+      ]
+    },
+    {
+      "id": "e2-08",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Welcher Satz ist richtig? (Es passiert jetzt gerade.)",
+      "options": [
+        "She is writing an email now.",
+        "She writes an email now.",
+        "She is write an email now.",
+        "She writing an email now."
+      ],
+      "correct": 0,
+      "explanation": "Gerade jetzt: am/is/are + -ing."
+    },
+    {
+      "id": "e2-09",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie beginnt man eine formelle E-Mail an Herrn Smith?",
+      "options": [
+        "Dear Mr Smith,",
+        "Hey Smith!",
+        "Yo!",
+        "Hi mate,"
+      ],
+      "correct": 0,
+      "explanation": "In formellen E-Mails beginnt man mit „Dear Mr/Ms …“."
+    },
+    {
+      "id": "e2-10",
+      "difficulty": 1,
+      "type": "translate",
+      "prompt": "Könnten Sie mir bitte die Details schicken?",
+      "answer": "Could you send me the details, please?",
+      "alt": [
+        "Could you please send me the details?"
+      ],
+      "extra": [
+        "can",
+        "sent"
+      ]
+    },
+    {
+      "id": "e2-11",
+      "difficulty": 1,
+      "type": "cloze",
+      "text": "Hello, this is Anna {{speaking}}. How can I {{help}} you?",
+      "distractors": [
+        "talking",
+        "helps"
+      ],
+      "explanation": "Am Telefon sagt man „This is … speaking“ und „How can I help you?“."
+    },
+    {
+      "id": "e2-12",
+      "difficulty": 2,
+      "type": "listen",
+      "text": "Could you tell him that I called?",
+      "options": [
+        "Could you tell him that I called?",
+        "Could you tell her that I called?",
+        "Could you tell him that I’ll call?",
+        "Could you ask him if I called?"
+      ],
+      "correct": 0,
+      "translation": "Könnten Sie ihm sagen, dass ich angerufen habe?"
+    },
+    {
+      "id": "e2-13",
+      "difficulty": 1,
+      "type": "speak",
+      "text": "I’m calling about the job advert.",
+      "translation": "Ich rufe wegen der Stellenanzeige an."
+    },
+    {
+      "id": "e2-14",
+      "difficulty": 1,
+      "type": "translate",
+      "prompt": "Ich freue mich auf Ihre Antwort.",
+      "answer": "I look forward to your reply.",
+      "alt": [
+        "I look forward to your answer."
+      ],
+      "extra": [
+        "answer",
+        "hearing"
+      ]
+    },
+    {
+      "id": "e2-15",
+      "difficulty": 1,
+      "type": "order",
+      "question": "Bring die E-Mail in die richtige Reihenfolge.",
+      "steps": [
+        "Dear Ms Brown,",
+        "I am writing to ask about the apprenticeship.",
+        "Could you send me more information, please?",
+        "I look forward to hearing from you.",
+        "Kind regards, Tom Miller"
+      ],
+      "explanation": "Anrede, Grund, Bitte, Schluss, Gruß."
+    },
+    {
+      "id": "e2-16",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "„Kind regards“ schreibt man am Ende einer E-Mail.",
+      "correct": true,
+      "explanation": "Richtig – es entspricht „Mit freundlichen Grüßen“."
+    },
+    {
+      "id": "e2-17",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was ist die Past-Simple-Form von „go“?",
+      "options": [
+        "went",
+        "goed",
+        "gone",
+        "going"
+      ],
+      "correct": 0,
+      "explanation": "go – went – gone (unregelmäßig)."
+    },
+    {
+      "id": "e2-18",
+      "difficulty": 2,
+      "type": "translate",
+      "prompt": "Ich habe letztes Jahr ein Praktikum gemacht.",
+      "answer": "I did an internship last year.",
+      "alt": [],
+      "extra": [
+        "done",
+        "make"
+      ]
+    },
+    {
+      "id": "e2-19",
+      "difficulty": 1,
+      "type": "cloze",
+      "text": "Where {{did}} you work last year? – I {{worked}} in a bakery.",
+      "distractors": [
+        "do",
+        "work"
+      ],
+      "explanation": "Frage mit did + Grundform; Antwort im Past Simple."
+    },
+    {
+      "id": "e2-20",
+      "difficulty": 1,
+      "type": "listen",
+      "text": "I started my apprenticeship two years ago.",
+      "options": [
+        "I started my apprenticeship two years ago.",
+        "I started my apprenticeship two weeks ago.",
+        "I stopped my apprenticeship two years ago.",
+        "I started my internship two years ago."
+      ],
+      "correct": 0,
+      "translation": "Ich habe meine Ausbildung vor zwei Jahren begonnen."
+    },
+    {
+      "id": "e2-21",
+      "difficulty": 1,
+      "type": "speak",
+      "text": "I have two years of experience.",
+      "translation": "Ich habe zwei Jahre Erfahrung."
+    },
+    {
+      "id": "e2-22",
+      "difficulty": 2,
+      "type": "translate",
+      "prompt": "Warum möchten Sie diese Stelle?",
+      "answer": "Why do you want this job?",
+      "alt": [
+        "Why would you like this job?"
+      ],
+      "extra": [
+        "would",
+        "like"
+      ]
+    },
+    {
+      "id": "e2-23",
+      "difficulty": 1,
+      "type": "sort",
+      "question": "Gute Idee oder lieber nicht im Vorstellungsgespräch?",
+      "categories": [
+        {
+          "id": "good",
+          "label": "Gute Idee"
+        },
+        {
+          "id": "bad",
+          "label": "Lieber nicht"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Be on time",
+          "category": "good"
+        },
+        {
+          "text": "Ask questions about the company",
+          "category": "good"
+        },
+        {
+          "text": "Wear clean clothes",
+          "category": "good"
+        },
+        {
+          "text": "Look at your phone",
+          "category": "bad"
+        },
+        {
+          "text": "Say bad things about your old boss",
+          "category": "bad"
+        },
+        {
+          "text": "Arrive late",
+          "category": "bad"
+        }
+      ]
+    },
+    {
+      "id": "e2-24",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was heißt „Bewerbung“ (für eine Stelle) auf Englisch?",
+      "options": [
+        "application",
+        "advertisement",
+        "apprentice",
+        "appointment"
+      ],
+      "correct": 0,
+      "explanation": "application = Bewerbung. appointment = Termin, advertisement = Anzeige."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "e2-l1",
+      "title": "Im Betrieb",
+      "subtitle": "Aufgaben und Werkzeuge",
+      "icon": "wrench",
+      "grammar": {
+        "title": "Present Simple oder Present Continuous?",
+        "text": "• Present Simple: Gewohnheiten und Fakten – I work in a workshop. He starts at eight every day.\n• Present Continuous (am/is/are + -ing): was gerade passiert – I am repairing a car right now.\nSignalwörter: always, usually, every day → Simple. now, at the moment → Continuous.",
+        "examples": [
+          {
+            "en": "I work in a workshop.",
+            "de": "Ich arbeite in einer Werkstatt."
+          },
+          {
+            "en": "He is repairing a car right now.",
+            "de": "Er repariert gerade ein Auto."
+          },
+          {
+            "en": "She usually starts at seven.",
+            "de": "Sie fängt normalerweise um sieben an."
+          }
+        ]
+      },
+      "items": [
+        "e2-01",
+        "e2-02",
+        "e2-03",
+        "e2-04",
+        "e2-05",
+        "e2-06",
+        "e2-07",
+        "e2-08"
+      ]
+    },
+    {
+      "id": "e2-l2",
+      "title": "Telefon & E-Mail",
+      "subtitle": "Formell schreiben und telefonieren",
+      "icon": "mail",
+      "grammar": {
+        "title": "Formell: I am writing to … / Could you …?",
+        "text": "Im Beruf klingst du höflich und klar.\n• Anrede: Dear Mr Smith, / Dear Ms Brown,\n• Grund nennen: I am writing to ask about …\n• Bitte: Could you send me the details, please?\n• Schluss: I look forward to hearing from you. – Kind regards,\nAm Telefon: This is Anna speaking. How can I help you?",
+        "examples": [
+          {
+            "en": "I am writing to ask about the job.",
+            "de": "Ich schreibe, um mich nach der Stelle zu erkundigen."
+          },
+          {
+            "en": "Could you send me the details?",
+            "de": "Könnten Sie mir die Einzelheiten schicken?"
+          },
+          {
+            "en": "Kind regards, Anna",
+            "de": "Mit freundlichen Grüßen, Anna"
+          }
+        ]
+      },
+      "items": [
+        "e2-09",
+        "e2-10",
+        "e2-11",
+        "e2-12",
+        "e2-13",
+        "e2-14",
+        "e2-15",
+        "e2-16"
+      ]
+    },
+    {
+      "id": "e2-l3",
+      "title": "Bewerbung",
+      "subtitle": "Vorstellungsgespräch",
+      "icon": "file-text",
+      "grammar": {
+        "title": "Past Simple: Was war?",
+        "text": "Das Past Simple beschreibt abgeschlossene Vergangenheit.\n• Regelmäßig: Verb + -ed (work → worked, start → started)\n• Unregelmäßig: go → went, make → made, have → had, do → did\n• Fragen und Verneinung mit did: Did you work there? – I didn’t work there.",
+        "examples": [
+          {
+            "en": "I worked in a bakery last year.",
+            "de": "Ich habe letztes Jahr in einer Bäckerei gearbeitet."
+          },
+          {
+            "en": "Where did you do your internship?",
+            "de": "Wo hast du dein Praktikum gemacht?"
+          },
+          {
+            "en": "I didn’t start in January.",
+            "de": "Ich habe nicht im Januar angefangen."
+          }
+        ]
+      },
+      "items": [
+        "e2-17",
+        "e2-18",
+        "e2-19",
+        "e2-20",
+        "e2-21",
+        "e2-22",
+        "e2-23",
+        "e2-24"
+      ]
+    }
+  ]
+}

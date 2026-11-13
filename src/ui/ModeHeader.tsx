@@ -2,6 +2,7 @@ import { useState } from 'react';
 import type { ReactNode } from 'react';
 import { useOptionalPruefung } from '@/app/pruefungContext';
 import { GlossarSheet } from './GlossarSheet';
+import { useSequence } from './sequence';
 import { Icon } from './Icon';
 import { ProgressBar } from './ProgressBar';
 
@@ -30,12 +31,18 @@ export function ModeHeader({
   onLookupChange?: (open: boolean) => void;
 }) {
   const pr = useOptionalPruefung();
+  const seq = useSequence();
   const [open, setOpen] = useState(false);
   const canLookup = !!pr && lookup !== undefined && !exam;
   const toggle = (v: boolean) => {
     setOpen(v);
     onLookupChange?.(v);
   };
+  if (seq && !exam) {
+    // Aufgabe innerhalb einer Lektion/Folge: Fortschritt der ganzen Folge zeigen
+    current = seq.index - 1 + (current > 0 ? 1 : 0);
+    total = seq.total;
+  }
   if (exam) {
     current = exam.index;
     total = exam.total;

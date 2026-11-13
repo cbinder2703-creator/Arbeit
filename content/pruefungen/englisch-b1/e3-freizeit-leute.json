@@ -1,0 +1,535 @@
+{
+  "id": "e3",
+  "chapter": 3,
+  "title": "Freizeit & Leute",
+  "subtitle": "Hobbys, Verabredungen, Small Talk, Social Media",
+  "pages": "3 Lektionen",
+  "color": "#EC4899",
+  "icon": "music",
+  "flashcards": [
+    {
+      "id": "e3-f01",
+      "term": "hobby",
+      "definition": "Hobby – „My hobby is photography.“"
+    },
+    {
+      "id": "e3-f02",
+      "term": "to enjoy",
+      "definition": "genießen, gern tun – „I enjoy cooking.“"
+    },
+    {
+      "id": "e3-f03",
+      "term": "favourite",
+      "definition": "Lieblings- – „my favourite song“"
+    },
+    {
+      "id": "e3-f04",
+      "term": "band",
+      "definition": "Band – „a rock band“"
+    },
+    {
+      "id": "e3-f05",
+      "term": "concert",
+      "definition": "Konzert – „We went to a concert.“"
+    },
+    {
+      "id": "e3-f06",
+      "term": "to hang out",
+      "definition": "abhängen, Zeit verbringen – „We hang out after school.“"
+    },
+    {
+      "id": "e3-f07",
+      "term": "weekend",
+      "definition": "Wochenende – „at the weekend“"
+    },
+    {
+      "id": "e3-f08",
+      "term": "to meet up",
+      "definition": "sich treffen – „Let’s meet up at six.“"
+    },
+    {
+      "id": "e3-f09",
+      "term": "Shall we …?",
+      "definition": "Wollen wir …? – „Shall we go?“"
+    },
+    {
+      "id": "e3-f10",
+      "term": "opinion",
+      "definition": "Meinung – „in my opinion“"
+    },
+    {
+      "id": "e3-f11",
+      "term": "post",
+      "definition": "Beitrag, posten – „She posted a photo.“"
+    },
+    {
+      "id": "e3-f12",
+      "term": "to share",
+      "definition": "teilen – „Please share this video.“"
+    },
+    {
+      "id": "e3-f13",
+      "term": "to follow",
+      "definition": "folgen – „I follow her on Instagram.“"
+    },
+    {
+      "id": "e3-f14",
+      "term": "follower",
+      "definition": "Follower, Anhänger/in"
+    }
+  ],
+  "items": [
+    {
+      "id": "e3-01",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welcher Satz ist richtig?",
+      "options": [
+        "I enjoy playing the guitar.",
+        "I enjoy to play the guitar.",
+        "I enjoy play the guitar.",
+        "I enjoying the guitar."
+      ],
+      "correct": 0,
+      "explanation": "Nach enjoy folgt die -ing-Form."
+    },
+    {
+      "id": "e3-02",
+      "difficulty": 1,
+      "type": "translate",
+      "prompt": "Ich höre gern Musik.",
+      "answer": "I like listening to music.",
+      "alt": [],
+      "extra": [
+        "listen",
+        "hearing"
+      ]
+    },
+    {
+      "id": "e3-03",
+      "difficulty": 1,
+      "type": "cloze",
+      "text": "She enjoys {{swimming}} and he loves {{playing}} video games.",
+      "distractors": [
+        "swim",
+        "play"
+      ],
+      "explanation": "Nach enjoy und love steht die -ing-Form."
+    },
+    {
+      "id": "e3-04",
+      "difficulty": 2,
+      "type": "listen",
+      "text": "My favourite band is playing in town on Saturday.",
+      "options": [
+        "My favourite band is playing in town on Saturday.",
+        "My favourite band is playing in town on Sunday.",
+        "My favourite singer is playing in town on Saturday.",
+        "My favourite band is staying in town on Saturday."
+      ],
+      "correct": 0,
+      "translation": "Meine Lieblingsband spielt am Samstag in der Stadt."
+    },
+    {
+      "id": "e3-05",
+      "difficulty": 1,
+      "type": "speak",
+      "text": "What kind of music do you like?",
+      "translation": "Welche Art von Musik magst du?"
+    },
+    {
+      "id": "e3-06",
+      "difficulty": 2,
+      "type": "translate",
+      "prompt": "Am Wochenende wandere ich gern.",
+      "answer": "I enjoy hiking at the weekend.",
+      "alt": [
+        "At the weekend I enjoy hiking."
+      ],
+      "extra": [
+        "hike",
+        "in"
+      ]
+    },
+    {
+      "id": "e3-07",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Hobbys",
+      "pairs": [
+        {
+          "left": "hiking",
+          "right": "Wandern"
+        },
+        {
+          "left": "swimming",
+          "right": "Schwimmen"
+        },
+        {
+          "left": "drawing",
+          "right": "Zeichnen"
+        },
+        {
+          "left": "cooking",
+          "right": "Kochen"
+        },
+        {
+          "left": "gaming",
+          "right": "Computerspielen"
+        }
+      ]
+    },
+    {
+      "id": "e3-08",
+      "difficulty": 1,
+      "type": "sort",
+      "question": "Drinnen oder draußen?",
+      "categories": [
+        {
+          "id": "in",
+          "label": "Drinnen"
+        },
+        {
+          "id": "out",
+          "label": "Draußen"
+        }
+      ],
+      "cards": [
+        {
+          "text": "reading",
+          "category": "in"
+        },
+        {
+          "text": "cooking",
+          "category": "in"
+        },
+        {
+          "text": "playing cards",
+          "category": "in"
+        },
+        {
+          "text": "hiking",
+          "category": "out"
+        },
+        {
+          "text": "cycling",
+          "category": "out"
+        },
+        {
+          "text": "skateboarding",
+          "category": "out"
+        }
+      ]
+    },
+    {
+      "id": "e3-09",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Welcher Satz sagt, dass du etwas schon geplant hast?",
+      "options": [
+        "I’m going to see a film tonight.",
+        "Oh, the phone is ringing – I’ll answer it.",
+        "I promise I’ll be on time.",
+        "Wait, I’ll help you."
+      ],
+      "correct": 0,
+      "explanation": "Für feste Pläne nutzt man „going to“."
+    },
+    {
+      "id": "e3-10",
+      "difficulty": 1,
+      "type": "translate",
+      "prompt": "Wollen wir uns um sieben treffen?",
+      "answer": "Shall we meet at seven?",
+      "alt": [],
+      "extra": [
+        "will",
+        "do"
+      ]
+    },
+    {
+      "id": "e3-11",
+      "difficulty": 2,
+      "type": "cloze",
+      "text": "It’s hot in here! – OK, I {{will}} open the window. We {{are}} going to meet at six.",
+      "distractors": [
+        "going",
+        "is"
+      ],
+      "explanation": "Spontan: will. Plan: be + going to."
+    },
+    {
+      "id": "e3-12",
+      "difficulty": 1,
+      "type": "listen",
+      "text": "Do you want to go to the cinema on Friday?",
+      "options": [
+        "Do you want to go to the cinema on Friday?",
+        "Do you want to go to the cinema on Sunday?",
+        "Did you want to go to the cinema on Friday?",
+        "Do you want to go to the café on Friday?"
+      ],
+      "correct": 0,
+      "translation": "Möchtest du am Freitag ins Kino gehen?"
+    },
+    {
+      "id": "e3-13",
+      "difficulty": 1,
+      "type": "speak",
+      "text": "Nice to meet you. Where are you from?",
+      "translation": "Schön, dich kennenzulernen. Woher kommst du?"
+    },
+    {
+      "id": "e3-14",
+      "difficulty": 1,
+      "type": "translate",
+      "prompt": "Ich werde dich später anrufen.",
+      "answer": "I will call you later.",
+      "alt": [],
+      "extra": [
+        "am",
+        "going"
+      ]
+    },
+    {
+      "id": "e3-15",
+      "difficulty": 2,
+      "type": "order",
+      "question": "Bring das Gespräch in die richtige Reihenfolge.",
+      "steps": [
+        "Hi! I’m Sam. Nice to meet you.",
+        "Hi Sam, I’m Lena. Where are you from?",
+        "I’m from Hamburg. And you?",
+        "I’m from Berlin, but I live in Munich now.",
+        "Cool! Do you want to get a coffee?"
+      ],
+      "explanation": "Ein typischer Small Talk."
+    },
+    {
+      "id": "e3-16",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Auf „How are you?“ antwortet man meist kurz, z. B. „Fine, thanks. And you?“.",
+      "correct": true,
+      "explanation": "Richtig – im Small Talk ist das eine Begrüßung, kein langer Bericht."
+    },
+    {
+      "id": "e3-17",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welcher Satz ist richtig?",
+      "options": [
+        "This phone is better than that one.",
+        "This phone is more good than that one.",
+        "This phone is gooder than that one.",
+        "This phone is better that that one."
+      ],
+      "correct": 0,
+      "explanation": "good → better (unregelmäßig), dann „than“."
+    },
+    {
+      "id": "e3-18",
+      "difficulty": 2,
+      "type": "translate",
+      "prompt": "Dieses Video ist lustiger als das andere.",
+      "answer": "This video is funnier than the other one.",
+      "alt": [],
+      "extra": [
+        "funny",
+        "more"
+      ]
+    },
+    {
+      "id": "e3-19",
+      "difficulty": 1,
+      "type": "cloze",
+      "text": "Cycling is {{faster}} {{than}} walking.",
+      "distractors": [
+        "fast",
+        "then"
+      ],
+      "explanation": "Kurzes Adjektiv: faster than."
+    },
+    {
+      "id": "e3-20",
+      "difficulty": 2,
+      "type": "listen",
+      "text": "I think social media can be fun, but it takes a lot of time.",
+      "options": [
+        "I think social media can be fun, but it takes a lot of time.",
+        "I think social media can be fun, but it costs a lot of money.",
+        "I think social media can be boring, but it takes a lot of time.",
+        "I thought social media can be fun, but it takes a lot of time."
+      ],
+      "correct": 0,
+      "translation": "Ich finde, Social Media kann Spaß machen, aber es kostet viel Zeit."
+    },
+    {
+      "id": "e3-21",
+      "difficulty": 1,
+      "type": "speak",
+      "text": "In my opinion, this app is really useful.",
+      "translation": "Meiner Meinung nach ist diese App richtig nützlich."
+    },
+    {
+      "id": "e3-22",
+      "difficulty": 2,
+      "type": "translate",
+      "prompt": "Meiner Meinung nach ist das eine gute Idee.",
+      "answer": "In my opinion, that is a good idea.",
+      "alt": [
+        "I think that is a good idea."
+      ],
+      "extra": [
+        "I",
+        "think"
+      ]
+    },
+    {
+      "id": "e3-23",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Meinung ausdrücken",
+      "pairs": [
+        {
+          "left": "I agree",
+          "right": "Ich stimme zu"
+        },
+        {
+          "left": "I disagree",
+          "right": "Ich bin anderer Meinung"
+        },
+        {
+          "left": "in my opinion",
+          "right": "meiner Meinung nach"
+        },
+        {
+          "left": "on the one hand",
+          "right": "einerseits"
+        },
+        {
+          "left": "for example",
+          "right": "zum Beispiel"
+        }
+      ]
+    },
+    {
+      "id": "e3-24",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was bedeutet „to follow“ bei Social Media?",
+      "options": [
+        "folgen (einem Konto)",
+        "löschen",
+        "blockieren",
+        "teilen"
+      ],
+      "correct": 0,
+      "explanation": "Wer jemandem folgt, sieht dessen Beiträge. „to share“ heißt teilen."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "e3-l1",
+      "title": "Hobbys & Musik",
+      "subtitle": "Sagen, was du gern machst",
+      "icon": "headphones",
+      "grammar": {
+        "title": "like / love / enjoy + -ing",
+        "text": "Nach like, love, enjoy und hate steht oft die -ing-Form:\n• I enjoy playing football.\n• She likes listening to music.\nAber: Nach „would like“ steht „to“ + Grundform: I’d like to go to a concert.",
+        "examples": [
+          {
+            "en": "I enjoy playing the guitar.",
+            "de": "Ich spiele gern Gitarre."
+          },
+          {
+            "en": "She loves swimming.",
+            "de": "Sie liebt Schwimmen."
+          },
+          {
+            "en": "I’d like to go to a concert.",
+            "de": "Ich würde gern auf ein Konzert gehen."
+          }
+        ]
+      },
+      "items": [
+        "e3-01",
+        "e3-02",
+        "e3-03",
+        "e3-04",
+        "e3-05",
+        "e3-06",
+        "e3-07",
+        "e3-08"
+      ]
+    },
+    {
+      "id": "e3-l2",
+      "title": "Verabredungen & Small Talk",
+      "subtitle": "Leute kennenlernen",
+      "icon": "users",
+      "grammar": {
+        "title": "will oder going to?",
+        "text": "• going to: Pläne, die du schon gemacht hast – I’m going to meet Lisa tomorrow.\n• will: spontane Entscheidungen und Versprechen – I’ll call you later. – It’s hot. I’ll open the window.\nVorschläge: Shall we meet at seven? (Wollen wir …?)",
+        "examples": [
+          {
+            "en": "I’m going to see a film tonight.",
+            "de": "Ich werde heute Abend einen Film ansehen (geplant)."
+          },
+          {
+            "en": "It’s hot – I’ll open the window.",
+            "de": "Es ist heiß – ich mache das Fenster auf."
+          },
+          {
+            "en": "Shall we meet at seven?",
+            "de": "Wollen wir uns um sieben treffen?"
+          }
+        ]
+      },
+      "items": [
+        "e3-09",
+        "e3-10",
+        "e3-11",
+        "e3-12",
+        "e3-13",
+        "e3-14",
+        "e3-15",
+        "e3-16"
+      ]
+    },
+    {
+      "id": "e3-l3",
+      "title": "Social Media & Meinung",
+      "subtitle": "Vergleichen und Meinung sagen",
+      "icon": "message-circle",
+      "grammar": {
+        "title": "Vergleiche: -er than / more … than",
+        "text": "• Kurze Adjektive: + -er than – fast → faster than\n• Lange Adjektive: more … than – more interesting than\n• Unregelmäßig: good → better, bad → worse\nMeinung sagen: In my opinion, … / I think that … / I agree. / I disagree.",
+        "examples": [
+          {
+            "en": "Cycling is faster than walking.",
+            "de": "Radfahren ist schneller als Gehen."
+          },
+          {
+            "en": "This video is more interesting than that one.",
+            "de": "Dieses Video ist interessanter als das."
+          },
+          {
+            "en": "In my opinion, it’s a good idea.",
+            "de": "Meiner Meinung nach ist das eine gute Idee."
+          }
+        ]
+      },
+      "items": [
+        "e3-17",
+        "e3-18",
+        "e3-19",
+        "e3-20",
+        "e3-21",
+        "e3-22",
+        "e3-23",
+        "e3-24"
+      ]
+    }
+  ]
+}

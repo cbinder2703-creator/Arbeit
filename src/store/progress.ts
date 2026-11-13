@@ -18,11 +18,14 @@ interface ProgressState {
   recordBestTime: (pid: string, key: string, value: number) => void;
   addBadges: (pid: string, ids: string[]) => void;
   recordExam: (pid: string, percent: number, grade: number) => void;
+  recordLesson: (pid: string, lessonId: string, stars: number, percent: number) => void;
   resetPruefung: (pid: string) => void;
   resetAll: () => void;
 }
 
-const get = (s: ProgressState, pid: string): PruefungsFortschritt => s.byPruefung[pid] ?? emptyProgress();
+/** Fehlende Felder (ältere Speicherstände) mit Standardwerten auffüllen */
+const fill = (p: Partial<PruefungsFortschritt> | undefined): PruefungsFortschritt => ({ ...emptyProgress(), ...p });
+const get = (s: ProgressState, pid: string): PruefungsFortschritt => fill(s.byPruefung[pid]);
 
 /** Streak für einen Tag fortschreiben */
 function touchDay(count: number, last: string | null, today: string): { count: number; last: string } {
@@ -116,6 +119,24 @@ export const useProgress = create<ProgressState>()(
           };
         }),
 
+      recordLesson: (pid, lessonId, stars, percent) =>
+        set((s) => {
+          const cur = get(s, pid);
+          const old = cur.lessons[lessonId];
+          return {
+            byPruefung: {
+              ...s.byPruefung,
+              [pid]: {
+                ...cur,
+                lessons: {
+                  ...cur.lessons,
+                  [lessonId]: { stars: Math.max(old?.stars ?? 0, stars), best: Math.max(old?.best ?? 0, percent), done: (old?.done ?? 0) + (stars > 0 ? 1 : 0) },
+                },
+              },
+            },
+          };
+        }),
+
       resetPruefung: (pid) =>
         set((s) => {
           const rest = { ...s.byPruefung };
@@ -127,7 +148,12 @@ export const useProgress = create<ProgressState>()(
     }),
     {
       name: 'azubiquest-progress',
-      version: 1,
+      version: 2,
+      // ältere Speicherstände bekommen neue Felder (z. B. Lektionen) automatisch
+      merge: (persisted, current) => {
+        const p = (persisted ?? {}) as Partial<ProgressState>;
+        return { ...current, ...p, byPruefung: Object.fromEntries(Object.entries(p.byPruefung ?? {}).map(([k, v]) => [k, fill(v)])) };
+      },
       partialize: (s) => ({
         byPruefung: s.byPruefung,
         globalStreak: s.globalStreak,
@@ -141,8 +167,8 @@ export const useProgress = create<ProgressState>()(
 /** Fortschritt einer Prüfung (leer, wenn noch nichts gespielt wurde) */
 export function useFortschritt(pid: string | undefined): PruefungsFortschritt {
   const p = useProgress((s) => (pid ? s.byPruefung[pid] : undefined));
-  return p ?? EMPTY;
+  return p ? (p.lessons ? p : fill(p)) : EMPTY;
 }
 const EMPTY = emptyProgress();
 
-export const getFortschritt = (pid: string): PruefungsFortschritt => useProgress.getState().byPruefung[pid] ?? emptyProgress();
+export const getFortschritt = (pid: string): PruefungsFortschritt => fill(useProgress.getState().byPruefung[pid]);

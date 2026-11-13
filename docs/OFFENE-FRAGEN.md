@@ -7,3 +7,6 @@ Hier stehen Punkte, bei denen Inhalte fehlen oder unklar sind (nichts wurde gera
 - **Impressum/Datenschutz:** echte Angaben (Name, Anschrift, E-Mail, Hosting-Anbieter) müssen eingetragen werden.
 - **Prüfungstermin:** `examDate` in `content/pruefungen/berufsbildung-arbeitswelt/pruefung.json` ist `null` – sobald der Termin feststeht, als `"JJJJ-MM-TT"` eintragen, dann erscheinen Countdown und Lernplan-Hinweis.
 - **Logo:** Das App-Icon ist ein einfaches Platzhalter-Symbol.
+- **Englisch-Inhalte gegenlesen:** Die 96 Aufgaben und 56 Lernkarten von „English Quest“ hat Claude selbst geschrieben (B1). Bitte von einer Lehrkraft oder jemandem mit gutem Englisch prüfen lassen (Übersetzungen, natürliche Formulierungen, „alt“-Lösungen). Fehler bitte in `content/pruefungen/englisch-b1/` korrigieren.
+- **Britisch oder amerikanisch?** Vorlesen/Sprechen ist auf `en-GB` eingestellt (`speech.lang` in `pruefung.json`).
+- **Wörter fehlen?** Bei Übersetzungen akzeptiert die App nur die Hauptlösung und die Sätze in `alt`. Wenn eine richtige Variante abgelehnt wird, bitte melden, dann kommt sie als `alt` dazu.

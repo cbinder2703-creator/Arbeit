@@ -18,6 +18,16 @@ eigenem Fortschritt und eigener Abschlussprüfung. Dafür ist **keine Code-Ände
 5. `npm run dev` → die neue Prüfung erscheint unter „Meine Prüfungen“.
 6. `git push` → online.
 
+## Zusätzliche Aufgabentypen (Sprachen)
+- `translate`: `prompt` (z. B. Deutsch), `answer` (Lösung), optional `alt` (weitere richtige Sätze aus denselben Wörtern) und `extra` (falsche Wörter).
+- `listen`: `text` wird vorgelesen, `options` (mit dem Text), `correct`, optional `translation`.
+- `speak`: `text` zum Nachsprechen, optional `translation`.
+- Vorlesen/Sprechen aktivieren: in `pruefung.json` `"speech": { "lang": "en-GB", "rate": 0.95 }`.
+
+## Lernpfad (optional)
+In einer Kapitel-Datei `lessons` anlegen: `{ "id", "title", "subtitle", "icon", "grammar": { "title", "text", "examples": [{ "en", "de" }] }, "items": ["<Aufgaben-IDs>"] }`.
+Lektionen werden nacheinander freigeschaltet. Alle Aufgaben sollten in einer Lektion vorkommen (sonst warnt `validate-content`).
+
 ## Inhalte aus Buchfotos erstellen lassen
 
 Fotos der Buchseiten in den Ordner `vorlagen/<id>/` legen (wird nicht veröffentlicht, steht in `.gitignore`)

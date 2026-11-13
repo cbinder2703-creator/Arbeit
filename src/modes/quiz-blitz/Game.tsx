@@ -7,6 +7,7 @@ import { itemText } from '@/engine/describe';
 import { useSettings } from '@/store/settings';
 import { ModeFrame } from '@/ui/ModeFrame';
 import { ModeHeader } from '@/ui/ModeHeader';
+import { useFinishLabel } from '@/ui/sequence';
 import { FeedbackSheet } from '@/ui/FeedbackSheet';
 import { TimerRing } from '@/ui/TimerRing';
 import { ChapterChip } from '@/ui/ChapterChip';
@@ -19,6 +20,7 @@ import { playSound } from '@/ui/sound';
 const LIMIT_MS = 20_000;
 
 export default function Game({ items, onAnswer, onFinish, onClose, score, exam }: ModeProps) {
+  const finishLabel = useFinishLabel();
   const relaxedSetting = useSettings((s) => s.relaxed);
   const relaxed = relaxedSetting || !!exam;
   const [sel, setSel] = useState<number | null>(null); // nur Abschlussprüfung
@@ -189,7 +191,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score, exam }
             (correct ? undefined : `Richtig wäre: ${options[correctIdx]}`)
           }
           law={item.law}
-          nextLabel={idx + 1 >= items.length ? 'Ergebnis ansehen' : 'Weiter'}
+          nextLabel={idx + 1 >= items.length ? finishLabel : 'Weiter'}
           onNext={next}
         />
       )}

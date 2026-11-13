@@ -5,15 +5,18 @@ import { useFortschritt } from '@/store/progress';
 import { levelOf } from '@/engine/stats';
 import { usePruefung } from './pruefungContext';
 import { ProgressBar } from '@/ui/ProgressBar';
+import { hasPath } from '@/engine/path';
 
 /** Prüfungs-Layout: eigener Kopfbereich + Navigation (mobil unten, ab 1024 px Sidebar) */
 export function PruefungsShell({ children, hero = false }: { children: ReactNode; hero?: boolean }) {
-  const { meta } = usePruefung();
+  const pr = usePruefung();
+  const { meta } = pr;
   const base = `/p/${meta.id}`;
   const fort = useFortschritt(meta.id);
   const lvl = levelOf(fort);
   const items = [
     { to: base, label: 'Start', icon: 'home', end: true },
+    ...(hasPath(pr) ? [{ to: `${base}/pfad`, label: 'Pfad', icon: 'route', end: false }] : []),
     { to: `${base}/modi`, label: 'Spielmodi', icon: 'gamepad', end: false },
     { to: `${base}/karten`, label: 'Karten', icon: 'layers', end: false },
     { to: `${base}/abschluss`, label: 'Prüfung', icon: 'crown', end: false },

@@ -117,3 +117,22 @@ Hier steht, was unklar war und wie ich es entschieden habe (statt nachzufragen).
     für eine statische Seite; die Grenzen stehen in `docs/LOGIN.md`.
 40. **Kein Markieren beim Ziehen/Wischen:** Spielelemente sind `user-select: none` und ohne iOS-Kontextmenü (`.no-select`, Buttons global).
 41. **Zeitstrahl am Handy:** zusätzlich zum Ziehen am Griff: Zeile antippen und mit „Hoch“/„Runter“ (große Knöpfe) verschieben.
+
+## Englisch (English Quest)
+
+42. **Eigenes Spiel „English Quest“** (`content/pruefungen/englisch-b1/`, Niveau B1, Themen: Alltag & Reisen, Beruf & Ausbildung, Freizeit & Leute,
+    Schule & Prüfung). 4 Einheiten × 3 Lektionen × 8 Aufgaben = 96 Aufgaben, 56 Lernkarten. **Alle Inhalte sind von Claude selbst geschrieben**
+    (kein Schulbuch, nichts kopiert) und sollten von einer Lehrkraft gegengelesen werden (siehe `docs/OFFENE-FRAGEN.md`).
+43. **Neue Aufgabentypen** (für alle Prüfungen nutzbar): `translate` (Satz aus Wörtern bauen, Alternativen in `alt`, falsche Wörter in `extra`),
+    `listen` (Satz hören und den richtigen wählen), `speak` (Satz laut nachsprechen). Neue Modi: **Satz bauen**, **Hören**, **Sprechen**.
+    Sie erscheinen nur in Prüfungen mit passenden Aufgaben (Azubi-Akademie unverändert).
+44. **Lernpfad (generisch):** Kapitel können `lessons` haben (Titel, optional `grammar`-Tipp, Aufgaben-IDs). Der Pfad schaltet Lektionen nacheinander frei
+    (Vorgänger geschafft), Sterne nach Trefferquote der ersten Runde (mindestens 1 Stern), falsche Aufgaben werden am Ende einmal wiederholt.
+    Keine Herzen/Tagesziele (nicht gewünscht). Fortschritt: `lessons` im Prüfungs-Fortschritt; ältere Speicherstände werden automatisch aufgefüllt.
+45. **Vorlesen** (`speech` in `pruefung.json`, hier `en-GB`, Tempo 0,95): 🔊 bei Lernkarten, Beispielen, Lösungen und im Modus Hören; läuft auf dem Gerät
+    (Web Speech API). Ohne Sprachausgabe wird der Satz zum Lesen angezeigt. Britisches Englisch ist voreingestellt – für amerikanisches `en-US` setzen.
+46. **Sprechen:** nutzt die Spracherkennung des Browsers, die je nach Browser Audio an den Hersteller schickt → **nur nach ausdrücklicher Zustimmung**
+    (Einstellung `speechConsent`); sonst „Ohne Mikrofon üben“ (Selbstbewertung) oder Überspringen. Bestanden ab 80 % übereinstimmender Wörter, bis 3 Versuche.
+    Funktioniert nicht in jedem Browser (z. B. Firefox) und braucht HTTPS. Nicht Teil des Abschlusstests.
+47. **Abschlusstest Englisch:** wie die Abschlussprüfung, aber ohne Sprech-Aufgaben (kein Feedback-freier Modus); Hören und Satz bauen sind dabei.
+48. **Lückentext:** gleiche Wörter in mehreren Lücken bekommen jeweils einen eigenen Chip.

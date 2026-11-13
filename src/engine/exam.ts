@@ -18,7 +18,10 @@ export function fractionOf(r: Pick<AnswerReport, 'correct' | 'parts'>): number {
 }
 
 /** `n` Aufgaben aus allen Kapiteln – verteilt nach Größe der Kapitel, danach gemischt */
-export function pickExamItems(p: Pruefung, n: number, rng: Rng = Math.random): ExamPick[] {
+export function pickExamItems(p: Pruefung, n: number, rng: Rng = Math.random, allowed: (type: ContentItem['type']) => boolean = () => true): ExamPick[] {
+  // nur Aufgabentypen, die ohne Feedback geprüft werden können (z. B. kein Sprechen)
+  const chapters = p.chapters.map((c) => ({ ...c, items: c.items.filter((i) => allowed(i.type)) }));
+  p = { ...p, chapters };
   const total = p.chapters.reduce((s, c) => s + c.items.length, 0);
   const want = Math.min(n, total);
   const quota = p.chapters.map((c) => ({ c, q: Math.floor((want * c.items.length) / total), rest: (want * c.items.length) / total - Math.floor((want * c.items.length) / total) }));

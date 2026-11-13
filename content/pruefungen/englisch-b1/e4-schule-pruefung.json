@@ -1,0 +1,509 @@
+{
+  "id": "e4",
+  "chapter": 4,
+  "title": "Schule & Prüfung",
+  "subtitle": "Im Unterricht, Tests, Meinung schreiben",
+  "pages": "3 Lektionen",
+  "color": "#8B5CF6",
+  "icon": "graduation-cap",
+  "flashcards": [
+    {
+      "id": "e4-f01",
+      "term": "exam / test",
+      "definition": "Prüfung / Test – „I have an exam tomorrow.“"
+    },
+    {
+      "id": "e4-f02",
+      "term": "homework",
+      "definition": "Hausaufgaben – „Did you do your homework?“"
+    },
+    {
+      "id": "e4-f03",
+      "term": "to revise",
+      "definition": "den Stoff wiederholen (britisch) – „I revise every evening.“"
+    },
+    {
+      "id": "e4-f04",
+      "term": "subject",
+      "definition": "Fach – „My favourite subject is art.“"
+    },
+    {
+      "id": "e4-f05",
+      "term": "timetable",
+      "definition": "Stundenplan – „What’s on the timetable today?“"
+    },
+    {
+      "id": "e4-f06",
+      "term": "marks / grades",
+      "definition": "Noten, Punkte"
+    },
+    {
+      "id": "e4-f07",
+      "term": "to pass an exam",
+      "definition": "eine Prüfung bestehen"
+    },
+    {
+      "id": "e4-f08",
+      "term": "to fail an exam",
+      "definition": "durch eine Prüfung fallen"
+    },
+    {
+      "id": "e4-f09",
+      "term": "to hand in",
+      "definition": "abgeben – „Hand in your homework, please.“"
+    },
+    {
+      "id": "e4-f10",
+      "term": "to cheat",
+      "definition": "schummeln, betrügen – „You mustn’t cheat.“"
+    },
+    {
+      "id": "e4-f11",
+      "term": "deadline",
+      "definition": "Abgabetermin – „The deadline is Friday.“"
+    },
+    {
+      "id": "e4-f12",
+      "term": "to improve",
+      "definition": "besser werden, verbessern – „I want to improve my English.“"
+    },
+    {
+      "id": "e4-f13",
+      "term": "to explain",
+      "definition": "erklären – „Can you explain that again?“"
+    },
+    {
+      "id": "e4-f14",
+      "term": "although",
+      "definition": "obwohl – „Although it was hard, I passed.“"
+    }
+  ],
+  "items": [
+    {
+      "id": "e4-01",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was sagst du, wenn du etwas nicht verstanden hast?",
+      "options": [
+        "Sorry, could you repeat that, please?",
+        "Be quiet!",
+        "I have finished.",
+        "That’s wrong!"
+      ],
+      "correct": 0,
+      "explanation": "Höflich nachfragen: „Could you repeat that, please?“"
+    },
+    {
+      "id": "e4-02",
+      "difficulty": 1,
+      "type": "translate",
+      "prompt": "Öffnet eure Bücher auf Seite zehn.",
+      "answer": "Open your books on page ten.",
+      "alt": [],
+      "extra": [
+        "at",
+        "book"
+      ]
+    },
+    {
+      "id": "e4-03",
+      "difficulty": 1,
+      "type": "cloze",
+      "text": "Please {{listen}} carefully. Don’t {{talk}} during the test.",
+      "distractors": [
+        "hear",
+        "say"
+      ],
+      "explanation": "listen = zuhören, talk = reden."
+    },
+    {
+      "id": "e4-04",
+      "difficulty": 1,
+      "type": "listen",
+      "text": "Please turn off your phones before the lesson starts.",
+      "options": [
+        "Please turn off your phones before the lesson starts.",
+        "Please turn on your phones before the lesson starts.",
+        "Please turn off your phones after the lesson starts.",
+        "Please turn off your laptops before the lesson starts."
+      ],
+      "correct": 0,
+      "translation": "Bitte schaltet eure Handys aus, bevor der Unterricht beginnt."
+    },
+    {
+      "id": "e4-05",
+      "difficulty": 1,
+      "type": "speak",
+      "text": "Excuse me, can I ask a question?",
+      "translation": "Entschuldigung, darf ich eine Frage stellen?"
+    },
+    {
+      "id": "e4-06",
+      "difficulty": 2,
+      "type": "translate",
+      "prompt": "Ich habe meine Hausaufgaben vergessen.",
+      "answer": "I forgot my homework.",
+      "alt": [
+        "I have forgotten my homework."
+      ],
+      "extra": [
+        "have",
+        "forgotten"
+      ]
+    },
+    {
+      "id": "e4-07",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Schule",
+      "pairs": [
+        {
+          "left": "homework",
+          "right": "Hausaufgaben"
+        },
+        {
+          "left": "exam",
+          "right": "Prüfung"
+        },
+        {
+          "left": "subject",
+          "right": "Fach"
+        },
+        {
+          "left": "teacher",
+          "right": "Lehrer/in"
+        },
+        {
+          "left": "timetable",
+          "right": "Stundenplan"
+        }
+      ]
+    },
+    {
+      "id": "e4-08",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "„Marks“ und „grades“ bedeuten beide „Noten“.",
+      "correct": true,
+      "explanation": "Richtig – im britischen Englisch sagt man oft „marks“, im amerikanischen „grades“."
+    },
+    {
+      "id": "e4-09",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Welcher Satz heißt „Du darfst nicht schummeln“?",
+      "options": [
+        "You mustn’t cheat.",
+        "You don’t have to cheat.",
+        "You shouldn’t have cheat.",
+        "You can’t must cheat."
+      ],
+      "correct": 0,
+      "explanation": "mustn’t = Verbot. „don’t have to“ heißt nur „nicht nötig“."
+    },
+    {
+      "id": "e4-10",
+      "difficulty": 1,
+      "type": "translate",
+      "prompt": "Du solltest jeden Tag lernen.",
+      "answer": "You should study every day.",
+      "alt": [
+        "You should revise every day."
+      ],
+      "extra": [
+        "must",
+        "revise"
+      ]
+    },
+    {
+      "id": "e4-11",
+      "difficulty": 3,
+      "type": "cloze",
+      "text": "In the exam you {{mustn’t}} use your phone. You {{don’t}} have to bring a pen – we have some.",
+      "distractors": [
+        "must",
+        "can"
+      ],
+      "explanation": "mustn’t = Verbot, don’t have to = nicht nötig."
+    },
+    {
+      "id": "e4-12",
+      "difficulty": 1,
+      "type": "listen",
+      "text": "The test starts at ten o’clock, so don’t be late.",
+      "options": [
+        "The test starts at ten o’clock, so don’t be late.",
+        "The test starts at ten o’clock, so don’t be early.",
+        "The test ends at ten o’clock, so don’t be late.",
+        "The test starts at two o’clock, so don’t be late."
+      ],
+      "correct": 0,
+      "translation": "Der Test beginnt um zehn Uhr, also komm nicht zu spät."
+    },
+    {
+      "id": "e4-13",
+      "difficulty": 1,
+      "type": "speak",
+      "text": "I need more time to revise.",
+      "translation": "Ich brauche mehr Zeit zum Lernen."
+    },
+    {
+      "id": "e4-14",
+      "difficulty": 1,
+      "type": "translate",
+      "prompt": "Wann ist die nächste Prüfung?",
+      "answer": "When is the next exam?",
+      "alt": [
+        "When is the next test?"
+      ],
+      "extra": [
+        "where",
+        "test"
+      ]
+    },
+    {
+      "id": "e4-15",
+      "difficulty": 2,
+      "type": "pairs",
+      "question": "Modalverben",
+      "pairs": [
+        {
+          "left": "must",
+          "right": "müssen"
+        },
+        {
+          "left": "mustn’t",
+          "right": "nicht dürfen"
+        },
+        {
+          "left": "don’t have to",
+          "right": "nicht müssen"
+        },
+        {
+          "left": "should",
+          "right": "sollte"
+        },
+        {
+          "left": "can",
+          "right": "können"
+        }
+      ]
+    },
+    {
+      "id": "e4-16",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was heißt „to revise“ vor einer Prüfung?",
+      "options": [
+        "wiederholen / lernen",
+        "bestehen",
+        "durchfallen",
+        "abschreiben"
+      ],
+      "correct": 0,
+      "explanation": "Im britischen Englisch heißt „to revise“ den Stoff wiederholen."
+    },
+    {
+      "id": "e4-17",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Welcher Satz ist richtig?",
+      "options": [
+        "If it rains, we will stay at home.",
+        "If it will rain, we stay at home.",
+        "If it rains, we stayed at home.",
+        "When it rain, we will stay."
+      ],
+      "correct": 0,
+      "explanation": "if + Present Simple, dann will + Grundform."
+    },
+    {
+      "id": "e4-18",
+      "difficulty": 2,
+      "type": "translate",
+      "prompt": "Wenn du lernst, wirst du bestehen.",
+      "answer": "If you study, you will pass.",
+      "alt": [],
+      "extra": [
+        "studied",
+        "won’t"
+      ]
+    },
+    {
+      "id": "e4-19",
+      "difficulty": 1,
+      "type": "cloze",
+      "text": "I study a lot {{because}} I want to pass. It was hard, {{but}} I did it.",
+      "distractors": [
+        "so",
+        "although"
+      ],
+      "explanation": "because = weil (Grund), but = aber (Gegensatz)."
+    },
+    {
+      "id": "e4-20",
+      "difficulty": 2,
+      "type": "listen",
+      "text": "Although it was difficult, I passed the exam.",
+      "options": [
+        "Although it was difficult, I passed the exam.",
+        "Although it was difficult, I failed the exam.",
+        "Because it was difficult, I passed the exam.",
+        "Although it was easy, I passed the exam."
+      ],
+      "correct": 0,
+      "translation": "Obwohl es schwierig war, habe ich die Prüfung bestanden."
+    },
+    {
+      "id": "e4-21",
+      "difficulty": 2,
+      "type": "speak",
+      "text": "If I practise every day, I will improve.",
+      "translation": "Wenn ich jeden Tag übe, werde ich besser."
+    },
+    {
+      "id": "e4-22",
+      "difficulty": 3,
+      "type": "translate",
+      "prompt": "Ich bin müde, weil ich spät ins Bett gegangen bin.",
+      "answer": "I am tired because I went to bed late.",
+      "alt": [],
+      "extra": [
+        "so",
+        "go"
+      ]
+    },
+    {
+      "id": "e4-23",
+      "difficulty": 2,
+      "type": "order",
+      "question": "Bring den Mini-Aufsatz in die richtige Reihenfolge.",
+      "steps": [
+        "I think that homework is useful.",
+        "First, it helps you remember the lesson.",
+        "Second, you learn to work alone.",
+        "However, too much homework is stressful.",
+        "In conclusion, teachers should give a little homework every day."
+      ],
+      "explanation": "Meinung, Grund 1, Grund 2, Gegenargument, Schluss."
+    },
+    {
+      "id": "e4-24",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie sagt man „obwohl“ auf Englisch?",
+      "options": [
+        "although",
+        "because",
+        "so",
+        "but"
+      ],
+      "correct": 0,
+      "explanation": "although = obwohl. „Although it rained, we went for a walk.“"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "e4-l1",
+      "title": "Im Unterricht",
+      "subtitle": "Typische Sätze in der Klasse",
+      "icon": "book-open",
+      "grammar": {
+        "title": "Anweisungen und Nachfragen",
+        "text": "Lehrkräfte geben Anweisungen mit der Grundform: Open your books. Listen carefully. Don’t talk.\nDu kannst höflich nachfragen:\n• Could you repeat that, please?\n• Sorry, I didn’t understand.\n• Can I ask a question?",
+        "examples": [
+          {
+            "en": "Open your books on page ten.",
+            "de": "Öffnet eure Bücher auf Seite zehn."
+          },
+          {
+            "en": "Could you repeat that, please?",
+            "de": "Könnten Sie das bitte wiederholen?"
+          },
+          {
+            "en": "Sorry, I didn’t understand.",
+            "de": "Entschuldigung, ich habe das nicht verstanden."
+          }
+        ]
+      },
+      "items": [
+        "e4-01",
+        "e4-02",
+        "e4-03",
+        "e4-04",
+        "e4-05",
+        "e4-06",
+        "e4-07",
+        "e4-08"
+      ]
+    },
+    {
+      "id": "e4-l2",
+      "title": "Tests & Lernen",
+      "subtitle": "Pflicht, Verbot und Rat",
+      "icon": "pencil",
+      "grammar": {
+        "title": "must, have to, should",
+        "text": "• must / have to = müssen\n• should = sollte (ein Rat)\n• mustn’t = nicht dürfen (Verbot!)\n• don’t have to = nicht müssen (nicht nötig)\nAchtung: „You mustn’t cheat“ (du darfst nicht schummeln) ist etwas ganz anderes als „You don’t have to cheat“.",
+        "examples": [
+          {
+            "en": "You must hand in your homework.",
+            "de": "Du musst deine Hausaufgaben abgeben."
+          },
+          {
+            "en": "You mustn’t use your phone in the exam.",
+            "de": "Du darfst dein Handy in der Prüfung nicht benutzen."
+          },
+          {
+            "en": "You don’t have to wear a uniform.",
+            "de": "Du musst keine Uniform tragen."
+          }
+        ]
+      },
+      "items": [
+        "e4-09",
+        "e4-10",
+        "e4-11",
+        "e4-12",
+        "e4-13",
+        "e4-14",
+        "e4-15",
+        "e4-16"
+      ]
+    },
+    {
+      "id": "e4-l3",
+      "title": "Meinung schreiben",
+      "subtitle": "Gründe und Verbindungswörter",
+      "icon": "type",
+      "grammar": {
+        "title": "if-Sätze und Verbindungswörter",
+        "text": "• if-Satz (Typ 1): if + Present Simple, will + Grundform – If you study, you will pass.\n• because = weil, but = aber, so = also, although = obwohl, however = jedoch\nEin kurzer Text: Meinung → Grund 1 → Grund 2 → Gegenargument → Schluss.",
+        "examples": [
+          {
+            "en": "If it rains, we will stay at home.",
+            "de": "Wenn es regnet, bleiben wir zu Hause."
+          },
+          {
+            "en": "I study a lot because I want to pass.",
+            "de": "Ich lerne viel, weil ich bestehen will."
+          },
+          {
+            "en": "Although it was hard, I did it.",
+            "de": "Obwohl es schwer war, habe ich es geschafft."
+          }
+        ]
+      },
+      "items": [
+        "e4-17",
+        "e4-18",
+        "e4-19",
+        "e4-20",
+        "e4-21",
+        "e4-22",
+        "e4-23",
+        "e4-24"
+      ]
+    }
+  ]
+}

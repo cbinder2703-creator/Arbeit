@@ -15,6 +15,7 @@ import { ProgressBar } from '@/ui/ProgressBar';
 import { ProgressRing } from '@/ui/ProgressRing';
 import { ModeCard } from '@/ui/ModeCard';
 import { BadgeList } from '@/ui/BadgeList';
+import { hasPath, nextLesson, pathProgress } from '@/engine/path';
 
 function Stat({ label, value, sub, color, bar }: { label: string; value: string; sub: string; color: string; bar?: number }) {
   return (
@@ -44,6 +45,9 @@ export function PruefungStart() {
   const defMode = pickDefaultMode(allModes, pr, heuteKap.id);
   const heuteTo = defMode ? playPath(meta.id, defMode.id, heuteKap.id) : `/p/${meta.id}/modi?kapitel=${heuteKap.id}`;
   const modes = allModes.filter((m) => isModeAvailable(m, pr));
+  const path = hasPath(pr);
+  const nextL = path ? nextLesson(pr, fort) : null;
+  const pp = path ? pathProgress(pr, fort) : null;
 
   const countdownLine =
     days === null
@@ -99,6 +103,26 @@ export function PruefungStart() {
           <Stat label="Richtig" value={acc ? `${acc.percent} %` : '–'} sub={acc ? 'letzte 7 Tage' : 'noch nichts gespielt'} color="#22C55E" />
           <Stat label="Fällig" value={String(due)} sub="Wiederholungen" color="#3B82F6" />
         </section>
+
+        {/* Lernpfad: nächste Lektion */}
+        {path && pp && (
+          <section aria-label="Lernpfad">
+            <Link
+              to={nextL ? `/p/${meta.id}/lektion/${nextL.lesson.id}` : `/p/${meta.id}/pfad`}
+              className="flex items-center gap-3 rounded-2xl bg-gradient-to-r from-p to-[var(--p-dark)] p-4 text-white shadow-lg active:scale-[0.99]"
+            >
+              <ProgressRing percent={pp.percent} size={52} color="#FFFFFF" stroke={5} label={`${pp.done}/${pp.total}`} />
+              <div className="min-w-0 flex-1">
+                <div className="text-[11px] font-bold tracking-wider opacity-80">{nextL ? 'WEITER LERNEN' : 'LERNPFAD GESCHAFFT'}</div>
+                <div className="truncate font-display text-lg">{nextL ? `Lektion ${nextL.index + 1}: ${nextL.lesson.title}` : 'Alle Lektionen abgeschlossen'}</div>
+                <div className="text-xs opacity-90">{nextL ? nextL.chapter.title : 'Wiederhole sie jederzeit im Lernpfad'}</div>
+              </div>
+              <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-white text-[var(--p-color)]">
+                <Icon name="play" />
+              </span>
+            </Link>
+          </section>
+        )}
 
         {/* Heute dran */}
         <section aria-label="Heute dran" className="lg:hidden">

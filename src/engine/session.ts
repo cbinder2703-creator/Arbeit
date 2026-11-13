@@ -5,6 +5,7 @@ import type { ChapterRef, GameMode, PlayItem } from '@/modes/types';
 import { isDue } from './leitner';
 import type { PruefungsFortschritt } from '@/store/types';
 import { shuffle } from './shuffle';
+import { tokenize } from './words';
 import type { Rng } from './shuffle';
 
 export type ModeSpec = Pick<
@@ -60,7 +61,8 @@ export function prepareItem(item: ContentItem, chapter: Chapter | undefined, rng
   const ref = chapter ? chapterRef(chapter) : undefined;
   switch (item.type) {
     case 'mc':
-    case 'case': {
+    case 'case':
+    case 'listen': {
       const order = shuffle(
         item.options.map((_, i) => i),
         rng,
@@ -82,7 +84,13 @@ export function prepareItem(item: ContentItem, chapter: Chapter | undefined, rng
       return { ...item, shuffledSteps: s, chapter: ref };
     }
     case 'cloze': {
-      const chips = shuffle([...new Set([...gapsOf(item.text), ...item.distractors])], rng);
+      // jede Lücke bekommt ihr eigenes Wort (auch bei gleichen Wörtern); Ablenker nur, wenn sie nicht schon Lösung sind
+      const gaps = gapsOf(item.text);
+      const chips = shuffle([...gaps, ...[...new Set(item.distractors)].filter((d) => !gaps.includes(d))], rng);
+      return { ...item, chips, chapter: ref };
+    }
+    case 'translate': {
+      const chips = shuffle([...tokenize(item.answer), ...item.extra], rng);
       return { ...item, chips, chapter: ref };
     }
     default:

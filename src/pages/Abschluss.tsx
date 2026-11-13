@@ -17,6 +17,7 @@ import { useProgress } from '@/store/progress';
 import { GRADE_LABEL } from '@/engine/grades';
 import type { PlayItem } from '@/modes/types';
 import { ItemSequence, modeForType } from '@/ui/ItemSequence';
+import { allModes } from '@/modes/registry';
 import { ExamResult } from '@/ui/ExamResult';
 import type { ExamResultData } from '@/ui/ExamResult';
 import { RoundResult } from '@/ui/RoundResult';
@@ -52,7 +53,9 @@ export function Abschluss() {
   const finished = useRef(false);
 
   const start = () => {
-    const picks = pickExamItems(pr, meta.finalExam.questions).filter((x) => modeForType(x.item.type));
+    const picks = pickExamItems(pr, meta.finalExam.questions, Math.random, (type) =>
+      allModes.some((m) => m.supportsExam && m.accepts.includes(type)),
+    ).filter((x) => modeForType(x.item.type));
     fractions.current = {};
     finished.current = false;
     const items = picks.map((x) => prepareItem(x.item, x.chapter, Math.random));

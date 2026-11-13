@@ -8,6 +8,8 @@ import { Profil } from '@/pages/Profil';
 import { Impressum, Datenschutz } from '@/pages/Rechtliches';
 import { NotFound } from '@/pages/NotFound';
 import { Abschluss } from '@/pages/Abschluss';
+import { Pfad } from '@/pages/Pfad';
+import { Lektion } from '@/pages/Lektion';
 import { Karten } from '@/pages/Karten';
 import { Runde } from '@/pages/Runde';
 
@@ -22,6 +24,8 @@ export function AppRoutes() {
       </Route>
       <Route path="p/:pruefungId" element={<PruefungRoute />}>
         <Route index element={<PruefungStart />} />
+        <Route path="pfad" element={<Pfad />} />
+        <Route path="lektion/:lessonId" element={<Lektion />} />
         <Route path="modi" element={<Modi />} />
         <Route path="karten" element={<Karten />} />
         <Route path="abschluss" element={<Abschluss />} />

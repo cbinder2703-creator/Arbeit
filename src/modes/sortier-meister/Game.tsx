@@ -7,6 +7,7 @@ import { partsPoints } from '@/engine/scoring';
 import { itemText } from '@/engine/describe';
 import { ModeFrame } from '@/ui/ModeFrame';
 import { ModeHeader } from '@/ui/ModeHeader';
+import { useFinishLabel } from '@/ui/sequence';
 import { FeedbackSheet } from '@/ui/FeedbackSheet';
 import { ChapterChip } from '@/ui/ChapterChip';
 import { useKeys } from '@/ui/useKeys';
@@ -96,6 +97,7 @@ function CurrentCard({
 }
 
 export default function Game({ items, onAnswer, onFinish, onClose, exam }: ModeProps) {
+  const finishLabel = useFinishLabel();
   const item = items[0];
   if (item.type !== 'sort') throw new Error('Sortier-Meister braucht eine sort-Aufgabe');
   const cards = item.cards; // von der Engine gemischt
@@ -225,7 +227,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, exam }: ModeP
           title={errors === 0 ? 'Alles richtig sortiert!' : `Geschafft – ${errors} ${errors === 1 ? 'Fehler' : 'Fehler'}`}
           points={done.points}
           text={item.explanation}
-          nextLabel="Ergebnis ansehen"
+          nextLabel={finishLabel}
           onNext={() => onFinish({ score: done.total, maxScore: cards.length * 100 })}
         />
       )}

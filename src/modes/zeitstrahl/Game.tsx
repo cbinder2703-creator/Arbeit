@@ -5,6 +5,7 @@ import type { AnswerResult } from '@/engine/scoring';
 import { itemText } from '@/engine/describe';
 import { ModeFrame } from '@/ui/ModeFrame';
 import { ModeHeader } from '@/ui/ModeHeader';
+import { useFinishLabel } from '@/ui/sequence';
 import { FeedbackSheet } from '@/ui/FeedbackSheet';
 import { Button } from '@/ui/Button';
 import { ChapterChip } from '@/ui/ChapterChip';
@@ -103,6 +104,7 @@ const toSteps = (item: ModeProps['items'][number]): Step[] => {
 };
 
 export default function Game({ items, onAnswer, onFinish, onClose, score, exam }: ModeProps) {
+  const finishLabel = useFinishLabel();
   const [idx, setIdx] = useState(0);
   const item = items[idx];
   if (item.type !== 'order') throw new Error('Zeitstrahl braucht order-Aufgaben');
@@ -209,7 +211,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score, exam }
           title={perfect ? 'Reihenfolge stimmt!' : `${right} von ${order.length} an der richtigen Stelle`}
           points={res.points}
           text={item.explanation}
-          nextLabel={idx + 1 >= items.length ? 'Ergebnis ansehen' : 'Weiter'}
+          nextLabel={idx + 1 >= items.length ? finishLabel : 'Weiter'}
           onNext={next}
         />
       )}

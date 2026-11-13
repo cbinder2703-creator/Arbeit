@@ -5,6 +5,7 @@ import { ModeFrame } from '@/ui/ModeFrame';
 import { ModeHeader } from '@/ui/ModeHeader';
 import { Button } from '@/ui/Button';
 import { Icon } from '@/ui/Icon';
+import { SpeakButton } from '@/ui/SpeakButton';
 import { useKeys } from '@/ui/useKeys';
 import { playSound } from '@/ui/sound';
 
@@ -93,7 +94,10 @@ export default function Game({ flashcards = [], onAnswer, onFinish, onClose }: M
           </button>
         </div>
 
-        <div className="mx-auto mt-5 grid w-full max-w-md grid-cols-2 gap-3">
+        <div className="mx-auto mt-3 flex w-full max-w-md justify-center">
+          <SpeakButton text={card.term} label={`„${card.term}“ vorlesen`} />
+        </div>
+        <div className="mx-auto mt-3 grid w-full max-w-md grid-cols-2 gap-3">
           <Button variant="secondary" disabled={!flipped} onClick={() => judge(false)}>
             <Icon name="reset" size={18} /> Nochmal
           </Button>
