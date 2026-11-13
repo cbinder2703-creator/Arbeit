@@ -4,6 +4,7 @@ import type { AnswerResult } from '@/engine/scoring';
 import { COMBO_FROM } from '@/engine/scoring';
 import { ModeFrame } from '@/ui/ModeFrame';
 import { ModeHeader } from '@/ui/ModeHeader';
+import { useFinishLabel } from '@/ui/sequence';
 import { FeedbackSheet } from '@/ui/FeedbackSheet';
 import { Chip } from '@/ui/Chip';
 import { Icon } from '@/ui/Icon';
@@ -13,6 +14,7 @@ import { buildQuestions } from './questions';
 import { MiniChart } from './MiniChart';
 
 export default function Game({ charts, onAnswer, onFinish, onClose, score }: ModeProps) {
+  const finishLabel = useFinishLabel();
   const questions = useMemo(() => buildQuestions(charts, 10), [charts]);
   const [idx, setIdx] = useState(0);
   const [picked, setPicked] = useState<'a' | 'b' | null>(null);
@@ -92,7 +94,7 @@ export default function Game({ charts, onAnswer, onFinish, onClose, score }: Mod
           correct={correct}
           points={res.points}
           text={`${q.a.label}: ${q.a.value}${q.suffix} · ${q.b.label}: ${q.b.value}${q.suffix}`}
-          nextLabel={idx + 1 >= questions.length ? 'Ergebnis ansehen' : 'Weiter'}
+          nextLabel={idx + 1 >= questions.length ? finishLabel : 'Weiter'}
           onNext={next}
         />
       )}

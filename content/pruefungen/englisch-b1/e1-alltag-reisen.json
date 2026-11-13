@@ -1,0 +1,525 @@
+{
+  "id": "e1",
+  "chapter": 1,
+  "title": "Alltag & Reisen",
+  "subtitle": "Bahnhof, Hotel, Restaurant, Weg erfragen, Einkaufen",
+  "pages": "3 Lektionen",
+  "color": "#0EA5E9",
+  "icon": "plane",
+  "flashcards": [
+    {
+      "id": "e1-f01",
+      "term": "platform",
+      "definition": "Bahnsteig, Gleis – „The train leaves from platform 3.“"
+    },
+    {
+      "id": "e1-f02",
+      "term": "delay",
+      "definition": "Verspätung – „There is a delay of ten minutes.“"
+    },
+    {
+      "id": "e1-f03",
+      "term": "luggage / baggage",
+      "definition": "Gepäck – „Where is my luggage?“"
+    },
+    {
+      "id": "e1-f04",
+      "term": "passport",
+      "definition": "Reisepass – „Please show your passport.“"
+    },
+    {
+      "id": "e1-f05",
+      "term": "boarding pass",
+      "definition": "Bordkarte – „Have your boarding pass ready.“"
+    },
+    {
+      "id": "e1-f06",
+      "term": "departure / arrival",
+      "definition": "Abfahrt/Abflug und Ankunft"
+    },
+    {
+      "id": "e1-f07",
+      "term": "return ticket",
+      "definition": "Hin- und Rückfahrkarte – „A return ticket to Bath, please.“"
+    },
+    {
+      "id": "e1-f08",
+      "term": "to book",
+      "definition": "buchen, reservieren – „I’d like to book a table.“"
+    },
+    {
+      "id": "e1-f09",
+      "term": "receipt",
+      "definition": "Quittung, Kassenbon – „Can I have a receipt?“"
+    },
+    {
+      "id": "e1-f10",
+      "term": "tip",
+      "definition": "Trinkgeld – „Is the tip included?“"
+    },
+    {
+      "id": "e1-f11",
+      "term": "double room",
+      "definition": "Doppelzimmer – „A double room for two nights.“"
+    },
+    {
+      "id": "e1-f12",
+      "term": "turn left / turn right",
+      "definition": "links / rechts abbiegen"
+    },
+    {
+      "id": "e1-f13",
+      "term": "opposite",
+      "definition": "gegenüber – „The café is opposite the park.“"
+    },
+    {
+      "id": "e1-f14",
+      "term": "How much is it?",
+      "definition": "Was kostet das? – frag das beim Einkaufen."
+    }
+  ],
+  "items": [
+    {
+      "id": "e1-01",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie sagt man „Verspätung“ auf Englisch?",
+      "options": [
+        "delay",
+        "arrival",
+        "luggage",
+        "passport"
+      ],
+      "correct": 0,
+      "explanation": "delay = Verspätung. „The train has a delay.“"
+    },
+    {
+      "id": "e1-02",
+      "difficulty": 1,
+      "type": "translate",
+      "prompt": "Ich habe ein Ticket gebucht.",
+      "answer": "I have booked a ticket.",
+      "alt": [],
+      "extra": [
+        "was",
+        "has"
+      ]
+    },
+    {
+      "id": "e1-03",
+      "difficulty": 1,
+      "type": "cloze",
+      "text": "{{Have}} you ever {{been}} to London?",
+      "distractors": [
+        "has",
+        "was",
+        "gone"
+      ],
+      "explanation": "Present Perfect: have/has + 3. Form. Die 3. Form von „be“ ist „been“."
+    },
+    {
+      "id": "e1-04",
+      "difficulty": 1,
+      "type": "listen",
+      "text": "The train to Manchester leaves from platform four.",
+      "options": [
+        "The train to Manchester leaves from platform four.",
+        "The train to Manchester leaves from platform five.",
+        "The train from Manchester leaves from platform four.",
+        "The plane to Manchester leaves from gate four."
+      ],
+      "correct": 0,
+      "translation": "Der Zug nach Manchester fährt von Gleis vier ab."
+    },
+    {
+      "id": "e1-05",
+      "difficulty": 1,
+      "type": "speak",
+      "text": "Excuse me, is this the train to Leeds?",
+      "translation": "Entschuldigung, ist das der Zug nach Leeds?"
+    },
+    {
+      "id": "e1-06",
+      "difficulty": 1,
+      "type": "translate",
+      "prompt": "Sie hat den Zug verpasst.",
+      "answer": "She has missed the train.",
+      "alt": [],
+      "extra": [
+        "have",
+        "miss"
+      ]
+    },
+    {
+      "id": "e1-07",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Wort und Bedeutung",
+      "pairs": [
+        {
+          "left": "luggage",
+          "right": "Gepäck"
+        },
+        {
+          "left": "delay",
+          "right": "Verspätung"
+        },
+        {
+          "left": "passport",
+          "right": "Reisepass"
+        },
+        {
+          "left": "boarding pass",
+          "right": "Bordkarte"
+        },
+        {
+          "left": "departure",
+          "right": "Abfahrt / Abflug"
+        }
+      ]
+    },
+    {
+      "id": "e1-08",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Welcher Satz ist richtig?",
+      "options": [
+        "She has missed the bus.",
+        "She have missed the bus.",
+        "She has miss the bus.",
+        "She is missed the bus."
+      ],
+      "correct": 0,
+      "explanation": "Bei she/he/it: has + 3. Form (missed)."
+    },
+    {
+      "id": "e1-09",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was ist die höflichste Bitte im Restaurant?",
+      "options": [
+        "Could I have the menu, please?",
+        "Give me the menu.",
+        "I want menu.",
+        "Menu now!"
+      ],
+      "correct": 0,
+      "explanation": "„Could I … , please?“ ist höflich und freundlich."
+    },
+    {
+      "id": "e1-10",
+      "difficulty": 1,
+      "type": "translate",
+      "prompt": "Ich hätte gern einen Tisch für vier.",
+      "answer": "I’d like a table for four.",
+      "alt": [],
+      "extra": [
+        "want",
+        "would"
+      ]
+    },
+    {
+      "id": "e1-11",
+      "difficulty": 1,
+      "type": "cloze",
+      "text": "Would you like {{some}} water? – Yes, {{please}}.",
+      "distractors": [
+        "any",
+        "thanks"
+      ],
+      "explanation": "In Angeboten und Bitten nutzt man „some“ (nicht „any“)."
+    },
+    {
+      "id": "e1-12",
+      "difficulty": 2,
+      "type": "listen",
+      "text": "I’d like to book a double room for three nights.",
+      "options": [
+        "I’d like to book a double room for three nights.",
+        "I’d like to book a single room for three nights.",
+        "I’d like to book a double room for two nights.",
+        "I’d like to book a double room for three weeks."
+      ],
+      "correct": 0,
+      "translation": "Ich möchte ein Doppelzimmer für drei Nächte buchen."
+    },
+    {
+      "id": "e1-13",
+      "difficulty": 1,
+      "type": "speak",
+      "text": "Could I have the bill, please?",
+      "translation": "Könnte ich bitte die Rechnung haben?"
+    },
+    {
+      "id": "e1-14",
+      "difficulty": 1,
+      "type": "translate",
+      "prompt": "Gibt es hier WLAN?",
+      "answer": "Is there Wi-Fi here?",
+      "alt": [
+        "Do you have Wi-Fi here?"
+      ],
+      "extra": [
+        "Do",
+        "you",
+        "have"
+      ]
+    },
+    {
+      "id": "e1-15",
+      "difficulty": 1,
+      "type": "sort",
+      "question": "Wer sagt das – Gast oder Personal?",
+      "categories": [
+        {
+          "id": "guest",
+          "label": "Gast"
+        },
+        {
+          "id": "staff",
+          "label": "Personal"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Could I have a quiet room?",
+          "category": "guest"
+        },
+        {
+          "text": "Is breakfast included?",
+          "category": "guest"
+        },
+        {
+          "text": "What time is checkout?",
+          "category": "guest"
+        },
+        {
+          "text": "How can I help you?",
+          "category": "staff"
+        },
+        {
+          "text": "Here is your key card.",
+          "category": "staff"
+        },
+        {
+          "text": "Breakfast is from seven to ten.",
+          "category": "staff"
+        }
+      ]
+    },
+    {
+      "id": "e1-16",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was bedeutet „tip“ im Restaurant?",
+      "options": [
+        "Trinkgeld",
+        "Tischnummer",
+        "Vorspeise",
+        "Rechnung"
+      ],
+      "correct": 0,
+      "explanation": "Im Restaurant heißt „tip“ Trinkgeld. Im Alltag kann „tip“ auch „Tipp“ heißen."
+    },
+    {
+      "id": "e1-17",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was heißt „opposite“ in „The bank is opposite the station“?",
+      "options": [
+        "gegenüber",
+        "neben",
+        "hinter",
+        "zwischen"
+      ],
+      "correct": 0,
+      "explanation": "opposite = gegenüber."
+    },
+    {
+      "id": "e1-18",
+      "difficulty": 1,
+      "type": "translate",
+      "prompt": "Gehen Sie geradeaus.",
+      "answer": "Go straight on.",
+      "alt": [
+        "Go straight ahead."
+      ],
+      "extra": [
+        "ahead",
+        "left"
+      ]
+    },
+    {
+      "id": "e1-19",
+      "difficulty": 2,
+      "type": "cloze",
+      "text": "The bank is {{opposite}} the station, {{between}} the café and the hotel.",
+      "distractors": [
+        "behind",
+        "above"
+      ],
+      "explanation": "opposite = gegenüber, between = zwischen."
+    },
+    {
+      "id": "e1-20",
+      "difficulty": 1,
+      "type": "listen",
+      "text": "Turn right at the corner and go past the bank.",
+      "options": [
+        "Turn right at the corner and go past the bank.",
+        "Turn left at the corner and go past the bank.",
+        "Turn right at the corner and go past the school.",
+        "Turn right at the corner and go to the bank."
+      ],
+      "correct": 0,
+      "translation": "Biegen Sie an der Ecke rechts ab und gehen Sie an der Bank vorbei."
+    },
+    {
+      "id": "e1-21",
+      "difficulty": 1,
+      "type": "speak",
+      "text": "How much is this, please?",
+      "translation": "Was kostet das, bitte?"
+    },
+    {
+      "id": "e1-22",
+      "difficulty": 1,
+      "type": "translate",
+      "prompt": "Wie komme ich zum Bahnhof?",
+      "answer": "How do I get to the station?",
+      "alt": [
+        "How can I get to the station?"
+      ],
+      "extra": [
+        "can",
+        "go"
+      ]
+    },
+    {
+      "id": "e1-23",
+      "difficulty": 2,
+      "type": "order",
+      "question": "Bring den Dialog in die richtige Reihenfolge.",
+      "steps": [
+        "Excuse me, where is the post office?",
+        "Go straight on and turn left at the traffic lights.",
+        "Is it far?",
+        "No, it’s about five minutes on foot.",
+        "Thank you very much!"
+      ],
+      "explanation": "So läuft ein typisches Gespräch nach dem Weg."
+    },
+    {
+      "id": "e1-24",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "„Cheap“ bedeutet „teuer“.",
+      "correct": false,
+      "explanation": "Falsch – cheap = billig. Teuer heißt „expensive“."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "e1-l1",
+      "title": "Unterwegs",
+      "subtitle": "Flughafen & Bahn",
+      "icon": "train-front",
+      "grammar": {
+        "title": "Present Perfect: have/has + 3. Form",
+        "text": "Mit dem Present Perfect sagst du, was schon passiert ist und jetzt noch wichtig ist.\nBildung: have/has + 3. Form (Partizip) des Verbs.\n• In Fragen und Verneinungen passt „yet“ (schon/noch): Have you checked in yet?\n• In Aussagen passt „already“ (schon): I have already checked in.\nWichtig: Bei he/she/it heißt es has.",
+        "examples": [
+          {
+            "en": "I have booked a flight.",
+            "de": "Ich habe einen Flug gebucht."
+          },
+          {
+            "en": "She has missed the train.",
+            "de": "Sie hat den Zug verpasst."
+          },
+          {
+            "en": "Have you checked in yet?",
+            "de": "Hast du schon eingecheckt?"
+          }
+        ]
+      },
+      "items": [
+        "e1-01",
+        "e1-02",
+        "e1-03",
+        "e1-04",
+        "e1-05",
+        "e1-06",
+        "e1-07",
+        "e1-08"
+      ]
+    },
+    {
+      "id": "e1-l2",
+      "title": "Hotel & Restaurant",
+      "subtitle": "Höflich bestellen und fragen",
+      "icon": "utensils",
+      "grammar": {
+        "title": "Höfliche Bitten: Could I …? / I’d like …",
+        "text": "Mit „could“ und „would“ klingst du höflich.\n• Could I have the bill, please? (Könnte ich bitte die Rechnung haben?)\n• I’d like a table for two. („I’d like“ = I would like, höflicher als „I want“)\n• Would you like some water? (Möchten Sie etwas Wasser?)\nEin „please“ am Ende macht jede Bitte freundlicher.",
+        "examples": [
+          {
+            "en": "Could I have a room for two nights, please?",
+            "de": "Könnte ich bitte ein Zimmer für zwei Nächte haben?"
+          },
+          {
+            "en": "I’d like the chicken, please.",
+            "de": "Ich hätte gern das Hähnchen."
+          },
+          {
+            "en": "Would you like some water?",
+            "de": "Möchten Sie etwas Wasser?"
+          }
+        ]
+      },
+      "items": [
+        "e1-09",
+        "e1-10",
+        "e1-11",
+        "e1-12",
+        "e1-13",
+        "e1-14",
+        "e1-15",
+        "e1-16"
+      ]
+    },
+    {
+      "id": "e1-l3",
+      "title": "Weg & Einkaufen",
+      "subtitle": "Nach dem Weg fragen",
+      "icon": "map-pin",
+      "grammar": {
+        "title": "Wegbeschreibung: Imperativ und Orte",
+        "text": "Anweisungen gibst du mit der Grundform des Verbs: Turn left. Go straight on. Take the second street on the right.\nOrte beschreiben:\n• next to = neben\n• opposite = gegenüber\n• between = zwischen\n• at the corner = an der Ecke",
+        "examples": [
+          {
+            "en": "Turn left at the traffic lights.",
+            "de": "Biegen Sie an der Ampel links ab."
+          },
+          {
+            "en": "The bank is opposite the station.",
+            "de": "Die Bank ist gegenüber vom Bahnhof."
+          },
+          {
+            "en": "It’s next to the bakery.",
+            "de": "Es ist neben der Bäckerei."
+          }
+        ]
+      },
+      "items": [
+        "e1-17",
+        "e1-18",
+        "e1-19",
+        "e1-20",
+        "e1-21",
+        "e1-22",
+        "e1-23",
+        "e1-24"
+      ]
+    }
+  ]
+}

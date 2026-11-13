@@ -78,6 +78,37 @@ export const clozeSchema = z.object({
   distractors: z.array(z.string().min(1)).default([]),
 });
 
+/** Übersetzen durch Wörter antippen (Satz bauen): `answer` ist die Lösung, `alt` weitere richtige Sätze */
+export const translateSchema = z.object({
+  ...base,
+  type: z.literal('translate'),
+  prompt: z.string().min(1),
+  answer: z.string().min(1),
+  alt: z.array(z.string().min(1)).default([]),
+  /** zusätzliche falsche Wörter in der Wortauswahl */
+  extra: z.array(z.string().min(1)).default([]),
+  /** Sprache des Satzes zum Vorlesen/Anzeigen der Lösung (nur Info) */
+  hint: z.string().optional(),
+});
+
+/** Hören: `text` wird vorgelesen, gewählt wird der gehörte Satz */
+export const listenSchema = z.object({
+  ...base,
+  type: z.literal('listen'),
+  text: z.string().min(1),
+  options: z.array(z.string().min(1)).min(2).max(6),
+  correct: z.number().int().min(0),
+  translation: z.string().optional(),
+});
+
+/** Sprechen: `text` laut nachsprechen */
+export const speakSchema = z.object({
+  ...base,
+  type: z.literal('speak'),
+  text: z.string().min(1),
+  translation: z.string().optional(),
+});
+
 export const itemSchema = z.discriminatedUnion('type', [
   mcSchema,
   truefalseSchema,
@@ -87,6 +118,9 @@ export const itemSchema = z.discriminatedUnion('type', [
   caseSchema,
   spotSchema,
   clozeSchema,
+  translateSchema,
+  listenSchema,
+  speakSchema,
 ]);
 
 export const flashcardSchema = z.object({ id, term: z.string().min(1), definition: z.string().min(1) });
@@ -103,6 +137,24 @@ export const chartSchema = z.object({
 });
 export const chartsSchema = z.record(z.union([chartSchema, z.string()]));
 
+// ---------- Lektionen (Lernpfad) ----------
+export const grammarSchema = z.object({
+  title: z.string().min(1),
+  text: z.string().min(1),
+  examples: z.array(z.object({ en: z.string().min(1), de: z.string().min(1) })).default([]),
+});
+
+export const lessonSchema = z.object({
+  id,
+  title: z.string().min(1),
+  subtitle: z.string().default(''),
+  icon: z.string().default('star'),
+  /** Kurze Erklärung vor der Lektion */
+  grammar: grammarSchema.optional(),
+  /** IDs der Aufgaben dieser Lektion in Reihenfolge */
+  items: z.array(id).min(1),
+});
+
 // ---------- Kapitel ----------
 export const chapterSchema = z.object({
   id,
@@ -116,6 +168,7 @@ export const chapterSchema = z.object({
   items: z.array(itemSchema).default([]),
   charts: chartsSchema.optional(),
   contractChecklist: z.object({ title: z.string(), entries: z.array(z.string()) }).optional(),
+  lessons: z.array(lessonSchema).default([]),
 });
 
 // ---------- Prüfung ----------
@@ -126,6 +179,7 @@ export const badgeConditionSchema = z.discriminatedUnion('kind', [
   z.object({ kind: z.literal('finalGrade'), maxGrade: z.number().int().min(1).max(6) }),
   z.object({ kind: z.literal('level'), level: z.number().int().min(2) }),
   z.object({ kind: z.literal('streak'), days: z.number().int().min(2) }),
+  z.object({ kind: z.literal('lessonsDone'), count: z.number().int().min(1) }),
 ]);
 
 export const badgeSchema = z.object({
@@ -151,6 +205,8 @@ export const pruefungSchema = z.object({
   accent: hexColor,
   icon: z.string().default('book-open'),
   theme: z.string().default('standard'),
+  /** Sprache zum Vorlesen/Sprechen (z. B. Englisch): zeigt 🔊 bei Begriffen und Lösungen */
+  speech: z.object({ lang: z.string().default('en-GB'), rate: z.number().min(0.5).max(1.5).default(0.95) }).optional(),
   chapters: z.array(z.string().endsWith('.json')).min(1),
   modes: z.union([z.literal('auto'), z.array(z.string())]).default('auto'),
   finalExam: z.object({
@@ -169,6 +225,10 @@ export type OrderItem = z.infer<typeof orderSchema>;
 export type CaseItem = z.infer<typeof caseSchema>;
 export type SpotItem = z.infer<typeof spotSchema>;
 export type ClozeItem = z.infer<typeof clozeSchema>;
+export type TranslateItem = z.infer<typeof translateSchema>;
+export type ListenItem = z.infer<typeof listenSchema>;
+export type SpeakItem = z.infer<typeof speakSchema>;
+export type Lesson = z.infer<typeof lessonSchema>;
 export type ContentItem = z.infer<typeof itemSchema>;
 export type ItemType = ContentItem['type'];
 export type Flashcard = z.infer<typeof flashcardSchema>;
@@ -180,4 +240,4 @@ export type Charts = NonNullable<Chapter['charts']>;
 export type Checklist = NonNullable<Chapter['contractChecklist']>;
 export type ChartData = z.infer<typeof chartSchema>;
 
-export const ITEM_TYPES: ItemType[] = ['mc', 'truefalse', 'sort', 'pairs', 'order', 'case', 'spot', 'cloze'];
+export const ITEM_TYPES: ItemType[] = ['mc', 'truefalse', 'sort', 'pairs', 'order', 'case', 'spot', 'cloze', 'translate', 'listen', 'speak'];

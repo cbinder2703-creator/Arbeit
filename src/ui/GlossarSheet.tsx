@@ -4,6 +4,7 @@ import type { GlossaryCard } from '@/engine/glossary';
 import { useOptionalPruefung } from '@/app/pruefungContext';
 import { Icon } from './Icon';
 import { Button } from './Button';
+import { SpeakButton } from './SpeakButton';
 
 function CardView({ c, open }: { c: GlossaryCard; open?: boolean }) {
   return (
@@ -12,7 +13,10 @@ function CardView({ c, open }: { c: GlossaryCard; open?: boolean }) {
         <span className="font-display text-[16px] leading-snug">{c.term}</span>
         <Icon name="chevron-right" size={18} className="shrink-0 text-mute transition group-open:rotate-90" />
       </summary>
-      <p className="px-3.5 pb-3.5 text-[15px] leading-relaxed text-ink/90">{c.definition}</p>
+      <div className="flex items-start gap-2 px-3.5 pb-3.5">
+        <p className="flex-1 text-[15px] leading-relaxed text-ink/90">{c.definition}</p>
+        <SpeakButton text={c.term} label={`„${c.term}“ vorlesen`} />
+      </div>
     </details>
   );
 }

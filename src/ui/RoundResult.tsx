@@ -35,12 +35,17 @@ export function RoundResult({
   onPracticeWrong,
   onBack,
   backLabel = 'Zurück zu den Modi',
+  onNext,
+  nextLabel = 'Weiter',
 }: {
   data: ResultData;
   onAgain: () => void;
   onPracticeWrong?: () => void;
   onBack: () => void;
   backLabel?: string;
+  /** Hauptknopf, z. B. „Nächste Lektion“ */
+  onNext?: () => void;
+  nextLabel?: string;
 }) {
   const { outcome } = data;
   const lvl = levelFromXp(outcome.xpAfter);
@@ -127,7 +132,12 @@ export function RoundResult({
       )}
 
       <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-        <Button onClick={onAgain} className="flex-1">
+        {onNext && (
+          <Button variant="confirm" onClick={onNext} className="flex-1">
+            {nextLabel} <Icon name="chevron-right" size={18} />
+          </Button>
+        )}
+        <Button onClick={onAgain} variant={onNext ? 'secondary' : 'primary'} className="flex-1">
           <Icon name="reset" size={18} /> Nochmal
         </Button>
         {onPracticeWrong && data.wrong.length > 0 && (

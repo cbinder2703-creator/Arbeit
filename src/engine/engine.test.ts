@@ -147,3 +147,32 @@ describe('Statistik', () => {
     expect(heuteDran(p, f, '2026-02-01')).toMatchObject({ chapterId: 'k3', reason: 'faellig', due: 5 });
   });
 });
+
+describe('Sätze aus Wörtern', async () => {
+  const { tokenize, normalizeSentence, matchesAnswer, similarity } = await import('./words');
+  it('tokenize: Satzzeichen am Rand weg, Apostroph bleibt', () => {
+    expect(tokenize('I’ve booked a room, please.')).toEqual(["I've", 'booked', 'a', 'room', 'please']);
+    expect(tokenize('Where is the bus-stop?')).toEqual(['Where', 'is', 'the', 'bus-stop']);
+  });
+  it('Vergleich ohne Groß-/Kleinschreibung und Satzzeichen, mit Alternativen', () => {
+    expect(normalizeSentence('  Could I have the bill, please? ')).toBe('could i have the bill please');
+    expect(matchesAnswer(['could', 'I', 'have', 'the', 'bill', 'please'], 'Could I have the bill, please?')).toBe(true);
+    expect(matchesAnswer('please could I have the bill', 'Could I have the bill, please?', ['Please could I have the bill?'])).toBe(true);
+    expect(matchesAnswer('I could have the bill', 'Could I have the bill, please?')).toBe(false);
+  });
+  it('Ähnlichkeit für Sprechen (Anteil richtiger Wörter in Reihenfolge)', () => {
+    expect(similarity('Nice to meet you', 'nice to meet you')).toBe(1);
+    expect(similarity('Nice to meet you', 'nice to meat you')).toBe(0.75);
+    expect(similarity('Nice to meet you', 'hello')).toBe(0);
+    expect(similarity('', 'x')).toBe(0);
+  });
+});
+
+describe('Lückentext-Chips', () => {
+  it('gleiche Wörter in zwei Lücken bekommen zwei Chips', () => {
+    const it = { id: 'c', type: 'cloze' as const, difficulty: 1, text: 'I look forward {{to}} it and I am used {{to}} it.', distractors: ['at', 'to'] };
+    const x = prepareItem(it, undefined, mulberry32(2)) as { chips: string[] };
+    expect(x.chips.filter((c) => c === 'to')).toHaveLength(2);
+    expect(x.chips).toContain('at');
+  });
+});

@@ -2,6 +2,7 @@
 // Wird vom Loader (Browser) und von scripts/validate-content.ts (Node) benutzt.
 import { chapterSchema, pruefungSchema, ITEM_TYPES } from './schema';
 import type { Chapter, PruefungMeta } from './schema';
+import { tokenize } from '@/engine/words';
 
 export interface Pruefung {
   meta: PruefungMeta;
@@ -91,6 +92,18 @@ export function parsePruefung(
           }
           break;
         }
+        case 'listen':
+          if (it.correct >= it.options.length) errors.push(`${where}: correct=${it.correct} liegt außerhalb der ${it.options.length} Optionen`);
+          if (new Set(it.options).size !== it.options.length) errors.push(`${where}: doppelte Antwortoptionen`);
+          if (!it.options.includes(it.text)) warnings.push(`${where}: der vorgelesene Text steht nicht unter den Optionen`);
+          break;
+        case 'translate':
+          if (tokenize(it.answer).length < 2) errors.push(`${where}: answer braucht mindestens zwei Wörter`);
+          for (const a of it.alt) {
+            const w = [...tokenize(it.answer), ...it.extra].map((x) => x.toLowerCase());
+            for (const t of tokenize(a)) if (!w.includes(t.toLowerCase())) warnings.push(`${where}: alt "${a}" enthält Wort "${t}" nicht in der Wortauswahl`);
+          }
+          break;
         case 'cloze':
           if (gapsOf(it.text).length === 0) errors.push(`${where}: Text enthält keine Lücke {{…}}`);
           break;
@@ -102,6 +115,21 @@ export function parsePruefung(
           break;
       }
     }
+  }
+
+  // Lektionen: Aufgaben müssen existieren, IDs eindeutig
+  const lessonIds = new Set<string>();
+  for (const ch of chapters) {
+    const inLesson = new Set<string>();
+    for (const l of ch.lessons) {
+      if (lessonIds.has(l.id)) errors.push(`${folder}: Lektions-ID "${l.id}" doppelt`);
+      lessonIds.add(l.id);
+      for (const itemId of l.items) {
+        if (!ch.items.some((i) => i.id === itemId)) errors.push(`${folder}/${ch.id}: Lektion "${l.id}" verweist auf unbekannte Aufgabe "${itemId}" (muss im selben Kapitel stehen)`);
+        inLesson.add(itemId);
+      }
+    }
+    if (ch.lessons.length) for (const i of ch.items) if (!inLesson.has(i.id)) warnings.push(`${folder}/${ch.id}: Aufgabe "${i.id}" steckt in keiner Lektion`);
   }
 
   if (allItems.length === 0) errors.push(`${folder}: keine Aufgaben vorhanden`);

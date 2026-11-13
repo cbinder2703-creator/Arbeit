@@ -8,6 +8,7 @@ import { itemText } from '@/engine/describe';
 import { useSettings } from '@/store/settings';
 import { ModeFrame } from '@/ui/ModeFrame';
 import { ModeHeader } from '@/ui/ModeHeader';
+import { useFinishLabel } from '@/ui/sequence';
 import { FeedbackSheet } from '@/ui/FeedbackSheet';
 import { TimerRing } from '@/ui/TimerRing';
 import { ChapterChip } from '@/ui/ChapterChip';
@@ -20,6 +21,7 @@ const BLITZ_MS = 60_000;
 const THRESHOLD = 110;
 
 export default function Game({ items, onAnswer, onFinish, onClose, score }: ModeProps) {
+  const finishLabel = useFinishLabel();
   const blitz = useSettings((s) => s.blitz);
   const reduce = useReducedMotion();
   const [idx, setIdx] = useState(0);
@@ -190,7 +192,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
           points={res.points}
           text={item.explanation ?? `Die Aussage ist ${truth ? 'wahr' : 'falsch'}.`}
           law={item.law}
-          nextLabel={idx + 1 >= items.length ? 'Ergebnis ansehen' : 'Weiter'}
+          nextLabel={idx + 1 >= items.length ? finishLabel : 'Weiter'}
           onNext={next}
         />
       )}

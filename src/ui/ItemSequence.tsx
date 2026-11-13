@@ -4,6 +4,7 @@ import type { PlayItem, GameMode } from '@/modes/types';
 import { usePruefung } from '@/app/pruefungContext';
 import { allModes } from '@/modes/registry';
 import type { AnswerReport, AnswerResult } from '@/engine/scoring';
+import { SequenceContext } from './sequence';
 
 /** Spielmodus, der eine Aufgabe dieses Typs zeigen kann (Abschlussprüfung und „Fehler üben“) */
 export const modeForType = (type: PlayItem['type']): GameMode | undefined =>
@@ -17,6 +18,7 @@ export function ItemSequence({
   onAnswer,
   onDone,
   onClose,
+  lastLabel,
 }: {
   items: PlayItem[];
   exam: boolean;
@@ -24,6 +26,8 @@ export function ItemSequence({
   onAnswer: (r: AnswerReport) => AnswerResult;
   onDone: () => void;
   onClose: () => void;
+  /** Beschriftung nach der letzten Aufgabe (Standard „Ergebnis ansehen“) */
+  lastLabel?: string;
 }) {
   const pr = usePruefung();
   const [idx, setIdx] = useState(0);
@@ -33,6 +37,7 @@ export function ItemSequence({
   const Game = mode.Component;
   return (
     <Suspense fallback={<div className="grid min-h-dvh place-items-center text-mute">Lädt …</div>}>
+      <SequenceContext.Provider value={{ index: idx + 1, total: items.length, lastLabel: idx + 1 >= items.length ? (lastLabel ?? 'Ergebnis ansehen') : 'Weiter' }}>
       <Game
         key={`${idx}-${item.id}`}
         pruefung={pr.meta}
@@ -44,6 +49,7 @@ export function ItemSequence({
         onFinish={() => (idx + 1 >= items.length ? onDone() : setIdx(idx + 1))}
         onClose={onClose}
       />
+      </SequenceContext.Provider>
     </Suspense>
   );
 }

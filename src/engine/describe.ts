@@ -29,6 +29,12 @@ export function describeItem(item: ContentItem): { title: string; answer: string
           .map((l) => `„${l.text}“ → ${l.fix ?? 'Fehler'}`)
           .join(' · '),
       };
+    case 'translate':
+      return { title: `Übersetze: ${item.prompt}`, answer: item.answer };
+    case 'listen':
+      return { title: `Hören: ${item.text}`, answer: item.options[item.correct] };
+    case 'speak':
+      return { title: `Sprechen: ${item.text}`, answer: item.translation ?? item.text };
     case 'cloze': {
       let i = 0;
       const gaps = gapsOf(item.text);
@@ -59,5 +65,11 @@ export function itemText(item: ContentItem): string {
       return [item.title, item.intro, ...item.lines.map((l) => l.text)].join(' \n ');
     case 'cloze':
       return item.text.replace(/\{\{.+?\}\}/g, ' … ');
+    case 'translate':
+      return [item.prompt, item.answer, ...item.extra].join(' \n ');
+    case 'listen':
+      return [item.text, ...item.options].join(' \n ');
+    case 'speak':
+      return [item.text, item.translation ?? ''].join(' \n ');
   }
 }

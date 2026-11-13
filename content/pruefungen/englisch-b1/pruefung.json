@@ -1,0 +1,88 @@
+{
+  "id": "englisch-b1",
+  "title": "Englisch B1 – Alltag, Beruf, Freizeit, Schule",
+  "gameTitle": "English Quest",
+  "tagline": "Sprechen, hören, Sätze bauen – Lektion für Lektion",
+  "subject": "Englisch",
+  "pages": "Eigene Lektionen (B1)",
+  "examDate": null,
+  "color": "#0EA5E9",
+  "accent": "#F472B6",
+  "icon": "languages",
+  "theme": "welle",
+  "speech": {
+    "lang": "en-GB",
+    "rate": 0.95
+  },
+  "chapters": [
+    "e1-alltag-reisen.json",
+    "e2-beruf-ausbildung.json",
+    "e3-freizeit-leute.json",
+    "e4-schule-pruefung.json"
+  ],
+  "modes": "auto",
+  "finalExam": {
+    "title": "Abschlusstest",
+    "questions": 20,
+    "unlockAtPercent": 60
+  },
+  "badges": [
+    {
+      "id": "satz-bauer",
+      "title": "Satzbauer",
+      "rule": "10 Übersetzungen richtig",
+      "condition": {
+        "kind": "typeCorrect",
+        "type": "translate",
+        "count": 10
+      }
+    },
+    {
+      "id": "gutes-ohr",
+      "title": "Gutes Ohr",
+      "rule": "6 Hörverständnis-Aufgaben richtig",
+      "condition": {
+        "kind": "typeCorrect",
+        "type": "listen",
+        "count": 6
+      }
+    },
+    {
+      "id": "sprecher",
+      "title": "Mutiger Sprecher",
+      "rule": "5 Sprech-Aufgaben geschafft",
+      "condition": {
+        "kind": "typeCorrect",
+        "type": "speak",
+        "count": 5
+      }
+    },
+    {
+      "id": "pfad-profi",
+      "title": "Pfad-Profi",
+      "rule": "Alle 12 Lektionen geschafft",
+      "condition": {
+        "kind": "lessonsDone",
+        "count": 12
+      }
+    },
+    {
+      "id": "test-bestanden",
+      "title": "Bestanden!",
+      "rule": "Abschlusstest mit Note 4 oder besser",
+      "condition": {
+        "kind": "finalGrade",
+        "maxGrade": 4
+      }
+    },
+    {
+      "id": "einser",
+      "title": "Einser-Kandidat",
+      "rule": "Abschlusstest mit Note 1",
+      "condition": {
+        "kind": "finalGrade",
+        "maxGrade": 1
+      }
+    }
+  ]
+}

@@ -89,4 +89,6 @@ Auf dem PC zusätzlich Tastatur. Runde endet mit dem gemeinsamen Ergebnisbildsch
 - Wahr oder Falsch? im **Blitz-Modus** (Profil → Einstellungen): 60 Sekunden gesamt, kurzes Aufblitzen statt Sheet.
 - Quiz-Blitz im **Entspannt-Modus**: kein Timer, kein Zeitbonus.
 - In der Abschlussprüfung läuft jede Aufgabe im passenden Modus **ohne Feedback** (Memory als Zuordnungsliste).
+- **Sprach-Modi (nur Prüfungen mit passenden Aufgaben):** *Satz bauen* (Wörter antippen, `translate`), *Hören* (Satz anhören und wählen, `listen`), *Sprechen* (Satz nachsprechen mit Mikrofon nach Zustimmung oder Selbstbewertung, `speak`).
+- **Lernpfad:** Prüfungen mit `lessons` haben den Tab „Pfad“ (Lektionen nacheinander, Grammatik-Tipp, Sterne).
 - **Begriff nachschlagen:** In allen Aufgaben-Modi gibt es oben den Knopf „Begriff?“ (Glühbirne). Er zeigt passende Lernkarten und eine Suche; nicht in der Abschlussprüfung.

@@ -9,6 +9,7 @@ import { Button } from '@/ui/Button';
 import { playPath } from '@/engine/pickMode';
 import { dayString } from '@/engine/dates';
 import { isDue } from '@/engine/leitner';
+import { SpeakButton } from '@/ui/SpeakButton';
 
 /** Route /p/:pruefungId/karten – alle Lernkarten dieser Prüfung zum Nachschlagen und Lernen */
 export function Karten() {
@@ -74,11 +75,12 @@ export function Karten() {
                 const isOpen = open.has(f.id);
                 return (
                   <li key={f.id}>
+                    <div className="relative h-full rounded-2xl bg-card transition hover:bg-card-hi" style={{ borderLeft: `4px solid ${c.color}` }}>
+                    <div className="absolute right-2 top-2 z-10"><SpeakButton text={f.term} label={`„${f.term}“ vorlesen`} className="!px-2.5" /></div>
                     <button
                       onClick={() => toggle(f.id)}
                       aria-expanded={isOpen}
-                      className="tap block h-full w-full rounded-2xl bg-card p-3.5 text-left transition hover:bg-card-hi"
-                      style={{ borderLeft: `4px solid ${c.color}` }}
+                      className="tap block h-full w-full rounded-2xl p-3.5 pr-14 text-left"
                     >
                       <span className="flex items-start justify-between gap-2">
                         <span className="font-display text-[16px] leading-snug">{f.term}</span>
@@ -94,6 +96,7 @@ export function Karten() {
                         <span className="mt-1 block text-xs text-mute">Tippen für die Erklärung</span>
                       )}
                     </button>
+                    </div>
                   </li>
                 );
               })}

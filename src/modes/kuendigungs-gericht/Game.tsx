@@ -6,6 +6,7 @@ import type { AnswerResult } from '@/engine/scoring';
 import { itemText } from '@/engine/describe';
 import { ModeFrame } from '@/ui/ModeFrame';
 import { ModeHeader } from '@/ui/ModeHeader';
+import { useFinishLabel } from '@/ui/sequence';
 import { Button } from '@/ui/Button';
 import { Chip } from '@/ui/Chip';
 import { ChapterChip } from '@/ui/ChapterChip';
@@ -14,6 +15,7 @@ import { useKeys } from '@/ui/useKeys';
 import { playSound } from '@/ui/sound';
 
 export default function Game({ items, onAnswer, onFinish, onClose, score, exam }: ModeProps) {
+  const finishLabel = useFinishLabel();
   const reduce = useReducedMotion();
   const [idx, setIdx] = useState(0);
   const [sel, setSel] = useState<number | null>(null);
@@ -151,7 +153,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score, exam }
               </div>
             )}
             <Button variant="theme" block className="mt-4" onClick={next}>
-              {last ? 'Ergebnis ansehen' : 'Nächster Fall'}
+              {last ? finishLabel : 'Nächster Fall'}
             </Button>
           </div>
         )}

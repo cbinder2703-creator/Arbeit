@@ -4,6 +4,7 @@ import type { AnswerResult } from '@/engine/scoring';
 import { itemText } from '@/engine/describe';
 import { ModeFrame } from '@/ui/ModeFrame';
 import { ModeHeader } from '@/ui/ModeHeader';
+import { useFinishLabel } from '@/ui/sequence';
 import { FeedbackSheet } from '@/ui/FeedbackSheet';
 import { Button } from '@/ui/Button';
 import { ChapterChip } from '@/ui/ChapterChip';
@@ -12,6 +13,7 @@ import { evaluateGaps, groupGaps, parse } from './evaluate';
 import type { Seg } from './evaluate';
 
 export default function Game({ items, onAnswer, onFinish, onClose, score, exam }: ModeProps) {
+  const finishLabel = useFinishLabel();
   const [idx, setIdx] = useState(0);
   const item = items[idx];
   if (item.type !== 'cloze') throw new Error('Lückentext braucht cloze-Aufgaben');
@@ -135,7 +137,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score, exam }
           text={
             (perfect ? '' : `Richtig: ${gaps.map((g) => g.answer).join(' · ')}. `) + (item.explanation ?? '')
           }
-          nextLabel={idx + 1 >= items.length ? 'Ergebnis ansehen' : 'Weiter'}
+          nextLabel={idx + 1 >= items.length ? finishLabel : 'Weiter'}
           onNext={next}
         />
       )}

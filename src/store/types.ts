@@ -5,6 +5,15 @@ export interface DayStats {
   correct: number;
 }
 
+export interface LessonProgress {
+  /** 0 = noch nicht geschafft, 1–3 Sterne */
+  stars: number;
+  /** beste Quote in Prozent */
+  best: number;
+  /** wie oft geschafft */
+  done: number;
+}
+
 /** Fortschritt EINER Prüfung – wird getrennt nach pruefungId gespeichert */
 export interface PruefungsFortschritt {
   xp: number;
@@ -23,6 +32,8 @@ export interface PruefungsFortschritt {
   examAttempts: number;
   rounds: number;
   daily: Record<string, DayStats>;
+  /** Lernpfad: Lektionen nach ID */
+  lessons: Record<string, LessonProgress>;
 }
 
 export const emptyProgress = (): PruefungsFortschritt => ({
@@ -39,4 +50,5 @@ export const emptyProgress = (): PruefungsFortschritt => ({
   examAttempts: 0,
   rounds: 0,
   daily: {},
+  lessons: {},
 });

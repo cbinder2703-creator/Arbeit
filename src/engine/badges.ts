@@ -23,6 +23,8 @@ function met(c: BadgeCondition, p: Pruefung, f: PruefungsFortschritt): boolean {
       return levelFromXp(f.xp).level >= c.level;
     case 'streak':
       return f.bestStreak >= c.days;
+    case 'lessonsDone':
+      return Object.values(f.lessons ?? {}).filter((l) => l.stars > 0).length >= c.count;
   }
 }
 

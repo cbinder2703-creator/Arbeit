@@ -7,6 +7,8 @@ interface SettingsState {
   relaxed: boolean;
   /** Blitz-Modus bei „Wahr oder Falsch?“ (60-Sekunden-Timer) */
   blitz: boolean;
+  /** Mikrofon/Spracherkennung erlaubt (Aufnahme wird vom Browser-Hersteller ausgewertet) */
+  speechConsent: boolean;
   set: (patch: Partial<Omit<SettingsState, 'set'>>) => void;
 }
 
@@ -16,6 +18,7 @@ export const useSettings = create<SettingsState>()(
       sound: true,
       relaxed: false,
       blitz: false,
+      speechConsent: false,
       set: (patch) => set(patch),
     }),
     { name: 'azubiquest-settings', version: 1 },
