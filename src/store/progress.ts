@@ -11,6 +11,7 @@ interface ProgressState {
   globalStreak: number;
   bestGlobalStreak: number;
   globalLastDay: string | null;
+  globalResetAt: number;
 
   recordAnswer: (pid: string, itemId: string, correct: boolean, today?: string) => void;
   addXp: (pid: string, xp: number) => void;
@@ -41,6 +42,7 @@ export const useProgress = create<ProgressState>()(
       globalStreak: 0,
       bestGlobalStreak: 0,
       globalLastDay: null,
+      globalResetAt: 0,
 
       recordAnswer: (pid, itemId, correct, today = dayString()) =>
         set((s) => {
@@ -137,14 +139,18 @@ export const useProgress = create<ProgressState>()(
           };
         }),
 
+      // Zurücksetzen merkt sich den Zeitpunkt, damit andere Geräte (Cloud-Konto) den alten Stand nicht zurückbringen
       resetPruefung: (pid) =>
-        set((s) => {
-          const rest = { ...s.byPruefung };
-          delete rest[pid];
-          return { byPruefung: rest };
-        }),
+        set((s) => ({ byPruefung: { ...s.byPruefung, [pid]: { ...emptyProgress(), resetAt: Date.now() } } })),
 
-      resetAll: () => set({ byPruefung: {}, globalStreak: 0, bestGlobalStreak: 0, globalLastDay: null }),
+      resetAll: () =>
+        set((s) => ({
+          byPruefung: Object.fromEntries(Object.keys(s.byPruefung).map((k) => [k, { ...emptyProgress(), resetAt: Date.now() }])),
+          globalStreak: 0,
+          bestGlobalStreak: 0,
+          globalLastDay: null,
+          globalResetAt: Date.now(),
+        })),
     }),
     {
       name: 'azubiquest-progress',
@@ -159,6 +165,7 @@ export const useProgress = create<ProgressState>()(
         globalStreak: s.globalStreak,
         bestGlobalStreak: s.bestGlobalStreak,
         globalLastDay: s.globalLastDay,
+        globalResetAt: s.globalResetAt,
       }),
     },
   ),

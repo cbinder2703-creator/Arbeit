@@ -136,3 +136,11 @@ Hier steht, was unklar war und wie ich es entschieden habe (statt nachzufragen).
     Funktioniert nicht in jedem Browser (z. B. Firefox) und braucht HTTPS. Nicht Teil des Abschlusstests.
 47. **Abschlusstest Englisch:** wie die Abschlussprüfung, aber ohne Sprech-Aufgaben (kein Feedback-freier Modus); Hören und Satz bauen sind dabei.
 48. **Lückentext:** gleiche Wörter in mehreren Lücken bekommen jeweils einen eigenen Chip.
+
+## Konten (Supabase)
+
+49. **Konten mit Nutzername + Passwort, ohne E-Mail** (Wunsch des Nutzers), **offene Registrierung**. Nutzername → Pseudo-Adresse, dadurch eindeutig und ohne Mailversand (`src/cloud/`, `docs/SUPABASE.md`).
+    Ohne Werte in `src/cloud/config.ts` ist die Funktion aus. Der alte gemeinsame Login (`AZUBI_LOGIN_*`) bleibt als Alternative bestehen; mit Konten ist er nicht nötig.
+50. **Abgleich Gerät ↔ Cloud:** Zusammenführen je Wert (der bessere Stand), Hochladen gebündelt nach 4 s und erst nach dem ersten erfolgreichen Abholen. XP werden bei Parallelnutzung nicht addiert. Zurücksetzen gewinnt per Zeitstempel (`resetAt`).
+51. **Profil:** „Konto“ (Name, Speicherstand, Abmelden, Konto löschen) und „Fortschritt zurücksetzen“ je Prüfung (zweistufig, ohne `window.confirm`). Kein „Passwort vergessen“ (keine E-Mail) – Zurücksetzen nur durch den Betreiber per SQL.
+52. **Datenschutztext** wechselt automatisch auf „Konto“, sobald Cloud aktiv ist. Verantwortlicher/Impressum fehlen weiterhin (auf Wunsch weggelassen) – bei Konten rechtlich heikel, siehe `docs/SUPABASE.md`.

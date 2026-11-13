@@ -9,13 +9,16 @@ import './index.css';
 import { registerSW } from 'virtual:pwa-register';
 import { App } from './app/App';
 import { LoginGate } from './auth/LoginGate';
+import { CloudGate } from './cloud/CloudGate';
 
 registerSW({ immediate: true });
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <LoginGate>
-      <App />
-    </LoginGate>
+    <CloudGate>
+      <LoginGate>
+        <App />
+      </LoginGate>
+    </CloudGate>
   </StrictMode>,
 );
