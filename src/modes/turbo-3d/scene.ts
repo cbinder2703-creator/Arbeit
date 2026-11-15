@@ -1,7 +1,6 @@
 import {
   AmbientLight,
   BoxGeometry,
-  CanvasTexture,
   Color,
   CylinderGeometry,
   DirectionalLight,
@@ -13,69 +12,19 @@ import {
   PerspectiveCamera,
   PlaneGeometry,
   Scene,
-  SRGBColorSpace,
   WebGLRenderer,
   ConeGeometry,
 } from 'three';
 import type { BufferGeometry, Material, Object3D, Texture } from 'three';
 import type { Round } from '@/engine/laneRun';
 import { CHOICE_COLORS, LETTERS } from '@/ui/game/colors';
+import { signTexture } from '@/ui/game3d/webgl';
 
 export const LANE_W = 2.4;
 
-/** Gibt es WebGL überhaupt? (Sehr alte Geräte / abgeschaltete Grafikbeschleunigung: nein) */
-export function webglAvailable(): boolean {
-  try {
-    const c = document.createElement('canvas');
-    return !!(c.getContext('webgl2') || c.getContext('webgl'));
-  } catch {
-    return false;
-  }
-}
+export { webglAvailable } from '@/ui/game3d/webgl';
 
 const laneX = (lane: number, lanes: number) => (lane - (lanes - 1) / 2) * LANE_W;
-
-function wrap(ctx: CanvasRenderingContext2D, text: string, maxW: number, maxLines: number): string[] {
-  const words = text.split(/\s+/);
-  const lines: string[] = [];
-  let cur = '';
-  for (const w of words) {
-    const t = cur ? `${cur} ${w}` : w;
-    if (ctx.measureText(t).width > maxW && cur) {
-      lines.push(cur);
-      cur = w;
-    } else cur = t;
-  }
-  if (cur) lines.push(cur);
-  if (lines.length > maxLines) {
-    const cut = lines.slice(0, maxLines);
-    cut[maxLines - 1] = `${cut[maxLines - 1].replace(/.{0,2}$/, '')}…`;
-    return cut;
-  }
-  return lines;
-}
-
-function signTexture(letter: string, text: string, color: string): CanvasTexture {
-  const c = document.createElement('canvas');
-  c.width = c.height = 256;
-  const g = c.getContext('2d')!;
-  g.fillStyle = color;
-  g.fillRect(0, 0, 256, 256);
-  g.fillStyle = 'rgba(11,16,32,.88)';
-  g.fillRect(8, 8, 240, 240);
-  g.fillStyle = color;
-  g.font = '900 76px Nunito, Inter, sans-serif';
-  g.textAlign = 'center';
-  g.textBaseline = 'middle';
-  g.fillText(letter, 128, 54);
-  g.fillStyle = '#fff';
-  g.font = '700 25px Inter, system-ui, sans-serif';
-  const lines = wrap(g, text, 220, 6);
-  lines.forEach((l, i) => g.fillText(l, 128, 112 + i * 29));
-  const t = new CanvasTexture(c);
-  t.colorSpace = SRGBColorSpace;
-  return t;
-}
 
 /** Die 3D-Szene des Turbo-Rennens: Straße, Auto, Hindernisse, Antwort-Tor. Kein React, keine Spielregeln. */
 export class RaceScene {
