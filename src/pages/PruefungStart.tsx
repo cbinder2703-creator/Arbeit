@@ -76,7 +76,7 @@ export function PruefungStart() {
             </div>
             <h1 className="mt-2 text-4xl leading-tight lg:mt-0 lg:text-5xl">{meta.gameTitle}</h1>
             <p className="mt-2 text-[15px] text-white/90">
-              Prüfung: {meta.title}
+              {meta.subject ? `${meta.subject} · ` : 'Prüfung: '}{meta.title}
               {fort.bestGrade ? ` · Beste Note: ${fort.bestGrade}` : ''}
             </p>
             <p className="mt-0.5 text-sm font-semibold text-white/90">{countdownLine}</p>
