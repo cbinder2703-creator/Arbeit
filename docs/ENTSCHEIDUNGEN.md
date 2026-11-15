@@ -173,3 +173,9 @@ Hier steht, was unklar war und wie ich es entschieden habe (statt nachzufragen).
 66. **Burg-Wacht ist ausbalanciert getestet:** In `defense.test.ts` gewinnt, wer alles richtig macht (40 Zufallspartien), mit zwei Fehlern fast immer, und wer nichts richtig macht, verliert immer.
 67. **Klassenarbeit-Wiederholung (Blatt „Wiederholung KA 26“)** ist Teil von Print-Profi: Kapitel 7 „Klassenarbeit: Wiederholung“ (4 Lektionen zu Aufgabe 1–7) und Kapitel 8 „Dreisatz“ (2 Lektionen). Das Blatt hatte keine Lösungen – alle Lösungen sind aus dem Stoff der übrigen Blätter bzw. gerechnet; sie stehen auch in „Arbeitsblätter prüfen“ (Blatt „Wiederholung für die Klassenarbeit“, Status „Lösung ergänzt“).
 68. **Auf dem Blatt unklar** (siehe `docs/OFFENE-FRAGEN.md`): „DIN4“ wurde als DIN A4 gelesen; die kursive Zierschrift in Aufgabe 1 als Schreibschrift; „Schwarz (400 %)“ als alle vier Druckfarben übereinander. Die zwei „Übung“-Aufgaben im Dreisatz sind eigene Rechenbeispiele in demselben Stil.
+
+## Mehr 3D-Spiele
+
+69. **Gemeinsame 3D-Basis** in `src/ui/game3d/`: `Base3D` (Renderer, Szene, Kamera, Licht, Aufräumen), `useScene3D` (Szene im Host-Element, eigene Spielschleife, WebGL-Fallback), `NoWebGL`, Textur-Helfer für Antwortschilder. Neue 3D-Spiele brauchen nur noch eine Szene-Klasse und die Spielregeln.
+70. **Drei weitere 3D-Spiele:** Elfmeter (Tor-Felder), Raumflug (freie Steuerung in der Ebene, Logik in `src/engine/spaceRun.ts`, Feld-Lage in `src/engine/zones.ts`) und Turmbau. Wie bei Turbo-Rennen gilt: Antworten stehen immer auch als Knöpfe darunter, 3D-Szenen werden nur geladen, wenn das Spiel geöffnet wird.
+71. **Das Tor im Elfmeter ist vergrößert** (9 × 3,2 m statt 7,32 × 2,44 m), damit die Antwort-Felder auf kleinen Bildschirmen gut treffbar sind.

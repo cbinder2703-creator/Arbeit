@@ -109,6 +109,18 @@ Das Tor ist zu, bis alle Monster besiegt sind. Herzen am Wegesrand heilen. Steue
 Tower-Defense: Gegner marschieren in 4 Spuren auf deine Burg (5 Herzen) zu. Jede richtige Antwort gibt einen Baupunkt: Spur antippen (PC: Q W E R) baut oder verstärkt einen Turm (Stufe 1–3).
 Eine falsche Antwort schickt zwei zusätzliche, schnellere Gegner. Nach der letzten Frage geht die Verteidigung weiter, bis kein Gegner mehr da ist.
 
+## 20. Elfmeter 3D ⚽  (`elfmeter-3d`)
+Du stehst am Elfmeterpunkt, im Tor liegen 2–4 Antwort-Felder (A–D). Tippe ein Feld an (oder wähle die Antwort unten, PC: 1–4): Richtig = Torwart springt in die falsche Ecke → Tor. Falsch = er hält.
+Keine Herzen: Alle Fragen werden geschossen, ab 60 % Toren gilt die Runde als gewonnen.
+
+## 21. Raumflug 3D 🛰️  (`raumflug-3d`)
+Frei steuerbares Raumschiff (nicht nur Spuren): Finger oder Maus ziehen, das Schiff folgt; PC: Pfeiltasten oder 1–4. Felsen umfliegen, am Ende durch den Ring mit der richtigen Antwort. Der Ring, dem du am nächsten bist, leuchtet auf und zählt.
+3 Herzen (Fels getroffen oder falscher Ring = −1).
+
+## 22. Turmbau 3D 🧱  (`turm-3d`)
+Richtig = ein neuer Block fällt auf den Turm (jeder 5. ist golden), die Kamera kreist und steigt mit. Falsch = der Turm wackelt, der oberste Block fällt herunter und du verlierst ein Herz.
+Am Ende steht, wie hoch dein Turm ist.
+
 ## Auswahl-Logik
 - Die Modus-Liste einer Prüfung zeigt nur Modi, für die im gewählten Kapitel genug Items vorhanden sind (`minItems`).
 - Die Startseite eines Prüfungs-Spiels schlägt „Heute dran“ vor: das Kapitel mit den meisten fälligen Leitner-Items.
