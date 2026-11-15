@@ -124,6 +124,22 @@ export function PruefungStart() {
           </section>
         )}
 
+        {/* Arbeitsblätter prüfen (nur wenn die Prüfung eine korrektur.json hat) */}
+        {pr.korrektur && (
+          <section aria-label="Arbeitsblätter prüfen">
+            <Link to={`/p/${meta.id}/korrektur`} className="flex items-center gap-3 rounded-2xl border-2 border-sky-400/60 bg-sky-400/10 p-4 active:scale-[0.99]">
+              <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-black/25 text-sky-300">
+                <Icon name="check" size={24} />
+              </span>
+              <div className="min-w-0 flex-1">
+                <div className="font-display text-lg">{pr.korrektur.title}</div>
+                <div className="text-xs text-mute">Deine Antworten geprüft · Fehler, Lücken und richtige Lösungen</div>
+              </div>
+              <Icon name="chevron-right" className="text-mute" />
+            </Link>
+          </section>
+        )}
+
         {/* Heute dran */}
         <section aria-label="Heute dran" className="lg:hidden">
           <Link

@@ -144,3 +144,14 @@ Hier steht, was unklar war und wie ich es entschieden habe (statt nachzufragen).
 50. **Abgleich Gerät ↔ Cloud:** Zusammenführen je Wert (der bessere Stand), Hochladen gebündelt nach 4 s und erst nach dem ersten erfolgreichen Abholen. XP werden bei Parallelnutzung nicht addiert. Zurücksetzen gewinnt per Zeitstempel (`resetAt`).
 51. **Profil:** „Konto“ (Name, Speicherstand, Abmelden, Konto löschen) und „Fortschritt zurücksetzen“ je Prüfung (zweistufig, ohne `window.confirm`). Kein „Passwort vergessen“ (keine E-Mail) – Zurücksetzen nur durch den Betreiber per SQL.
 52. **Datenschutztext** wechselt automatisch auf „Konto“, sobald Cloud aktiv ist. Verantwortlicher/Impressum fehlen weiterhin (auf Wunsch weggelassen) – bei Konten rechtlich heikel, siehe `docs/SUPABASE.md`.
+
+## Print-Profi (LF2)
+
+53. **Eigenes Spiel „Print-Profi“** (`content/pruefungen/lf2-daten-nutzen/`) aus den Arbeitsblättern LF2 (LS1 Steckbrief/DIN, LS2 Schriften, LS3 Licht/Auge/Farbmischung/E-Mail, LS4 Auflösung/Weihnachtskarte).
+    6 Kapitel, 21 Lektionen mit „Kurz erklärt“, 192 Aufgaben, 88 Lernkarten, 7 Abzeichen. Alles in eigenen Worten, keine Scans. Das Spiel hat bewusst **keinen Prüfungstermin** (`examDate: null`) – bitte eintragen, sobald bekannt.
+    Die Lektions-Erklärungen nutzen das Feld `examples` mit `en` = Begriff und `de` = Erklärung (Feldnamen stammen vom Englisch-Spiel).
+54. **Handschriftliche Antworten wurden geprüft, nicht blind übernommen.** Wo die Antwort auf den Blättern falsch oder ungenau war, steht in den Aufgaben die richtige Fassung (z. B. 8 × A4 in A1, black/fett, Grün absorbiert kurz- und langwellig).
+    Die Gegenüberstellung steht in **„Arbeitsblätter prüfen“** (neue optionale Datei `korrektur.json` + Seite `/p/:id/korrektur`; 68 Einträge: 44 richtig, 6 falsch, 5 ungenau, 12 Lösung ergänzt, 1 unsicher).
+55. **Allgemeinwissen als Ergänzung** (steht nicht wörtlich auf den Blättern): Begriffe des Vier-Linien-Systems (Ober-/Mittel-/Unterlänge, Versalhöhe), Hauptaufgaben von Photoshop/Illustrator/InDesign, Schnittmarken und Beschnitt (üblich ca. 3 mm), Punze. Diese Stellen sind in der Korrektur kenntlich gemacht.
+56. **Nicht aufgenommen:** reine Zeichen-/Färbeaufgaben, Aufgaben, die nur mit dem Bild lösbar sind (z. B. Nummern im Augen-Schema, Buchstaben am Muster-wort „Hamburgo“) sowie die Aussage „Workflow = Eingabe und Ausgabe“ (siehe `docs/OFFENE-FRAGEN.md`).
+57. **Neu, allgemein nutzbar:** Hintergrundmuster `raster` (Halbton-Punkte), Icons printer/palette/ruler/sun, Einheit „mm“ bei „Höher oder tiefer?“ (Titel mit „(mm)“), optionale `korrektur.json`.

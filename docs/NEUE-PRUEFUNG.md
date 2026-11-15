@@ -24,6 +24,10 @@ eigenem Fortschritt und eigener Abschlussprüfung. Dafür ist **keine Code-Ände
 - `speak`: `text` zum Nachsprechen, optional `translation`.
 - Vorlesen/Sprechen aktivieren: in `pruefung.json` `"speech": { "lang": "en-GB", "rate": 0.95 }`.
 
+## Arbeitsblätter prüfen (optional)
+Eine Datei `korrektur.json` im Prüfungsordner (nicht in `chapters` auflisten) erzeugt die Seite „Arbeitsblätter prüfen“: `{ "title", "intro", "sheets": [{ "id", "title", "subtitle", "color", "entries": [{ "task", "yours", "status", "correct", "note" }] }] }`.
+`status`: `ok` (stimmt), `fix` (falsch), `partial` (ungenau), `missing` (Antwort fehlte, `yours` = null), `unsure` (nicht sicher).
+
 ## Lernpfad (optional)
 In einer Kapitel-Datei `lessons` anlegen: `{ "id", "title", "subtitle", "icon", "grammar": { "title", "text", "examples": [{ "en", "de" }] }, "items": ["<Aufgaben-IDs>"] }`.
 Lektionen werden nacheinander freigeschaltet. Alle Aufgaben sollten in einer Lektion vorkommen (sonst warnt `validate-content`).

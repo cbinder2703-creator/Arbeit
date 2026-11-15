@@ -40,7 +40,8 @@ export function thresholdFor(ds: ChartData, entries: Entry[]): number {
   return (Math.max(...vals) - Math.min(...vals)) * 0.15;
 }
 
-export const suffixFor = (ds: ChartData): string => (/%/.test(ds.title) ? ' %' : /Stunden/i.test(ds.title) ? ' Std.' : '');
+export const suffixFor = (ds: ChartData): string =>
+  /%/.test(ds.title) ? ' %' : /Stunden/i.test(ds.title) ? ' Std.' : /\(mm\)/.test(ds.title) ? ' mm' : '';
 
 export function buildQuestions(charts: Charts | undefined, count: number, rng: Rng = Math.random): HQuestion[] {
   if (!charts) return [];

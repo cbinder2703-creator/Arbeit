@@ -1,0 +1,480 @@
+{
+  "title": "Arbeitsblätter prüfen",
+  "intro": "Hier steht jede Aufgabe deiner Blätter mit deiner Antwort und der richtigen Lösung. Grün = stimmt · Rot = falsch · Gelb = ungenau · Blau = deine Antwort fehlte, hier ist die Lösung · Grau = nicht sicher. Alles stammt nur aus deinen Blättern. Ich habe Handschrift und Fotos gelesen – prüfe die markierten Stellen kurz im Heft. Zeichenaufgaben konnte ich nicht kontrollieren.",
+  "sheets": [
+    {
+      "id": "ls1",
+      "title": "LS1 Steckbrief & DIN-Formate",
+      "subtitle": "Aufgabenblatt, Fragen 1–5",
+      "color": "#3B82F6",
+      "entries": [
+        {
+          "task": "Vorgaben: 4/0-farbig",
+          "yours": "nur die Vorderseite · 4 Grundfarben: Cyan, Magenta, Yellow, Blau",
+          "status": "fix",
+          "correct": "Die vier Druckfarben sind Cyan, Magenta, Yellow und Black (Schwarz) – nicht Blau. 4/0 heißt: eine Seite vierfarbig bedruckt, die andere unbedruckt.",
+          "note": "Bei Frage 2b hast du selbst „Black“ geschrieben. Falls auf dem Blatt „Blau“ steht: ändern."
+        },
+        {
+          "task": "Vorgaben: offenes Format",
+          "yours": "DIN A4",
+          "status": "ok",
+          "correct": "Offen DIN A4, geschlossen DIN A5 (Tischaufsteller, in der Mitte gefaltet)."
+        },
+        {
+          "task": "1a) 1. Die Angabe 297 × 210 mm meint ein DIN-A4-Hochformat",
+          "yours": "Falsch",
+          "status": "ok",
+          "correct": "Falsch – bei Breite × Höhe ist 297 × 210 mm ein Querformat. Hochformat ist 210 × 297 mm."
+        },
+        {
+          "task": "1a) 2. „Layout“ bedeutet übersetzt „etwas anlegen“",
+          "yours": "Richtig",
+          "status": "ok",
+          "correct": "Richtig – to lay out = anlegen, entwerfen."
+        },
+        {
+          "task": "1a) 3. Das DIN-A4-Format wurde 1982 festgelegt",
+          "yours": "Falsch",
+          "status": "ok",
+          "correct": "Falsch – 1922 (DIN-Norm 476)."
+        },
+        {
+          "task": "1a) 4. Für Postkarten ist das Format 105 × 148 mm festgelegt",
+          "yours": "Richtig",
+          "status": "ok",
+          "correct": "Richtig – das ist DIN A6."
+        },
+        {
+          "task": "1a) 5. Das Ausgangsformat der DIN-Formate ist ca. 1 qm",
+          "yours": "Richtig",
+          "status": "ok",
+          "correct": "Richtig – DIN A0 hat 841 × 1189 mm ≈ 1 m²."
+        },
+        {
+          "task": "1a) 6. Die A-Reihe ist für Geschäftsdrucksachen, die B-Reihe für Umschläge",
+          "yours": "Falsch",
+          "status": "ok",
+          "correct": "Falsch – Umschläge gehören zur C-Reihe, die B-Reihe ist für Ordner und Mappen."
+        },
+        {
+          "task": "1a) 7. Ein DIN A4 passt maximal 6-mal in ein DIN A1",
+          "yours": "Richtig",
+          "status": "fix",
+          "correct": "Falsch. Jedes Format passt zweimal ins nächstgrößere: A1 = 2 × A2 = 4 × A3 = 8 × A4. Es passen also 8 DIN A4 in ein DIN A1.",
+          "note": "Das ist der einzige Fehler in Frage 1a."
+        },
+        {
+          "task": "1b) Fehlende DIN-Formate ergänzen",
+          "yours": null,
+          "status": "missing",
+          "correct": "DIN A3: 297 × 420 mm\nDIN A4: 210 × 297 mm\nDIN A5: 148 × 210 mm\nDIN A6: 105 × 148 mm",
+          "note": "Regel: Die kurze Seite wird zur langen Seite, die lange Seite wird halbiert und abgerundet: 594 → 297 · 841 : 2 = 420,5 → 420 · 297 : 2 = 148,5 → 148."
+        },
+        {
+          "task": "2a) Was bedeutet die Angabe 4/4 farbig?",
+          "yours": "vorne und hinten jeweils 4 farbig",
+          "status": "ok",
+          "correct": "Vorder- und Rückseite sind jeweils vierfarbig bedruckt."
+        },
+        {
+          "task": "2b) Mit wie vielen Farben druckt ihr im Betrieb? Welche?",
+          "yours": "1. Cyan  2. Magenta  3. Yellow  4. Black",
+          "status": "ok",
+          "correct": "Vierfarbdruck: Cyan, Magenta, Yellow, Black (CMYK).",
+          "note": "Die Antwort hängt vom Betrieb ab; Standard ist CMYK."
+        },
+        {
+          "task": "3) Welche Programme kennst du, wofür?",
+          "yours": "Photoshop, InDesign (Layout) (Bilder) · Illustrator, Powerpoint, Excel, Canva (Grafiken)",
+          "status": "partial",
+          "correct": "Photoshop = Bilder bearbeiten (Pixelgrafik) · InDesign = Layout / Seitengestaltung · Illustrator = Grafiken zeichnen (Vektorgrafik). Ergänzend: PowerPoint = Präsentationen, Excel = Tabellen und Diagramme, Canva = Online-Gestaltung.",
+          "note": "Dein Kern stimmt – ordne jedem Programm seine Hauptaufgabe zu."
+        },
+        {
+          "task": "4a) Zu welchem Zahnarzt würdest du gehen?",
+          "yours": "Nr. 5",
+          "status": "ok",
+          "correct": "Es gibt keine feste Lösung, es geht um Lesbarkeit und Wirkung: Eine klare, gut lesbare, seriöse Schrift wie Nr. 5 passt gut. Verschnörkelte oder sehr dünne Schriften sind schwerer lesbar.",
+          "note": "Vergleiche mit deinem Partner und begründe."
+        },
+        {
+          "task": "4b) Was sollte man für eine gute Lesbarkeit beachten?",
+          "yours": "Format (Aufgabenstellung), Schriftart, Schriftgröße, Farben, einheitliche Schriftart, Informationsdichte",
+          "status": "partial",
+          "correct": "Passende Schriftart und Schriftgröße · einheitliche Schrift · Schriftschnitte, die die Lesbarkeit unterstützen · Zeilenabstand mindestens 120 % · guter Kontrast zwischen Schrift und Hintergrund (Farben) · nicht zu viel Information auf einmal.",
+          "note": "Das Format gehört eher zur „Umsetzung der Vorgaben“ als zur Lesbarkeit. Es fehlt der Zeilenabstand (mind. 120 %)."
+        },
+        {
+          "task": "Plakat „So sollte man es nicht machen“",
+          "yours": "gute Lesbarkeit · Kontraste · vor Hintergrund Kontraste",
+          "status": "partial",
+          "correct": "Das Plakat zeigt schlechte Lesbarkeit: Die Schrift hat zu wenig Kontrast zum Hintergrund und geht im unruhigen Hintergrund unter. Besser: klarer Kontrast zwischen Schrift und Hintergrund, ruhiger Hintergrund.",
+          "note": "Du hast aufgeschrieben, was man besser macht – gefragt war, was falsch ist."
+        },
+        {
+          "task": "5) Zusatzaufgabe: Kontrastpaare skizzieren",
+          "yours": null,
+          "status": "missing",
+          "correct": "Schreibe deinen Vor- und Nachnamen viermal: 1. fett / fein (dicke und dünne Schrift) · 2. groß / klein · 3. breit / schmal · 4. sachlich (klare Grotesk) / verspielt (verschnörkelte Schrift).",
+          "note": "Das ist eine eigene Skizze – hier gibt es keine feste Lösung."
+        }
+      ]
+    },
+    {
+      "id": "ls2",
+      "title": "LS2 Schriften",
+      "subtitle": "Gestaltungselement Schrift, Schriftgruppen",
+      "color": "#F97316",
+      "entries": [
+        {
+          "task": "1) Hamburgo: Fachbegriffe E, F, G, H, J, P, Q, R",
+          "yours": "E Versalie · F Hauptstrich · G Haarstrich · H Serife · J Gemeine · P Kehlung · Q Halbserife · R Geschlossene Punze",
+          "status": "ok",
+          "correct": "Passt: Alle 8 Wörter der Wortliste sind genau einmal verwendet. Zur Kontrolle: Versalie = Großbuchstabe, Hauptstrich = Grundstrich, Haarstrich = Haarlinie/Querstrich, Serife = häkchenartiges Ende, Gemeine = Kleinbuchstabe.",
+          "note": "Schon gedruckt waren: I Scheitel, K Bauch, L Überhang, M Offene Punze, N Anstrich/Dachansatz, O Endstrich, S Symmetrieachse. Die Zuordnung P/Q/R habe ich nur über die Wortliste geprüft."
+        },
+        {
+          "task": "2) Vier-Linien-System: einzeichnen und benennen",
+          "yours": null,
+          "status": "missing",
+          "correct": "a) Vier waagerechte Linien: Schriftlinie (Grundlinie, unten – darauf steht „Hamburg“) · Mittellinie (Oberkante von a, m, u, r) · obere Linie für Versalhöhe und Oberlänge (Oberkante von H bzw. b) · Unterlängenlinie (Unterkante des g).\nb) Benennen: Versalhöhe = Höhe des Großbuchstabens H · Oberlänge = Teil des b über der Mittellänge · Mittellänge = Höhe von a, m, u, r · Unterlänge = Teil des g unter der Schriftlinie.",
+          "note": "Bei vielen Schriften ragt die Oberlänge etwas höher als die Versalhöhe."
+        },
+        {
+          "task": "3) Typografische Begriffe verbinden",
+          "yours": "Typografie → Gestaltungsprozess · Gemeine → Kleinbuchstaben · Versalien → Großbuchstaben · Serifen → Häkchenartige Enden",
+          "status": "ok",
+          "correct": "Alle vier Verbindungen stimmen."
+        },
+        {
+          "task": "4) Schriftschnitte: Arial 1–4 und „narrow bold italic“",
+          "yours": "regular/normal · bold/halbfett · kursiv/italic · narrow/schmal · narrow bold italic",
+          "status": "ok",
+          "correct": "Passt zur Wortliste: black/fett – bold/halbfett – kursiv/italic – regular/normal – narrow/schmal – narrow bold italic."
+        },
+        {
+          "task": "4) Schriftschnitte: das letzte, sehr kräftige Arial",
+          "yours": "bold/halbfett",
+          "status": "fix",
+          "correct": "black/fett. Die Wortliste enthält black/fett, und bold/halbfett hast du schon für Beispiel 2 benutzt.",
+          "note": "Prüfe im Heft: Das Beispiel sollte deutlich kräftiger sein als das bold-Beispiel."
+        },
+        {
+          "task": "Schriftgruppen-Tabelle (5 Gruppen)",
+          "yours": "alle Zeilen ausgefüllt",
+          "status": "ok",
+          "correct": "Passt: Grotesk = geometrisch, serifenlos (Arial, Helvetica) · Egyptienne = überdimensionale Serifen (Rockwell) · Antiqua = Serifen als Lesehilfe, sehr gut lesbar (Times, Garamond, Bodoni) · Fraktur = gebrochen, wie mit der Feder geschrieben (Old English, Schwabacher) · Schreibschrift = Handschrift nachempfunden, nur für größere Schriftgrade (Brush Script).",
+          "note": "Deine eigenen Beispiele wie Helvetica, Myriad Pro, Palatino oder Lucida Handwriting passen ebenfalls."
+        }
+      ]
+    },
+    {
+      "id": "ls3a",
+      "title": "LS3 Licht, Auge & Farbsehen",
+      "subtitle": "Infotext Farbensehen und Schemata",
+      "color": "#10B981",
+      "entries": [
+        {
+          "task": "Übung 1: Schema des Sehens",
+          "yours": "L Licht (+Strahlung) · A Auge · S Sehzentrum · 1 Farbreiz · 2 Erregung · 3 Farbempfindung",
+          "status": "ok",
+          "correct": "Alles richtig.",
+          "note": "Schreibweise: Sehzentrum (nicht „Sehzentren“)."
+        },
+        {
+          "task": "Übung 2: Wodurch unterscheiden sich die beiden Wellen?",
+          "yours": "unterschiedliche Wellenlängen und Wellenlängen/Frequenzen",
+          "status": "ok",
+          "correct": "Durch die Wellenlänge: Die obere Welle ist länger (weniger Schwingungen pro Sekunde), die untere kürzer (mehr Schwingungen pro Sekunde = höhere Frequenz).",
+          "note": "Du hast „Wellenlängen“ doppelt geschrieben – einmal Wellenlänge, einmal Frequenz."
+        },
+        {
+          "task": "Übung: Schema der Wellenbereiche beschriften",
+          "yours": null,
+          "status": "missing",
+          "correct": "Unter „Licht“ (400–700 nm): sichtbares Licht · links daneben (kurzwellig): Ultraviolett-Strahlung (UV) · rechts daneben (langwellig): Infrarot (IR, Wärmestrahlung) · UV, IR und alle anderen Bereiche (Gamma, Röntgen, Mikrowellen, Radar …) sind unsichtbar."
+        },
+        {
+          "task": "Auge: Beschriftung 1–6",
+          "yours": "1 Iris · 2 Linse · 3 Netzhaut · 4 Blindenerv · 5 Sehgrube · 6 Sehnerv",
+          "status": "fix",
+          "correct": "Nr. 4 = der blinde Fleck (dort mündet der Sehnerv in die Netzhaut). Einen „Blindenerv“ gibt es nicht. Iris, Linse, Sehgrube und Sehnerv passen.",
+          "note": "Bei Nr. 3 (Netzhaut) bitte kurz im Heft prüfen, ob die 3 auf der lichtempfindlichen Schicht liegt."
+        },
+        {
+          "task": "Netzhaut-Schema",
+          "yours": "Stäbchen = Helligkeitssehen · Zapfen = Farbsehen · 1 Nerven · 2 Netzhaut",
+          "status": "ok",
+          "correct": "Alles richtig."
+        },
+        {
+          "task": "Schema des Farbensehens: Zahlen und Farben",
+          "yours": "400 / 500 / 600 / 700 nm · Blau / Grün / Rot",
+          "status": "ok",
+          "correct": "Blau 400–500 nm, Grün 500–600 nm, Rot 600–700 nm."
+        },
+        {
+          "task": "Schema des Farbensehens, Übung 2–3: Zapfen grau färben, Farbe im Sehzentrum",
+          "yours": null,
+          "status": "missing",
+          "correct": "400–500 nm: nur die B-Zapfen reagieren (R und G grau) → im Sehzentrum Blau · 500–600 nm: nur die G-Zapfen (R und B grau) → Grün · 600–700 nm: nur die R-Zapfen (G und B grau) → Rot."
+        },
+        {
+          "task": "Schema des additiven Farbensehens (5 Felder)",
+          "yours": "Cyan: 400–500 + 500–600 · Gelb: 500–600 + 600–700 · Magenta: 400–500 + 600–700 · Weiß: 400–700, alle Zapfen · Schwarz: kein Licht, keine Zapfen",
+          "status": "ok",
+          "correct": "Alle fünf Felder stimmen."
+        },
+        {
+          "task": "Additive Farbmischung, Übung 1: Farbprojektion mit den richtigen Farben",
+          "yours": null,
+          "status": "missing",
+          "correct": "Überlappungen: Blau + Grün = Cyan · Grün + Rot = Gelb · Blau + Rot = Magenta · Mitte (alle drei) = Weiß."
+        },
+        {
+          "task": "Übung 2: Summe aller Lichtgrundfarben",
+          "yours": "Weiß",
+          "status": "ok",
+          "correct": "Blau + Grün + Rot = Weiß."
+        },
+        {
+          "task": "Übung 3: Ausgangsfarbe der additiven Farbmischung",
+          "yours": "Schwarz",
+          "status": "ok",
+          "correct": "Ohne Licht ist es schwarz – die Lichtfarben werden dazu addiert."
+        },
+        {
+          "task": "Übung 6: Tabelle Farbempfindung und Spektralbereiche",
+          "yours": "Blau, Grün, Rot = Grundfarben · Cyan, Gelb, Magenta = Zweitfarben · Weiß in allen drei Bereichen",
+          "status": "ok",
+          "correct": "Cyan = 400–600 nm, Gelb = 500–700 nm, Magenta = 400–500 + 600–700 nm. Weiß = alle drei Bereiche, Schwarz = keiner.",
+          "note": "Die Überschrift hast du richtig zu „additiven“ verbessert."
+        },
+        {
+          "task": "Fachbegriffe: Additive Farbmischung",
+          "yours": "Mischung von Licht verschiedener Quellen",
+          "status": "partial",
+          "correct": "Mischung von Licht verschiedener Wellenlängen (die Lichtfarben addieren sich, Ausgangsfarbe Schwarz).",
+          "note": "„Quellen“ ist nicht falsch (mehrere Projektoren), aber der Fachbegriff ist Wellenlängen."
+        },
+        {
+          "task": "Fachbegriffe-Tabelle: alle anderen Zeilen",
+          "yours": "Remittieren = zurückwerfen · Absorbieren = verschlucken · sichtbares Licht = 400–700 nm · Infrarot = Wärmestrahlung · UV = Vergilben von Papier · Netzhaut = Augenrückwand · Farbe sehen = Zapfen · Helligkeitssehen = Stäbchen · Blau 400–500 nm · Grün 500–600 nm · Rot 600–700 nm · Grundfarben = RGB",
+          "status": "ok",
+          "correct": "Alles richtig. Zu UV noch: bräunt/verbrennt die Haut, kopiert Druckformen."
+        },
+        {
+          "task": "Fadenzähler: Was siehst du auf dem Handydisplay?",
+          "yours": null,
+          "status": "missing",
+          "correct": "Viele winzige Bildpunkte in Rot, Grün und Blau (RGB). Das Display mischt Licht additiv – aus der Nähe erkennt man die einzelnen Farbpunkte."
+        }
+      ]
+    },
+    {
+      "id": "ls3b",
+      "title": "LS3 Farbe an Gegenständen & Druckfarben",
+      "subtitle": "Remission, subtraktive und autotypische Farbmischung",
+      "color": "#A855F7",
+      "entries": [
+        {
+          "task": "Farbe sehen an Gegenständen: rote Fläche",
+          "yours": "lang remittiert · kurz + mittel absorbiert (klein = blau, mittel = grün, lang = rot)",
+          "status": "ok",
+          "correct": "Rot: langwellig remittiert, kurz- und mittelwellig absorbiert."
+        },
+        {
+          "task": "… gelbe Fläche",
+          "yours": "mittel + lang remittiert · kurz absorbiert",
+          "status": "ok",
+          "correct": "Gelb: mittel- und langwellig remittiert, kurzwellig absorbiert."
+        },
+        {
+          "task": "… grüne Fläche",
+          "yours": "mittel absorbiert · kurz absorbiert · mittel remittiert",
+          "status": "fix",
+          "correct": "Grün: mittelwellige Strahlung wird remittiert; kurz- und langwellige werden absorbiert.",
+          "note": "Du hast „mittel“ doppelt benutzt (absorbiert und remittiert) – bei der ersten Lücke gehört „lang“ hin."
+        },
+        {
+          "task": "Zeichenaufgaben: Strahlen färben und schwärzen",
+          "yours": null,
+          "status": "missing",
+          "correct": "Rot: remittierter Strahl rot, die anderen (blau, grün) schwarz, Sehzentrum rot · Gelb: grüner und roter Strahl bleiben, blauer schwarz, Sehzentrum gelb · Grün: nur der grüne Strahl bleibt, blau und rot schwarz, Sehzentrum grün."
+        },
+        {
+          "task": "Subtraktive Druckfarben: rote Lasurfarbe",
+          "yours": "nur die roten Lichtstrahlen · absorbiert: grün + blau",
+          "status": "ok",
+          "correct": "Rot lässt nur Rot durch; Grün und Blau werden absorbiert."
+        },
+        {
+          "task": "… gelbe Lasurfarbe",
+          "yours": "grün + rot · absorbiert: blau",
+          "status": "ok",
+          "correct": "Gelb lässt Grün + Rot durch, Blau wird absorbiert."
+        },
+        {
+          "task": "… Magenta darunter, Gelb darüber",
+          "yours": "rot · die anderen Lichtanteile absorbiert",
+          "status": "ok",
+          "correct": "Magenta (Blau + Rot) und Gelb (Grün + Rot) haben nur Rot gemeinsam."
+        },
+        {
+          "task": "Cyan und darüber Gelb",
+          "yours": "Grün · die anderen Lichtanteile absorbiert",
+          "status": "ok",
+          "correct": "Cyan (Blau + Grün) und Gelb (Grün + Rot) haben nur Grün gemeinsam."
+        },
+        {
+          "task": "Alle drei Farben der Europäischen Farbskala übereinander",
+          "yours": "Black · weil alle Farben absorbiert werden",
+          "status": "ok",
+          "correct": "Alle Lichtanteile werden absorbiert – es entsteht Schwarz."
+        },
+        {
+          "task": "Gelbe Deckfarbe auf Cyan: Farbeindruck und Begründung",
+          "yours": "Gelb · weil die anderen Farba…",
+          "status": "partial",
+          "correct": "Gelb – weil die Deckfarbe den Untergrund abdeckt: Sie remittiert das Licht schon an ihrer Oberfläche, es kommt gar nicht bis zur Cyan-Schicht.",
+          "note": "Deine Begründung war abgeschnitten – so macht sie Sinn."
+        },
+        {
+          "task": "Weiße Deckfarbe auf grauem Papier",
+          "yours": "Deckfarbe · weiß · weil alle Farben/Lichtanteile remittiert werden",
+          "status": "ok",
+          "correct": "Die Deckfarbe remittiert alle Lichtanteile – das Grau scheint nicht durch."
+        },
+        {
+          "task": "Autotypische Farbmischung: Merksatz",
+          "yours": "subtraktiv + additiv = autotypische Farbmischung",
+          "status": "ok",
+          "correct": "Richtig.",
+          "note": "Schreibweise: subtraktiv."
+        },
+        {
+          "task": "Lupenbild: a, s und der Name des Zusammenspiels",
+          "yours": "a = additive · s = subtraktive · autotypische",
+          "status": "ok",
+          "correct": "a (Punkte nebeneinander) = additive Farbmischung, s (Punkte überlappen) = subtraktive, das Zusammenspiel = autotypische Farbmischung."
+        },
+        {
+          "task": "Cyan und Gelb: welche Lichtanteile werden remittiert?",
+          "yours": "Cyan: Blau und Grün · Gelb: Grün und Rot",
+          "status": "ok",
+          "correct": "Richtig."
+        },
+        {
+          "task": "Gesamtsumme der remittierten Lichtanteile",
+          "yours": "Grün + Gelb + Blau + Rot",
+          "status": "fix",
+          "correct": "Blau + Grün (von Cyan) und Grün + Rot (von Gelb) = Blau + Grün + Grün + Rot.",
+          "note": "„Gelb“ ist kein Lichtanteil – gemeint ist das zweite Grün."
+        },
+        {
+          "task": "Blau + Grün + Rot ergeben den Farbeindruck …, dazu kommt der Farbanteil …",
+          "yours": "weiß · grün",
+          "status": "ok",
+          "correct": "Weiß, dazu zusätzliches Grün."
+        },
+        {
+          "task": "Der entstehende Farbeindruck ist demnach ein …",
+          "yours": null,
+          "status": "missing",
+          "correct": "Helles Grün (Weiß plus zusätzliches Grün)."
+        },
+        {
+          "task": "Dieses Beispiel zeigt die ○ subtraktive ○ additive Farbmischung",
+          "yours": null,
+          "status": "missing",
+          "correct": "Die additive Farbmischung – die Rasterpunkte liegen nebeneinander. (Wo sie sich überlappen, wirkt die subtraktive.)"
+        },
+        {
+          "task": "Seite 13: Überlappung und Rand",
+          "yours": "subtraktive · Grün · hellgrün",
+          "status": "ok",
+          "correct": "Überlappung = subtraktive Mischung = Grün; außen (nebeneinander) = additive Mischung = helles Grün.",
+          "note": "Schreibweise: subtraktive (nicht „substrative“)."
+        },
+        {
+          "task": "Seite 13, Übung 1–3: Zeichnungen ergänzen und colorieren",
+          "yours": null,
+          "status": "missing",
+          "correct": "Texte unter allen vier Zeichnungen ergänzen (siehe oben). In der Lupe einzeichnen: Überlappung von Cyan und Gelb = Grün; daneben Cyan und Gelb nebeneinander.",
+          "note": "Das ist eine Zeichenaufgabe – hier gibt es nur die Regeln."
+        }
+      ]
+    },
+    {
+      "id": "ls4",
+      "title": "LS4 Weihnachtskarte",
+      "subtitle": "Auflösung, Farbtiefe, Technik, Siebdruck",
+      "color": "#14B8A6",
+      "entries": [
+        {
+          "task": "1) Was passt zusammen?",
+          "yours": "RIP e · Laserdrucker a · Recorder c · Tintenstrahl b · Text d",
+          "status": "ok",
+          "correct": "RIP = Raster Image Prozessor, Laserdrucker = Elektrofotografie, Recorder = Belichter, Tintenstrahl = Inkjet, Text = .txt, .doc, .rtf."
+        },
+        {
+          "task": "2) Lückentext Auflösung",
+          "yours": "Auflösung · Scanner · Druckprozess · ppi · 72 ppi · Digitaldruck · 300 dpi · Rasterpunkte · 2,54",
+          "status": "ok",
+          "correct": "Alle 9 Wörter stimmen. Deine Korrekturen bei Monitor (72 ppi) und Standard im Druck (300 dpi) sind richtig."
+        },
+        {
+          "task": "RGB-Bild mit 8 Bit: Anzahl möglicher Farben",
+          "yours": "16.777.216",
+          "status": "ok",
+          "correct": "256 × 256 × 256 = 16.777.216."
+        },
+        {
+          "task": "Übungsfragen 1a) Briefing = Auftragsbesprechung mit dem Kunden",
+          "yours": "Richtig",
+          "status": "ok",
+          "correct": "Richtig."
+        },
+        {
+          "task": "1b) Der Workflow in der Druckvorstufe lässt sich in die Bereiche Eingabe und Ausgabe unterteilen",
+          "yours": "Falsch (Richtig durchgestrichen)",
+          "status": "unsure",
+          "correct": "Wahrscheinlich Falsch: Üblich ist Eingabe – Verarbeitung – Ausgabe (drei Bereiche).",
+          "note": "Auf deinen Blättern steht dazu nichts Genaueres – bitte im Unterricht gegenprüfen."
+        },
+        {
+          "task": "1c) bis 1f)",
+          "yours": "c Richtig · d Falsch · e Falsch („300 dpi Standard“) · f Richtig",
+          "status": "ok",
+          "correct": "c) Server speichern und verwalten alle Produktionsdaten – richtig. d) Auf einen Server können mehrere Personen zugreifen – falsch. e) Offset: Standard sind 300 dpi, nicht 500 – falsch. f) Web: 72 ppi reichen – richtig."
+        },
+        {
+          "task": "2a) Schnittmarken und Beschnitt einzeichnen",
+          "yours": null,
+          "status": "missing",
+          "correct": "Schnittmarken: dünne Linien an den vier Ecken, außerhalb des Endformats – sie zeigen, wo geschnitten wird. Beschnitt: Der rote Balken und alles, was bis zum Rand reicht, muss über die Schnittkante hinaus in den Beschnittbereich laufen (üblich ca. 3 mm).",
+          "note": "Die 3 mm sind der übliche Wert, sie stehen nicht auf deinem Blatt."
+        },
+        {
+          "task": "2b) Was passiert bei fehlerhaftem Beschnitt?",
+          "yours": "Blitzer → Papierweiß erscheint",
+          "status": "ok",
+          "correct": "Richtig – am Rand blitzt das weiße Papier auf."
+        },
+        {
+          "task": "3) Tabelle Pixelgrafik und Vektorgrafik",
+          "yours": "Pixel: fotorealistisch · begrenzt skalierbar, evtl. größerer Speicher · Fotos | Vektor: beliebig skalierbar, geringerer Speicher · nicht fotorealistisch · Diagramme, Logos, Kreatives (Primitive)",
+          "status": "ok",
+          "correct": "Alles richtig."
+        },
+        {
+          "task": "4) Arbeitsschritte in die richtige Reihenfolge (Siebdruck)",
+          "yours": "Texterfassung 1 · Layouterstellung 2 · Korrekturabzüge 3 · Imprimatur 4 · Belichtung der Siebe 5 · Druck 6",
+          "status": "ok",
+          "correct": "Die Reihenfolge stimmt."
+        }
+      ]
+    }
+  ]
+}

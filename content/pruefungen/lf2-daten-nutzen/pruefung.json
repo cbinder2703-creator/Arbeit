@@ -1,0 +1,94 @@
+{
+  "id": "lf2-daten-nutzen",
+  "title": "LF2 – Daten verfahrensspezifisch nutzen",
+  "gameTitle": "Print-Profi",
+  "tagline": "Formate, Schrift, Farbe und Auflösung – Lektion für Lektion",
+  "subject": "Mediengestaltung Digital und Print – LF2",
+  "pages": "LS1 bis LS4",
+  "examDate": null,
+  "color": "#DB2777",
+  "accent": "#22D3EE",
+  "icon": "printer",
+  "theme": "raster",
+  "chapters": [
+    "k1-steckbrief-formate.json",
+    "k2-schriften.json",
+    "k3-licht-auge-sehen.json",
+    "k4-farbmischung.json",
+    "k5-kunden-email.json",
+    "k6-aufloesung-daten.json"
+  ],
+  "modes": "auto",
+  "finalExam": {
+    "title": "Abschlusstest",
+    "questions": 25,
+    "unlockAtPercent": 50
+  },
+  "badges": [
+    {
+      "id": "zuordner",
+      "title": "Zuordnungs-Profi",
+      "rule": "8 Zuordnungs-Aufgaben richtig",
+      "condition": {
+        "kind": "typeCorrect",
+        "type": "pairs",
+        "count": 8
+      }
+    },
+    {
+      "id": "sortierer",
+      "title": "Sortier-Profi",
+      "rule": "6 Sortier-Aufgaben richtig",
+      "condition": {
+        "kind": "typeCorrect",
+        "type": "sort",
+        "count": 6
+      }
+    },
+    {
+      "id": "mail-detektiv",
+      "title": "E-Mail-Detektiv",
+      "rule": "Die E-Mail-Aufgabe fehlerfrei",
+      "condition": {
+        "kind": "allOfType",
+        "type": "spot"
+      }
+    },
+    {
+      "id": "pfad-profi",
+      "title": "Pfad-Profi",
+      "rule": "Alle 21 Lektionen geschafft",
+      "condition": {
+        "kind": "lessonsDone",
+        "count": 21
+      }
+    },
+    {
+      "id": "aufsteiger",
+      "title": "Aufsteiger",
+      "rule": "Level 3 erreicht",
+      "condition": {
+        "kind": "level",
+        "level": 3
+      }
+    },
+    {
+      "id": "test-bestanden",
+      "title": "Bestanden!",
+      "rule": "Abschlusstest mit Note 4 oder besser",
+      "condition": {
+        "kind": "finalGrade",
+        "maxGrade": 4
+      }
+    },
+    {
+      "id": "einser",
+      "title": "Einser-Kandidat",
+      "rule": "Abschlusstest mit Note 1",
+      "condition": {
+        "kind": "finalGrade",
+        "maxGrade": 1
+      }
+    }
+  ]
+}

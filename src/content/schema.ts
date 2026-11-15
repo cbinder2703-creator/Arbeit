@@ -171,6 +171,25 @@ export const chapterSchema = z.object({
   lessons: z.array(lessonSchema).default([]),
 });
 
+// ---------- Arbeitsblatt-Korrektur (optional: korrektur.json im Prüfungsordner) ----------
+export const KORREKTUR_STATUS = ['ok', 'fix', 'partial', 'missing', 'unsure'] as const;
+export const korrekturEntrySchema = z.object({
+  task: z.string().min(1),
+  /** Deine Antwort auf dem Blatt (null = leer gelassen) */
+  yours: z.string().nullable().default(null),
+  /** ok = stimmt · fix = falsch · partial = ungenau · missing = Lösung ergänzt · unsure = nicht sicher */
+  status: z.enum(KORREKTUR_STATUS),
+  correct: z.string().min(1),
+  note: z.string().optional(),
+});
+export const korrekturSchema = z.object({
+  title: z.string().default('Arbeitsblätter prüfen'),
+  intro: z.string().default(''),
+  sheets: z
+    .array(z.object({ id, title: z.string().min(1), subtitle: z.string().default(''), color: hexColor.default('#94A3B8'), entries: z.array(korrekturEntrySchema).min(1) }))
+    .min(1),
+});
+
 // ---------- Prüfung ----------
 export const badgeConditionSchema = z.discriminatedUnion('kind', [
   z.object({ kind: z.literal('typeCorrect'), type: z.string(), count: z.number().int().min(1) }),
@@ -229,6 +248,9 @@ export type TranslateItem = z.infer<typeof translateSchema>;
 export type ListenItem = z.infer<typeof listenSchema>;
 export type SpeakItem = z.infer<typeof speakSchema>;
 export type Lesson = z.infer<typeof lessonSchema>;
+export type Korrektur = z.infer<typeof korrekturSchema>;
+export type KorrekturEntry = z.infer<typeof korrekturEntrySchema>;
+export type KorrekturStatus = (typeof KORREKTUR_STATUS)[number];
 export type ContentItem = z.infer<typeof itemSchema>;
 export type ItemType = ContentItem['type'];
 export type Flashcard = z.infer<typeof flashcardSchema>;

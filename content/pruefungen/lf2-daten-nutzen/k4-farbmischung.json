@@ -1,0 +1,963 @@
+{
+  "id": "k4",
+  "chapter": 4,
+  "title": "Farbmischung",
+  "subtitle": "LS3: Remission, additiv, subtraktiv, autotypisch",
+  "pages": "Arbeitsblätter LS3",
+  "color": "#A855F7",
+  "icon": "palette",
+  "flashcards": [
+    {
+      "id": "k4-f01",
+      "term": "Additive Farbmischung",
+      "definition": "Mischung von Licht verschiedener Wellenlängen (Rot, Grün, Blau). Ausgangsfarbe Schwarz, Summe Weiß – z. B. Monitor, Beamer."
+    },
+    {
+      "id": "k4-f02",
+      "term": "Subtraktive Farbmischung",
+      "definition": "Lasierende Farben wirken wie Filter und absorbieren Lichtanteile. Ausgangsfarbe Papierweiß, Summe Schwarz."
+    },
+    {
+      "id": "k4-f03",
+      "term": "Autotypische Farbmischung",
+      "definition": "Zusammenspiel von subtraktiver (Rasterpunkte überlappen) und additiver (nebeneinander) Farbmischung im Rasterdruck."
+    },
+    {
+      "id": "k4-f04",
+      "term": "Zweitfarben (Sekundärfarben)",
+      "definition": "Additiv: Cyan (Blau + Grün), Gelb (Grün + Rot), Magenta (Blau + Rot)."
+    },
+    {
+      "id": "k4-f05",
+      "term": "Lasurfarben (lasierend)",
+      "definition": "Durchsichtige Druckfarben, die wie Farbfilter wirken."
+    },
+    {
+      "id": "k4-f06",
+      "term": "Deckfarben",
+      "definition": "Druckfarben, die den Untergrund völlig abdecken und das Licht schon an der Oberfläche remittieren."
+    },
+    {
+      "id": "k4-f07",
+      "term": "Europäische Farbskala (Euro-Skala)",
+      "definition": "Die Druckfarben Cyan, Magenta und Gelb (plus Schwarz) des Vierfarbdrucks."
+    },
+    {
+      "id": "k4-f08",
+      "term": "Autotypischer Raster",
+      "definition": "Raster mit unterschiedlich großen Punkten, mit dem Farbplatten aufgerastert werden."
+    },
+    {
+      "id": "k4-f09",
+      "term": "Rasterpunkt",
+      "definition": "Kleiner Farbpunkt im Rasterdruck; die Größe bestimmt die Abstufung vom Papierweiß bis zum Vollton."
+    },
+    {
+      "id": "k4-f10",
+      "term": "Fadenzähler",
+      "definition": "Lupe, mit der man z. B. Rasterpunkte oder die Farbpunkte eines Bildschirms betrachtet."
+    },
+    {
+      "id": "k4-f11",
+      "term": "Spektrum",
+      "definition": "Zerlegung des weißen Lichts im Prisma in 400–700 nm: Blau, Grün, Rot (Magenta fehlt)."
+    },
+    {
+      "id": "k4-f12",
+      "term": "Prisma",
+      "definition": "Glaskörper, der weißes Licht in seine Spektralfarben zerlegt."
+    }
+  ],
+  "items": [
+    {
+      "id": "k4-001",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Eine Fläche erscheint rot. Welche Strahlung wird remittiert?",
+      "options": [
+        "Die langwellige",
+        "Die kurzwellige",
+        "Die mittelwellige",
+        "Alle"
+      ],
+      "correct": 0,
+      "explanation": "Rot = langwelliges Licht wird remittiert, kurz- und mittelwelliges absorbiert."
+    },
+    {
+      "id": "k4-002",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Eine Fläche erscheint gelb. Was wird remittiert?",
+      "options": [
+        "Mittel- und langwelliges Licht",
+        "Nur kurzwelliges Licht",
+        "Nur langwelliges Licht",
+        "Kurz- und langwelliges Licht"
+      ],
+      "correct": 0,
+      "explanation": "Gelb = Grün- und Rotanteil (mittel + lang) werden remittiert, Blau (kurz) wird absorbiert."
+    },
+    {
+      "id": "k4-003",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Eine Fläche erscheint grün. Was wird absorbiert?",
+      "options": [
+        "Kurz- und langwelliges Licht",
+        "Nur mittelwelliges Licht",
+        "Nur kurzwelliges Licht",
+        "Nichts"
+      ],
+      "correct": 0,
+      "explanation": "Grün = nur mittelwelliges Licht wird remittiert, kurz- und langwelliges absorbiert."
+    },
+    {
+      "id": "k4-004",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Eine Fläche erscheint blau. Was wird remittiert?",
+      "options": [
+        "Die kurzwellige Strahlung",
+        "Die langwellige Strahlung",
+        "Die mittelwellige Strahlung",
+        "Keine"
+      ],
+      "correct": 0,
+      "explanation": "Blau = kurzwelliges Licht."
+    },
+    {
+      "id": "k4-005",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Wellenlänge und Farbeindruck",
+      "pairs": [
+        {
+          "left": "Kurzwellig remittiert",
+          "right": "Blau"
+        },
+        {
+          "left": "Mittelwellig remittiert",
+          "right": "Grün"
+        },
+        {
+          "left": "Langwellig remittiert",
+          "right": "Rot"
+        },
+        {
+          "left": "Alles remittiert",
+          "right": "Weiß"
+        },
+        {
+          "left": "Alles absorbiert",
+          "right": "Schwarz"
+        }
+      ]
+    },
+    {
+      "id": "k4-006",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Der absorbierte Lichtanteil wird am Gegenstand in Wärme umgewandelt.",
+      "correct": true,
+      "explanation": "Richtig – deshalb wird ein schwarzer Gegenstand in der Sonne wärmer als ein weißer."
+    },
+    {
+      "id": "k4-007",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wann erscheint eine Fläche schwarz?",
+      "options": [
+        "Wenn alle Lichtanteile absorbiert werden",
+        "Wenn alle Lichtanteile remittiert werden",
+        "Wenn nur Blau absorbiert wird",
+        "Wenn nur Rot remittiert wird"
+      ],
+      "correct": 0,
+      "explanation": "Schwarz = alles wird absorbiert, nichts gelangt ins Auge."
+    },
+    {
+      "id": "k4-008",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wann erscheint eine Fläche weiß?",
+      "options": [
+        "Wenn alle Lichtanteile remittiert werden",
+        "Wenn alle Lichtanteile absorbiert werden",
+        "Wenn nur Grün remittiert wird",
+        "Wenn Rot und Blau absorbiert werden"
+      ],
+      "correct": 0,
+      "explanation": "Weiß = alle Lichtanteile (Blau, Grün, Rot) werden zurückgeworfen."
+    },
+    {
+      "id": "k4-009",
+      "difficulty": 1,
+      "type": "cloze",
+      "text": "Eine rote Fläche {{remittiert}} langwelliges Licht und {{absorbiert}} das kurz- und mittelwellige Licht.",
+      "distractors": [
+        "verschluckt nicht",
+        "streut"
+      ],
+      "explanation": "Remittiert = zurückgeworfen, absorbiert = verschluckt."
+    },
+    {
+      "id": "k4-010",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Lichtfarben addieren",
+      "pairs": [
+        {
+          "left": "Blau + Grün",
+          "right": "Cyan"
+        },
+        {
+          "left": "Grün + Rot",
+          "right": "Gelb"
+        },
+        {
+          "left": "Blau + Rot",
+          "right": "Magenta"
+        },
+        {
+          "left": "Blau + Grün + Rot",
+          "right": "Weiß"
+        },
+        {
+          "left": "Kein Licht",
+          "right": "Schwarz"
+        }
+      ]
+    },
+    {
+      "id": "k4-011",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Farbe ergibt die Summe aller Lichtgrundfarben?",
+      "options": [
+        "Weiß",
+        "Schwarz",
+        "Grau",
+        "Gelb"
+      ],
+      "correct": 0,
+      "explanation": "Blau + Grün + Rot = Weiß."
+    },
+    {
+      "id": "k4-012",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Auf welcher Ausgangsfarbe baut die additive Farbmischung auf?",
+      "options": [
+        "Schwarz",
+        "Weiß",
+        "Grau",
+        "Rot"
+      ],
+      "correct": 0,
+      "explanation": "Ohne Licht ist es schwarz – die Lichtfarben werden dazu addiert."
+    },
+    {
+      "id": "k4-013",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche sind die Grundfarben der additiven Farbmischung?",
+      "options": [
+        "Rot, Grün, Blau",
+        "Cyan, Magenta, Gelb",
+        "Rot, Gelb, Blau",
+        "Schwarz, Weiß, Grau"
+      ],
+      "correct": 0,
+      "explanation": "RGB – Rot, Grün, Blau."
+    },
+    {
+      "id": "k4-014",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Welche Wellenlängen müssen zusammen vorhanden sein, damit wir Gelb sehen?",
+      "options": [
+        "500–600 nm und 600–700 nm",
+        "400–500 nm und 500–600 nm",
+        "400–500 nm und 600–700 nm",
+        "Nur 600–700 nm"
+      ],
+      "correct": 0,
+      "explanation": "Gelb = Grün (500–600) + Rot (600–700)."
+    },
+    {
+      "id": "k4-015",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was sieht man unter der Lupe (Fadenzähler) auf einem Handy-Display?",
+      "options": [
+        "Rote, grüne und blaue Bildpunkte",
+        "Cyan-, Magenta- und Gelb-Raster",
+        "Nur schwarze Punkte",
+        "Gar keine Punkte"
+      ],
+      "correct": 0,
+      "explanation": "Bildschirme mischen Licht additiv – mit einer Lupe sind die RGB-Punkte zu erkennen."
+    },
+    {
+      "id": "k4-016",
+      "difficulty": 2,
+      "type": "truefalse",
+      "statement": "Magenta kommt im Spektrum des Prismas vor.",
+      "correct": false,
+      "explanation": "Falsch – Magenta fehlt im Spektrum, es entsteht nur durch Addition von Blau und Rot."
+    },
+    {
+      "id": "k4-017",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Farbbildschirme und Beamer arbeiten mit der additiven Farbmischung.",
+      "correct": true,
+      "explanation": "Richtig – sie mischen Licht in Rot, Grün und Blau."
+    },
+    {
+      "id": "k4-018",
+      "difficulty": 1,
+      "type": "cloze",
+      "text": "Rot, Grün und Blau sind die {{Grundfarben}} der {{additiven}} Farbmischung. Zusammen ergeben sie {{Weiß}}.",
+      "distractors": [
+        "subtraktiven",
+        "Schwarz",
+        "Zweitfarben"
+      ],
+      "explanation": "RGB – additive Farbmischung – Summe = Weiß."
+    },
+    {
+      "id": "k4-019",
+      "difficulty": 2,
+      "type": "pairs",
+      "question": "Spektralbereich und Farbempfindung",
+      "pairs": [
+        {
+          "left": "400–500 nm",
+          "right": "Blau"
+        },
+        {
+          "left": "500–600 nm",
+          "right": "Grün"
+        },
+        {
+          "left": "600–700 nm",
+          "right": "Rot"
+        },
+        {
+          "left": "400–600 nm",
+          "right": "Cyan"
+        },
+        {
+          "left": "500–700 nm",
+          "right": "Gelb"
+        }
+      ]
+    },
+    {
+      "id": "k4-020",
+      "difficulty": 1,
+      "type": "sort",
+      "question": "Grundfarbe oder Zweitfarbe der additiven Farbmischung?",
+      "categories": [
+        {
+          "id": "g",
+          "label": "Grundfarbe"
+        },
+        {
+          "id": "z",
+          "label": "Zweitfarbe"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Blau",
+          "category": "g"
+        },
+        {
+          "text": "Grün",
+          "category": "g"
+        },
+        {
+          "text": "Rot",
+          "category": "g"
+        },
+        {
+          "text": "Cyan",
+          "category": "z"
+        },
+        {
+          "text": "Gelb",
+          "category": "z"
+        },
+        {
+          "text": "Magenta",
+          "category": "z"
+        }
+      ]
+    },
+    {
+      "id": "k4-021",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Welche Zapfen werden bei Gelb gereizt?",
+      "options": [
+        "Die G- und R-Zapfen",
+        "Die B- und G-Zapfen",
+        "Die B- und R-Zapfen",
+        "Alle drei"
+      ],
+      "correct": 0,
+      "explanation": "Gelb = Grün + Rot."
+    },
+    {
+      "id": "k4-022",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Welche Zapfen werden bei Magenta gereizt?",
+      "options": [
+        "Die B- und R-Zapfen",
+        "Die B- und G-Zapfen",
+        "Die G- und R-Zapfen",
+        "Nur die R-Zapfen"
+      ],
+      "correct": 0,
+      "explanation": "Magenta = Blau + Rot."
+    },
+    {
+      "id": "k4-023",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was sehen wir, wenn alle drei Zapfenarten gereizt werden?",
+      "options": [
+        "Weiß",
+        "Schwarz",
+        "Grau",
+        "Gelb"
+      ],
+      "correct": 0,
+      "explanation": "Alle Wellenlängen von 400 bis 700 nm vorhanden = Weiß."
+    },
+    {
+      "id": "k4-024",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was sehen wir, wenn keine Zapfen gereizt werden?",
+      "options": [
+        "Schwarz",
+        "Weiß",
+        "Grau",
+        "Blau"
+      ],
+      "correct": 0,
+      "explanation": "Kein sichtbares Licht = Schwarz."
+    },
+    {
+      "id": "k4-025",
+      "difficulty": 2,
+      "type": "truefalse",
+      "statement": "Cyan entsteht, wenn die Rot- und Blau-Zapfen gleichzeitig gereizt werden.",
+      "correct": false,
+      "explanation": "Falsch – Cyan entsteht aus Blau und Grün. Rot + Blau ergibt Magenta."
+    },
+    {
+      "id": "k4-026",
+      "difficulty": 2,
+      "type": "cloze",
+      "text": "Ist Licht von 400 bis 500 nm und von 600 bis 700 nm vorhanden, sehen wir {{Magenta}}.",
+      "distractors": [
+        "Cyan",
+        "Gelb"
+      ],
+      "explanation": "Blau (400–500) + Rot (600–700) = Magenta."
+    },
+    {
+      "id": "k4-027",
+      "difficulty": 2,
+      "type": "pairs",
+      "question": "Was lässt die Druckfarbe durch?",
+      "pairs": [
+        {
+          "left": "Cyan",
+          "right": "Blau und Grün"
+        },
+        {
+          "left": "Gelb",
+          "right": "Grün und Rot"
+        },
+        {
+          "left": "Magenta",
+          "right": "Blau und Rot"
+        },
+        {
+          "left": "Rote Lasurfarbe",
+          "right": "Nur Rot"
+        },
+        {
+          "left": "Deckfarbe",
+          "right": "Nichts – sie deckt ab"
+        }
+      ]
+    },
+    {
+      "id": "k4-028",
+      "difficulty": 2,
+      "type": "pairs",
+      "question": "Druckfarben übereinander",
+      "pairs": [
+        {
+          "left": "Cyan + Gelb",
+          "right": "Grün"
+        },
+        {
+          "left": "Magenta + Gelb",
+          "right": "Rot"
+        },
+        {
+          "left": "Cyan + Magenta",
+          "right": "Blau"
+        },
+        {
+          "left": "Cyan + Magenta + Gelb",
+          "right": "Schwarz"
+        }
+      ]
+    },
+    {
+      "id": "k4-029",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Weißes Papier ist mit Cyan und darüber mit Gelb bedruckt. Was wird nur noch remittiert?",
+      "options": [
+        "Grün",
+        "Rot",
+        "Blau",
+        "Weiß"
+      ],
+      "correct": 0,
+      "explanation": "Cyan lässt Blau + Grün durch, Gelb lässt Grün + Rot durch – gemeinsam bleibt nur Grün."
+    },
+    {
+      "id": "k4-030",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Weißes Papier ist mit Magenta und Gelb bedruckt. Was wird nur noch remittiert?",
+      "options": [
+        "Rot",
+        "Grün",
+        "Blau",
+        "Cyan"
+      ],
+      "correct": 0,
+      "explanation": "Magenta (Blau + Rot) und Gelb (Grün + Rot) haben nur Rot gemeinsam."
+    },
+    {
+      "id": "k4-031",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Weißes Papier ist übereinander mit allen drei Farben der Europäischen Farbskala bedruckt. Der Farbeindruck ist …",
+      "options": [
+        "Schwarz, weil alle Farben absorbiert werden",
+        "Weiß, weil alles remittiert wird",
+        "Grau, weil nichts passiert",
+        "Rot, weil Rot übrig bleibt"
+      ],
+      "correct": 0,
+      "explanation": "Alle Lichtanteile werden absorbiert – es entsteht Schwarz."
+    },
+    {
+      "id": "k4-032",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Lichtanteile absorbiert eine rote Lasurfarbe?",
+      "options": [
+        "Grün und Blau",
+        "Nur Rot",
+        "Nur Blau",
+        "Keine"
+      ],
+      "correct": 0,
+      "explanation": "Rot lässt nur rote Strahlen durch, Grün und Blau werden absorbiert."
+    },
+    {
+      "id": "k4-033",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Auf graues Papier wird weiße Deckfarbe gedruckt. Welcher Farbeindruck entsteht?",
+      "options": [
+        "Weiß, weil alle Lichtanteile remittiert werden",
+        "Grau, weil das Papier durchscheint",
+        "Schwarz",
+        "Gelb"
+      ],
+      "correct": 0,
+      "explanation": "Die Deckfarbe remittiert alles schon an der Oberfläche."
+    },
+    {
+      "id": "k4-034",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Gelbe Deckfarbe liegt auf Cyan. Welcher Farbeindruck entsteht?",
+      "options": [
+        "Gelb, weil die Deckfarbe die Farbe darunter abdeckt",
+        "Grün, weil Cyan + Gelb gemischt wird",
+        "Cyan",
+        "Schwarz"
+      ],
+      "correct": 0,
+      "explanation": "Deckfarben lassen das Licht nicht bis zur darunterliegenden Farbe."
+    },
+    {
+      "id": "k4-035",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Lasierende Druckfarben sind durchsichtig und wirken wie Farbfilter.",
+      "correct": true,
+      "explanation": "Richtig – deshalb gilt die subtraktive Farbmischung."
+    },
+    {
+      "id": "k4-036",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Bei Deckfarben dringt das Licht bis zum Papier durch.",
+      "correct": false,
+      "explanation": "Falsch – Deckfarben remittieren das Licht schon an ihrer Oberfläche."
+    },
+    {
+      "id": "k4-037",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie heißt das Zusammenspiel von subtraktiver und additiver Farbmischung im Rasterdruck?",
+      "options": [
+        "Autotypische Farbmischung",
+        "Additive Farbmischung",
+        "Lasierende Farbmischung",
+        "Spektrale Farbmischung"
+      ],
+      "correct": 0,
+      "explanation": "Autotypische Farbmischung = additiv + subtraktiv."
+    },
+    {
+      "id": "k4-038",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wo wirkt im Rasterdruck die subtraktive Farbmischung?",
+      "options": [
+        "Wo sich die Rasterpunkte überlappen",
+        "Wo die Rasterpunkte nebeneinander liegen",
+        "Nur im Schwarz",
+        "Nur auf dem Bildschirm"
+      ],
+      "correct": 0,
+      "explanation": "Wo sich Druckfarben überdecken, wirkt die subtraktive Mischung."
+    },
+    {
+      "id": "k4-039",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Wo wirkt die additive Farbmischung im Rasterdruck?",
+      "options": [
+        "Wo die Rasterpunkte nebeneinander liegen (und klein genug sind)",
+        "Wo sich die Rasterpunkte überlappen",
+        "Im Papierweiß",
+        "Nur bei Deckfarben"
+      ],
+      "correct": 0,
+      "explanation": "Nebeneinanderliegende Punkte mischen sich im Auge additiv."
+    },
+    {
+      "id": "k4-040",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Anteile remittiert ein Cyan-Rasterpunkt?",
+      "options": [
+        "Blau und Grün",
+        "Grün und Rot",
+        "Blau und Rot",
+        "Nur Rot"
+      ],
+      "correct": 0,
+      "explanation": "Cyan lässt Blau + Grün durch."
+    },
+    {
+      "id": "k4-041",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Anteile remittiert ein gelber Rasterpunkt?",
+      "options": [
+        "Grün und Rot",
+        "Blau und Grün",
+        "Blau und Rot",
+        "Nur Blau"
+      ],
+      "correct": 0,
+      "explanation": "Gelb lässt Grün + Rot durch."
+    },
+    {
+      "id": "k4-042",
+      "difficulty": 3,
+      "type": "mc",
+      "question": "Cyan- und Gelb-Rasterpunkte liegen nebeneinander. Welcher Farbeindruck entsteht?",
+      "options": [
+        "Ein helles Grün",
+        "Blau",
+        "Schwarz",
+        "Reines Rot"
+      ],
+      "correct": 0,
+      "explanation": "Blau + Grün + Rot ergeben Weiß, dazu kommt zusätzliches Grün – ein aufgehelltes Grün."
+    },
+    {
+      "id": "k4-043",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wofür wird Schwarz im Vierfarbdruck ergänzt?",
+      "options": [
+        "Als „Tiefe“",
+        "Als Grundfarbe des Lichts",
+        "Als Ersatz für Cyan",
+        "Als Deckfarbe"
+      ],
+      "correct": 0,
+      "explanation": "Schwarz kommt als Ergänzung, als „Tiefe“ zu Cyan, Magenta und Gelb dazu."
+    },
+    {
+      "id": "k4-044",
+      "difficulty": 2,
+      "type": "sort",
+      "question": "Additiv oder subtraktiv?",
+      "categories": [
+        {
+          "id": "a",
+          "label": "Additiv"
+        },
+        {
+          "id": "s",
+          "label": "Subtraktiv"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Monitor",
+          "category": "a"
+        },
+        {
+          "text": "Beamer",
+          "category": "a"
+        },
+        {
+          "text": "Rasterpunkte nebeneinander",
+          "category": "a"
+        },
+        {
+          "text": "Ausgangsfarbe Schwarz",
+          "category": "a"
+        },
+        {
+          "text": "Druckfarben übereinander",
+          "category": "s"
+        },
+        {
+          "text": "Rasterpunkte überlappen sich",
+          "category": "s"
+        },
+        {
+          "text": "Lasierende Farbfilter",
+          "category": "s"
+        },
+        {
+          "text": "Ausgangsfarbe Papierweiß",
+          "category": "s"
+        }
+      ]
+    },
+    {
+      "id": "k4-045",
+      "difficulty": 2,
+      "type": "cloze",
+      "text": "Beim Vierfarbdruck entsteht der Farbeindruck durch {{autotypische}} Farbmischung: Wo Punkte überlappen, wirkt die {{subtraktive}}, wo sie nebeneinander liegen, die {{additive}}.",
+      "distractors": [
+        "spektrale",
+        "lasierende"
+      ],
+      "explanation": "Autotypisch = additiv und subtraktiv zusammen."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "k4-l1",
+      "title": "Farbe an Gegenständen",
+      "subtitle": "Remittieren und Absorbieren",
+      "icon": "sun",
+      "grammar": {
+        "title": "Wie entsteht die Farbe eines Gegenstands?",
+        "text": "• Die Oberfläche remittiert (wirft zurück) je nach „Farbe“ Teile des einfallenden Lichts und absorbiert den Rest. Den zurückgestrahlten Teil sehen wir.\n• Der absorbierte Anteil wird am Gegenstand in Wärme umgewandelt.\n• Vereinfacht ist „weißes Licht“ die Summe aus kurzwelligem (Blau), mittelwelligem (Grün) und langwelligem (Rot) Licht.\n• Rot: langwellig remittiert, kurz- und mittelwellig absorbiert.\n• Gelb: mittel- und langwellig remittiert, kurzwellig absorbiert.\n• Grün: mittelwellig remittiert, kurz- und langwellig absorbiert.\n• Weiß: alles wird remittiert. Schwarz: alles wird absorbiert.",
+        "examples": [
+          {
+            "en": "Rot",
+            "de": "remittiert lang, absorbiert kurz + mittel"
+          },
+          {
+            "en": "Gelb",
+            "de": "remittiert mittel + lang, absorbiert kurz"
+          },
+          {
+            "en": "Grün",
+            "de": "remittiert mittel, absorbiert kurz + lang"
+          }
+        ]
+      },
+      "items": [
+        "k4-001",
+        "k4-002",
+        "k4-003",
+        "k4-004",
+        "k4-005",
+        "k4-006",
+        "k4-007",
+        "k4-008",
+        "k4-009"
+      ]
+    },
+    {
+      "id": "k4-l2",
+      "title": "Additive Farbmischung",
+      "subtitle": "Licht mischen: Rot, Grün, Blau",
+      "icon": "sun",
+      "grammar": {
+        "title": "Additive Farbmischung (Lichtfarben)",
+        "text": "• Alle sichtbaren Farben lassen sich aus den drei Lichtgrundfarben Blau, Grün und Rot (RGB) erzeugen – z. B. mit drei Projektoren mit Farbfiltern. Wo sich die Lichter überlagern, addieren sich die Wellenlängen.\n• Ausgangsfarbe ist Schwarz (kein Licht). Alle drei Lichtfarben zusammen ergeben Weiß.\n• Zweitfarben (Sekundärfarben): Blau + Grün = Cyan · Grün + Rot = Gelb · Blau + Rot = Magenta.\n• Angewendet wird die additive Farbmischung bei Farbbildschirmen und Beamern. Mit einer Lupe sieht man auf dem Bildschirm die einzelnen Farbpunkte.\n• Im Spektrum liegt Gelb zwischen Rot und Grün, Cyan zwischen Grün und Blau. Magenta fehlt im Spektrum – es entsteht nur durch Addition von Blau und Rot.",
+        "examples": [
+          {
+            "en": "Blau + Grün",
+            "de": "Cyan"
+          },
+          {
+            "en": "Grün + Rot",
+            "de": "Gelb"
+          },
+          {
+            "en": "Blau + Rot",
+            "de": "Magenta"
+          }
+        ]
+      },
+      "items": [
+        "k4-010",
+        "k4-011",
+        "k4-012",
+        "k4-013",
+        "k4-014",
+        "k4-015",
+        "k4-016",
+        "k4-017",
+        "k4-018"
+      ]
+    },
+    {
+      "id": "k4-l3",
+      "title": "Farbensehen im Schema",
+      "subtitle": "Welche Zapfen reagieren?",
+      "icon": "eye",
+      "grammar": {
+        "title": "Welche Wellenlängen ergeben welche Farbe?",
+        "text": "• 400–500 nm → Blau · 500–600 nm → Grün · 600–700 nm → Rot (Grundfarben).\n• 400–500 + 500–600 nm → Cyan · 500–600 + 600–700 nm → Gelb · 400–500 + 600–700 nm → Magenta (Zweitfarben).\n• Alle Bereiche (400–700 nm) → Weiß: alle Zapfen werden gereizt.\n• Kein sichtbares Licht → Schwarz: keine Zapfen werden gereizt.\n• Farben wie Gelb, Cyan, Magenta und Weiß entstehen, wenn mehrere Zapfenarten gleichzeitig angesprochen werden.",
+        "examples": [
+          {
+            "en": "Gelb",
+            "de": "G- und R-Zapfen"
+          },
+          {
+            "en": "Cyan",
+            "de": "B- und G-Zapfen"
+          },
+          {
+            "en": "Magenta",
+            "de": "B- und R-Zapfen"
+          }
+        ]
+      },
+      "items": [
+        "k4-019",
+        "k4-020",
+        "k4-021",
+        "k4-022",
+        "k4-023",
+        "k4-024",
+        "k4-025",
+        "k4-026"
+      ]
+    },
+    {
+      "id": "k4-l4",
+      "title": "Lasur- & Deckfarben",
+      "subtitle": "Subtraktive Farbmischung",
+      "icon": "palette",
+      "grammar": {
+        "title": "Subtraktive Farbmischung (Druckfarben)",
+        "text": "• Lasierende Druckfarben sind durchsichtig und wirken wie Farbfilter: Sie lassen die Strahlen ihrer Eigenfarbe durch. Das weiße Papier darunter remittiert sie nach oben, der Rest wird absorbiert.\n• Cyan lässt Blau + Grün durch (absorbiert Rot). Gelb lässt Grün + Rot durch (absorbiert Blau). Magenta lässt Blau + Rot durch (absorbiert Grün). Eine rote Lasurfarbe lässt nur Rot durch.\n• Übereinander gedruckt: Cyan + Gelb = Grün · Magenta + Gelb = Rot · Cyan + Magenta = Blau · alle drei = Schwarz (alles absorbiert).\n• Die Gesetze gelten auch beim Mischen lasierender Druckfarben (wie kleine Farbfilter).\n• Deckfarben decken den Untergrund ab: Sie remittieren das Licht schon an ihrer Oberfläche, es dringt nicht bis zum Papier. Gelbe Deckfarbe auf Cyan sieht gelb aus, weiße Deckfarbe auf grauem Papier sieht weiß aus.",
+        "examples": [
+          {
+            "en": "Lasurfarbe",
+            "de": "durchsichtig wie ein Farbfilter"
+          },
+          {
+            "en": "Deckfarbe",
+            "de": "deckt den Untergrund ab"
+          },
+          {
+            "en": "Cyan + Gelb",
+            "de": "ergibt Grün"
+          }
+        ]
+      },
+      "items": [
+        "k4-027",
+        "k4-028",
+        "k4-029",
+        "k4-030",
+        "k4-031",
+        "k4-032",
+        "k4-033",
+        "k4-034",
+        "k4-035",
+        "k4-036"
+      ]
+    },
+    {
+      "id": "k4-l5",
+      "title": "Autotypische Farbmischung",
+      "subtitle": "Rasterdruck: additiv + subtraktiv",
+      "icon": "layers",
+      "grammar": {
+        "title": "Farbmischung beim mehrfarbigen Rasterdruck",
+        "text": "• Beim Vierfarbdruck entstehen die Farben durch das Zusammenwirken der drei Grundfarben Cyan, Magenta und Gelb (Lasurfarben). Schwarz kommt als Ergänzung, als „Tiefe“ dazu.\n• Die Farbplatten sind aufgerastert, um Abstufungen vom Papierweiß über helle Farbtöne bis zum Vollton wiederzugeben. Ein Raster mit unterschiedlich großen Punkten heißt autotypischer Raster.\n• Wo sich Rasterpunkte überlappen, wirkt die subtraktive Farbmischung. Wo sie nebeneinander liegen, wirkt die additive – vorausgesetzt, die Punkte sind so klein, dass das Auge sie nicht mehr einzeln erkennt.\n• Dieses Zusammenspiel heißt autotypische Farbmischung.\n• Beispiel Cyan + Gelb: Cyan remittiert Blau + Grün, Gelb remittiert Grün + Rot. Nebeneinander ergibt das Blau + Grün + Rot = Weiß plus zusätzliches Grün: ein helles Grün (additiv). Wo die Punkte überlappen, bleibt nur Grün (subtraktiv).",
+        "examples": [
+          {
+            "en": "Autotypische Farbmischung",
+            "de": "additiv + subtraktiv im Raster"
+          },
+          {
+            "en": "Überlappung",
+            "de": "subtraktive Mischung"
+          },
+          {
+            "en": "Nebeneinander",
+            "de": "additive Mischung"
+          }
+        ]
+      },
+      "items": [
+        "k4-037",
+        "k4-038",
+        "k4-039",
+        "k4-040",
+        "k4-041",
+        "k4-042",
+        "k4-043",
+        "k4-044",
+        "k4-045"
+      ]
+    }
+  ]
+}

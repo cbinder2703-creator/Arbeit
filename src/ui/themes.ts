@@ -16,6 +16,8 @@ export const THEME_PATTERNS: Record<string, string> = {
   arena: svg(`<path d='M-4 44L44 -4M16 60L60 16' stroke='${w(0.12)}' stroke-width='3'/>`, 48),
   // Karomuster (Hefte)
   heft: svg(`<path d='M0 0H40V40' fill='none' stroke='${w(0.12)}' stroke-width='1.5'/>`, 40),
+  // Rasterpunkte (Halbton, wie im Druck)
+  raster: svg(`<circle cx='7' cy='7' r='4' fill='${w(0.15)}'/><circle cx='21' cy='21' r='2.5' fill='${w(0.13)}'/><circle cx='21' cy='7' r='1.3' fill='${w(0.12)}'/><circle cx='7' cy='21' r='1.3' fill='${w(0.12)}'/>`, 28),
   // Wellen
   welle: svg(`<path d='M0 20q10-12 20 0t20 0' fill='none' stroke='${w(0.14)}' stroke-width='3'/>`, 40),
   // Sterne
