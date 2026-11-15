@@ -161,56 +161,59 @@
     {
       "id": "k5-010",
       "difficulty": 2,
-      "type": "spot",
-      "title": "Fehler in der Kunden-E-Mail",
-      "intro": "Frau Schuster bekommt diese E-Mail. Tippe alle Zeilen an, die nicht zu den E-Mail-Vorgaben passen.",
-      "lines": [
+      "type": "sort",
+      "question": "Passt die Zeile der E-Mail zu den Vorgaben?",
+      "categories": [
+        {
+          "id": "ok",
+          "label": "Passt"
+        },
+        {
+          "id": "fehler",
+          "label": "Fehler"
+        }
+      ],
+      "cards": [
         {
           "text": "Betreff: Alles Mögliche zum Logo und zu den Farben und überhaupt",
-          "error": true,
-          "fix": "Der Betreff soll kurz und zutreffend sein, z. B. „Farbdarstellung Logo“."
+          "category": "fehler"
         },
         {
           "text": "Hi Frau Schuster,",
-          "error": true,
-          "fix": "„Hi“ ist falsch – besser „Sehr geehrte Frau Schuster,“."
+          "category": "fehler"
         },
         {
           "text": "vielen Dank für Ihre Anfrage zu Ihrem Logo.",
-          "error": false
+          "category": "ok"
         },
         {
           "text": "Auf dem Handy leuchten die Farben, weil dort Licht additiv gemischt wird.",
-          "error": false
+          "category": "ok"
         },
         {
           "text": "Die komplette Farbtabelle füge ich direkt hier in den E-Mail-Text ein.",
-          "error": true,
-          "fix": "Längere Texte und Tabellen gehören in den Anhang."
+          "category": "fehler"
         },
         {
           "text": "Im Druck entstehen die Farben durch Rasterpunkte aus Cyan, Magenta, Gelb und Schwarz.",
-          "error": false
+          "category": "ok"
         },
         {
           "text": "Ich freue mich auf Ihre Antwordt.",
-          "error": true,
-          "fix": "Rechtschreibfehler: „Antwort“."
+          "category": "fehler"
         },
         {
           "text": "MfG",
-          "error": true,
-          "fix": "„MfG“ ist falsch – besser „Mit freundlichen Grüßen“ nach einer Leerzeile."
+          "category": "fehler"
         }
-      ]
+      ],
+      "explanation": "Fehler: Betreff zu lang und unklar (besser „Farbdarstellung Logo“) · „Hi“ statt „Sehr geehrte Frau Schuster,“ · Tabelle gehört in den Anhang · Rechtschreibung („Antwort“) · „MfG“ statt „Mit freundlichen Grüßen“. Nach der Anrede wird klein weitergeschrieben – „vielen Dank …“ ist richtig."
     },
     {
       "id": "k5-011",
       "difficulty": 3,
-      "type": "case",
-      "title": "Das Handy-Logo",
-      "situation": "Ein Kunde zeigt dir sein Logo auf dem Handy. Er besteht darauf, dass die Farben im Druck genau so aussehen wie auf dem Display, und bittet um eine Einschätzung.",
-      "question": "Was ist die fachlich richtige Antwort?",
+      "type": "mc",
+      "question": "Ein Kunde verlangt, dass sein Logo im Druck „genau dieselben Farben“ hat wie auf dem Handy. Was ist die fachlich richtige Antwort?",
       "options": [
         "Das Handy mischt Licht additiv (RGB), der Druck arbeitet mit Rasterfarben aus Cyan, Magenta, Gelb und Schwarz – die Farben sehen deshalb meist nicht identisch aus.",
         "Die Farben werden exakt gleich, weil beide Rot, Grün und Blau verwenden.",

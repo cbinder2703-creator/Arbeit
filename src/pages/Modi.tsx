@@ -2,7 +2,7 @@ import { useSearchParams } from 'react-router-dom';
 import { usePruefung } from '@/app/pruefungContext';
 import { PruefungsShell } from '@/app/PruefungsShell';
 import { allModes } from '@/modes/registry';
-import { contentCountFor, isModeAvailable } from '@/engine/session';
+import { isModeAvailable } from '@/engine/session';
 import { playPath } from '@/engine/pickMode';
 import { useFortschritt } from '@/store/progress';
 import { ModeCard } from '@/ui/ModeCard';
@@ -42,25 +42,38 @@ export function Modi() {
         </div>
         {chapter && <p className="mt-3 text-sm text-mute">{chapter.subtitle}</p>}
 
-        <div className="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-          {allModes.length === 0 && <p className="text-mute">Noch keine Spielmodi installiert.</p>}
-          {allModes.map((m) => {
-            const ok = isModeAvailable(m, pr, ids);
-            return (
-              <ModeCard
-                key={m.id}
-                mode={m}
-                available={ok}
-                to={playPath(meta.id, m.id, chapterId === 'alle' ? undefined : chapterId)}
-                best={fort.bestScores[`${m.id}:${chapterId}`]}
-              />
-            );
-          })}
-        </div>
-        <p className="mt-4 text-xs text-mute">
-          {allModes.filter((m) => isModeAvailable(m, pr, ids)).length} von {allModes.length} Modi passen zu dieser Auswahl
-          {' '}({allModes.reduce((n, m) => Math.max(n, contentCountFor(m, pr, ids)), 0)} Inhalte maximal).
-        </p>
+        {(() => {
+          // nur Modi, die in DIESER Prüfung überhaupt Inhalte haben; die im gewählten Kapitel fehlenden klappen wir ein
+          const forExam = allModes.filter((m) => isModeAvailable(m, pr));
+          const playable = forExam.filter((m) => isModeAvailable(m, pr, ids));
+          const hidden = forExam.filter((m) => !isModeAvailable(m, pr, ids));
+          const card = (m: (typeof allModes)[number], ok: boolean) => (
+            <ModeCard
+              key={m.id}
+              mode={m}
+              available={ok}
+              to={playPath(meta.id, m.id, chapterId === 'alle' ? undefined : chapterId)}
+              best={fort.bestScores[`${m.id}:${chapterId}`]}
+            />
+          );
+          return (
+            <>
+              <div className="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">{playable.map((m) => card(m, true))}</div>
+              {hidden.length > 0 && (
+                <details className="mt-5 rounded-2xl bg-card/60 p-3">
+                  <summary className="tap cursor-pointer text-sm font-semibold text-mute">
+                    {hidden.length} weitere {hidden.length === 1 ? 'Modus' : 'Modi'} – in diesem Kapitel nicht verfügbar
+                  </summary>
+                  <div className="mt-3 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">{hidden.map((m) => card(m, false))}</div>
+                </details>
+              )}
+              <p className="mt-4 text-xs text-mute">
+                {playable.length} Spielmodi für diese Auswahl
+                {forExam.length !== playable.length ? ` · ${forExam.length} in dieser Prüfung` : ''}.
+              </p>
+            </>
+          );
+        })()}
       </div>
     </PruefungsShell>
   );

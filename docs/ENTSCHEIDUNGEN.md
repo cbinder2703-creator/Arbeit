@@ -155,3 +155,12 @@ Hier steht, was unklar war und wie ich es entschieden habe (statt nachzufragen).
 55. **Allgemeinwissen als Ergänzung** (steht nicht wörtlich auf den Blättern): Begriffe des Vier-Linien-Systems (Ober-/Mittel-/Unterlänge, Versalhöhe), Hauptaufgaben von Photoshop/Illustrator/InDesign, Schnittmarken und Beschnitt (üblich ca. 3 mm), Punze. Diese Stellen sind in der Korrektur kenntlich gemacht.
 56. **Nicht aufgenommen:** reine Zeichen-/Färbeaufgaben, Aufgaben, die nur mit dem Bild lösbar sind (z. B. Nummern im Augen-Schema, Buchstaben am Muster-wort „Hamburgo“) sowie die Aussage „Workflow = Eingabe und Ausgabe“ (siehe `docs/OFFENE-FRAGEN.md`).
 57. **Neu, allgemein nutzbar:** Hintergrundmuster `raster` (Halbton-Punkte), Icons printer/palette/ruler/sun, Einheit „mm“ bei „Höher oder tiefer?“ (Titel mit „(mm)“), optionale `korrektur.json`.
+
+## Spielvielfalt & Aufräumen
+
+58. **Modi, die zu einem Fach nicht passen, werden nicht angezeigt.** Die Modi-Seite listet nur Modi, die für die gewählte Auswahl wirklich Inhalte haben; der Rest steht eingeklappt unter „N weitere Modi – in diesem Kapitel nicht verfügbar“.
+    Print-Profi hat weder „Kündigungs-Gericht“ noch „Vertrags-Detektiv“ (keine `case`-/`spot`-Aufgaben). Dafür gibt es dort eine Sortier-Aufgabe „Passt die Zeile der E-Mail zu den Vorgaben?“.
+59. **Vier neue, fachunabhängige Spielmodi** (Plugins, keine Prüfungs-Sonderfälle): Boss-Kampf, Wer wird Azubionär?, Blasen-Quiz, Begriffe-Raten. Sie erscheinen automatisch in jeder Prüfung mit passenden Inhalten (mc/truefalse bzw. Lernkarten).
+60. **Azubionär ist ein Spiel, kein Test:** Joker und Aussteigen ändern nur den Spielstand; XP und Leitner-Boxen werden wie überall von der Engine vergeben. Die Prozentbalken beim Publikum sind Zufall mit Schwierigkeitsbezug, keine echten Daten.
+61. **Begriffe-Raten** nutzt nur Lernkarten, deren Begriff 4–20 Buchstaben hat (ohne Klammerzusätze, bei „A / B“ gilt der erste Teil). Alles andere wird übersprungen.
+62. **Blasen-Quiz und Boss-Kampf** respektieren „Ohne Zeitdruck“ und `prefers-reduced-motion` (kein Zeitverlust, keine Bewegung).

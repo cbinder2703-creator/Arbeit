@@ -46,12 +46,12 @@
       }
     },
     {
-      "id": "mail-detektiv",
-      "title": "E-Mail-Detektiv",
-      "rule": "Die E-Mail-Aufgabe fehlerfrei",
+      "id": "mail-profi",
+      "title": "E-Mail-Profi",
+      "rule": "Die E-Mail-Aufgabe fehlerfrei sortiert",
       "condition": {
-        "kind": "allOfType",
-        "type": "spot"
+        "kind": "item",
+        "itemId": "k5-010"
       }
     },
     {
