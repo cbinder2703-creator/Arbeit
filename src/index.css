@@ -76,3 +76,9 @@
   0% { opacity: 1; transform: translateY(-20px) rotate(0deg); }
   100% { opacity: 0; transform: translateY(105dvh) rotate(540deg); }
 }
+
+@keyframes sway {
+  0%, 100% { transform: translateX(-7px); }
+  50% { transform: translateX(7px); }
+}
+.sway { animation: sway 3.2s ease-in-out infinite; }

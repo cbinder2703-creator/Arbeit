@@ -7,6 +7,7 @@ eigenem Fortschritt und eigener Abschlussprüfung. Dafür ist **keine Code-Ände
 
 1. Neuen Ordner anlegen: `content/pruefungen/<id>/` (kebab-case, z. B. `vertragsrecht-kaufvertrag`).
 2. `pruefung.json` anlegen (Vorlage: `content/pruefungen/berufsbildung-arbeitswelt/pruefung.json`):
+   - `subject` = Fach (z. B. „WiPo“, „Englisch“, „LF2“) – steht groß auf der Kachel und auf der Startseite
    - eigenen `gameTitle` ausdenken (z. B. „Vertrags-Arena“), eigene `color`/`accent`/`theme`
    - `examDate` eintragen, falls der Termin bekannt ist (`"JJJJ-MM-TT"`)
    - jedes Abzeichen braucht neben `rule` (Text) eine `condition` (`typeCorrect`, `allOfType`, `item`, `finalGrade`, `level`, `streak`) – siehe Vorlage

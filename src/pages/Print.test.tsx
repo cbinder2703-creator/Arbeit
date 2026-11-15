@@ -33,7 +33,9 @@ describe('Print-Profi – Inhalte', () => {
     expect(pr.chapters).toHaveLength(6);
     expect(pr.chapters.flatMap((c) => c.lessons)).toHaveLength(21);
     expect(items.length).toBeGreaterThan(180);
-    for (const t of ['mc', 'truefalse', 'sort', 'pairs', 'order', 'case', 'spot', 'cloze']) expect(items.some((i) => i.type === t)).toBe(true);
+    for (const t of ['mc', 'truefalse', 'sort', 'pairs', 'order', 'cloze']) expect(items.some((i) => i.type === t)).toBe(true);
+    // keine Gerichts-/Vertrags-Aufgaben in LF2
+    expect(items.some((i) => i.type === 'case' || i.type === 'spot')).toBe(false);
   });
   it('jede Aufgabe steckt in genau einer Lektion', () => {
     for (const c of pr.chapters) {
@@ -42,9 +44,11 @@ describe('Print-Profi – Inhalte', () => {
       expect(used.sort()).toEqual(c.items.map((i) => i.id).sort());
     }
   });
-  it('alle Spielmodi für Aufgaben sind verfügbar, Sprach-Modi nicht', () => {
+  it('passende Spielmodi sind verfügbar, Gericht/Detektiv/Sprach-Modi nicht', () => {
     const ids = allModes.filter((m) => isModeAvailable(m, pr)).map((m) => m.id);
-    expect(ids).toEqual(expect.arrayContaining(['quiz-blitz', 'wahr-falsch-swipe', 'sortier-meister', 'memory', 'lueckentext', 'zeitstrahl', 'vertrags-detektiv', 'kuendigungs-gericht', 'lernkarten', 'hoeher-tiefer']));
+    expect(ids).toEqual(expect.arrayContaining(['quiz-blitz', 'wahr-falsch-swipe', 'sortier-meister', 'memory', 'lueckentext', 'zeitstrahl', 'lernkarten', 'hoeher-tiefer', 'azubionaer', 'boss-kampf', 'wort-jagd', 'blasen-quiz']));
+    expect(ids).not.toContain('vertrags-detektiv');
+    expect(ids).not.toContain('kuendigungs-gericht');
     expect(ids).not.toContain('hoeren');
     expect(ids).not.toContain('sprechen');
   });

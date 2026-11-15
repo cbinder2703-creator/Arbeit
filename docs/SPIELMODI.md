@@ -77,6 +77,22 @@ Auf dem PC zusätzlich Tastatur. Runde endet mit dem gemeinsamen Ergebnisbildsch
 
 ---
 
+## 12. Boss-Kampf ⚔️  (`boss-kampf`)
+Du kämpfst gegen einen Boss (zufälliger Name). Richtige Antwort = Treffer, falsche = der Boss schlägt zu (3 Herzen).
+Aufgaben: Multiple Choice und Wahr/Falsch. Pro Frage 20 Sekunden (aus bei „Ohne Zeitdruck“). Boss-Leben = Anzahl Fragen − 2. Sieg mit Konfetti.
+
+## 13. Wer wird Azubionär? 🏆  (`azubionaer`)
+15 Fragen, nach Schwierigkeit sortiert, Geldleiter von 50 bis 1 Million Taler. Sicherheitsstufen bei Frage 5 und 10.
+Joker: 50:50, Publikum (Prozentbalken, bei leichten Fragen treffsicherer) und Tauschen. „Finale Antwort“ bestätigt, „Aussteigen“ nimmt den aktuellen Betrag mit.
+
+## 14. Blasen-Quiz 🫧  (`blasen-quiz`)
+Antworten steigen als Blasen auf – tippe die richtige, bevor sie oben verschwindet. 3 Leben. Bei „Ohne Zeitdruck“ steigen die Blasen langsamer,
+bei reduzierter Bewegung steht die Liste still (kein Zeitdruck).
+
+## 15. Begriffe-Raten 🔤  (`wort-jagd`)
+Galgenmännchen für Fachbegriffe: Die Erklärung steht da, der Begriff wird Buchstabe für Buchstabe erraten (6 Runden, 6 Leben, Tipp kostet 1 Leben).
+Die Erklärung wird so geschwärzt, dass der gesuchte Begriff nicht darin vorkommt. Tastatur auf dem PC, Bildschirmtasten (inkl. Ä Ö Ü ß) am Handy.
+
 ## Auswahl-Logik
 - Die Modus-Liste einer Prüfung zeigt nur Modi, für die im gewählten Kapitel genug Items vorhanden sind (`minItems`).
 - Die Startseite eines Prüfungs-Spiels schlägt „Heute dran“ vor: das Kapitel mit den meisten fälligen Leitner-Items.

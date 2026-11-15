@@ -640,5 +640,49 @@
         "k6-028"
       ]
     }
-  ]
+  ],
+  "charts": {
+    "aufloesung": {
+      "title": "Auflösung in ppi bzw. dpi",
+      "unit": "ppi/dpi",
+      "source": "Arbeitsblatt LS4",
+      "values": [
+        [
+          "Monitor (ppi)",
+          72
+        ],
+        [
+          "Untere Grenze guter Druck (dpi)",
+          150
+        ],
+        [
+          "Standard Offset und Digitaldruck (dpi)",
+          300
+        ]
+      ]
+    },
+    "bit": {
+      "title": "Abstufungen je Farbkanal nach Bittiefe",
+      "unit": "Abstufungen",
+      "source": "Arbeitsblatt LS4",
+      "values": [
+        [
+          "1 Bit",
+          2
+        ],
+        [
+          "2 Bit",
+          4
+        ],
+        [
+          "4 Bit",
+          16
+        ],
+        [
+          "8 Bit",
+          256
+        ]
+      ]
+    }
+  }
 }

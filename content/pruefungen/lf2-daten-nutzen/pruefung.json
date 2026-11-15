@@ -3,7 +3,7 @@
   "title": "LF2 – Daten verfahrensspezifisch nutzen",
   "gameTitle": "Print-Profi",
   "tagline": "Formate, Schrift, Farbe und Auflösung – Lektion für Lektion",
-  "subject": "Mediengestaltung Digital und Print – LF2",
+  "subject": "LF2",
   "pages": "LS1 bis LS4",
   "examDate": null,
   "color": "#DB2777",
@@ -46,12 +46,12 @@
       }
     },
     {
-      "id": "mail-detektiv",
-      "title": "E-Mail-Detektiv",
-      "rule": "Die E-Mail-Aufgabe fehlerfrei",
+      "id": "mail-profi",
+      "title": "E-Mail-Profi",
+      "rule": "Die E-Mail-Aufgabe fehlerfrei sortiert",
       "condition": {
-        "kind": "allOfType",
-        "type": "spot"
+        "kind": "item",
+        "itemId": "k5-010"
       }
     },
     {
