@@ -1,0 +1,871 @@
+{
+  "id": "k7",
+  "chapter": 7,
+  "title": "Klassenarbeit: Wiederholung",
+  "subtitle": "Blatt „Wiederholung für Klassenarbeit“: Schrift, Druckfarben, Farben sehen, DIN",
+  "pages": "Wiederholung KA 26, S. 1–3",
+  "color": "#EAB308",
+  "icon": "file-text",
+  "flashcards": [
+    {
+      "id": "k7-f01",
+      "term": "Antiqua und Grotesk",
+      "definition": "Die zwei am besten lesbaren Schriftgruppen (Fraktur, Egyptienne und Schreibschrift sind bei viel Text schlecht lesbar)."
+    },
+    {
+      "id": "k7-f02",
+      "term": "Vier-Linien-System",
+      "definition": "Oberlinie, Mittellinie, Schriftlinie, Unterlinie – daraus ergeben sich Oberlänge, Mittellänge und Unterlänge; Versalhöhe = Höhe der Großbuchstaben."
+    },
+    {
+      "id": "k7-f03",
+      "term": "Punze",
+      "definition": "Innenraum eines Buchstabens (geschlossen z. B. im o, offen z. B. im n)."
+    },
+    {
+      "id": "k7-f04",
+      "term": "Zusammendruck",
+      "definition": "Mehrere Druckfarben übereinander: Rot = M + Y, Grün = C + Y, Blau = C + M, Schwarz (400 %) = C + M + Y + K, Weiß = nichts gedruckt."
+    },
+    {
+      "id": "k7-f05",
+      "term": "Wellenlängenbereiche",
+      "definition": "Blau 400–500 nm, Grün 500–600 nm, Rot 600–700 nm; davor UV, danach Infrarot."
+    },
+    {
+      "id": "k7-f06",
+      "term": "Lasierende Farbe",
+      "definition": "Durchsichtig wie ein Filter – das Licht dringt bis zum Papier und wird dort remittiert."
+    },
+    {
+      "id": "k7-f07",
+      "term": "DIN-Format-Rechnen",
+      "definition": "Jedes Format passt zweimal ins nächstgrößere: A1 = 4 × A3 = 8 × A4 = 16 × A5."
+    },
+    {
+      "id": "k7-f08",
+      "term": "Flächenmasse",
+      "definition": "Gewicht pro m² (z. B. 80 g/m²). Gewicht eines Bogens = Fläche in m² × Flächenmasse."
+    }
+  ],
+  "items": [
+    {
+      "id": "k7-001",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Tabelle ergänzen: Schriftbeispiel und Bezeichnung",
+      "pairs": [
+        {
+          "left": "Gebrochene Buchstaben wie Old English",
+          "right": "Fraktur"
+        },
+        {
+          "left": "Serifenlose Schrift wie Arial",
+          "right": "Grotesk"
+        },
+        {
+          "left": "Handschrift-ähnlich wie Brush Script",
+          "right": "Schreibschrift"
+        },
+        {
+          "left": "Überdimensionale Serifen wie Rockwell",
+          "right": "Egyptienne"
+        },
+        {
+          "left": "Serifenschrift wie Times",
+          "right": "Antiqua"
+        }
+      ]
+    },
+    {
+      "id": "k7-002",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Welche zwei Schriftgruppen sind am besten lesbar?",
+      "options": [
+        "Antiqua und Grotesk",
+        "Fraktur und Schreibschrift",
+        "Egyptienne und Fraktur",
+        "Schreibschrift und Egyptienne"
+      ],
+      "correct": 0,
+      "explanation": "Antiqua (Serifen als Lesehilfe) und Grotesk. Fraktur, Egyptienne und Schreibschrift sind bei längeren Texten schlecht lesbar bzw. ungeeignet."
+    },
+    {
+      "id": "k7-003",
+      "difficulty": 2,
+      "type": "sort",
+      "question": "Zu welcher Schriftgruppe passt die Beschreibung?",
+      "categories": [
+        {
+          "id": "g",
+          "label": "Grotesk"
+        },
+        {
+          "id": "e",
+          "label": "Egyptienne"
+        },
+        {
+          "id": "a",
+          "label": "Antiqua"
+        },
+        {
+          "id": "f",
+          "label": "Fraktur"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Serifenlose Schrift",
+          "category": "g"
+        },
+        {
+          "text": "Serifenbetonte Schrift",
+          "category": "e"
+        },
+        {
+          "text": "Serifen als Lesehilfe",
+          "category": "a"
+        },
+        {
+          "text": "Gebrochene Schrift",
+          "category": "f"
+        },
+        {
+          "text": "Wirkt wie mit der Feder geschrieben",
+          "category": "f"
+        },
+        {
+          "text": "Überdimensionale Serifen",
+          "category": "e"
+        }
+      ]
+    },
+    {
+      "id": "k7-004",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Fraktur eignet sich gut für lange Lesetexte.",
+      "correct": false,
+      "explanation": "Falsch – gebrochene Schriften sind bei längeren Texten schlecht lesbar."
+    },
+    {
+      "id": "k7-005",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Im Wort „Hamburg“: Wie heißt das große H?",
+      "options": [
+        "Versalie",
+        "Gemeine",
+        "Punze",
+        "Serife"
+      ],
+      "correct": 0,
+      "explanation": "Versalie = Großbuchstabe."
+    },
+    {
+      "id": "k7-006",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Im Wort „Hamburg“: Wie nennt man die kleinen Buchstaben „amburg“?",
+      "options": [
+        "Gemeine",
+        "Versalien",
+        "Punzen",
+        "Serifen"
+      ],
+      "correct": 0,
+      "explanation": "Gemeine = Kleinbuchstaben."
+    },
+    {
+      "id": "k7-007",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie heißt der Innenraum eines Buchstabens, z. B. im „a“ oder „b“?",
+      "options": [
+        "Punze",
+        "Serife",
+        "Versalie",
+        "Gemeine"
+      ],
+      "correct": 0,
+      "explanation": "Punze = Innenraum eines Buchstabens (geschlossen oder offen)."
+    },
+    {
+      "id": "k7-008",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie heißen die kleinen häkchenartigen Abschlüsse an den Buchstabenstrichen?",
+      "options": [
+        "Serifen",
+        "Punzen",
+        "Versalien",
+        "Gemeine"
+      ],
+      "correct": 0,
+      "explanation": "Serifen."
+    },
+    {
+      "id": "k7-009",
+      "difficulty": 2,
+      "type": "order",
+      "question": "Vier-Linien-System: Bring die Linien von oben nach unten in die richtige Reihenfolge.",
+      "steps": [
+        "Oberlinie",
+        "Mittellinie",
+        "Schriftlinie",
+        "Unterlinie"
+      ],
+      "explanation": "Oberlänge liegt zwischen Ober- und Mittellinie, Mittellänge zwischen Mittel- und Schriftlinie, Unterlänge zwischen Schrift- und Unterlinie."
+    },
+    {
+      "id": "k7-010",
+      "difficulty": 2,
+      "type": "pairs",
+      "question": "Abstände im Vier-Linien-System",
+      "pairs": [
+        {
+          "left": "Mittellänge",
+          "right": "Kleinbuchstaben ohne Ober- und Unterlänge (a, e, o)"
+        },
+        {
+          "left": "Oberlänge",
+          "right": "Teil über der Mittellänge (b, d, h)"
+        },
+        {
+          "left": "Unterlänge",
+          "right": "Teil unter der Schriftlinie (g, p, y)"
+        },
+        {
+          "left": "Versalhöhe",
+          "right": "Höhe der Großbuchstaben"
+        }
+      ]
+    },
+    {
+      "id": "k7-011",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Auf einer Auftragstasche für den Offsetdruck steht 4/4. Was bedeutet das?",
+      "options": [
+        "Vorder- und Rückseite werden jeweils vierfarbig bedruckt",
+        "Nur die Vorderseite wird vierfarbig bedruckt",
+        "Vier Seiten in vier Farben",
+        "Vorne vierfarbig, hinten einfarbig"
+      ],
+      "correct": 0,
+      "explanation": "4/4 = beide Seiten vierfarbig. Bei 4/0 wäre nur eine Seite bedruckt."
+    },
+    {
+      "id": "k7-012",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "4/4 bedeutet, dass nur eine Seite bedruckt wird.",
+      "correct": false,
+      "explanation": "Falsch – das wäre 4/0. Bei 4/4 sind Vorder- und Rückseite vierfarbig."
+    },
+    {
+      "id": "k7-013",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Mit welchen Druckfarben wird ein 4/4-Auftrag gedruckt?",
+      "options": [
+        "Cyan, Magenta, Yellow und Black",
+        "Rot, Grün, Blau und Schwarz",
+        "Cyan, Magenta, Yellow und Weiß",
+        "Rot, Gelb, Blau und Schwarz"
+      ],
+      "correct": 0,
+      "explanation": "Die vier Druckfarben sind Cyan, Magenta, Yellow und Black (CMYK)."
+    },
+    {
+      "id": "k7-014",
+      "difficulty": 1,
+      "type": "cloze",
+      "text": "Bei 4/4 werden {{Vorder- und Rückseite}} mit {{Cyan}}, {{Magenta}}, {{Yellow}} und Black bedruckt.",
+      "distractors": [
+        "Rot",
+        "Grün"
+      ],
+      "explanation": "4/4 = beide Seiten, die vier Druckfarben CMYK."
+    },
+    {
+      "id": "k7-015",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Anwendung und typische Adobe-Software",
+      "pairs": [
+        {
+          "left": "Bild",
+          "right": "Photoshop"
+        },
+        {
+          "left": "Layout",
+          "right": "InDesign"
+        },
+        {
+          "left": "Grafik",
+          "right": "Illustrator"
+        }
+      ]
+    },
+    {
+      "id": "k7-016",
+      "difficulty": 2,
+      "type": "sort",
+      "question": "Zu welcher Anwendung passt die Aufgabe?",
+      "categories": [
+        {
+          "id": "b",
+          "label": "Bild (Photoshop)"
+        },
+        {
+          "id": "l",
+          "label": "Layout (InDesign)"
+        },
+        {
+          "id": "g",
+          "label": "Grafik (Illustrator)"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Foto retuschieren",
+          "category": "b"
+        },
+        {
+          "text": "Mehrseitiges Heft anlegen",
+          "category": "l"
+        },
+        {
+          "text": "Logo als Vektorgrafik zeichnen",
+          "category": "g"
+        },
+        {
+          "text": "Pixelgrafik bearbeiten",
+          "category": "b"
+        },
+        {
+          "text": "Seiten für einen Flyer gestalten",
+          "category": "l"
+        },
+        {
+          "text": "Diagramm zeichnen",
+          "category": "g"
+        }
+      ]
+    },
+    {
+      "id": "k7-017",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Adobe-Software ist typisch für das Layout?",
+      "options": [
+        "InDesign",
+        "Photoshop",
+        "Illustrator",
+        "Acrobat Reader"
+      ],
+      "correct": 0,
+      "explanation": "InDesign dient dem Layout."
+    },
+    {
+      "id": "k7-018",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Adobe-Software ist typisch für Vektorgrafiken (Grafik)?",
+      "options": [
+        "Illustrator",
+        "Photoshop",
+        "InDesign",
+        "Premiere"
+      ],
+      "correct": 0,
+      "explanation": "Illustrator – Grafiken mit Vektoren."
+    },
+    {
+      "id": "k7-019",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie heißt die Abkürzung für die vier Druckfarben?",
+      "options": [
+        "CMYK",
+        "RGB",
+        "HKS",
+        "DIN"
+      ],
+      "correct": 0,
+      "explanation": "CMYK = Cyan, Magenta, Yellow, Key (Black)."
+    },
+    {
+      "id": "k7-020",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Wellenlängenbereiche des Lichts (Aufgabe 5a)",
+      "pairs": [
+        {
+          "left": "Blau",
+          "right": "400 bis 500 nm"
+        },
+        {
+          "left": "Grün",
+          "right": "500 bis 600 nm"
+        },
+        {
+          "left": "Rot",
+          "right": "600 bis 700 nm"
+        },
+        {
+          "left": "UV-Strahlung",
+          "right": "kürzer als 400 nm"
+        },
+        {
+          "left": "Infrarot",
+          "right": "länger als 700 nm"
+        }
+      ]
+    },
+    {
+      "id": "k7-021",
+      "difficulty": 2,
+      "type": "pairs",
+      "question": "Zusammendruck: Welche Druckfarben ergeben das Druckergebnis? (Aufgabe 5b)",
+      "pairs": [
+        {
+          "left": "Rot",
+          "right": "Magenta + Yellow"
+        },
+        {
+          "left": "Grün",
+          "right": "Cyan + Yellow"
+        },
+        {
+          "left": "Blau",
+          "right": "Cyan + Magenta"
+        },
+        {
+          "left": "Schwarz (400 %)",
+          "right": "Cyan + Magenta + Yellow + Black"
+        },
+        {
+          "left": "Weiß",
+          "right": "keine Farbe – Papier bleibt unbedruckt"
+        }
+      ]
+    },
+    {
+      "id": "k7-022",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Das Druckergebnis soll Grün sein. Welche Druckfarben liegen übereinander?",
+      "options": [
+        "Cyan und Yellow",
+        "Magenta und Yellow",
+        "Cyan und Magenta",
+        "Nur Cyan"
+      ],
+      "correct": 0,
+      "explanation": "Cyan + Yellow = Grün."
+    },
+    {
+      "id": "k7-023",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Druckfarbe wird bei Rot im Zusammendruck NICHT gedruckt?",
+      "options": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Alle drei werden gedruckt"
+      ],
+      "correct": 0,
+      "explanation": "Rot = Magenta + Yellow – Cyan bleibt weg."
+    },
+    {
+      "id": "k7-024",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Für Weiß wird im Offsetdruck keine Druckfarbe gedruckt – das Papier bleibt unbedruckt.",
+      "correct": true,
+      "explanation": "Richtig – das Papierweiß bleibt stehen."
+    },
+    {
+      "id": "k7-025",
+      "difficulty": 2,
+      "type": "sort",
+      "question": "Stäbchen oder Zapfen? (Aufgabe 5c)",
+      "categories": [
+        {
+          "id": "s",
+          "label": "Stäbchen"
+        },
+        {
+          "id": "z",
+          "label": "Zapfen"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Hell-Dunkel-Sehen",
+          "category": "s"
+        },
+        {
+          "text": "Sehen in der Dämmerung, ohne Farben",
+          "category": "s"
+        },
+        {
+          "text": "Ca. 120 Millionen",
+          "category": "s"
+        },
+        {
+          "text": "Farbsehen",
+          "category": "z"
+        },
+        {
+          "text": "Drei Arten (B, G, R)",
+          "category": "z"
+        },
+        {
+          "text": "Ca. 6 Millionen",
+          "category": "z"
+        }
+      ]
+    },
+    {
+      "id": "k7-026",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Additive Farbmischung (Aufgabe 5d)",
+      "pairs": [
+        {
+          "left": "Rot + Grün",
+          "right": "Gelb"
+        },
+        {
+          "left": "Grün + Blau",
+          "right": "Cyan"
+        },
+        {
+          "left": "Blau + Rot",
+          "right": "Magenta"
+        },
+        {
+          "left": "Rot + Grün + Blau",
+          "right": "Weiß"
+        }
+      ]
+    },
+    {
+      "id": "k7-027",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was bedeutet Remittieren?",
+      "options": [
+        "Licht zurückwerfen",
+        "Licht verschlucken",
+        "Licht durchlassen",
+        "Licht brechen"
+      ],
+      "correct": 0,
+      "explanation": "Remittieren = zurückwerfen, Absorbieren = verschlucken."
+    },
+    {
+      "id": "k7-028",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was passiert beim Absorbieren?",
+      "options": [
+        "Das Licht wird verschluckt (und in Wärme umgewandelt)",
+        "Das Licht wird zurückgeworfen",
+        "Das Licht wird heller",
+        "Das Licht wird gespiegelt"
+      ],
+      "correct": 0,
+      "explanation": "Der absorbierte Anteil wird in Wärme umgewandelt."
+    },
+    {
+      "id": "k7-029",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Weißes Licht trifft auf eine gelbe Farbschicht auf weißem Papier. Welcher Farbeindruck entsteht im Gehirn?",
+      "options": [
+        "Gelb",
+        "Blau",
+        "Schwarz",
+        "Weiß"
+      ],
+      "correct": 0,
+      "explanation": "Gelb absorbiert das Blau. Grün und Rot gelangen zum Papier, werden remittiert und ergeben im Auge Grün + Rot = Gelb."
+    },
+    {
+      "id": "k7-030",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Welche Eigenschaft muss die Farbe haben, damit das Licht bis zum Papier durchdringt?",
+      "options": [
+        "Sie muss lasierend (durchsichtig) sein",
+        "Sie muss deckend sein",
+        "Sie muss schwarz sein",
+        "Sie muss glänzen"
+      ],
+      "correct": 0,
+      "explanation": "Lasierende Druckfarben wirken wie Farbfilter – das Licht erreicht das Papier und wird dort remittiert."
+    },
+    {
+      "id": "k7-031",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie groß ist ein DIN-A4-Querformat in mm?",
+      "options": [
+        "297 × 210 mm",
+        "210 × 297 mm",
+        "420 × 297 mm",
+        "148 × 210 mm"
+      ],
+      "correct": 0,
+      "explanation": "Querformat: 297 mm breit, 210 mm hoch."
+    },
+    {
+      "id": "k7-032",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie groß ist ein DIN-A4-Hochformat in cm?",
+      "options": [
+        "21 × 29,7 cm",
+        "29,7 × 21 cm",
+        "2,1 × 2,97 cm",
+        "42 × 29,7 cm"
+      ],
+      "correct": 0,
+      "explanation": "210 × 297 mm = 21 × 29,7 cm."
+    },
+    {
+      "id": "k7-033",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Wie viele A6 passen in ein A2?",
+      "options": [
+        "16",
+        "8",
+        "4",
+        "32"
+      ],
+      "correct": 0,
+      "explanation": "A2 → 2 × A3 → 4 × A4 → 8 × A5 → 16 × A6."
+    },
+    {
+      "id": "k7-034",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Wie viele A5 enthält ein A1?",
+      "options": [
+        "16",
+        "8",
+        "32",
+        "4"
+      ],
+      "correct": 0,
+      "explanation": "A1 → 2 × A2 → 4 × A3 → 8 × A4 → 16 × A5."
+    },
+    {
+      "id": "k7-035",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie viele A3 enthält ein A1?",
+      "options": [
+        "4",
+        "2",
+        "8",
+        "16"
+      ],
+      "correct": 0,
+      "explanation": "A1 = 2 × A2 = 4 × A3."
+    },
+    {
+      "id": "k7-036",
+      "difficulty": 3,
+      "type": "mc",
+      "question": "Die Flächenmasse eines Papiers beträgt 80 g/m². Wie schwer ist ein Bogen A3?",
+      "options": [
+        "Etwa 10 g",
+        "Etwa 5 g",
+        "Etwa 20 g",
+        "Etwa 80 g"
+      ],
+      "correct": 0,
+      "explanation": "A0 ist ca. 1 m², A3 ist ein Achtel davon (0,125 m²): 80 g : 8 = 10 g. (Genau: 0,297 m · 0,420 m ≈ 0,1247 m² → ca. 9,98 g.)"
+    },
+    {
+      "id": "k7-037",
+      "difficulty": 2,
+      "type": "cloze",
+      "text": "Ein A1 enthält {{4}} mal A3, {{8}} mal A4 und {{16}} mal A5.",
+      "distractors": [
+        "2",
+        "32"
+      ],
+      "explanation": "Jedes Format passt zweimal ins nächstgrößere."
+    },
+    {
+      "id": "k7-038",
+      "difficulty": 2,
+      "type": "truefalse",
+      "statement": "Ein A2 enthält 4 mal A5.",
+      "correct": false,
+      "explanation": "Falsch – A2 = 2 × A3 = 4 × A4 = 8 × A5. Es sind also 8 × A5."
+    },
+    {
+      "id": "k7-039",
+      "difficulty": 3,
+      "type": "truefalse",
+      "statement": "Ein Bogen A3 mit 80 g/m² wiegt etwa 10 Gramm.",
+      "correct": true,
+      "explanation": "Richtig – A3 hat ca. 0,125 m², 0,125 · 80 g = 10 g."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "k7-l1",
+      "title": "Aufgabe 1–2: Schrift",
+      "subtitle": "Schriftgruppen, Schriftelemente, Vier-Linien-System",
+      "icon": "type",
+      "grammar": {
+        "title": "Schrift – das kommt in der Arbeit dran",
+        "text": "• Fünf Schriftgruppen: Grotesk (serifenlos), Egyptienne (serifenbetont), Antiqua (Serifenschrift), Fraktur (gebrochen) und Schreibschrift (Handschrift-ähnlich).\n• Am besten lesbar für längere Texte sind Antiqua und Grotesk. Fraktur, Egyptienne und Schreibschrift sind bei viel Text schlecht lesbar bzw. ungeeignet.\n• Schriftelemente: Serife = häkchenartiges Ende · Gemeine = Kleinbuchstabe · Punze = Innenraum eines Buchstabens · Versalie = Großbuchstabe.\n• Vier-Linien-System von oben nach unten: Oberlinie – Mittellinie – Schriftlinie – Unterlinie. Die Abstände heißen Oberlänge, Mittellänge, Unterlänge; die Versalhöhe ist die Höhe der Großbuchstaben.",
+        "examples": [
+          {
+            "en": "Antiqua + Grotesk",
+            "de": "die zwei am besten lesbaren Schriftgruppen"
+          },
+          {
+            "en": "Punze",
+            "de": "Innenraum eines Buchstabens"
+          },
+          {
+            "en": "Versalie",
+            "de": "Großbuchstabe"
+          }
+        ]
+      },
+      "items": [
+        "k7-001",
+        "k7-002",
+        "k7-003",
+        "k7-004",
+        "k7-005",
+        "k7-006",
+        "k7-007",
+        "k7-008",
+        "k7-009",
+        "k7-010"
+      ]
+    },
+    {
+      "id": "k7-l2",
+      "title": "Aufgabe 3–4: Druckfarben & Software",
+      "subtitle": "4/4, CMYK, Photoshop, InDesign, Illustrator",
+      "icon": "printer",
+      "grammar": {
+        "title": "Druckfarben und Adobe-Software",
+        "text": "• Die Angabe 4/4 auf der Auftragstasche heißt: Vorder- und Rückseite werden jeweils vierfarbig bedruckt.\n• Die vier Druckfarben: Cyan, Magenta, Yellow und Black (Schwarz) – kurz CMYK.\n• Typische Adobe-Software: Bild – Photoshop · Layout – InDesign · Grafik – Illustrator.",
+        "examples": [
+          {
+            "en": "4/4",
+            "de": "beide Seiten vierfarbig"
+          },
+          {
+            "en": "CMYK",
+            "de": "Cyan, Magenta, Yellow, Black"
+          },
+          {
+            "en": "InDesign",
+            "de": "Layout"
+          }
+        ]
+      },
+      "items": [
+        "k7-011",
+        "k7-012",
+        "k7-013",
+        "k7-014",
+        "k7-015",
+        "k7-016",
+        "k7-017",
+        "k7-018",
+        "k7-019"
+      ]
+    },
+    {
+      "id": "k7-l3",
+      "title": "Aufgabe 5–6: Farben sehen",
+      "subtitle": "Spektrum, Zusammendruck, Stäbchen/Zapfen, Remission",
+      "icon": "eye",
+      "grammar": {
+        "title": "Farben sehen – das Wichtigste",
+        "text": "• Sichtbares Licht (vereinfacht): Blau 400–500 nm, Grün 500–600 nm, Rot 600–700 nm. Links davon liegt UV, rechts davon Infrarot (IR).\n• Zusammendruck (Druckfarben übereinander): Rot = Magenta + Yellow · Grün = Cyan + Yellow · Blau = Cyan + Magenta · Schwarz (400 %) = Cyan + Magenta + Yellow + Black · Weiß = nichts gedruckt (Papier).\n• Stäbchen: Hell-Dunkel-Sehen, sehr lichtempfindlich (ca. 120 Mio.). Zapfen: Farbsehen, drei Arten B, G, R (ca. 6 Mio.).\n• Additive Farbmischung: Rot + Grün = Gelb · Grün + Blau = Cyan · Blau + Rot = Magenta · alle drei = Weiß.\n• Remittieren = Licht zurückwerfen, Absorbieren = Licht verschlucken. Damit Licht bis zum Papier durchdringt, muss die Farbe lasierend (durchsichtig wie ein Filter) sein.",
+        "examples": [
+          {
+            "en": "Zusammendruck Rot",
+            "de": "Magenta + Yellow"
+          },
+          {
+            "en": "Stäbchen",
+            "de": "Hell-Dunkel"
+          },
+          {
+            "en": "Lasierend",
+            "de": "durchsichtig – Licht erreicht das Papier"
+          }
+        ]
+      },
+      "items": [
+        "k7-020",
+        "k7-021",
+        "k7-022",
+        "k7-023",
+        "k7-024",
+        "k7-025",
+        "k7-026",
+        "k7-027",
+        "k7-028",
+        "k7-029",
+        "k7-030"
+      ]
+    },
+    {
+      "id": "k7-l4",
+      "title": "Aufgabe 7: DIN-Formate rechnen",
+      "subtitle": "Maße, Anzahl pro Bogen, Flächenmasse",
+      "icon": "ruler",
+      "grammar": {
+        "title": "DIN-Formate rechnen",
+        "text": "• DIN A4: Hochformat 210 × 297 mm = 21 × 29,7 cm, Querformat 297 × 210 mm. (Auf dem Blatt steht „DIN4“, gemeint ist DIN A4.)\n• Jedes Format passt zweimal ins nächstgrößere: A1 = 2 × A2 = 4 × A3 = 8 × A4 = 16 × A5 = 32 × A6.\n• A0 hat ca. 1 m². Jedes kleinere Format hat die Hälfte: A1 = 0,5 m², A2 = 0,25 m², A3 = 0,125 m².\n• Gewicht = Fläche × Flächenmasse: A3 bei 80 g/m² → 0,125 m² · 80 g/m² = 10 g.",
+        "examples": [
+          {
+            "en": "A4 quer",
+            "de": "297 × 210 mm"
+          },
+          {
+            "en": "A4 hoch",
+            "de": "21 × 29,7 cm"
+          },
+          {
+            "en": "1 A1",
+            "de": "= 16 × A5"
+          }
+        ]
+      },
+      "items": [
+        "k7-031",
+        "k7-032",
+        "k7-033",
+        "k7-034",
+        "k7-035",
+        "k7-036",
+        "k7-037",
+        "k7-038",
+        "k7-039"
+      ]
+    }
+  ]
+}

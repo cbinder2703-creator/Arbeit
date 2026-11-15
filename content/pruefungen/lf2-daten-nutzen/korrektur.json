@@ -1,6 +1,6 @@
 {
   "title": "Arbeitsblätter prüfen",
-  "intro": "Hier steht jede Aufgabe deiner Blätter mit deiner Antwort und der richtigen Lösung. Grün = stimmt · Rot = falsch · Gelb = ungenau · Blau = deine Antwort fehlte, hier ist die Lösung · Grau = nicht sicher. Alles stammt nur aus deinen Blättern. Ich habe Handschrift und Fotos gelesen – prüfe die markierten Stellen kurz im Heft. Zeichenaufgaben konnte ich nicht kontrollieren.",
+  "intro": "Hier steht jede Aufgabe deiner Blätter mit deiner Antwort und der richtigen Lösung. Grün = stimmt · Rot = falsch · Gelb = ungenau · Blau = deine Antwort fehlte, hier ist die Lösung · Grau = nicht sicher. Alles stammt nur aus deinen Blättern. Ich habe Handschrift und Fotos gelesen – prüfe die markierten Stellen kurz im Heft. Zeichenaufgaben konnte ich nicht kontrollieren. Beim Blatt „Wiederholung für die Klassenarbeit“ standen keine Lösungen – dort ist alles eine Musterlösung aus dem Stoff deiner Blätter.",
   "sheets": [
     {
       "id": "ls1",
@@ -473,6 +473,168 @@
           "yours": "Texterfassung 1 · Layouterstellung 2 · Korrekturabzüge 3 · Imprimatur 4 · Belichtung der Siebe 5 · Druck 6",
           "status": "ok",
           "correct": "Die Reihenfolge stimmt."
+        }
+      ]
+    },
+    {
+      "id": "ka26",
+      "title": "Wiederholung für die Klassenarbeit",
+      "subtitle": "Blatt „Wiederholung KA 26“, Aufgaben 1–7 und Dreisatz (ohne Lösungen – Musterlösung ergänzt)",
+      "color": "#EAB308",
+      "entries": [
+        {
+          "task": "1a) Schriftgruppen: Tabelle ergänzen",
+          "yours": null,
+          "status": "missing",
+          "correct": "Fraktur (gebrochene Schrift) · Grotesk (Beispiel: Arial) · Schreibschrift · Egyptienne = serifenbetonte Schrift (Beispiel: Rockwell) · Antiqua (Beispiel: Times)",
+          "note": "Die Zeile mit der kursiven Zierschrift habe ich als Schreibschrift gelesen – bitte mit der Schrift auf dem Blatt vergleichen."
+        },
+        {
+          "task": "1b) Welche zwei Schriftgruppen sind am besten lesbar?",
+          "yours": null,
+          "status": "missing",
+          "correct": "Antiqua und Grotesk.",
+          "note": "Fraktur und Egyptienne sind bei längeren Texten schlecht lesbar, Schreibschriften bei viel Text ungeeignet."
+        },
+        {
+          "task": "2a) Serife, Gemeine, Punze, Versalie im Wort „Hamburg“ markieren",
+          "yours": null,
+          "status": "missing",
+          "correct": "Serife: der kleine Abschlussstrich an den Buchstabenenden (z. B. am Fuß von m, u, b). Gemeine: ein Kleinbuchstabe, z. B. das a oder m. Punze: der Innenraum eines Buchstabens, z. B. im a oder b. Versalie: das große H.",
+          "note": "Das Markieren selbst ist eine Zeichenaufgabe – hier steht, worauf du zeigen musst."
+        },
+        {
+          "task": "2b) Vier-Linien-System einzeichnen und die Abstände benennen",
+          "yours": null,
+          "status": "missing",
+          "correct": "Von oben nach unten: Oberlinie – Mittellinie – Schriftlinie – Unterlinie. Oberlänge = Teil über der Mittellänge (H-, b-, d-Höhe), Mittellänge = Höhe der Kleinbuchstaben ohne Ober-/Unterlänge, Unterlänge = Teil unter der Schriftlinie (g). Versalhöhe = Höhe der Großbuchstaben.",
+          "note": "Die Namen der Linien (Ober-, Mittel-, Schrift-, Unterlinie) sind Fachwissen, das nicht wörtlich auf deinen Blättern stand."
+        },
+        {
+          "task": "3a) Was bedeutet 4/4 auf der Auftragstasche?",
+          "yours": null,
+          "status": "missing",
+          "correct": "Vorder- und Rückseite werden jeweils vierfarbig bedruckt."
+        },
+        {
+          "task": "3b) Mit welchen Druckfarben wird der Auftrag gedruckt?",
+          "yours": null,
+          "status": "missing",
+          "correct": "Cyan, Magenta, Yellow und Black (Schwarz) – CMYK."
+        },
+        {
+          "task": "4) Typische Adobe-Software für Bild, Grafik, Layout",
+          "yours": null,
+          "status": "missing",
+          "correct": "Bild – Photoshop · Grafik – Illustrator · Layout – InDesign."
+        },
+        {
+          "task": "5a) Wellenlängenbereiche des sichtbaren Lichts",
+          "yours": null,
+          "status": "missing",
+          "correct": "Blau 400–500 nm · Grün 500–600 nm · Rot 600–700 nm (links UV, rechts Infrarot).",
+          "note": "Die Striche im Bild liegen bei 400, 500, 600 und 700 nm."
+        },
+        {
+          "task": "5b) Zusammendruck-Tabelle (Cyan, Magenta, Yellow, Black eintragen)",
+          "yours": null,
+          "status": "missing",
+          "correct": "Schwarz (400 %): alle vier Farben · Weiß: keine · Rot: Magenta + Yellow · Grün: Cyan + Yellow · Blau: Cyan + Magenta · Cyan: nur Cyan · Magenta: nur Magenta · Yellow: nur Yellow.",
+          "note": "Schwarz mit 400 % heißt: alle vier Druckfarben übereinander (4 × 100 %). Ob in diesem Modell auch Black bei Schwarz gedruckt wird, steht nicht auf dem Blatt – 400 % spricht dafür."
+        },
+        {
+          "task": "5c) Aufgaben von Stäbchen und Zapfen",
+          "yours": null,
+          "status": "missing",
+          "correct": "Stäbchen: Hell-Dunkel-Sehen, sehr lichtempfindlich (ca. 120 Mio.), sehen in der Dämmerung ohne Farben. Zapfen: Farbsehen, drei Arten (B, G, R), ca. 6 Mio."
+        },
+        {
+          "task": "5d) Additive Farbmischung zeichnen",
+          "yours": null,
+          "status": "missing",
+          "correct": "Drei sich überlappende Kreise (Rot, Grün, Blau) auf schwarzem Grund: Rot + Grün = Gelb · Grün + Blau = Cyan · Blau + Rot = Magenta · alle drei in der Mitte = Weiß."
+        },
+        {
+          "task": "6a) Unterschied Remittieren und Absorbieren (Abbildung)",
+          "yours": null,
+          "status": "missing",
+          "correct": "Remittieren = Licht wird zurückgeworfen (z. B. vom weißen Papier). Absorbieren = Licht wird verschluckt und in Wärme umgewandelt (hier das Blau von der gelben Farbe)."
+        },
+        {
+          "task": "6b) Welcher Farbeindruck entsteht im Gehirn?",
+          "yours": null,
+          "status": "missing",
+          "correct": "Gelb – das Grün und das Rot kommen zurück und mischen sich im Auge zu Gelb.",
+          "note": "Auf der Abbildung sind drei Strahlen (Blau, Grün, Rot) auf einer gelben Schicht über weißem Papier."
+        },
+        {
+          "task": "6c) Welche Eigenschaft muss die Farbe haben, damit das Licht bis zum Papier kommt?",
+          "yours": null,
+          "status": "missing",
+          "correct": "Sie muss lasierend (durchsichtig wie ein Farbfilter) sein."
+        },
+        {
+          "task": "7a) DIN A4 Querformat in mm",
+          "yours": null,
+          "status": "missing",
+          "correct": "297 × 210 mm",
+          "note": "Auf dem Blatt steht „DIN4“ – gemeint ist DIN A4."
+        },
+        {
+          "task": "7b) DIN A4 Hochformat in cm",
+          "yours": null,
+          "status": "missing",
+          "correct": "21 × 29,7 cm"
+        },
+        {
+          "task": "7c) Wie viele A6 passen in ein A2?",
+          "yours": null,
+          "status": "missing",
+          "correct": "16 (A2 = 2 × A3 = 4 × A4 = 8 × A5 = 16 × A6)."
+        },
+        {
+          "task": "7d) Wie viele A5 enthält ein A1?",
+          "yours": null,
+          "status": "missing",
+          "correct": "16 (A1 = 2 × A2 = 4 × A3 = 8 × A4 = 16 × A5)."
+        },
+        {
+          "task": "7e) Wie viele A3 enthält ein A1?",
+          "yours": null,
+          "status": "missing",
+          "correct": "4 (A1 = 2 × A2 = 4 × A3)."
+        },
+        {
+          "task": "7f) Flächenmasse 80 g/m² – Gewicht eines Bogens A3",
+          "yours": null,
+          "status": "missing",
+          "correct": "Etwa 10 g: A3 hat ca. 0,125 m² (ein Achtel von A0 ≈ 1 m²), 0,125 · 80 g = 10 g.",
+          "note": "Genau gerechnet: 0,297 m · 0,420 m ≈ 0,1247 m² → ca. 9,98 g."
+        },
+        {
+          "task": "Dreisatz 1) 6 kg Offsetfarbe kosten 142,80 € – 86 kg?",
+          "yours": null,
+          "status": "missing",
+          "correct": "142,80 € : 6 = 23,80 € je kg · 86 = 2.046,80 €."
+        },
+        {
+          "task": "Dreisatz 2) 1600 Kataloge wiegen 16,4 kg – 8800 Kataloge?",
+          "yours": null,
+          "status": "missing",
+          "correct": "16,4 kg : 1600 · 8800 = 90,2 kg."
+        },
+        {
+          "task": "Dreisatz 3) 2 Druckmaschinen: 12 500 Bogen/h – 3 Maschinen?",
+          "yours": null,
+          "status": "missing",
+          "correct": "12 500 : 2 = 6 250 · 3 = 18 750 Bogen pro Stunde."
+        },
+        {
+          "task": "Dreisatz 4) 4 Mediengestalter brauchen 6 Tage – wie viele für 3 Tage?",
+          "yours": null,
+          "status": "missing",
+          "correct": "Umgekehrt proportional: 4 · 6 : 3 = 8 Mediengestalter.",
+          "note": "Weniger Tage → mehr Personen, deshalb nicht 4 · 3 : 6."
         }
       ]
     }

@@ -3,7 +3,7 @@
   "title": "LF2 – Daten verfahrensspezifisch nutzen",
   "gameTitle": "Print-Profi",
   "tagline": "Formate, Schrift, Farbe und Auflösung – Lektion für Lektion",
-  "subject": "LF2",
+  "subject": "Mediengestaltung Digital und Print – LF2",
   "pages": "LS1 bis LS4",
   "examDate": null,
   "color": "#DB2777",
@@ -16,7 +16,9 @@
     "k3-licht-auge-sehen.json",
     "k4-farbmischung.json",
     "k5-kunden-email.json",
-    "k6-aufloesung-daten.json"
+    "k6-aufloesung-daten.json",
+    "k7-klassenarbeit-wiederholung.json",
+    "k8-dreisatz.json"
   ],
   "modes": "auto",
   "finalExam": {
@@ -57,10 +59,10 @@
     {
       "id": "pfad-profi",
       "title": "Pfad-Profi",
-      "rule": "Alle 21 Lektionen geschafft",
+      "rule": "Alle 27 Lektionen geschafft",
       "condition": {
         "kind": "lessonsDone",
-        "count": 21
+        "count": 27
       }
     },
     {

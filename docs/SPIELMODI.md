@@ -93,6 +93,22 @@ bei reduzierter Bewegung steht die Liste still (kein Zeitdruck).
 Galgenmännchen für Fachbegriffe: Die Erklärung steht da, der Begriff wird Buchstabe für Buchstabe erraten (6 Runden, 6 Leben, Tipp kostet 1 Leben).
 Die Erklärung wird so geschwärzt, dass der gesuchte Begriff nicht darin vorkommt. Tastatur auf dem PC, Bildschirmtasten (inkl. Ä Ö Ü ß) am Handy.
 
+## 16. Lern-Runner 🏃  (`lern-runner`)
+2D-Lauf in Seitenansicht: Die Strecke hat so viele Spuren wie Antworten (2–4). Du läufst automatisch, weichst Steinen aus und läufst durch das Tor der richtigen Antwort (Spur A–D).
+Steuerung: Spur antippen, hoch/runter wischen, ↑ ↓ oder 1–4; die Antwort-Knöpfe unter dem Spielfeld wechseln ebenfalls die Spur. 3 Herzen: Stein getroffen oder falsches Tor = −1. Mit „Ohne Zeitdruck“ ist das Tempo niedriger.
+
+## 17. Turbo-Rennen 3D 🚀  (`turbo-3d`)
+Dasselbe Prinzip in 3D (Three.js, lokal gebündelt, wird erst beim Öffnen geladen): Du fährst durch eine Landschaft, weichst Kisten aus und fährst unter dem Schild der richtigen Antwort durch.
+Steuerung: links/rechts tippen oder wischen, ← →, 1–4. Ohne WebGL (sehr alte Geräte) erscheint ein freundlicher Hinweis statt eines Fehlers.
+
+## 18. Verlies 🏰  (`verlies`)
+Zufälliges Labyrinth (9 × 10 Felder) mit bis zu 7 Monstern. Läufst du in ein Monster, musst du eine Frage lösen: richtig = besiegt, falsch = −1 Herz und die Frage kommt später wieder.
+Das Tor ist zu, bis alle Monster besiegt sind. Herzen am Wegesrand heilen. Steuerung: Feld antippen (läuft den kürzesten Weg), wischen, Pfeiltasten/WASD.
+
+## 19. Burg-Wacht 🛡️  (`burg-wacht`)
+Tower-Defense: Gegner marschieren in 4 Spuren auf deine Burg (5 Herzen) zu. Jede richtige Antwort gibt einen Baupunkt: Spur antippen (PC: Q W E R) baut oder verstärkt einen Turm (Stufe 1–3).
+Eine falsche Antwort schickt zwei zusätzliche, schnellere Gegner. Nach der letzten Frage geht die Verteidigung weiter, bis kein Gegner mehr da ist.
+
 ## Auswahl-Logik
 - Die Modus-Liste einer Prüfung zeigt nur Modi, für die im gewählten Kapitel genug Items vorhanden sind (`minItems`).
 - Die Startseite eines Prüfungs-Spiels schlägt „Heute dran“ vor: das Kapitel mit den meisten fälligen Leitner-Items.

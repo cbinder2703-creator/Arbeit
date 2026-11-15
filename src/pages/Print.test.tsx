@@ -28,11 +28,11 @@ const open = (path: string) =>
   );
 
 describe('Print-Profi – Inhalte', () => {
-  it('ist ein eigenes Spiel (LF2) mit 6 Kapiteln, 21 Lektionen und allen Aufgabentypen', () => {
+  it('ist ein eigenes Spiel (LF2) mit 8 Kapiteln, 27 Lektionen und allen Aufgabentypen', () => {
     expect(pr.meta.gameTitle).toBe('Print-Profi');
-    expect(pr.chapters).toHaveLength(6);
-    expect(pr.chapters.flatMap((c) => c.lessons)).toHaveLength(21);
-    expect(items.length).toBeGreaterThan(180);
+    expect(pr.chapters).toHaveLength(8);
+    expect(pr.chapters.flatMap((c) => c.lessons)).toHaveLength(27);
+    expect(items.length).toBeGreaterThan(230);
     for (const t of ['mc', 'truefalse', 'sort', 'pairs', 'order', 'cloze']) expect(items.some((i) => i.type === t)).toBe(true);
     // keine Gerichts-/Vertrags-Aufgaben in LF2
     expect(items.some((i) => i.type === 'case' || i.type === 'spot')).toBe(false);
@@ -91,12 +91,37 @@ describe('Print-Profi – Seiten', () => {
   });
 });
 
+describe('Klassenarbeits-Wiederholung (KA 26)', () => {
+  const ka = pr.chapters.filter((c) => c.id === 'k7' || c.id === 'k8');
+  it('Kapitel „Klassenarbeit: Wiederholung“ und „Dreisatz“ sind da, mit Lektionen und Lernkarten', () => {
+    expect(ka.map((c) => c.id)).toEqual(['k7', 'k8']);
+    expect(ka[0].lessons).toHaveLength(4);
+    expect(ka[1].lessons).toHaveLength(2);
+    expect(ka.every((c) => c.flashcards.length > 0)).toBe(true);
+  });
+  it('Rechenaufgaben des Blatts haben die richtigen Lösungen', () => {
+    const find = (part: string) => ka.flatMap((c) => c.items).find((i) => i.type === 'mc' && i.question.includes(part));
+    const right = (part: string) => {
+      const q = find(part);
+      return q && q.type === 'mc' ? q.options[q.correct] : undefined;
+    };
+    expect(right('6 kg Offsetfarbe kosten 142,80')).toBe('2.046,80 €');
+    expect(right('1600 Kataloge')).toBe('90,2 kg');
+    expect(right('Zwei Druckmaschinen drucken zusammen')).toBe('18 750');
+    expect(right('4 Mediengestalter')).toBe('8');
+    expect(right('Wie viele A6 passen in ein A2')).toBe('16');
+    expect(right('Wie viele A5 enthält ein A1')).toBe('16');
+    expect(right('Wie viele A3 enthält ein A1')).toBe('4');
+    expect(right('Wie schwer ist ein Bogen A3')).toBe('Etwa 10 g');
+  });
+});
+
 describe('Arbeitsblätter prüfen', () => {
   const k = pr.korrektur!;
   const all = k.sheets.flatMap((s) => s.entries);
 
   it('ist vorhanden, jeder Eintrag hat eine richtige Lösung; Fehler sind markiert', () => {
-    expect(k.sheets).toHaveLength(5);
+    expect(k.sheets).toHaveLength(6);
     expect(all.every((e) => e.correct.length > 5)).toBe(true);
     expect(all.filter((e) => e.status === 'fix').map((e) => e.task)).toEqual(
       expect.arrayContaining([expect.stringContaining('7. Ein DIN A4 passt maximal 6-mal'), expect.stringContaining('Auge: Beschriftung'), expect.stringContaining('grüne Fläche'), expect.stringContaining('Gesamtsumme')]),

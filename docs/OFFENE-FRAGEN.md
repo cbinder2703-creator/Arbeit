@@ -14,3 +14,11 @@ Hier stehen Punkte, bei denen Inhalte fehlen oder unklar sind (nichts wurde gera
 - **LF2-Inhalte gegenlesen (Print-Profi):** Aufgaben, Erklärungen und Lernkarten hat Claude aus den Arbeitsblättern geschrieben. Bitte mit Heft/Lehrkraft gegenprüfen, besonders: Zuordnung P/Q/R am Muster-wort „Hamburgo“ (Kehlung, Halbserife, geschlossene Punze), Nummern im Augen-Schema (Nr. 3 Netzhaut), und das letzte Arial-Beispiel bei den Schriftschnitten.
 - **Workflow Eingabe/Ausgabe (LS4, Übungsfrage 1b):** Auf den Blättern steht nicht, ob „Eingabe und Ausgabe“ vollständig ist. Üblich sind drei Bereiche (Eingabe – Verarbeitung – Ausgabe), die Aussage wäre dann falsch. Diese Frage ist nicht im Spiel; in „Arbeitsblätter prüfen“ steht sie als „Unsicher“.
 - **Prüfungstermin LF2:** `examDate` in `content/pruefungen/lf2-daten-nutzen/pruefung.json` ist leer.
+
+## Wiederholung KA 26 (LF2)
+
+- Aufgabe 7 schreibt „DIN4“ – gemeint ist vermutlich DIN A4 (210 × 297 mm). Bitte kurz mit der Lehrkraft bestätigen.
+- Aufgabe 1a: Die kursive Schrift in der zweiten Tabellenzeile wurde als **Schreibschrift** gelesen. Falls die Lehrkraft eine andere Gruppe meint, in `k7-klassenarbeit-wiederholung.json` anpassen.
+- Aufgabe 5b: „Schwarz (400 %)“ = Cyan + Magenta + Yellow + Black (4 × 100 %). Das Buch sagt für die drei Farbfilter (C + M + Y) „Schwarz“; ob die Lehrkraft in der Tabelle auch Black einträgt, ist nicht geklärt.
+- Aufgabe 2b: Die Namen der vier Linien (Ober-, Mittel-, Schrift-, Unterlinie) und die Abstände sind allgemeines Fachwissen und stehen nicht wörtlich auf den anderen Blättern.
+- Aufgabe 6b/c: Lösung anhand der Abbildung gelesen (gelbe Farbschicht auf weißem Papier, Blau wird absorbiert, Grün und Rot ergeben Gelb; Farbe muss lasierend sein).
