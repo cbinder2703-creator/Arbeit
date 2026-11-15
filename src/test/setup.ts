@@ -24,3 +24,6 @@ class RO {
 }
 (globalThis as unknown as { ResizeObserver: unknown }).ResizeObserver ??= RO;
 window.scrollTo = (() => {}) as typeof window.scrollTo;
+
+// jsdom hat keinen Canvas – Spiele zeichnen dann einfach nichts
+HTMLCanvasElement.prototype.getContext = (() => null) as unknown as typeof HTMLCanvasElement.prototype.getContext;

@@ -1,0 +1,307 @@
+{
+  "id": "k8",
+  "chapter": 8,
+  "title": "Dreisatz",
+  "subtitle": "Zusatzaufgabe: Dreisatz mit Preisen, Mengen und Zeit",
+  "pages": "Wiederholung KA 26, S. 4",
+  "color": "#0EA5E9",
+  "icon": "ruler",
+  "flashcards": [
+    {
+      "id": "k8-f01",
+      "term": "Dreisatz",
+      "definition": "Rechenverfahren in drei Sätzen: Gegebenes – Einheit 1 – gesuchte Menge."
+    },
+    {
+      "id": "k8-f02",
+      "term": "Proportional",
+      "definition": "Je mehr, desto mehr: erst durch die gegebene Menge teilen, dann mit der gesuchten Menge malnehmen."
+    },
+    {
+      "id": "k8-f03",
+      "term": "Umgekehrt proportional",
+      "definition": "Je mehr, desto weniger: erst malnehmen (Gesamtarbeit), dann durch die neue Größe teilen."
+    }
+  ],
+  "items": [
+    {
+      "id": "k8-001",
+      "difficulty": 1,
+      "type": "order",
+      "question": "Bring die drei Sätze des Dreisatzes in die richtige Reihenfolge.",
+      "steps": [
+        "1. Satz: Das Gegebene aufschreiben (8 Stunden ≙ 132 €)",
+        "2. Satz: Auf die Einheit 1 umrechnen (1 Stunde ≙ 132 € : 8)",
+        "3. Satz: Auf die gesuchte Menge hochrechnen (38 Stunden ≙ 132 € · 38 : 8)"
+      ],
+      "explanation": "Erst Gegebenes, dann auf 1 herunterrechnen, dann auf die gesuchte Menge hochrechnen."
+    },
+    {
+      "id": "k8-002",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Ein Drucker erhält für 8 Stunden Arbeit 132 €. Wie viel Euro bekommt er für 38 Stunden?",
+      "options": [
+        "627 €",
+        "5.016 €",
+        "501,60 €",
+        "304 €"
+      ],
+      "correct": 0,
+      "explanation": "132 € : 8 = 16,50 € je Stunde; 16,50 € · 38 = 627 €."
+    },
+    {
+      "id": "k8-003",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie viel Euro verdient der Drucker in 1 Stunde (2. Satz)?",
+      "options": [
+        "16,50 €",
+        "132 €",
+        "1.056 €",
+        "8 €"
+      ],
+      "correct": 0,
+      "explanation": "132 € : 8 Stunden = 16,50 € je Stunde."
+    },
+    {
+      "id": "k8-004",
+      "difficulty": 2,
+      "type": "sort",
+      "question": "Proportional oder umgekehrt proportional?",
+      "categories": [
+        {
+          "id": "p",
+          "label": "Je mehr, desto mehr (proportional)"
+        },
+        {
+          "id": "u",
+          "label": "Je mehr, desto weniger (umgekehrt proportional)"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Menge Offsetfarbe und Preis",
+          "category": "p"
+        },
+        {
+          "text": "Anzahl Kataloge und Gewicht",
+          "category": "p"
+        },
+        {
+          "text": "Arbeitsstunden und Lohn",
+          "category": "p"
+        },
+        {
+          "text": "Anzahl Druckmaschinen und gedruckte Bogen pro Stunde",
+          "category": "p"
+        },
+        {
+          "text": "Anzahl Mediengestalter und benötigte Tage",
+          "category": "u"
+        },
+        {
+          "text": "Anzahl Druckmaschinen und Zeit für dieselbe Auflage",
+          "category": "u"
+        }
+      ]
+    },
+    {
+      "id": "k8-005",
+      "difficulty": 2,
+      "type": "truefalse",
+      "statement": "Arbeiten doppelt so viele Mediengestalter an einem Auftrag, brauchen sie nur halb so lange (gleiche Leistung).",
+      "correct": true,
+      "explanation": "Richtig – das ist umgekehrt proportional: Mehr Leute, weniger Tage."
+    },
+    {
+      "id": "k8-006",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Welche Rechnung gilt bei „4 Gestalter brauchen 6 Tage – wie viele brauchen 3 Tage?“",
+      "options": [
+        "Umgekehrter Dreisatz: 4 · 6 : 3",
+        "Normaler Dreisatz: 4 · 3 : 6",
+        "4 + 6 − 3",
+        "6 : 4 · 3"
+      ],
+      "correct": 0,
+      "explanation": "Weniger Tage → mehr Gestalter: 4 · 6 = 24 Arbeitstage, 24 : 3 = 8."
+    },
+    {
+      "id": "k8-007",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "6 kg Offsetfarbe kosten 142,80 €. Wie viel kosten 86 kg?",
+      "options": [
+        "2.046,80 €",
+        "12.280,80 €",
+        "1.023,40 €",
+        "1.904,00 €"
+      ],
+      "correct": 0,
+      "explanation": "142,80 € : 6 = 23,80 € je kg; 23,80 € · 86 = 2.046,80 €."
+    },
+    {
+      "id": "k8-008",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "1600 Kataloge wiegen 16,4 kg. Wie viel kg wiegt eine Auflage von 8800 dieser Kataloge?",
+      "options": [
+        "90,2 kg",
+        "9,02 kg",
+        "902 kg",
+        "29,8 kg"
+      ],
+      "correct": 0,
+      "explanation": "16,4 kg : 1600 = 0,01025 kg je Katalog; · 8800 = 90,2 kg."
+    },
+    {
+      "id": "k8-009",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Zwei Druckmaschinen drucken zusammen 12 500 Bogen in der Stunde. Wie viele Bogen drucken drei Maschinen mit gleicher Laufgeschwindigkeit in der Stunde?",
+      "options": [
+        "18 750",
+        "37 500",
+        "8 333",
+        "25 000"
+      ],
+      "correct": 0,
+      "explanation": "12 500 : 2 = 6 250 je Maschine; · 3 = 18 750."
+    },
+    {
+      "id": "k8-010",
+      "difficulty": 3,
+      "type": "mc",
+      "question": "An den Bildern eines Kataloges arbeiten 4 Mediengestalter 6 Tage. Wie viele müssen eingesetzt werden, wenn die Arbeit in 3 Tagen fertig sein muss?",
+      "options": [
+        "8",
+        "2",
+        "12",
+        "4"
+      ],
+      "correct": 0,
+      "explanation": "Umgekehrt proportional: 4 · 6 = 24 Arbeitstage; 24 : 3 = 8 Mediengestalter."
+    },
+    {
+      "id": "k8-011",
+      "difficulty": 2,
+      "type": "cloze",
+      "text": "6 kg Offsetfarbe kosten 142,80 €. Also kostet 1 kg {{23,80 €}} und 86 kg kosten {{2.046,80 €}}.",
+      "distractors": [
+        "857,00 €",
+        "23,08 €"
+      ],
+      "explanation": "142,80 : 6 = 23,80; 23,80 · 86 = 2.046,80."
+    },
+    {
+      "id": "k8-012",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Drei Druckmaschinen drucken in der Stunde das Eineinhalbfache von zwei Maschinen.",
+      "correct": true,
+      "explanation": "Richtig – 18 750 : 12 500 = 1,5."
+    },
+    {
+      "id": "k8-013",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Übung: 5 Stunden Arbeit kosten 175 €. Wie viel kosten 12 Stunden?",
+      "options": [
+        "420 €",
+        "2.100 €",
+        "70 €",
+        "350 €"
+      ],
+      "correct": 0,
+      "explanation": "175 € : 5 = 35 € je Stunde; · 12 = 420 €."
+    },
+    {
+      "id": "k8-014",
+      "difficulty": 3,
+      "type": "mc",
+      "question": "Übung: 3 Druckmaschinen brauchen 8 Stunden für eine Auflage. Wie lange brauchen 4 gleich schnelle Maschinen?",
+      "options": [
+        "6 Stunden",
+        "10 Stunden und 40 Minuten",
+        "12 Stunden",
+        "4 Stunden"
+      ],
+      "correct": 0,
+      "explanation": "Umgekehrt proportional: 3 · 8 = 24 Maschinenstunden; 24 : 4 = 6 Stunden."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "k8-l1",
+      "title": "Dreisatz-Verfahren",
+      "subtitle": "Drei Sätze, proportional und umgekehrt",
+      "icon": "ruler",
+      "grammar": {
+        "title": "Der Dreisatz",
+        "text": "• Ist ein Zusammenhang zwischen zwei Größen bekannt, kann man mit dem Dreisatz jeden anderen Zusammenhang berechnen. Es sind drei Schritte (Sätze).\n• Beispiel: 8 Stunden Arbeit ≙ 132 €. 1. Satz: 8 Stunden ≙ 132 €. 2. Satz: 1 Stunde ≙ 132 € : 8 = 16,50 €. 3. Satz: 38 Stunden ≙ 132 € · 38 : 8 = 627 €.\n• Proportional (je mehr, desto mehr): Hier erst durch die gegebene Menge teilen, dann mit der gesuchten Menge multiplizieren.\n• Umgekehrt proportional (je mehr, desto weniger): Hier erst multiplizieren, dann teilen – z. B. 4 Gestalter · 6 Tage = 24 Arbeitstage; bei 3 Tagen: 24 : 3 = 8 Gestalter.",
+        "examples": [
+          {
+            "en": "1. Satz",
+            "de": "das Gegebene aufschreiben"
+          },
+          {
+            "en": "2. Satz",
+            "de": "auf die Einheit 1 umrechnen"
+          },
+          {
+            "en": "3. Satz",
+            "de": "auf die gesuchte Menge hochrechnen"
+          }
+        ]
+      },
+      "items": [
+        "k8-001",
+        "k8-002",
+        "k8-003",
+        "k8-004",
+        "k8-005",
+        "k8-006"
+      ]
+    },
+    {
+      "id": "k8-l2",
+      "title": "Aufgaben vom Blatt",
+      "subtitle": "Farbe, Kataloge, Druckmaschinen, Mediengestalter",
+      "icon": "printer",
+      "grammar": {
+        "title": "Die vier Aufgaben im Überblick",
+        "text": "• 6 kg Offsetfarbe kosten 142,80 € → 1 kg = 23,80 € → 86 kg = 2.046,80 €.\n• 1600 Kataloge wiegen 16,4 kg → 8800 Kataloge wiegen 90,2 kg.\n• 2 Druckmaschinen drucken 12 500 Bogen pro Stunde → 3 Maschinen drucken 18 750 Bogen pro Stunde.\n• 4 Mediengestalter brauchen 6 Tage → in 3 Tagen braucht man 8 Mediengestalter (umgekehrt proportional).",
+        "examples": [
+          {
+            "en": "Aufgabe 1",
+            "de": "2.046,80 €"
+          },
+          {
+            "en": "Aufgabe 2",
+            "de": "90,2 kg"
+          },
+          {
+            "en": "Aufgabe 3",
+            "de": "18 750 Bogen"
+          },
+          {
+            "en": "Aufgabe 4",
+            "de": "8 Mediengestalter"
+          }
+        ]
+      },
+      "items": [
+        "k8-007",
+        "k8-008",
+        "k8-009",
+        "k8-010",
+        "k8-011",
+        "k8-012",
+        "k8-013",
+        "k8-014"
+      ]
+    }
+  ]
+}

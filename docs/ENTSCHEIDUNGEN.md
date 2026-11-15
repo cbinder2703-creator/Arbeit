@@ -164,3 +164,12 @@ Hier steht, was unklar war und wie ich es entschieden habe (statt nachzufragen).
 60. **Azubionär ist ein Spiel, kein Test:** Joker und Aussteigen ändern nur den Spielstand; XP und Leitner-Boxen werden wie überall von der Engine vergeben. Die Prozentbalken beim Publikum sind Zufall mit Schwierigkeitsbezug, keine echten Daten.
 61. **Begriffe-Raten** nutzt nur Lernkarten, deren Begriff 4–20 Buchstaben hat (ohne Klammerzusätze, bei „A / B“ gilt der erste Teil). Alles andere wird übersprungen.
 62. **Blasen-Quiz und Boss-Kampf** respektieren „Ohne Zeitdruck“ und `prefers-reduced-motion` (kein Zeitverlust, keine Bewegung).
+
+## Echte Spiele & Klassenarbeits-Blatt
+
+63. **Vier Spiele mit Spielfläche** (`lern-runner`, `turbo-3d`, `verlies`, `burg-wacht`) bleiben normale Plugins: gleiche Aufgaben (mc/Wahr-Falsch), gleiche Engine-Punkte. Gemeinsame Bausteine liegen in `src/ui/game/` (Spielfläche mit Schleife, Gesten, Herzen, Endbildschirm, Antwort-Knöpfe) und `src/engine/` (`choices.ts`, `laneRun.ts`) – kein Modus importiert einen anderen.
+64. **Grafik ohne Bilddateien:** Figuren sind Emojis und einfache Formen (2D) bzw. Würfel/Kegel (3D). Dadurch offline, ohne Lizenzfragen und klein. Three.js wird über npm eingebunden (keine externe CDN, DSGVO) und nur geladen, wenn das 3D-Spiel geöffnet wird.
+65. **Barrierefreiheit der Spiele:** Jede Spielfläche hat ein `aria-label`; alle Antworten stehen zusätzlich als Knöpfe darunter (Antippen wechselt die Spur). „Ohne Zeitdruck“ und `prefers-reduced-motion` machen Runner, Rennen und Burg-Wacht langsamer.
+66. **Burg-Wacht ist ausbalanciert getestet:** In `defense.test.ts` gewinnt, wer alles richtig macht (40 Zufallspartien), mit zwei Fehlern fast immer, und wer nichts richtig macht, verliert immer.
+67. **Klassenarbeit-Wiederholung (Blatt „Wiederholung KA 26“)** ist Teil von Print-Profi: Kapitel 7 „Klassenarbeit: Wiederholung“ (4 Lektionen zu Aufgabe 1–7) und Kapitel 8 „Dreisatz“ (2 Lektionen). Das Blatt hatte keine Lösungen – alle Lösungen sind aus dem Stoff der übrigen Blätter bzw. gerechnet; sie stehen auch in „Arbeitsblätter prüfen“ (Blatt „Wiederholung für die Klassenarbeit“, Status „Lösung ergänzt“).
+68. **Auf dem Blatt unklar** (siehe `docs/OFFENE-FRAGEN.md`): „DIN4“ wurde als DIN A4 gelesen; die kursive Zierschrift in Aufgabe 1 als Schreibschrift; „Schwarz (400 %)“ als alle vier Druckfarben übereinander. Die zwei „Übung“-Aufgaben im Dreisatz sind eigene Rechenbeispiele in demselben Stil.
