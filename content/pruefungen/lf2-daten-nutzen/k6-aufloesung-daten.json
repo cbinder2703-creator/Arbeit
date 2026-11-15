@@ -1,0 +1,644 @@
+{
+  "id": "k6",
+  "chapter": 6,
+  "title": "Auflösung & Daten",
+  "subtitle": "LS4: ppi/dpi, Farbtiefe, Pixel/Vektor, Technik, Beschnitt",
+  "pages": "Arbeitsblätter LS4",
+  "color": "#14B8A6",
+  "icon": "printer",
+  "flashcards": [
+    {
+      "id": "k6-f01",
+      "term": "Auflösung",
+      "definition": "Detailwiedergabe, bei der einzelne Elemente getrennt wahrgenommen werden."
+    },
+    {
+      "id": "k6-f02",
+      "term": "ppi (Pixel per inch)",
+      "definition": "Eingabeauflösung – z. B. Digitalkamera, Scanner, Monitor (72 ppi)."
+    },
+    {
+      "id": "k6-f03",
+      "term": "dpi (Dots per inch)",
+      "definition": "Druckauflösung – Wiedergabefeinheit für den Druckprozess; Standard 300 dpi."
+    },
+    {
+      "id": "k6-f04",
+      "term": "Inch (Zoll)",
+      "definition": "1 Inch = 2,54 cm."
+    },
+    {
+      "id": "k6-f05",
+      "term": "Farbtiefe (Bittiefe)",
+      "definition": "Anzahl der Bits für Farbinformationen; üblich 8 Bit pro Kanal = 256 Abstufungen."
+    },
+    {
+      "id": "k6-f06",
+      "term": "RGB-Farbwerte",
+      "definition": "8 Bit pro Kanal: 256 × 256 × 256 = 16.777.216 mögliche Farben."
+    },
+    {
+      "id": "k6-f07",
+      "term": "Pixelgrafik",
+      "definition": "Aus einzelnen Bildpunkten; fotorealistisch, nur begrenzt skalierbar."
+    },
+    {
+      "id": "k6-f08",
+      "term": "Vektorgrafik",
+      "definition": "Mathematisch beschrieben (Vektoren, Ankerpunkte); beliebig skalierbar, wenig Speicher, nicht fotorealistisch."
+    },
+    {
+      "id": "k6-f09",
+      "term": "Grafische Primitive",
+      "definition": "Einfache Grundformen der Vektorgrafik: Linien, Kreise, Polygone, Kurven."
+    },
+    {
+      "id": "k6-f10",
+      "term": "RIP (Raster Image Prozessor)",
+      "definition": "Rechnet die Daten für die Ausgabe in Rasterpunkte um."
+    },
+    {
+      "id": "k6-f11",
+      "term": "Belichter (Recorder)",
+      "definition": "Gerät, das Druckvorlagen belichtet."
+    },
+    {
+      "id": "k6-f12",
+      "term": "Elektrofotografie",
+      "definition": "Technik des Laserdruckers."
+    },
+    {
+      "id": "k6-f13",
+      "term": "Inkjet",
+      "definition": "Technik des Tintenstrahldruckers."
+    },
+    {
+      "id": "k6-f14",
+      "term": "Briefing",
+      "definition": "Auftragsbesprechung mit dem Kunden."
+    },
+    {
+      "id": "k6-f15",
+      "term": "Server",
+      "definition": "Speichert und verwaltet alle digitalen Daten des Produktionsprozesses; mehrere Personen können zugreifen."
+    },
+    {
+      "id": "k6-f16",
+      "term": "Schnittmarken und Beschnitt",
+      "definition": "Schnittmarken zeigen die Schnittkanten; bei falschem Beschnitt entsteht ein Blitzer (Papierweiß am Rand)."
+    },
+    {
+      "id": "k6-f17",
+      "term": "Imprimatur (Druckfreigabe)",
+      "definition": "Freigabe zum Druck, nachdem der Kunde die Korrekturabzüge geprüft hat."
+    }
+  ],
+  "items": [
+    {
+      "id": "k6-001",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wofür steht ppi?",
+      "options": [
+        "Pixel per inch",
+        "Punkte per Papier",
+        "Printer per inch",
+        "Pixel pro Impuls"
+      ],
+      "correct": 0,
+      "explanation": "ppi = Pixel per inch – die Eingabeauflösung (Kamera, Scanner, Monitor)."
+    },
+    {
+      "id": "k6-002",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wofür steht dpi?",
+      "options": [
+        "Dots per inch",
+        "Digital per inch",
+        "Drucke pro Inch",
+        "Dateien pro Impuls"
+      ],
+      "correct": 0,
+      "explanation": "dpi = Dots per inch – die Druckauflösung."
+    },
+    {
+      "id": "k6-003",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Auflösung ist Standard für Offset- und Digitaldruck?",
+      "options": [
+        "300 dpi",
+        "72 dpi",
+        "500 dpi",
+        "1000 dpi"
+      ],
+      "correct": 0,
+      "explanation": "Für Offset- und Digitaldruck sind 300 dpi Standard."
+    },
+    {
+      "id": "k6-004",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Mit welcher Auflösung werden am Monitor Informationen üblicherweise wiedergegeben?",
+      "options": [
+        "72 ppi",
+        "300 ppi",
+        "150 ppi",
+        "600 ppi"
+      ],
+      "correct": 0,
+      "explanation": "Am Monitor: 72 ppi."
+    },
+    {
+      "id": "k6-005",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Wo liegt die untere Grenze einer guten Auflösung?",
+      "options": [
+        "Bei 150 dpi",
+        "Bei 30 dpi",
+        "Bei 72 dpi",
+        "Bei 300 dpi"
+      ],
+      "correct": 0,
+      "explanation": "Die untere Grenze ist 150 dpi; bei Großformaten darf sie geringer sein."
+    },
+    {
+      "id": "k6-006",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Ein Inch entspricht …",
+      "options": [
+        "2,54 cm",
+        "1 cm",
+        "10 cm",
+        "25,4 cm"
+      ],
+      "correct": 0,
+      "explanation": "1 Inch = 2,54 cm."
+    },
+    {
+      "id": "k6-007",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Für die Ausgabe im Offsetdruck werden die Bilder im Layout mit mindestens 500 dpi benötigt.",
+      "correct": false,
+      "explanation": "Falsch – Standard sind 300 dpi."
+    },
+    {
+      "id": "k6-008",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Für die Ausgabe im Web ist eine Auflösung von 72 ppi ausreichend.",
+      "correct": true,
+      "explanation": "Richtig – Monitore geben mit 72 ppi wieder."
+    },
+    {
+      "id": "k6-009",
+      "difficulty": 2,
+      "type": "sort",
+      "question": "ppi oder dpi?",
+      "categories": [
+        {
+          "id": "p",
+          "label": "ppi (Eingabe)"
+        },
+        {
+          "id": "d",
+          "label": "dpi (Druck)"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Digitalkamera",
+          "category": "p"
+        },
+        {
+          "text": "Scanner",
+          "category": "p"
+        },
+        {
+          "text": "Monitor",
+          "category": "p"
+        },
+        {
+          "text": "Offsetdruck",
+          "category": "d"
+        },
+        {
+          "text": "Digitaldruck",
+          "category": "d"
+        },
+        {
+          "text": "Wiedergabefeinheit im Druckprozess",
+          "category": "d"
+        }
+      ]
+    },
+    {
+      "id": "k6-010",
+      "difficulty": 2,
+      "type": "cloze",
+      "text": "Die Eingabeauflösung wird in {{ppi}} angegeben, die Druckauflösung in {{dpi}}. Für Offset- und Digitaldruck sind {{300 dpi}} Standard.",
+      "distractors": [
+        "72 ppi",
+        "500 dpi"
+      ],
+      "explanation": "ppi = Eingabe, dpi = Druck, Standard 300 dpi."
+    },
+    {
+      "id": "k6-011",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Bittiefe und Abstufungen",
+      "pairs": [
+        {
+          "left": "1 Bit",
+          "right": "2 Abstufungen"
+        },
+        {
+          "left": "2 Bit",
+          "right": "4 Abstufungen"
+        },
+        {
+          "left": "4 Bit",
+          "right": "16 Abstufungen"
+        },
+        {
+          "left": "8 Bit",
+          "right": "256 Abstufungen"
+        }
+      ]
+    },
+    {
+      "id": "k6-012",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Wie viele Farben kann ein RGB-Bild mit 8 Bit pro Kanal darstellen?",
+      "options": [
+        "16.777.216",
+        "256",
+        "65.536",
+        "1.024"
+      ],
+      "correct": 0,
+      "explanation": "256 × 256 × 256 = 16.777.216."
+    },
+    {
+      "id": "k6-013",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Grafikart lässt sich beliebig ohne Qualitätsverlust skalieren?",
+      "options": [
+        "Vektorgrafik",
+        "Pixelgrafik",
+        "Beide",
+        "Keine"
+      ],
+      "correct": 0,
+      "explanation": "Vektorgrafiken bestehen aus Vektoren und Ankerpunkten."
+    },
+    {
+      "id": "k6-014",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Grafikart eignet sich für fotorealistische Darstellungen?",
+      "options": [
+        "Pixelgrafik",
+        "Vektorgrafik",
+        "Keine",
+        "Nur Textdateien"
+      ],
+      "correct": 0,
+      "explanation": "Fotos sind Pixelgrafiken."
+    },
+    {
+      "id": "k6-015",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wofür eignen sich Vektorgrafiken besonders?",
+      "options": [
+        "Diagramme, Logos und kreative Arbeiten",
+        "Fotos",
+        "Nur Texte",
+        "Gescannte Bilder"
+      ],
+      "correct": 0,
+      "explanation": "Ihre Stärke sind grafische Primitive wie Linien, Kreise, Polygone und Kurven."
+    },
+    {
+      "id": "k6-016",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Vektorgrafiken werden aus einzelnen Pixeln gebildet.",
+      "correct": false,
+      "explanation": "Falsch – sie werden mit mathematischen Funktionen (Vektoren und Ankerpunkten) beschrieben."
+    },
+    {
+      "id": "k6-017",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Der Speicherverbrauch von Vektorgrafiken ist sehr gering.",
+      "correct": true,
+      "explanation": "Richtig – Fotorealismus ist mit Vektorgrafiken aber nicht möglich."
+    },
+    {
+      "id": "k6-018",
+      "difficulty": 2,
+      "type": "sort",
+      "question": "Pixel- oder Vektorgrafik?",
+      "categories": [
+        {
+          "id": "p",
+          "label": "Pixelgrafik"
+        },
+        {
+          "id": "v",
+          "label": "Vektorgrafik"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Fotorealistisch",
+          "category": "p"
+        },
+        {
+          "text": "Nur begrenzt skalierbar",
+          "category": "p"
+        },
+        {
+          "text": "Evtl. größerer Speicherbedarf",
+          "category": "p"
+        },
+        {
+          "text": "Mathematische Funktionen",
+          "category": "v"
+        },
+        {
+          "text": "Ankerpunkte",
+          "category": "v"
+        },
+        {
+          "text": "Beliebig skalierbar",
+          "category": "v"
+        },
+        {
+          "text": "Logos und Diagramme",
+          "category": "v"
+        }
+      ]
+    },
+    {
+      "id": "k6-019",
+      "difficulty": 2,
+      "type": "pairs",
+      "question": "Programm und Aufgabe",
+      "pairs": [
+        {
+          "left": "Photoshop",
+          "right": "Bilder bearbeiten (Pixelgrafik)"
+        },
+        {
+          "left": "Illustrator",
+          "right": "Grafiken zeichnen (Vektorgrafik)"
+        },
+        {
+          "left": "InDesign",
+          "right": "Layout"
+        }
+      ]
+    },
+    {
+      "id": "k6-020",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Technik und Begriff",
+      "pairs": [
+        {
+          "left": "RIP",
+          "right": "Raster Image Prozessor"
+        },
+        {
+          "left": "Laserdrucker",
+          "right": "Elektrofotografie"
+        },
+        {
+          "left": "Recorder",
+          "right": "Belichter"
+        },
+        {
+          "left": "Tintenstrahl",
+          "right": "Inkjet"
+        },
+        {
+          "left": "Text",
+          "right": ".txt, .doc, .rtf"
+        }
+      ]
+    },
+    {
+      "id": "k6-021",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wofür steht die Abkürzung RIP in der Druckvorstufe?",
+      "options": [
+        "Raster Image Prozessor",
+        "Rapid Image Print",
+        "Rotes Intensiv-Papier",
+        "Raster Inkjet Printer"
+      ],
+      "correct": 0,
+      "explanation": "RIP = Raster Image Prozessor."
+    },
+    {
+      "id": "k6-022",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Technik nutzt ein Laserdrucker?",
+      "options": [
+        "Elektrofotografie",
+        "Inkjet",
+        "Siebdruck",
+        "Belichter"
+      ],
+      "correct": 0,
+      "explanation": "Laserdrucker = Elektrofotografie; Tintenstrahl = Inkjet."
+    },
+    {
+      "id": "k6-023",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Der Begriff Briefing meint die Auftragsbesprechung mit dem Kunden.",
+      "correct": true,
+      "explanation": "Richtig."
+    },
+    {
+      "id": "k6-024",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Server dienen zum Speichern und Verwalten aller am Produktionsprozess benötigten digitalen Daten.",
+      "correct": true,
+      "explanation": "Richtig – und es können mehrere Personen zugreifen."
+    },
+    {
+      "id": "k6-025",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Auf einen Server kann immer nur eine Person zugreifen.",
+      "correct": false,
+      "explanation": "Falsch – mehrere Personen können auf einen Server zugreifen."
+    },
+    {
+      "id": "k6-026",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was passiert bei fehlerhaftem Beschnitt?",
+      "options": [
+        "Ein „Blitzer“: Papierweiß erscheint am Rand",
+        "Das Bild wird unscharf",
+        "Die Farben ändern sich",
+        "Die Datei wird größer"
+      ],
+      "correct": 0,
+      "explanation": "Schneidet man falsch, blitzt das weiße Papier am Rand auf."
+    },
+    {
+      "id": "k6-027",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wozu dienen Schnittmarken?",
+      "options": [
+        "Sie zeigen, wo das Druckerzeugnis geschnitten wird",
+        "Sie zeigen die Farben an",
+        "Sie verkleinern das Bild",
+        "Sie speichern die Datei"
+      ],
+      "correct": 0,
+      "explanation": "Schnittmarken markieren die Schnittkanten."
+    },
+    {
+      "id": "k6-028",
+      "difficulty": 2,
+      "type": "order",
+      "question": "Bring die Arbeitsschritte (Siebdruck) in die richtige Reihenfolge.",
+      "steps": [
+        "Texterfassung",
+        "Layouterstellung",
+        "Fertigung von Korrekturabzügen für den Kunden",
+        "Imprimatur/Druckfreigabe",
+        "Belichtung der Siebe",
+        "Druck auf der Siebdruckmaschine"
+      ],
+      "explanation": "Erst Text und Layout, dann Korrekturabzug, Druckfreigabe (Imprimatur), Siebe belichten, drucken."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "k6-l1",
+      "title": "Auflösung",
+      "subtitle": "ppi, dpi und der Standard",
+      "icon": "ruler",
+      "grammar": {
+        "title": "Auflösung in der Druckvorstufe",
+        "text": "• Auflösung beschreibt allgemein eine Detailwiedergabe, bei der einzelne Elemente voneinander getrennt wahrgenommen werden.\n• Eingabeauflösung (Bild von Digitalkamera oder Scanner): in ppi (Pixel per inch). Druckauflösung (Wiedergabefeinheit für den Druckprozess): in dpi (Dots per inch).\n• Monitor: 72 ppi. Für Offset- und Digitaldruck sind 300 dpi Standard. Die untere Grenze einer guten Auflösung ist 150 dpi. Bei Großformaten (z. B. Großplakaten) kann sie geringer sein. Fürs Web reichen 72 ppi.\n• Bei 300 dpi werden 300 Rasterpunkte pro Inch gedruckt. 1 Inch = 2,54 cm.",
+        "examples": [
+          {
+            "en": "ppi",
+            "de": "Pixel per inch (Eingabe)"
+          },
+          {
+            "en": "dpi",
+            "de": "Dots per inch (Druck)"
+          },
+          {
+            "en": "300 dpi",
+            "de": "Standard bei Offset- und Digitaldruck"
+          }
+        ]
+      },
+      "items": [
+        "k6-001",
+        "k6-002",
+        "k6-003",
+        "k6-004",
+        "k6-005",
+        "k6-006",
+        "k6-007",
+        "k6-008",
+        "k6-009",
+        "k6-010"
+      ]
+    },
+    {
+      "id": "k6-l2",
+      "title": "Farbtiefe & Grafiken",
+      "subtitle": "Bit, Pixel- und Vektorgrafik",
+      "icon": "palette",
+      "grammar": {
+        "title": "Farbtiefe und Grafikarten",
+        "text": "• Farbtiefe (Bittiefe): Die digitalen Bits für Farbinformationen. Üblich sind 8 Bit pro Farbkanal (RGB). 1 Bit = 2, 2 Bit = 4, 4 Bit = 16, 8 Bit = 256 Abstufungen.\n• Ein RGB-Bild mit 8 Bit pro Kanal hat 256 × 256 × 256 = 16.777.216 mögliche Farben.\n• Pixelgrafik: aus einzelnen Bildpunkten, fotorealistisch, nur begrenzt skalierbar, evtl. größerer Speicherbedarf – für Fotos (z. B. Photoshop).\n• Vektorgrafik: mit mathematischen Funktionen beschrieben (Vektoren und Ankerpunkte), beliebig skalierbar ohne Qualitätsverlust, geringer Speicherbedarf, aber nicht fotorealistisch – für Diagramme, Logos, grafische Primitive wie Linien, Kreise, Polygone, Kurven (z. B. Illustrator).\n• InDesign dient dem Layout.",
+        "examples": [
+          {
+            "en": "8 Bit",
+            "de": "256 Abstufungen pro Kanal"
+          },
+          {
+            "en": "Pixelgrafik",
+            "de": "Fotos"
+          },
+          {
+            "en": "Vektorgrafik",
+            "de": "Logos, beliebig skalierbar"
+          }
+        ]
+      },
+      "items": [
+        "k6-011",
+        "k6-012",
+        "k6-013",
+        "k6-014",
+        "k6-015",
+        "k6-016",
+        "k6-017",
+        "k6-018",
+        "k6-019"
+      ]
+    },
+    {
+      "id": "k6-l3",
+      "title": "Technik & Ablauf",
+      "subtitle": "RIP, Server, Beschnitt, Siebdruck",
+      "icon": "printer",
+      "grammar": {
+        "title": "Technik und Daten in der Druckvorstufe",
+        "text": "• RIP = Raster Image Prozessor. Laserdrucker arbeiten mit Elektrofotografie, Tintenstrahldrucker mit Inkjet. Der Recorder ist der Belichter. Texte liegen als .txt, .doc oder .rtf vor.\n• Briefing = die Auftragsbesprechung mit dem Kunden.\n• Server speichern und verwalten alle am Produktionsprozess benötigten digitalen Daten. Mehrere Personen können gleichzeitig zugreifen.\n• Schnittmarken zeigen, wo geschnitten wird. Bei fehlerhaftem Beschnitt entsteht ein Blitzer: Papierweiß erscheint am Rand.\n• Ablauf beim Siebdruck: Texterfassung – Layouterstellung – Korrekturabzüge für den Kunden – Imprimatur/Druckfreigabe – Belichtung der Siebe – Druck auf der Siebdruckmaschine.",
+        "examples": [
+          {
+            "en": "RIP",
+            "de": "Raster Image Prozessor"
+          },
+          {
+            "en": "Briefing",
+            "de": "Auftragsbesprechung mit dem Kunden"
+          },
+          {
+            "en": "Blitzer",
+            "de": "Papierweiß am Rand bei falschem Beschnitt"
+          }
+        ]
+      },
+      "items": [
+        "k6-020",
+        "k6-021",
+        "k6-022",
+        "k6-023",
+        "k6-024",
+        "k6-025",
+        "k6-026",
+        "k6-027",
+        "k6-028"
+      ]
+    }
+  ]
+}

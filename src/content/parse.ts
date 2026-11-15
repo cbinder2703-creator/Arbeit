@@ -1,12 +1,14 @@
 // Reine Funktionen (ohne Vite-Abhängigkeit): rohes JSON → geprüfte Prüfung.
 // Wird vom Loader (Browser) und von scripts/validate-content.ts (Node) benutzt.
-import { chapterSchema, pruefungSchema, ITEM_TYPES } from './schema';
-import type { Chapter, PruefungMeta } from './schema';
+import { chapterSchema, korrekturSchema, pruefungSchema, ITEM_TYPES } from './schema';
+import type { Chapter, Korrektur, PruefungMeta } from './schema';
 import { tokenize } from '@/engine/words';
 
 export interface Pruefung {
   meta: PruefungMeta;
   chapters: Chapter[];
+  /** optional: Prüfung der Arbeitsblätter (korrektur.json) */
+  korrektur?: Korrektur;
 }
 
 export interface ParseResult {
@@ -53,6 +55,13 @@ export function parsePruefung(
       continue;
     }
     chapters.push(c.data);
+  }
+
+  let korrektur: Korrektur | undefined;
+  if (rawFiles['korrektur.json'] !== undefined) {
+    const k = korrekturSchema.safeParse(rawFiles['korrektur.json']);
+    if (k.success) korrektur = k.data;
+    else errors.push(...zodErrors(`${folder}/korrektur.json`, k.error));
   }
 
   // --- inhaltliche Prüfungen ---
@@ -154,5 +163,5 @@ export function parsePruefung(
     warnings.push(`${folder}: finalExam.questions (${meta.finalExam.questions}) größer als Anzahl Aufgaben (${allItems.length})`);
   }
 
-  return { pruefung: errors.length ? null : { meta, chapters }, errors, warnings };
+  return { pruefung: errors.length ? null : { meta, chapters, korrektur }, errors, warnings };
 }

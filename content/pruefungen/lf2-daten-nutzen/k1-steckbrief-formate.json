@@ -1,0 +1,893 @@
+{
+  "id": "k1",
+  "chapter": 1,
+  "title": "Steckbrief & Formate",
+  "subtitle": "LS1: DIN-Formate, 4/0, Ablauf, Bewertung, Lesbarkeit",
+  "pages": "Arbeitsblätter LS1",
+  "color": "#3B82F6",
+  "icon": "ruler",
+  "flashcards": [
+    {
+      "id": "k1-f01",
+      "term": "DIN-Norm 476",
+      "definition": "Norm des Deutschen Instituts für Normung von 1922 – legt das Format DIN A4 und die DIN-Reihen fest."
+    },
+    {
+      "id": "k1-f02",
+      "term": "DIN A0",
+      "definition": "Ausgangsformat der A-Reihe: 841 × 1189 mm, ca. 1 m²."
+    },
+    {
+      "id": "k1-f03",
+      "term": "Seitenverhältnis (DIN)",
+      "definition": "1 zu √2 (1 : 1,4142) – bleibt beim Halbieren immer gleich."
+    },
+    {
+      "id": "k1-f04",
+      "term": "A-Reihe",
+      "definition": "Zeitschriften, Prospekte, Geschäftsdrucksachen, Postkarten, Karteikarten und andere Drucksachen."
+    },
+    {
+      "id": "k1-f05",
+      "term": "B-Reihe",
+      "definition": "Überwiegend für Ordner und Mappen; die A-Reihe passt hinein."
+    },
+    {
+      "id": "k1-f06",
+      "term": "C-Reihe",
+      "definition": "Briefumschläge und Postversand."
+    },
+    {
+      "id": "k1-f07",
+      "term": "DIN A6",
+      "definition": "105 × 148 mm – Postkarte. 1925 vom Weltpostverein als internationale Postkartengröße bestimmt."
+    },
+    {
+      "id": "k1-f08",
+      "term": "Hochformat und Querformat",
+      "definition": "Hoch: Breite kleiner als Höhe (A4: 210 × 297 mm). Quer: Breite größer als Höhe (A4: 297 × 210 mm)."
+    },
+    {
+      "id": "k1-f09",
+      "term": "Layout",
+      "definition": "Vom englischen „to lay out“: etwas anlegen oder entwerfen (legen, stellen, setzen)."
+    },
+    {
+      "id": "k1-f10",
+      "term": "4/0 farbig",
+      "definition": "Eine Seite mit den vier Druckfarben Cyan, Magenta, Yellow, Black bedruckt, die andere unbedruckt."
+    },
+    {
+      "id": "k1-f11",
+      "term": "4/4 farbig",
+      "definition": "Vorder- und Rückseite jeweils vierfarbig bedruckt."
+    },
+    {
+      "id": "k1-f12",
+      "term": "Handlungsprodukt",
+      "definition": "Das Ergebnis der Lernsituation – hier der Steckbrief als Tischaufsteller."
+    },
+    {
+      "id": "k1-f13",
+      "term": "Vollständige Handlung",
+      "definition": "Informieren – Planen – Entscheiden – Ausführen – Kontrollieren – Auswerten."
+    },
+    {
+      "id": "k1-f14",
+      "term": "Indikatorenliste",
+      "definition": "Bewertungsbogen mit Ja/Nein-Kriterien (beim Steckbrief 15 Punkte)."
+    },
+    {
+      "id": "k1-f15",
+      "term": "Kontrast (Gestaltung)",
+      "definition": "Gegensatz, z. B. fett/fein, groß/klein, breit/schmal, sachlich/verspielt."
+    }
+  ],
+  "items": [
+    {
+      "id": "k1-001",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Maße hat DIN A4 im Hochformat (Breite × Höhe)?",
+      "options": [
+        "210 × 297 mm",
+        "297 × 210 mm",
+        "148 × 210 mm",
+        "420 × 297 mm"
+      ],
+      "correct": 0,
+      "explanation": "Hochformat: Breite 210 mm, Höhe 297 mm. 297 × 210 mm wäre das Querformat."
+    },
+    {
+      "id": "k1-002",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Die Angabe 297 × 210 mm meint ein DIN-A4-Hochformat.",
+      "correct": false,
+      "explanation": "Falsch – bei Breite × Höhe ist 297 × 210 mm ein Querformat."
+    },
+    {
+      "id": "k1-003",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Das DIN-A4-Format wurde 1982 vom Deutschen Institut für Normung festgelegt.",
+      "correct": false,
+      "explanation": "Falsch – es wurde 1922 festgelegt (DIN-Norm 476)."
+    },
+    {
+      "id": "k1-004",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Für Postkarten ist das Format 105 × 148 mm (DIN A6) festgelegt.",
+      "correct": true,
+      "explanation": "Richtig – DIN A6 ist das Postkartenformat."
+    },
+    {
+      "id": "k1-005",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Das Ausgangsformat der DIN-Formate (DIN A0) ist ca. 1 qm groß.",
+      "correct": true,
+      "explanation": "Richtig – 841 × 1189 mm sind ungefähr 1 m²."
+    },
+    {
+      "id": "k1-006",
+      "difficulty": 1,
+      "type": "cloze",
+      "text": "Jedes nächstkleinere DIN-Format entsteht durch {{Halbieren}} der {{Längsseite}} des vorherigen Formats.",
+      "distractors": [
+        "Verdoppeln",
+        "Kurzseite",
+        "Drehen"
+      ],
+      "explanation": "Beispiel: Halbiert man die Längsseite von A3 (420 mm), entsteht A4 (210 × 297 mm)."
+    },
+    {
+      "id": "k1-007",
+      "difficulty": 1,
+      "type": "order",
+      "question": "Bring die DIN-Formate vom größten zum kleinsten in die richtige Reihenfolge.",
+      "steps": [
+        "DIN A2",
+        "DIN A3",
+        "DIN A4",
+        "DIN A5",
+        "DIN A6"
+      ],
+      "explanation": "Mit jeder Zahl wird das Format halb so groß."
+    },
+    {
+      "id": "k1-008",
+      "difficulty": 2,
+      "type": "pairs",
+      "question": "Format und Maße",
+      "pairs": [
+        {
+          "left": "DIN A2",
+          "right": "420 × 594 mm"
+        },
+        {
+          "left": "DIN A3",
+          "right": "297 × 420 mm"
+        },
+        {
+          "left": "DIN A4",
+          "right": "210 × 297 mm"
+        },
+        {
+          "left": "DIN A5",
+          "right": "148 × 210 mm"
+        },
+        {
+          "left": "DIN A6",
+          "right": "105 × 148 mm"
+        }
+      ]
+    },
+    {
+      "id": "k1-009",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Die A-Reihe ist für Geschäftsdrucksachen und die B-Reihe für Umschläge.",
+      "correct": false,
+      "explanation": "Falsch – die B-Reihe ist für Ordner und Mappen. Umschläge gehören zur C-Reihe."
+    },
+    {
+      "id": "k1-010",
+      "difficulty": 2,
+      "type": "truefalse",
+      "statement": "Ein DIN A4 passt maximal 6-mal in ein DIN A1.",
+      "correct": false,
+      "explanation": "Falsch – jedes Format passt zweimal ins nächstgrößere: A4 passt 2× in A3, 4× in A2 und 8× in A1."
+    },
+    {
+      "id": "k1-011",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche DIN-Reihe findet man bei Briefumschlägen?",
+      "options": [
+        "C-Reihe",
+        "A-Reihe",
+        "B-Reihe",
+        "D-Reihe"
+      ],
+      "correct": 0,
+      "explanation": "Umschläge und Postversand gehören zur C-Reihe."
+    },
+    {
+      "id": "k1-012",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wofür wird die B-Reihe überwiegend verwendet?",
+      "options": [
+        "Für Ordner und Mappen",
+        "Für Briefumschläge",
+        "Für Postkarten",
+        "Für Zeitschriften"
+      ],
+      "correct": 0,
+      "explanation": "Die B-Reihe wird überwiegend für Ordner, Mappen usw. verwendet."
+    },
+    {
+      "id": "k1-013",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Wie viele DIN-A5-Blätter ergeben zusammen ein DIN A3?",
+      "options": [
+        "4",
+        "2",
+        "8",
+        "16"
+      ],
+      "correct": 0,
+      "explanation": "A3 besteht aus 2× A4, und jedes A4 aus 2× A5 – also 4× A5."
+    },
+    {
+      "id": "k1-014",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welches Format entsteht, wenn man ein DIN A3 halbiert?",
+      "options": [
+        "DIN A4",
+        "DIN A2",
+        "DIN A5",
+        "DIN B3"
+      ],
+      "correct": 0,
+      "explanation": "Das Halbieren der Längsseite von A3 ergibt A4."
+    },
+    {
+      "id": "k1-015",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Wie oft wurde das Ausgangsformat A0 geteilt, um DIN A4 zu bekommen?",
+      "options": [
+        "4-mal",
+        "2-mal",
+        "3-mal",
+        "8-mal"
+      ],
+      "correct": 0,
+      "explanation": "Die Zahl im Namen sagt, wie oft A0 geteilt wurde: A4 = viermal."
+    },
+    {
+      "id": "k1-016",
+      "difficulty": 1,
+      "type": "sort",
+      "question": "Zu welcher DIN-Reihe gehört das?",
+      "categories": [
+        {
+          "id": "a",
+          "label": "A-Reihe"
+        },
+        {
+          "id": "b",
+          "label": "B-Reihe"
+        },
+        {
+          "id": "c",
+          "label": "C-Reihe"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Postkarte",
+          "category": "a"
+        },
+        {
+          "text": "Prospekt",
+          "category": "a"
+        },
+        {
+          "text": "Briefpapier",
+          "category": "a"
+        },
+        {
+          "text": "Ordner",
+          "category": "b"
+        },
+        {
+          "text": "Mappe",
+          "category": "b"
+        },
+        {
+          "text": "Briefumschlag",
+          "category": "c"
+        },
+        {
+          "text": "Umschlag für den Postversand",
+          "category": "c"
+        }
+      ]
+    },
+    {
+      "id": "k1-017",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Eine Postkarte (DIN A6) ist kleiner als ein DIN-A5-Blatt.",
+      "correct": true,
+      "explanation": "Richtig – A6 ist halb so groß wie A5."
+    },
+    {
+      "id": "k1-018",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was bedeutet die Angabe 4/0 farbig?",
+      "options": [
+        "Eine Seite vierfarbig, die andere unbedruckt",
+        "Beide Seiten vierfarbig",
+        "Vier Seiten einfarbig",
+        "Vierfarbig ohne Schwarz"
+      ],
+      "correct": 0,
+      "explanation": "4 = vier Druckfarben auf der ersten Seite, 0 = zweite Seite unbedruckt."
+    },
+    {
+      "id": "k1-019",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was bedeutet die Angabe 4/4 farbig?",
+      "options": [
+        "Vorne und hinten jeweils vierfarbig",
+        "Nur vorne vierfarbig",
+        "Vier Seiten in vier Farben",
+        "Zwei Seiten einfarbig"
+      ],
+      "correct": 0,
+      "explanation": "4/4 = beide Seiten werden mit vier Farben bedruckt."
+    },
+    {
+      "id": "k1-020",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche vier Druckfarben gehören zu 4/0?",
+      "options": [
+        "Cyan, Magenta, Yellow, Black",
+        "Rot, Grün, Blau, Schwarz",
+        "Cyan, Magenta, Yellow, White",
+        "Rot, Gelb, Blau, Schwarz"
+      ],
+      "correct": 0,
+      "explanation": "Die vier Grundfarben im Druck: Cyan, Magenta, Yellow (Gelb) und Black (Schwarz)."
+    },
+    {
+      "id": "k1-021",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Bei 4/0 wird der Bogen auf beiden Seiten mit vier Farben bedruckt.",
+      "correct": false,
+      "explanation": "Falsch – bei 4/0 ist nur eine Seite bedruckt, die andere bleibt unbedruckt (0)."
+    },
+    {
+      "id": "k1-022",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Steckbrief: Vorgaben",
+      "pairs": [
+        {
+          "left": "Geschlossenes Format",
+          "right": "DIN A5"
+        },
+        {
+          "left": "Offenes Format",
+          "right": "DIN A4"
+        },
+        {
+          "left": "Vorderseite",
+          "right": "Vorname und Name"
+        },
+        {
+          "left": "Rückseite",
+          "right": "Ausbildungsbetrieb, Hobbys, Wunschbild"
+        },
+        {
+          "left": "Programm",
+          "right": "Adobe InDesign"
+        }
+      ]
+    },
+    {
+      "id": "k1-023",
+      "difficulty": 1,
+      "type": "order",
+      "question": "Bring die Phasen der vollständigen Handlung in die richtige Reihenfolge.",
+      "steps": [
+        "Informieren",
+        "Planen",
+        "Entscheiden",
+        "Ausführen",
+        "Kontrollieren",
+        "Auswerten"
+      ],
+      "explanation": "Informieren, Planen, Entscheiden, Ausführen, Kontrollieren, Auswerten."
+    },
+    {
+      "id": "k1-024",
+      "difficulty": 2,
+      "type": "sort",
+      "question": "Zu welcher Phase gehört die Aufgabe?",
+      "categories": [
+        {
+          "id": "i",
+          "label": "Informieren"
+        },
+        {
+          "id": "p",
+          "label": "Planen"
+        },
+        {
+          "id": "a",
+          "label": "Ausführen"
+        },
+        {
+          "id": "k",
+          "label": "Kontrollieren"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Was muss ich machen? Was bedeutet 4/0?",
+          "category": "i"
+        },
+        {
+          "text": "Was bedeuten DIN A4 und InDesign?",
+          "category": "i"
+        },
+        {
+          "text": "Mit wem mache ich zusammen? Wie ist der Zeitplan?",
+          "category": "p"
+        },
+        {
+          "text": "Was brauchen wir für die Umsetzung?",
+          "category": "p"
+        },
+        {
+          "text": "Steckbrief am Rechner umsetzen",
+          "category": "a"
+        },
+        {
+          "text": "Drucken und evtl. schneiden",
+          "category": "a"
+        },
+        {
+          "text": "Ergebnisse besprechen und vergleichen",
+          "category": "k"
+        },
+        {
+          "text": "Bewertung nach Indikatorenliste durch den Partner",
+          "category": "k"
+        }
+      ]
+    },
+    {
+      "id": "k1-025",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Phase ist die fünfte der vollständigen Handlung?",
+      "options": [
+        "Kontrollieren",
+        "Auswerten",
+        "Ausführen",
+        "Entscheiden"
+      ],
+      "correct": 0,
+      "explanation": "1 Informieren, 2 Planen, 3 Entscheiden, 4 Ausführen, 5 Kontrollieren, 6 Auswerten."
+    },
+    {
+      "id": "k1-026",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Womit wird der Steckbrief ausgegeben?",
+      "options": [
+        "Mit der Digitaldruckmaschine",
+        "Mit der Siebdruckmaschine",
+        "Mit dem Tintenstrahldrucker",
+        "Gar nicht, er bleibt digital"
+      ],
+      "correct": 0,
+      "explanation": "Die Ausgabe erfolgt mit der Digitaldruckmaschine."
+    },
+    {
+      "id": "k1-027",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Die Daten werden in einem Namensordner auf dem Server gespeichert; darin liegt ein Unterordner LF2.",
+      "correct": true,
+      "explanation": "Richtig – so behält man auch bei mehreren Lernfeldern den Überblick."
+    },
+    {
+      "id": "k1-028",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Notenschlüssel",
+      "pairs": [
+        {
+          "left": "100–92 %",
+          "right": "Note 1"
+        },
+        {
+          "left": "91–81 %",
+          "right": "Note 2"
+        },
+        {
+          "left": "80–67 %",
+          "right": "Note 3"
+        },
+        {
+          "left": "66–50 %",
+          "right": "Note 4"
+        },
+        {
+          "left": "49–30 %",
+          "right": "Note 5"
+        }
+      ]
+    },
+    {
+      "id": "k1-029",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie viele Punkte kann man in der Indikatorenliste des Steckbriefs höchstens erreichen?",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct": 0,
+      "explanation": "Die Liste endet mit „Gesamt: / 15“."
+    },
+    {
+      "id": "k1-030",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie groß soll der Zeilenabstand mindestens sein?",
+      "options": [
+        "120 %",
+        "80 %",
+        "100 %",
+        "150 %"
+      ],
+      "correct": 0,
+      "explanation": "In der Indikatorenliste steht: mind. 120 %."
+    },
+    {
+      "id": "k1-031",
+      "difficulty": 2,
+      "type": "sort",
+      "question": "Zu welchem Kriterium gehört der Indikator?",
+      "categories": [
+        {
+          "id": "t",
+          "label": "Inhalt/Text"
+        },
+        {
+          "id": "a",
+          "label": "Aufgabenstellung"
+        },
+        {
+          "id": "g",
+          "label": "Gestaltung"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Rechtschreibung",
+          "category": "t"
+        },
+        {
+          "text": "Textstruktur",
+          "category": "t"
+        },
+        {
+          "text": "Lesbarkeit",
+          "category": "t"
+        },
+        {
+          "text": "Umsetzung der Vorgaben",
+          "category": "a"
+        },
+        {
+          "text": "Sorgfalt",
+          "category": "a"
+        },
+        {
+          "text": "Raumaufteilung",
+          "category": "g"
+        },
+        {
+          "text": "Farbe",
+          "category": "g"
+        },
+        {
+          "text": "Elemente",
+          "category": "g"
+        },
+        {
+          "text": "Typografie",
+          "category": "g"
+        }
+      ]
+    },
+    {
+      "id": "k1-032",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Kontrastpaare (Gegensätze)",
+      "pairs": [
+        {
+          "left": "fett",
+          "right": "fein"
+        },
+        {
+          "left": "groß",
+          "right": "klein"
+        },
+        {
+          "left": "breit",
+          "right": "schmal"
+        },
+        {
+          "left": "sachlich",
+          "right": "verspielt"
+        }
+      ]
+    },
+    {
+      "id": "k1-033",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was gehört zu einer guten Lesbarkeit?",
+      "options": [
+        "Genug Kontrast zwischen Schrift und Hintergrund",
+        "Möglichst viele verschiedene Schriftarten",
+        "Ein sehr enger Zeilenabstand",
+        "So viel Text wie möglich auf kleinem Raum"
+      ],
+      "correct": 0,
+      "explanation": "Wichtig sind passende Schrift und Größe, Kontrast zum Hintergrund und nicht zu viele Informationen auf einmal."
+    },
+    {
+      "id": "k1-034",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Farben, Gestaltungselemente und Typografie sollen den Interviewpartner repräsentieren.",
+      "correct": true,
+      "explanation": "Richtig – so steht es in der Indikatorenliste unter „Gestaltung“."
+    },
+    {
+      "id": "k1-035",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Wer 85 % der Punkte erreicht, bekommt die Note 3.",
+      "correct": false,
+      "explanation": "Falsch – 91–81 % ergeben die Note 2."
+    },
+    {
+      "id": "k1-036",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Note gibt es bei 60 % der Punkte?",
+      "options": [
+        "4",
+        "3",
+        "5",
+        "2"
+      ],
+      "correct": 0,
+      "explanation": "66–50 % entsprechen der Note 4."
+    },
+    {
+      "id": "k1-037",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Der Steckbrief wird nach der Indikatorenliste durch den Partner bzw. die Partnerin bewertet.",
+      "correct": true,
+      "explanation": "Richtig – das gehört zur Phase „Kontrollieren“."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "k1-l1",
+      "title": "DIN-Formate",
+      "subtitle": "Maße, Hoch- und Querformat",
+      "icon": "ruler",
+      "grammar": {
+        "title": "DIN-Formate – das Wichtigste",
+        "text": "• Das DIN-A4-Format wurde 1922 vom Deutschen Institut für Normung festgelegt (DIN-Norm 476).\n• Ausgangsformat der A-Reihe ist DIN A0: 841 × 1189 mm, das sind etwa 1 m² (1 qm).\n• Jedes nächstkleinere Format entsteht durch Halbieren der Längsseite des vorherigen Formats. Die Zahl im Namen sagt, wie oft A0 geteilt wurde.\n• Das Seitenverhältnis bleibt immer gleich: 1 zu √2 (1 : 1,4142).\n• Maße schreibt man als Breite × Höhe: A4 hoch = 210 × 297 mm, A4 quer = 297 × 210 mm.",
+        "examples": [
+          {
+            "en": "DIN A4",
+            "de": "210 × 297 mm – Briefpapier"
+          },
+          {
+            "en": "DIN A5",
+            "de": "148 × 210 mm – halbes A4"
+          },
+          {
+            "en": "DIN A6",
+            "de": "105 × 148 mm – Postkarte"
+          }
+        ]
+      },
+      "items": [
+        "k1-001",
+        "k1-002",
+        "k1-003",
+        "k1-004",
+        "k1-005",
+        "k1-006",
+        "k1-007",
+        "k1-008"
+      ]
+    },
+    {
+      "id": "k1-l2",
+      "title": "DIN-Reihen & Rechnen",
+      "subtitle": "A-, B- und C-Reihe",
+      "icon": "layers",
+      "grammar": {
+        "title": "A-, B- und C-Reihe",
+        "text": "• A-Reihe: Zeitschriften, Prospekte, Geschäftsdrucksachen, Postkarten, Karteikarten und andere Drucksachen.\n• B-Reihe: überwiegend für Ordner, Mappen usw. Die A-Reihe kann in die B-Reihe der gleichen Formatklasse eingesteckt werden.\n• C-Reihe: Briefumschläge – im Geschäftsleben und beim Postversand.\n• Rechnen: Jedes Format passt zweimal in das nächstgrößere. A4 passt also 2× in A3, 4× in A2 und 8× in A1.",
+        "examples": [
+          {
+            "en": "A-Reihe",
+            "de": "Briefpapier, Prospekte, Postkarten"
+          },
+          {
+            "en": "B-Reihe",
+            "de": "Ordner und Mappen"
+          },
+          {
+            "en": "C-Reihe",
+            "de": "Briefumschläge"
+          }
+        ]
+      },
+      "items": [
+        "k1-009",
+        "k1-010",
+        "k1-011",
+        "k1-012",
+        "k1-013",
+        "k1-014",
+        "k1-015",
+        "k1-016",
+        "k1-017"
+      ]
+    },
+    {
+      "id": "k1-l3",
+      "title": "Steckbrief: Vorgaben & Ablauf",
+      "subtitle": "4/0, A5/A4, sechs Phasen",
+      "icon": "file-text",
+      "grammar": {
+        "title": "Der Steckbrief als Tischaufsteller",
+        "text": "• Handlungsprodukt: Steckbrief über eine Mitschülerin oder einen Mitschüler als Tischaufsteller.\n• Format: geschlossen DIN A5, offen DIN A4 (in der Mitte gefaltet).\n• 4/0-farbig: Der Bogen wird nur auf einer Seite mit den vier Druckfarben Cyan, Magenta, Yellow und Black bedruckt (0 = andere Seite unbedruckt). Bei 4/4 sind vorne und hinten vierfarbig.\n• Vorderseite: Vorname und Name. Rückseite: Ausbildungsbetrieb, Hobbys, Wunschbild/Wunschgrafik.\n• Umsetzung in Adobe InDesign, Ausgabe mit der Digitaldruckmaschine. Die Daten liegen im Namensordner auf dem Server, darin ein Unterordner LF2. Dateien sinnvoll und nachvollziehbar benennen.\n• Vollständige Handlung: Informieren – Planen – Entscheiden – Ausführen – Kontrollieren – Auswerten.",
+        "examples": [
+          {
+            "en": "4/0",
+            "de": "eine Seite vierfarbig, die andere unbedruckt"
+          },
+          {
+            "en": "4/4",
+            "de": "vorne und hinten vierfarbig"
+          },
+          {
+            "en": "Tischaufsteller",
+            "de": "geschlossen A5, offen A4"
+          }
+        ]
+      },
+      "items": [
+        "k1-018",
+        "k1-019",
+        "k1-020",
+        "k1-021",
+        "k1-022",
+        "k1-023",
+        "k1-024",
+        "k1-025",
+        "k1-026",
+        "k1-027"
+      ]
+    },
+    {
+      "id": "k1-l4",
+      "title": "Bewertung & Lesbarkeit",
+      "subtitle": "Indikatorenliste, Note, Kontraste",
+      "icon": "star",
+      "grammar": {
+        "title": "So wird der Steckbrief bewertet",
+        "text": "• Die Indikatorenliste bewertet mit Ja/Nein, insgesamt sind 15 Punkte möglich. Bewertet wird durch den Partner bzw. die Partnerin.\n• Kriterien: Inhalt/Text (Rechtschreibung, Textstruktur, Lesbarkeit), Aufgabenstellung (Umsetzung der Vorgaben, Sorgfalt), Gestaltung (Raumaufteilung, Farbe, Elemente, Typografie).\n• Lesbarkeit: Schrift und Schriftschnitte fördern die Lesbarkeit; der Zeilenabstand ist ausreichend groß (mind. 120 %).\n• Gute Lesbarkeit: passende Schriftart und -größe, einheitliche Schrift, guter Kontrast zum Hintergrund, nicht zu viel Information auf einmal.\n• Farben, Elemente und Typografie sollen zur Person passen (repräsentieren sie).\n• Notenschlüssel: 100–92 % = 1 · 91–81 = 2 · 80–67 = 3 · 66–50 = 4 · 49–30 = 5 · 29–0 = 6.\n• Kontrastpaare in der Gestaltung: fett/fein, groß/klein, breit/schmal, sachlich/verspielt.",
+        "examples": [
+          {
+            "en": "Indikatorenliste",
+            "de": "Bewertungsbogen mit Ja/Nein, max. 15 Punkte"
+          },
+          {
+            "en": "Zeilenabstand",
+            "de": "mindestens 120 %"
+          },
+          {
+            "en": "Kontrast",
+            "de": "z. B. fett/fein, groß/klein"
+          }
+        ]
+      },
+      "items": [
+        "k1-028",
+        "k1-029",
+        "k1-030",
+        "k1-031",
+        "k1-032",
+        "k1-033",
+        "k1-034",
+        "k1-035",
+        "k1-036",
+        "k1-037"
+      ]
+    }
+  ],
+  "charts": {
+    "din": {
+      "title": "Längere Seite der DIN-A-Formate (mm)",
+      "unit": "mm",
+      "source": "Tabelle im Infotext „DIN-Format“",
+      "values": [
+        [
+          "A0",
+          1189
+        ],
+        [
+          "A1",
+          841
+        ],
+        [
+          "A2",
+          594
+        ],
+        [
+          "A3",
+          420
+        ],
+        [
+          "A4",
+          297
+        ],
+        [
+          "A5",
+          210
+        ],
+        [
+          "A6",
+          148
+        ],
+        [
+          "A7",
+          105
+        ]
+      ]
+    }
+  }
+}

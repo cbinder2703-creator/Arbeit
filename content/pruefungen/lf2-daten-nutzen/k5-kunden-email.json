@@ -1,0 +1,375 @@
+{
+  "id": "k5",
+  "chapter": 5,
+  "title": "Kunden-E-Mail",
+  "subtitle": "LS3: Aufbau und Regeln der E-Mail, Kundenfall Logo",
+  "pages": "Arbeitsblätter LS3",
+  "color": "#EC4899",
+  "icon": "mail",
+  "flashcards": [
+    {
+      "id": "k5-f01",
+      "term": "Betreff",
+      "definition": "Möglichst kurze, zutreffende Überschrift der E-Mail – oft genügt ein Wort."
+    },
+    {
+      "id": "k5-f02",
+      "term": "Anrede (E-Mail)",
+      "definition": "Freundlich, endet mit Komma, danach Leerzeile und klein weiterschreiben. „Hi“ ist falsch."
+    },
+    {
+      "id": "k5-f03",
+      "term": "Grußformel",
+      "definition": "Freundlicher Gruß nach einer Leerzeile, z. B. „Mit freundlichen Grüßen“ – nicht „MfG“."
+    },
+    {
+      "id": "k5-f04",
+      "term": "Signatur",
+      "definition": "Absenderangaben am Ende der E-Mail."
+    },
+    {
+      "id": "k5-f05",
+      "term": "Fließtext",
+      "definition": "Zusammenhängender Text ohne Worttrennungen und Zeilenumbrüche, mit Absätzen (eine Leerzeile)."
+    },
+    {
+      "id": "k5-f06",
+      "term": "Anhang (E-Mail)",
+      "definition": "Hier gehören längere Texte, Tabellen und Bilder hin."
+    },
+    {
+      "id": "k5-f07",
+      "term": "Aufbau der E-Mail",
+      "definition": "Betreff – Anrede – Einleitung – Hauptteil – Schlussabsatz – Grußformel und Signatur."
+    },
+    {
+      "id": "k5-f08",
+      "term": "Qualifizierte Beurteilung",
+      "definition": "Fachlich richtige, nachvollziehbare Einschätzung – hier zur Farbdarstellung im Druck im Vergleich zum Handy."
+    }
+  ],
+  "items": [
+    {
+      "id": "k5-001",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie sollte ein Betreff sein?",
+      "options": [
+        "Möglichst kurz und zutreffend – oft genügt ein Wort",
+        "Möglichst lang und ausführlich",
+        "Leer",
+        "Nur Großbuchstaben"
+      ],
+      "correct": 0,
+      "explanation": "So erkennt der Empfänger sofort das Anliegen."
+    },
+    {
+      "id": "k5-002",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Anrede passt in einer formellen E-Mail?",
+      "options": [
+        "Sehr geehrte Frau Schuster,",
+        "Hi",
+        "Hey Schuster!",
+        "Servus Schuster!"
+      ],
+      "correct": 0,
+      "explanation": "„Hi“ ist ausdrücklich falsch. Die Anrede endet mit einem Komma."
+    },
+    {
+      "id": "k5-003",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie geht es nach der Anrede weiter?",
+      "options": [
+        "Leerzeile, dann klein weiterschreiben",
+        "Direkt in derselben Zeile groß weiter",
+        "Mit einem Ausrufezeichen",
+        "Mit dem Gruß"
+      ],
+      "correct": 0,
+      "explanation": "Nach der Anrede (Komma) folgt eine Leerzeile, danach wird klein weitergeschrieben."
+    },
+    {
+      "id": "k5-004",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie beendet man die E-Mail richtig?",
+      "options": [
+        "Mit freundlichen Grüßen",
+        "MfG",
+        "Tschüss",
+        "Ende"
+      ],
+      "correct": 0,
+      "explanation": "Nach einer Leerzeile ein freundlicher Gruß – „MfG“ ist falsch."
+    },
+    {
+      "id": "k5-005",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wohin gehören längere Texte, Tabellen oder Bilder?",
+      "options": [
+        "In den Anhang",
+        "Direkt in den Mailtext",
+        "In die Betreffzeile",
+        "In die Signatur"
+      ],
+      "correct": 0,
+      "explanation": "Die E-Mail soll kurz bleiben – Längeres kommt in den Anhang."
+    },
+    {
+      "id": "k5-006",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Eine E-Mail wird als Fließtext geschrieben, ohne Worttrennungen und Zeilenumbrüche.",
+      "correct": true,
+      "explanation": "Richtig – beim Empfänger kann der Textumbruch anders aussehen."
+    },
+    {
+      "id": "k5-007",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Die Abkürzung „MfG“ ist ein richtiger Gruß in dieser Aufgabe.",
+      "correct": false,
+      "explanation": "Falsch – besser „Mit freundlichen Grüßen“."
+    },
+    {
+      "id": "k5-008",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "„Moin Moin“ als Anrede gilt nur für Norddeutschland.",
+      "correct": true,
+      "explanation": "Richtig – so steht es in den E-Mail-Vorgaben."
+    },
+    {
+      "id": "k5-009",
+      "difficulty": 1,
+      "type": "order",
+      "question": "Bring den Aufbau der E-Mail in die richtige Reihenfolge.",
+      "steps": [
+        "Betreffzeile",
+        "Anrede",
+        "Einleitung",
+        "Hauptteil",
+        "Schlussabsatz",
+        "Grußformel und Signatur"
+      ],
+      "explanation": "So ist der Bewertungsbogen aufgebaut."
+    },
+    {
+      "id": "k5-010",
+      "difficulty": 2,
+      "type": "spot",
+      "title": "Fehler in der Kunden-E-Mail",
+      "intro": "Frau Schuster bekommt diese E-Mail. Tippe alle Zeilen an, die nicht zu den E-Mail-Vorgaben passen.",
+      "lines": [
+        {
+          "text": "Betreff: Alles Mögliche zum Logo und zu den Farben und überhaupt",
+          "error": true,
+          "fix": "Der Betreff soll kurz und zutreffend sein, z. B. „Farbdarstellung Logo“."
+        },
+        {
+          "text": "Hi Frau Schuster,",
+          "error": true,
+          "fix": "„Hi“ ist falsch – besser „Sehr geehrte Frau Schuster,“."
+        },
+        {
+          "text": "vielen Dank für Ihre Anfrage zu Ihrem Logo.",
+          "error": false
+        },
+        {
+          "text": "Auf dem Handy leuchten die Farben, weil dort Licht additiv gemischt wird.",
+          "error": false
+        },
+        {
+          "text": "Die komplette Farbtabelle füge ich direkt hier in den E-Mail-Text ein.",
+          "error": true,
+          "fix": "Längere Texte und Tabellen gehören in den Anhang."
+        },
+        {
+          "text": "Im Druck entstehen die Farben durch Rasterpunkte aus Cyan, Magenta, Gelb und Schwarz.",
+          "error": false
+        },
+        {
+          "text": "Ich freue mich auf Ihre Antwordt.",
+          "error": true,
+          "fix": "Rechtschreibfehler: „Antwort“."
+        },
+        {
+          "text": "MfG",
+          "error": true,
+          "fix": "„MfG“ ist falsch – besser „Mit freundlichen Grüßen“ nach einer Leerzeile."
+        }
+      ]
+    },
+    {
+      "id": "k5-011",
+      "difficulty": 3,
+      "type": "case",
+      "title": "Das Handy-Logo",
+      "situation": "Ein Kunde zeigt dir sein Logo auf dem Handy. Er besteht darauf, dass die Farben im Druck genau so aussehen wie auf dem Display, und bittet um eine Einschätzung.",
+      "question": "Was ist die fachlich richtige Antwort?",
+      "options": [
+        "Das Handy mischt Licht additiv (RGB), der Druck arbeitet mit Rasterfarben aus Cyan, Magenta, Gelb und Schwarz – die Farben sehen deshalb meist nicht identisch aus.",
+        "Die Farben werden exakt gleich, weil beide Rot, Grün und Blau verwenden.",
+        "Das Logo lässt sich gar nicht drucken.",
+        "Es genügt, das Logo auf Papier auszudrucken, dann ist alles gleich."
+      ],
+      "correct": 0,
+      "explanation": "Bildschirme mischen Licht additiv, im Druck wirken subtraktive/autotypische Mischung und das Papier remittiert das Licht – deshalb gibt es Abweichungen."
+    },
+    {
+      "id": "k5-012",
+      "difficulty": 2,
+      "type": "sort",
+      "question": "Handy-Display oder Druck?",
+      "categories": [
+        {
+          "id": "h",
+          "label": "Handy-Display"
+        },
+        {
+          "id": "d",
+          "label": "Druck"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Leuchtet selbst",
+          "category": "h"
+        },
+        {
+          "text": "Additive Farbmischung",
+          "category": "h"
+        },
+        {
+          "text": "Rot, Grün, Blau als Bildpunkte",
+          "category": "h"
+        },
+        {
+          "text": "Ausgangsfarbe Schwarz",
+          "category": "h"
+        },
+        {
+          "text": "Papier remittiert das Licht",
+          "category": "d"
+        },
+        {
+          "text": "Rasterpunkte aus Cyan, Magenta, Gelb, Schwarz",
+          "category": "d"
+        },
+        {
+          "text": "Subtraktive/autotypische Mischung",
+          "category": "d"
+        },
+        {
+          "text": "Ausgangsfarbe Papierweiß",
+          "category": "d"
+        }
+      ]
+    },
+    {
+      "id": "k5-013",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Farbmischung nutzt ein Handy-Display?",
+      "options": [
+        "Additive Farbmischung",
+        "Subtraktive Farbmischung",
+        "Gar keine",
+        "Nur Schwarz-Weiß"
+      ],
+      "correct": 0,
+      "explanation": "Bildschirme mischen Licht in Rot, Grün und Blau."
+    },
+    {
+      "id": "k5-014",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Mischung wirkt im vierfarbigen Rasterdruck?",
+      "options": [
+        "Autotypische Farbmischung (subtraktiv + additiv)",
+        "Nur additive Farbmischung",
+        "Nur Schwarz",
+        "Spektrale Mischung"
+      ],
+      "correct": 0,
+      "explanation": "Im Raster überlappen Punkte (subtraktiv) und liegen nebeneinander (additiv)."
+    },
+    {
+      "id": "k5-015",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "In der Kunden-E-Mail soll die Fachsprache korrekt verwendet werden.",
+      "correct": true,
+      "explanation": "Richtig – das steht in der Aufgabe und im Bewertungsbogen."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "k5-l1",
+      "title": "E-Mail-Regeln",
+      "subtitle": "Betreff, Anrede, Text, Gruß",
+      "icon": "mail",
+      "grammar": {
+        "title": "Eine gute E-Mail schreiben",
+        "text": "• Betreff: möglichst kurz und zutreffend, oft genügt ein Wort. So erkennt der Empfänger sofort das Anliegen.\n• Anrede: freundlich, je nachdem ob der Empfänger fremd, bekannt oder vertraut ist, z. B. „Sehr geehrte Frau Schuster,“. Falsch: „Hi“. „Moin Moin“ gilt nur für Norddeutschland. Die Anrede endet mit einem Komma, danach folgt eine Leerzeile und es wird klein weitergeschrieben.\n• Text: kurz fassen. Längere Texte, Tabellen oder Bilder gehören in den Anhang. Fließtext ohne Worttrennungen und Zeilenumbrüche. Längere Texte in Absätze gliedern (Absatz = eine Leerzeile). Auf korrekte Rechtschreibung achten.\n• Gruß: nach einer Leerzeile ein freundlicher Gruß, z. B. „Mit freundlichen Grüßen“. Falsch: „MfG“.\n• Aufbau: Betreffzeile – Anrede – Einleitung – Hauptteil – Schlussabsatz – Grußformel und Signatur.",
+        "examples": [
+          {
+            "en": "Anrede",
+            "de": "Sehr geehrte Frau Schuster,"
+          },
+          {
+            "en": "Gruß",
+            "de": "Mit freundlichen Grüßen"
+          },
+          {
+            "en": "falsch",
+            "de": "„Hi“ und „MfG“"
+          }
+        ]
+      },
+      "items": [
+        "k5-001",
+        "k5-002",
+        "k5-003",
+        "k5-004",
+        "k5-005",
+        "k5-006",
+        "k5-007",
+        "k5-008",
+        "k5-009"
+      ]
+    },
+    {
+      "id": "k5-l2",
+      "title": "Kundenfall: Logo",
+      "subtitle": "Handy oder Druck?",
+      "icon": "star",
+      "grammar": {
+        "title": "Der Kunde und sein Handy-Logo",
+        "text": "• Ein Kunde möchte eine Geschäftsausstattung (Visitenkarte, Briefbogen, Notizblock). Er zeigt sein Logo auf dem Handy und möchte, dass die Farben im Druck genau so aussehen.\n• Handlungsprodukt: eine Kunden-E-Mail mit qualifizierter Beurteilung der Farbdarstellung im Druck im Vergleich zum Handy – mit Fachsprache.\n• Das Handy mischt Licht additiv (Rot, Grün, Blau). Im Druck entstehen die Farben mit Cyan, Magenta, Gelb und Schwarz subtraktiv bzw. autotypisch im Raster – auf Papier, das Licht remittiert.\n• Bewertet wird nach der Indikatorenliste: Vorgaben, Aufbau der E-Mail, Inhalt (nachvollziehbar, fachlich richtig, Fließtext) und Sprache (fehlerfrei, Fachsprache korrekt).",
+        "examples": [
+          {
+            "en": "Handy-Display",
+            "de": "additiv: RGB-Licht"
+          },
+          {
+            "en": "Druck",
+            "de": "subtraktiv/autotypisch: CMYK auf Papier"
+          }
+        ]
+      },
+      "items": [
+        "k5-010",
+        "k5-011",
+        "k5-012",
+        "k5-013",
+        "k5-014",
+        "k5-015"
+      ]
+    }
+  ]
+}

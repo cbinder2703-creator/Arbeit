@@ -1,0 +1,752 @@
+{
+  "id": "k2",
+  "chapter": 2,
+  "title": "Schriften",
+  "subtitle": "LS2: Schriftbild, Schriftschnitte, Schriftgruppen",
+  "pages": "Arbeitsblätter LS2",
+  "color": "#F97316",
+  "icon": "type",
+  "flashcards": [
+    {
+      "id": "k2-f01",
+      "term": "Typografie",
+      "definition": "Gestaltungsprozess mit Schrift, Bildern, Linien, Flächen und Leerräumen."
+    },
+    {
+      "id": "k2-f02",
+      "term": "Versalie (Majuskel)",
+      "definition": "Großbuchstabe."
+    },
+    {
+      "id": "k2-f03",
+      "term": "Gemeine (Minuskel)",
+      "definition": "Kleinbuchstabe."
+    },
+    {
+      "id": "k2-f04",
+      "term": "Hauptstrich (Grundstrich)",
+      "definition": "Der kräftige Strich eines Buchstabens."
+    },
+    {
+      "id": "k2-f05",
+      "term": "Haarstrich (Haarlinie)",
+      "definition": "Der dünne Strich eines Buchstabens (auch Querstrich)."
+    },
+    {
+      "id": "k2-f06",
+      "term": "Serife",
+      "definition": "Häkchenartiges Ende eines Buchstabenstrichs; ursprünglich eine Querrille am Strichende von in Stein gehauenen Schriften."
+    },
+    {
+      "id": "k2-f07",
+      "term": "Punze",
+      "definition": "Innenraum eines Buchstabens – geschlossen (im o) oder offen (im n)."
+    },
+    {
+      "id": "k2-f08",
+      "term": "Anstrich (Dachansatz)",
+      "definition": "Fachbegriff am Buchstaben (z. B. oben an b, d, h)."
+    },
+    {
+      "id": "k2-f09",
+      "term": "Schriftlinie",
+      "definition": "Die Linie, auf der die Buchstaben stehen."
+    },
+    {
+      "id": "k2-f10",
+      "term": "Oberlänge und Unterlänge",
+      "definition": "Oberlänge: Teil über der Mittellänge (b, d, h). Unterlänge: Teil unter der Schriftlinie (g, p, y)."
+    },
+    {
+      "id": "k2-f11",
+      "term": "Versalhöhe und Mittellänge",
+      "definition": "Versalhöhe: Höhe der Großbuchstaben. Mittellänge: Höhe der Kleinbuchstaben ohne Ober-/Unterlängen."
+    },
+    {
+      "id": "k2-f12",
+      "term": "Schriftschnitt",
+      "definition": "Strichstärke, Stellung und Breite einer Schrift: black/fett, bold/halbfett, italic/kursiv, regular/normal, narrow/schmal."
+    },
+    {
+      "id": "k2-f13",
+      "term": "Grotesk",
+      "definition": "Serifenlose Schrift aus geometrischen Grundformen, z. B. Arial, Helvetica."
+    },
+    {
+      "id": "k2-f14",
+      "term": "Egyptienne",
+      "definition": "Serifenbetonte Schrift mit überdimensionalen Serifen, z. B. Rockwell."
+    },
+    {
+      "id": "k2-f15",
+      "term": "Antiqua",
+      "definition": "Serifenschrift, sehr gut lesbar, für lange Texte – z. B. Times, Garamond, Bodoni, Palatino."
+    },
+    {
+      "id": "k2-f16",
+      "term": "Fraktur",
+      "definition": "Gebrochene Schrift, wirkt wie mit der Feder geschrieben – z. B. Schwabacher, Old English."
+    },
+    {
+      "id": "k2-f17",
+      "term": "Schreibschrift (Script)",
+      "definition": "Einer Handschrift nachempfunden, nur für größere Schriftgrade – z. B. Brush Script."
+    }
+  ],
+  "items": [
+    {
+      "id": "k2-001",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Fachbegriff und Bedeutung",
+      "pairs": [
+        {
+          "left": "Versalie",
+          "right": "Großbuchstabe"
+        },
+        {
+          "left": "Gemeine",
+          "right": "Kleinbuchstabe"
+        },
+        {
+          "left": "Hauptstrich",
+          "right": "Grundstrich"
+        },
+        {
+          "left": "Haarstrich",
+          "right": "Haarlinie / Querstrich"
+        },
+        {
+          "left": "Anstrich",
+          "right": "Dachansatz"
+        }
+      ]
+    },
+    {
+      "id": "k2-002",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie nennt man einen Großbuchstaben in der Typografie?",
+      "options": [
+        "Versalie",
+        "Gemeine",
+        "Serife",
+        "Punze"
+      ],
+      "correct": 0,
+      "explanation": "Versalie (auch Majuskel) = Großbuchstabe."
+    },
+    {
+      "id": "k2-003",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was ist eine „Gemeine“?",
+      "options": [
+        "Ein Kleinbuchstabe",
+        "Ein Großbuchstabe",
+        "Ein häkchenartiges Ende",
+        "Ein dünner Strich"
+      ],
+      "correct": 0,
+      "explanation": "Gemeine (auch Minuskel) = Kleinbuchstabe."
+    },
+    {
+      "id": "k2-004",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie heißen die häkchenartigen Enden an den Buchstabenstrichen?",
+      "options": [
+        "Serifen",
+        "Versalien",
+        "Punzen",
+        "Gemeine"
+      ],
+      "correct": 0,
+      "explanation": "Serifen sind die häkchenartigen Enden an Buchstaben."
+    },
+    {
+      "id": "k2-005",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Wie heißt der Innenraum eines Buchstabens, z. B. im „o“?",
+      "options": [
+        "Punze",
+        "Bauch",
+        "Scheitel",
+        "Überhang"
+      ],
+      "correct": 0,
+      "explanation": "Die Punze ist der Innenraum eines Buchstabens (im o: geschlossene Punze)."
+    },
+    {
+      "id": "k2-006",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Majuskel und Versalie bedeuten dasselbe: Großbuchstabe.",
+      "correct": true,
+      "explanation": "Richtig – Majuskel = Versalie = Großbuchstabe."
+    },
+    {
+      "id": "k2-007",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "„Minuskel“ ist ein anderes Wort für Versalie.",
+      "correct": false,
+      "explanation": "Falsch – Minuskel = Gemeine = Kleinbuchstabe."
+    },
+    {
+      "id": "k2-008",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Der Haarstrich ist der dünne Strich eines Buchstabens.",
+      "correct": true,
+      "explanation": "Richtig – Haarstrich = Haarlinie, der dünne Strich."
+    },
+    {
+      "id": "k2-009",
+      "difficulty": 1,
+      "type": "cloze",
+      "text": "Großbuchstaben heißen {{Versalien}} (Majuskeln), Kleinbuchstaben heißen {{Gemeine}} (Minuskeln).",
+      "distractors": [
+        "Serifen",
+        "Punzen"
+      ],
+      "explanation": "Versalie = Großbuchstabe, Gemeine = Kleinbuchstabe."
+    },
+    {
+      "id": "k2-010",
+      "difficulty": 1,
+      "type": "sort",
+      "question": "Dicker oder dünner Strich?",
+      "categories": [
+        {
+          "id": "h",
+          "label": "Hauptstrich (dick)"
+        },
+        {
+          "id": "d",
+          "label": "Haarstrich (dünn)"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Grundstrich",
+          "category": "h"
+        },
+        {
+          "text": "Hauptstrich",
+          "category": "h"
+        },
+        {
+          "text": "Haarlinie",
+          "category": "d"
+        },
+        {
+          "text": "Querstrich",
+          "category": "d"
+        },
+        {
+          "text": "Haarstrich",
+          "category": "d"
+        }
+      ]
+    },
+    {
+      "id": "k2-011",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Schriftschnitte: Englisch und Deutsch",
+      "pairs": [
+        {
+          "left": "black",
+          "right": "fett"
+        },
+        {
+          "left": "bold",
+          "right": "halbfett"
+        },
+        {
+          "left": "italic",
+          "right": "kursiv"
+        },
+        {
+          "left": "regular",
+          "right": "normal"
+        },
+        {
+          "left": "narrow",
+          "right": "schmal"
+        }
+      ]
+    },
+    {
+      "id": "k2-012",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was bezeichnen Schriftschnitte?",
+      "options": [
+        "Strichstärke, Stellung und Breite der Zeichen",
+        "Nur die Schriftgröße",
+        "Die Farbe der Schrift",
+        "Die Anzahl der Zeilen"
+      ],
+      "correct": 0,
+      "explanation": "Schriftschnitte bezeichnen Strichstärken, Stellung und Breite der Zeichen einer Schrift."
+    },
+    {
+      "id": "k2-013",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was bedeutet „narrow“ bei einem Schriftschnitt?",
+      "options": [
+        "Schmal",
+        "Fett",
+        "Kursiv",
+        "Normal"
+      ],
+      "correct": 0,
+      "explanation": "narrow = schmal."
+    },
+    {
+      "id": "k2-014",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie heißt „halbfett“ als Schriftschnitt auf Englisch?",
+      "options": [
+        "Bold",
+        "Black",
+        "Regular",
+        "Italic"
+      ],
+      "correct": 0,
+      "explanation": "bold = halbfett, black = fett."
+    },
+    {
+      "id": "k2-015",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Eine kursive (italic) Schrift steht schräg.",
+      "correct": true,
+      "explanation": "Richtig – kursiv/italic ist die schräg gestellte Variante."
+    },
+    {
+      "id": "k2-016",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Auf welcher Linie stehen die Buchstaben?",
+      "options": [
+        "Auf der Schriftlinie",
+        "Auf der Oberlänge",
+        "Auf der Unterlänge",
+        "Auf der Versalhöhe"
+      ],
+      "correct": 0,
+      "explanation": "Die Schriftlinie ist die Linie, auf der die Buchstaben stehen."
+    },
+    {
+      "id": "k2-017",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Schriften unterscheiden sich z. B. durch unterschiedliche Versalhöhen und Mittellängen.",
+      "correct": true,
+      "explanation": "Richtig – so steht es im Aufgabentext zum Vier-Linien-System."
+    },
+    {
+      "id": "k2-018",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welcher Buchstabe hat eine Unterlänge?",
+      "options": [
+        "g",
+        "h",
+        "o",
+        "x"
+      ],
+      "correct": 0,
+      "explanation": "Das g ragt unter die Schriftlinie."
+    },
+    {
+      "id": "k2-019",
+      "difficulty": 2,
+      "type": "sort",
+      "question": "Ober-, Mittel- oder Unterlänge?",
+      "categories": [
+        {
+          "id": "o",
+          "label": "Oberlänge"
+        },
+        {
+          "id": "m",
+          "label": "Mittellänge"
+        },
+        {
+          "id": "u",
+          "label": "Unterlänge"
+        }
+      ],
+      "cards": [
+        {
+          "text": "b",
+          "category": "o"
+        },
+        {
+          "text": "d",
+          "category": "o"
+        },
+        {
+          "text": "h",
+          "category": "o"
+        },
+        {
+          "text": "a",
+          "category": "m"
+        },
+        {
+          "text": "e",
+          "category": "m"
+        },
+        {
+          "text": "o",
+          "category": "m"
+        },
+        {
+          "text": "g",
+          "category": "u"
+        },
+        {
+          "text": "p",
+          "category": "u"
+        },
+        {
+          "text": "y",
+          "category": "u"
+        }
+      ],
+      "explanation": "Oberlänge ragt nach oben, Unterlänge unter die Schriftlinie."
+    },
+    {
+      "id": "k2-020",
+      "difficulty": 2,
+      "type": "sort",
+      "question": "Zu welcher Schriftgruppe gehört die Schrift?",
+      "categories": [
+        {
+          "id": "g",
+          "label": "Grotesk"
+        },
+        {
+          "id": "a",
+          "label": "Antiqua"
+        },
+        {
+          "id": "f",
+          "label": "Fraktur"
+        },
+        {
+          "id": "s",
+          "label": "Schreibschrift"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Arial",
+          "category": "g"
+        },
+        {
+          "text": "Helvetica",
+          "category": "g"
+        },
+        {
+          "text": "Times",
+          "category": "a"
+        },
+        {
+          "text": "Garamond",
+          "category": "a"
+        },
+        {
+          "text": "Palatino",
+          "category": "a"
+        },
+        {
+          "text": "Old English",
+          "category": "f"
+        },
+        {
+          "text": "Schwabacher",
+          "category": "f"
+        },
+        {
+          "text": "Brush Script",
+          "category": "s"
+        },
+        {
+          "text": "Lucida Handwriting",
+          "category": "s"
+        }
+      ]
+    },
+    {
+      "id": "k2-021",
+      "difficulty": 2,
+      "type": "sort",
+      "question": "Antiqua oder Grotesk?",
+      "categories": [
+        {
+          "id": "a",
+          "label": "Antiqua"
+        },
+        {
+          "id": "g",
+          "label": "Grotesk"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Serifen als Lesehilfe",
+          "category": "a"
+        },
+        {
+          "text": "Unterschiedliche Strichstärken",
+          "category": "a"
+        },
+        {
+          "text": "Für lange Lesetexte",
+          "category": "a"
+        },
+        {
+          "text": "Keine Serifen",
+          "category": "g"
+        },
+        {
+          "text": "Aus geometrischen Grundformen",
+          "category": "g"
+        },
+        {
+          "text": "Für Plakate und Werbung",
+          "category": "g"
+        }
+      ]
+    },
+    {
+      "id": "k2-022",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Schrift und Schriftgruppe",
+      "pairs": [
+        {
+          "left": "Rockwell",
+          "right": "Egyptienne"
+        },
+        {
+          "left": "Bodoni",
+          "right": "Antiqua"
+        },
+        {
+          "left": "Arial",
+          "right": "Grotesk"
+        },
+        {
+          "left": "Old English",
+          "right": "Fraktur"
+        },
+        {
+          "left": "Brush Script",
+          "right": "Schreibschrift"
+        }
+      ]
+    },
+    {
+      "id": "k2-023",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Schriftgruppe wird am häufigsten für längere Lesetexte verwendet?",
+      "options": [
+        "Antiqua",
+        "Fraktur",
+        "Schreibschrift",
+        "Egyptienne"
+      ],
+      "correct": 0,
+      "explanation": "Antiquaschriften sind wegen ihrer sehr guten Lesbarkeit die am häufigsten verwendeten Schriften für längere Texte."
+    },
+    {
+      "id": "k2-024",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Woher stammen die unterschiedlichen Strichstärken der Antiqua?",
+      "options": [
+        "Von in Stein gehauenen römischen Schriften",
+        "Von Schreibmaschinen",
+        "Von Computern",
+        "Von Pinselschriften"
+      ],
+      "correct": 0,
+      "explanation": "Die Strichstärken stammen von den in Stein gehauenen römischen Schriften (Meißelspitzen)."
+    },
+    {
+      "id": "k2-025",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Wie ist die Serife entstanden?",
+      "options": [
+        "Als Querrille am Ende eines in Stein gehauenen Buchstabenstrichs",
+        "Als Fehler beim Druck",
+        "Durch die Schreibmaschine",
+        "Als Verzierung der Fraktur"
+      ],
+      "correct": 0,
+      "explanation": "Als Abschluss eines Buchstabenstrichs wurde oft eine Querrille geschlagen – die heutige Serife."
+    },
+    {
+      "id": "k2-026",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Schreibschriften eignen sich gut für lange Fließtexte.",
+      "correct": false,
+      "explanation": "Falsch – bei viel Text sind Schreibschriften ungeeignet."
+    },
+    {
+      "id": "k2-027",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Die Serifen führen das Auge und ermöglichen ein langes, ermüdungsfreies Lesen.",
+      "correct": true,
+      "explanation": "Richtig – das ist ein Vorteil der Antiqua."
+    },
+    {
+      "id": "k2-028",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Schrift gehört zur Gruppe der Egyptienne (serifenbetonte Schriften)?",
+      "options": [
+        "Rockwell",
+        "Arial",
+        "Times",
+        "Old English"
+      ],
+      "correct": 0,
+      "explanation": "Rockwell hat überdimensionale Serifen – typisch Egyptienne."
+    },
+    {
+      "id": "k2-029",
+      "difficulty": 1,
+      "type": "cloze",
+      "text": "Die {{Antiqua}} hat {{Serifen}} als Lesehilfe und wirkt harmonisch, aber konservativ.",
+      "distractors": [
+        "Grotesk",
+        "Fraktur"
+      ],
+      "explanation": "Antiquaschriften: Serifen als Lesehilfe, harmonisch, konservativ."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "k2-l1",
+      "title": "Schriftbild",
+      "subtitle": "Fachbegriffe am Buchstaben",
+      "icon": "type",
+      "grammar": {
+        "title": "Fachbegriffe am Musterwort „Hamburgo“",
+        "text": "• Versalie = Großbuchstabe (Majuskel). Gemeine = Kleinbuchstabe (Minuskel).\n• Hauptstrich (Grundstrich) = der kräftige Strich eines Buchstabens. Haarstrich (Haarlinie, Querstrich) = der dünne Strich.\n• Serife = häkchenartiges Ende eines Buchstabenstrichs.\n• Punze = der Innenraum eines Buchstabens: geschlossen (z. B. im o) oder offen (z. B. im n).\n• Weitere Begriffe am Buchstaben: Scheitel, Bauch, Überhang, Anstrich (Dachansatz), Endstrich, Kehlung, Halbserife, Symmetrieachse.",
+        "examples": [
+          {
+            "en": "Versalie",
+            "de": "Großbuchstabe / Majuskel"
+          },
+          {
+            "en": "Gemeine",
+            "de": "Kleinbuchstabe / Minuskel"
+          },
+          {
+            "en": "Serife",
+            "de": "häkchenartiges Ende am Buchstaben"
+          }
+        ]
+      },
+      "items": [
+        "k2-001",
+        "k2-002",
+        "k2-003",
+        "k2-004",
+        "k2-005",
+        "k2-006",
+        "k2-007",
+        "k2-008",
+        "k2-009",
+        "k2-010"
+      ]
+    },
+    {
+      "id": "k2-l2",
+      "title": "Linien & Schriftschnitte",
+      "subtitle": "Vier-Linien-System, bold, italic …",
+      "icon": "layers",
+      "grammar": {
+        "title": "Vier-Linien-System und Schriftschnitte",
+        "text": "• Das Vier-Linien-System gliedert Buchstaben durch vier horizontale Linien. Schriften unterscheiden sich z. B. durch unterschiedliche Versalhöhen und Mittellängen.\n• Schriftlinie: die Linie, auf der die Buchstaben stehen.\n• Mittellänge: Höhe der Kleinbuchstaben ohne Ober- und Unterlängen (a, e, o). Oberlänge: Teil darüber (b, d, h). Unterlänge: Teil unter der Schriftlinie (g, p, y). Versalhöhe: Höhe der Großbuchstaben.\n• Schriftschnitte bezeichnen die Strichstärke, die Stellung und die Breite der Zeichen einer Schrift – mit deutschen und englischen Namen: black = fett, bold = halbfett, italic = kursiv, regular = normal, narrow = schmal.",
+        "examples": [
+          {
+            "en": "bold",
+            "de": "halbfett"
+          },
+          {
+            "en": "italic",
+            "de": "kursiv (schräg gestellt)"
+          },
+          {
+            "en": "narrow",
+            "de": "schmal"
+          }
+        ]
+      },
+      "items": [
+        "k2-011",
+        "k2-012",
+        "k2-013",
+        "k2-014",
+        "k2-015",
+        "k2-016",
+        "k2-017",
+        "k2-018",
+        "k2-019"
+      ]
+    },
+    {
+      "id": "k2-l3",
+      "title": "Schriftgruppen",
+      "subtitle": "Grotesk, Antiqua, Fraktur & Co.",
+      "icon": "search",
+      "grammar": {
+        "title": "Die Schriftgruppen im Überblick",
+        "text": "• Grotesk (serifenlose Schriften): aus geometrischen Grundformen konstruiert, keine Serifen, sachlich. Für lange Texte weniger gut lesbar als Antiqua. Für Werbung, Plakate, Monitorschriften. Beispiele: Arial, Helvetica, Univers, Myriad Pro.\n• Egyptienne (serifenbetonte Schriften): überdimensionale Serifen, wirkt konstruiert, bei längeren Texten schlecht lesbar. Für Speisekarten, Einladungen, Überschriften. Beispiel: Rockwell.\n• Antiqua (Serifenschriften): Serifen als Lesehilfe, harmonisch, aber konservativ. Sehr gut lesbar – am häufigsten für längere Lesetexte (Bücher, Zeitungen, Zeitschriften). Beispiele: Bodoni, Garamond, Times, Palatino.\n• Fraktur (gebrochene Schriften): wirkt wie mit der Feder geschrieben, mit An- und Abstrichen; bei längeren Texten schlecht lesbar. Für Headlines, Fantasy, Mystery. Beispiele: Schwabacher, Fraktur, Old English.\n• Schreibschriften (Script): einer Handschrift nachempfunden; bei viel Text ungeeignet. Für größere Schriftgrade, Headlines, Auszeichnungen. Beispiele: Lucida Handwriting, Brush Script.",
+        "examples": [
+          {
+            "en": "Grotesk",
+            "de": "serifenlos, sachlich – Arial, Helvetica"
+          },
+          {
+            "en": "Antiqua",
+            "de": "Serifen als Lesehilfe – Times, Garamond"
+          },
+          {
+            "en": "Fraktur",
+            "de": "gebrochene Schrift – Old English"
+          }
+        ]
+      },
+      "items": [
+        "k2-020",
+        "k2-021",
+        "k2-022",
+        "k2-023",
+        "k2-024",
+        "k2-025",
+        "k2-026",
+        "k2-027",
+        "k2-028",
+        "k2-029"
+      ]
+    }
+  ]
+}

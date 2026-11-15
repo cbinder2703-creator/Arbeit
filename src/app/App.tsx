@@ -11,6 +11,7 @@ import { Abschluss } from '@/pages/Abschluss';
 import { Pfad } from '@/pages/Pfad';
 import { Lektion } from '@/pages/Lektion';
 import { Karten } from '@/pages/Karten';
+import { Korrektur } from '@/pages/Korrektur';
 import { Runde } from '@/pages/Runde';
 
 export function AppRoutes() {
@@ -28,6 +29,7 @@ export function AppRoutes() {
         <Route path="lektion/:lessonId" element={<Lektion />} />
         <Route path="modi" element={<Modi />} />
         <Route path="karten" element={<Karten />} />
+        <Route path="korrektur" element={<Korrektur />} />
         <Route path="abschluss" element={<Abschluss />} />
         <Route path="spiel/:modusId" element={<Runde />} />
       </Route>

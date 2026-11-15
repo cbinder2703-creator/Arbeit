@@ -1,0 +1,848 @@
+{
+  "id": "k3",
+  "chapter": 3,
+  "title": "Licht, Auge & Farbsehen",
+  "subtitle": "LS3: Sehvorgang, Spektrum, Auge, Stäbchen und Zapfen",
+  "pages": "Arbeitsblätter LS3",
+  "color": "#10B981",
+  "icon": "eye",
+  "flashcards": [
+    {
+      "id": "k3-f01",
+      "term": "Remittieren",
+      "definition": "Licht zurückwerfen (lat.)."
+    },
+    {
+      "id": "k3-f02",
+      "term": "Absorbieren",
+      "definition": "Licht verschlucken (lat.) – der Anteil wird in Wärme umgewandelt."
+    },
+    {
+      "id": "k3-f03",
+      "term": "Farbreiz",
+      "definition": "Die Strahlung, die ins Auge fällt."
+    },
+    {
+      "id": "k3-f04",
+      "term": "Erregung",
+      "definition": "Das Signal, das die Sehzellen über den Sehnerv ans Gehirn weitergeben."
+    },
+    {
+      "id": "k3-f05",
+      "term": "Farbempfindung",
+      "definition": "Der Farbeindruck, der im Sehzentrum des Gehirns entsteht."
+    },
+    {
+      "id": "k3-f06",
+      "term": "Sehzentrum",
+      "definition": "Teil des Gehirns im Hinterkopf, in dem der Farbeindruck entsteht."
+    },
+    {
+      "id": "k3-f07",
+      "term": "Wellenlänge (λ)",
+      "definition": "Länge einer vollständigen Welle (Wellenberg + Wellental) – in Nanometern (nm)."
+    },
+    {
+      "id": "k3-f08",
+      "term": "Nanometer (nm)",
+      "definition": "Ein milliardstel Meter (10⁻⁹ m) bzw. ein millionstel Millimeter."
+    },
+    {
+      "id": "k3-f09",
+      "term": "Sichtbares Licht",
+      "definition": "Strahlung mit 380–760 nm, vereinfacht 400–700 nm."
+    },
+    {
+      "id": "k3-f10",
+      "term": "Infrarot (IR)",
+      "definition": "Unsichtbare Wärmestrahlung, langwellig neben dem Licht."
+    },
+    {
+      "id": "k3-f11",
+      "term": "Ultraviolett (UV)",
+      "definition": "Unsichtbare, kurzwellige Strahlung: bräunt die Haut, vergilbt Papier, kopiert Druckformen."
+    },
+    {
+      "id": "k3-f12",
+      "term": "Netzhaut",
+      "definition": "Lichtempfindliche Schicht an der Augenrückwand."
+    },
+    {
+      "id": "k3-f13",
+      "term": "Linse (Auge)",
+      "definition": "Bikonvexe Linse; erzeugt das Bild auf der Netzhaut; Schärfe durch Krümmung."
+    },
+    {
+      "id": "k3-f14",
+      "term": "Iris und Pupille",
+      "definition": "Iris = Regenbogenhaut; Pupille = runde Öffnung, die den Lichteinfall regelt."
+    },
+    {
+      "id": "k3-f15",
+      "term": "Sehgrube",
+      "definition": "Stelle des schärfsten Sehens in der Netzhaut (ca. 1,5 mm)."
+    },
+    {
+      "id": "k3-f16",
+      "term": "Blinder Fleck",
+      "definition": "Stelle ohne Sehzellen, an der der Sehnerv in die Netzhaut mündet."
+    },
+    {
+      "id": "k3-f17",
+      "term": "Stäbchen",
+      "definition": "Sehzellen für Hell/Dunkel, ca. 120 Millionen, sehr lichtempfindlich."
+    },
+    {
+      "id": "k3-f18",
+      "term": "Zapfen",
+      "definition": "Sehzellen für Farben, ca. 6 Millionen; drei Arten: B, G, R."
+    },
+    {
+      "id": "k3-f19",
+      "term": "Grundfarben des Lichts",
+      "definition": "Rot, Grün und Blau (RGB)."
+    }
+  ],
+  "items": [
+    {
+      "id": "k3-001",
+      "difficulty": 1,
+      "type": "order",
+      "question": "Bring den Sehvorgang in die richtige Reihenfolge.",
+      "steps": [
+        "Licht fällt ins Auge (Farbreiz)",
+        "Das Auge reagiert, die Sehzellen geben eine Erregung weiter",
+        "Die Erregung läuft über den Sehnerv zum Gehirn",
+        "Im Sehzentrum entsteht die Farbempfindung"
+      ],
+      "explanation": "Farbreiz → Erregung → Sehnerv → Farbempfindung im Sehzentrum."
+    },
+    {
+      "id": "k3-002",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Begriffe zum Sehvorgang",
+      "pairs": [
+        {
+          "left": "Farbreiz",
+          "right": "Strahlung, die ins Auge fällt"
+        },
+        {
+          "left": "Erregung",
+          "right": "Signal der Sehzellen an den Sehnerv"
+        },
+        {
+          "left": "Farbempfindung",
+          "right": "Entsteht im Sehzentrum"
+        },
+        {
+          "left": "Remittieren",
+          "right": "Zurückwerfen von Licht"
+        },
+        {
+          "left": "Absorbieren",
+          "right": "Verschlucken von Licht"
+        }
+      ]
+    },
+    {
+      "id": "k3-003",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was bedeutet „remittieren“?",
+      "options": [
+        "Zurückwerfen",
+        "Verschlucken",
+        "Durchlassen",
+        "Brechen"
+      ],
+      "correct": 0,
+      "explanation": "Remittieren (lat.) = zurückwerfen. Absorbieren = verschlucken."
+    },
+    {
+      "id": "k3-004",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wo entsteht die Farbempfindung?",
+      "options": [
+        "Im Sehzentrum des Gehirns",
+        "In der Netzhaut",
+        "Auf dem Gegenstand",
+        "In der Iris"
+      ],
+      "correct": 0,
+      "explanation": "Erst im Sehzentrum im Hinterkopf entsteht der Farbeindruck."
+    },
+    {
+      "id": "k3-005",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Elektromagnetische Wellen sind selbst farbig.",
+      "correct": false,
+      "explanation": "Falsch – sie sind nicht farbig, der Farbeindruck entsteht erst im Gehirn."
+    },
+    {
+      "id": "k3-006",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Mit welcher Geschwindigkeit breitet sich Licht aus?",
+      "options": [
+        "300 000 km/s",
+        "300 km/s",
+        "3 000 km/s",
+        "30 000 km/s"
+      ],
+      "correct": 0,
+      "explanation": "Licht breitet sich mit 300 000 km/s aus."
+    },
+    {
+      "id": "k3-007",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welcher Bereich ist vereinfacht das sichtbare Licht?",
+      "options": [
+        "400 bis 700 nm",
+        "100 bis 400 nm",
+        "700 bis 1000 nm",
+        "200 bis 500 nm"
+      ],
+      "correct": 0,
+      "explanation": "Genau: 380–760 nm, vereinfacht 400–700 nm."
+    },
+    {
+      "id": "k3-008",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Wie viel ist 1 Nanometer (nm)?",
+      "options": [
+        "Ein milliardstel Meter",
+        "Ein tausendstel Meter",
+        "Ein millionstel Meter",
+        "Ein hundertstel Meter"
+      ],
+      "correct": 0,
+      "explanation": "1 nm = 10⁻⁹ m = 1 milliardstel Meter = 1 millionstel Millimeter."
+    },
+    {
+      "id": "k3-009",
+      "difficulty": 2,
+      "type": "truefalse",
+      "statement": "Bei geringerer Schwingungszahl pro Sekunde sind die Wellen länger.",
+      "correct": true,
+      "explanation": "Richtig – je schneller die Schwingung, desto kürzer die Welle."
+    },
+    {
+      "id": "k3-010",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Ein schwarzer Gegenstand erwärmt sich in der Sonne stärker als ein weißer.",
+      "correct": true,
+      "explanation": "Richtig – der absorbierte Lichtanteil wird in Wärme umgewandelt."
+    },
+    {
+      "id": "k3-011",
+      "difficulty": 2,
+      "type": "order",
+      "question": "Bring die Strahlungsarten von kurzwellig nach langwellig in die richtige Reihenfolge.",
+      "steps": [
+        "Gammastrahlung",
+        "Röntgenstrahlung",
+        "Ultraviolett (UV)",
+        "Sichtbares Licht",
+        "Infrarot (IR)",
+        "Mikrowellen",
+        "Radiowellen"
+      ],
+      "explanation": "Je größer die Wellenlänge, desto weiter rechts im Spektrum."
+    },
+    {
+      "id": "k3-012",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Strahlung und Wirkung",
+      "pairs": [
+        {
+          "left": "Ultraviolette Strahlung",
+          "right": "Vergilbt Papier"
+        },
+        {
+          "left": "Infrarot",
+          "right": "Wärmestrahlung"
+        },
+        {
+          "left": "Röntgenstrahlung",
+          "right": "Durchdringt die Haut"
+        },
+        {
+          "left": "Sichtbares Licht",
+          "right": "400 bis 700 nm"
+        },
+        {
+          "left": "Gammastrahlung",
+          "right": "Schädigt den Körper"
+        }
+      ]
+    },
+    {
+      "id": "k3-013",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Strahlung vergilbt Papier?",
+      "options": [
+        "Ultraviolette Strahlung (UV)",
+        "Infrarot",
+        "Radiowellen",
+        "Blaues Licht"
+      ],
+      "correct": 0,
+      "explanation": "Kurzwellige UV-Strahlen vergilben das Papier."
+    },
+    {
+      "id": "k3-014",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Strahlung empfinden wir als Wärme?",
+      "options": [
+        "Infrarot",
+        "UV",
+        "Röntgen",
+        "Radar"
+      ],
+      "correct": 0,
+      "explanation": "Infrarot = Wärmestrahlung."
+    },
+    {
+      "id": "k3-015",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Was bewirken kurzwellige UV-Strahlen u. a.?",
+      "options": [
+        "Chemische Prozesse, z. B. beim Kopieren von Druckformen",
+        "Die Bräunung der Haut",
+        "Wärme",
+        "Funkverbindungen"
+      ],
+      "correct": 0,
+      "explanation": "Längerwellige UV-Strahlen bräunen die Haut, kürzere bewirken chemische Prozesse."
+    },
+    {
+      "id": "k3-016",
+      "difficulty": 1,
+      "type": "sort",
+      "question": "Sichtbar oder unsichtbar?",
+      "categories": [
+        {
+          "id": "s",
+          "label": "Sichtbar"
+        },
+        {
+          "id": "u",
+          "label": "Unsichtbar"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Rotes Licht (600–700 nm)",
+          "category": "s"
+        },
+        {
+          "text": "Grünes Licht (500–600 nm)",
+          "category": "s"
+        },
+        {
+          "text": "Blaues Licht (400–500 nm)",
+          "category": "s"
+        },
+        {
+          "text": "Infrarot",
+          "category": "u"
+        },
+        {
+          "text": "UV-Strahlung",
+          "category": "u"
+        },
+        {
+          "text": "Röntgenstrahlung",
+          "category": "u"
+        },
+        {
+          "text": "Radiowellen",
+          "category": "u"
+        }
+      ]
+    },
+    {
+      "id": "k3-017",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Röntgen- und Gammastrahlen durchdringen die Haut und schädigen den Körper.",
+      "correct": true,
+      "explanation": "Richtig – sie sind noch kurzwelliger als UV."
+    },
+    {
+      "id": "k3-018",
+      "difficulty": 1,
+      "type": "cloze",
+      "text": "Das sichtbare Licht liegt zwischen {{UV}}-Strahlung und {{Infrarot}}.",
+      "distractors": [
+        "Röntgen",
+        "Radar"
+      ],
+      "explanation": "Kurzwellig grenzt UV an, langwellig Infrarot."
+    },
+    {
+      "id": "k3-019",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Wellenlängen gehören zu Rot?",
+      "options": [
+        "600 bis 700 nm",
+        "400 bis 500 nm",
+        "500 bis 600 nm",
+        "700 bis 800 nm"
+      ],
+      "correct": 0,
+      "explanation": "Blau 400–500 nm, Grün 500–600 nm, Rot 600–700 nm."
+    },
+    {
+      "id": "k3-020",
+      "difficulty": 2,
+      "type": "pairs",
+      "question": "Teile des Auges",
+      "pairs": [
+        {
+          "left": "Linse",
+          "right": "Erzeugt das Bild auf der Netzhaut"
+        },
+        {
+          "left": "Iris",
+          "right": "Regenbogenhaut, regelt den Lichteinfall"
+        },
+        {
+          "left": "Pupille",
+          "right": "Runde Öffnung vor der Linse"
+        },
+        {
+          "left": "Netzhaut",
+          "right": "Lichtempfindliche Schicht an der Augenrückwand"
+        },
+        {
+          "left": "Sehnerv",
+          "right": "Leitet Impulse zum Gehirn"
+        },
+        {
+          "left": "Sehgrube",
+          "right": "Stelle des schärfsten Sehens"
+        }
+      ]
+    },
+    {
+      "id": "k3-021",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Womit lässt sich die Iris in einer Kamera vergleichen?",
+      "options": [
+        "Mit der verstellbaren Blende",
+        "Mit dem Film",
+        "Mit dem Objektiv",
+        "Mit dem Blitz"
+      ],
+      "correct": 0,
+      "explanation": "Die Iris lässt sich mit der verstellbaren Blende der Kamera vergleichen."
+    },
+    {
+      "id": "k3-022",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was passiert mit der Pupille bei großer Helligkeit?",
+      "options": [
+        "Sie verengt sich",
+        "Sie vergrößert sich",
+        "Sie bleibt gleich",
+        "Sie verschwindet"
+      ],
+      "correct": 0,
+      "explanation": "Bei größerer Helligkeit verengt sich die Pupille, bei geringerer vergrößert sie sich."
+    },
+    {
+      "id": "k3-023",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Wo liegt der blinde Fleck?",
+      "options": [
+        "Dort, wo der Sehnerv in die Netzhaut mündet",
+        "In der Mitte der Linse",
+        "Auf der Iris",
+        "In der Sehgrube"
+      ],
+      "correct": 0,
+      "explanation": "Am Eintritt des Sehnervs gibt es keine Sehzellen – dort sieht man nichts."
+    },
+    {
+      "id": "k3-024",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie heißt die Stelle des schärfsten Sehens?",
+      "options": [
+        "Sehgrube",
+        "Blinder Fleck",
+        "Pupille",
+        "Glaskörper"
+      ],
+      "correct": 0,
+      "explanation": "Die Sehgrube liegt der Linse gegenüber und misst nur ca. 1,5 mm."
+    },
+    {
+      "id": "k3-025",
+      "difficulty": 2,
+      "type": "truefalse",
+      "statement": "Die Schärfe der Abbildung entsteht im Auge durch eine Abstandsänderung zwischen Linse und Netzhaut.",
+      "correct": false,
+      "explanation": "Falsch – sie entsteht durch eine stärkere oder flachere Krümmung der Linse (Ringmuskeln)."
+    },
+    {
+      "id": "k3-026",
+      "difficulty": 2,
+      "type": "truefalse",
+      "statement": "Für die Naheinstellung hat die Augenlinse eine stärkere Krümmung.",
+      "correct": true,
+      "explanation": "Richtig – stärkere Krümmung = kürzere Brennweite."
+    },
+    {
+      "id": "k3-027",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was ist der Glaskörper?",
+      "options": [
+        "Eine gallertartige, durchsichtige Masse hinter der Linse",
+        "Die Linse selbst",
+        "Ein Muskel",
+        "Die Haut um das Auge"
+      ],
+      "correct": 0,
+      "explanation": "Der Raum hinter der Linse ist mit dem Glaskörper gefüllt."
+    },
+    {
+      "id": "k3-028",
+      "difficulty": 1,
+      "type": "cloze",
+      "text": "Die {{Linse}} erzeugt auf der {{Netzhaut}} das optische Abbild.",
+      "distractors": [
+        "Iris",
+        "Pupille"
+      ],
+      "explanation": "Die Linse bündelt das Licht, das Bild entsteht auf der Netzhaut."
+    },
+    {
+      "id": "k3-029",
+      "difficulty": 2,
+      "type": "pairs",
+      "question": "Sehzellen",
+      "pairs": [
+        {
+          "left": "Stäbchen",
+          "right": "Helligkeitssehen, ca. 120 Mio."
+        },
+        {
+          "left": "Zapfen",
+          "right": "Farbsehen, ca. 6 Mio."
+        },
+        {
+          "left": "B-Zapfen",
+          "right": "400–500 nm → Blau"
+        },
+        {
+          "left": "G-Zapfen",
+          "right": "500–600 nm → Grün"
+        },
+        {
+          "left": "R-Zapfen",
+          "right": "600–700 nm → Rot"
+        }
+      ]
+    },
+    {
+      "id": "k3-030",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Warum sieht man in der Dämmerung keine Farben mehr?",
+      "options": [
+        "Nur die empfindlicheren Stäbchen reagieren noch",
+        "Die Linse wird trüb",
+        "Die Iris schließt sich",
+        "Der Sehnerv ist abgeschaltet"
+      ],
+      "correct": 0,
+      "explanation": "Stäbchen sind empfindlicher als Zapfen – sie liefern bei wenig Licht nur Hell/Dunkel."
+    },
+    {
+      "id": "k3-031",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie viele Zapfenarten gibt es?",
+      "options": [
+        "Drei",
+        "Zwei",
+        "Vier",
+        "Sechs"
+      ],
+      "correct": 0,
+      "explanation": "Es gibt drei Arten: für Blau, Grün und Rot."
+    },
+    {
+      "id": "k3-032",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Farbe sehen wir, wenn die Zapfen für 500–600 nm gereizt werden?",
+      "options": [
+        "Grün",
+        "Blau",
+        "Rot",
+        "Gelb"
+      ],
+      "correct": 0,
+      "explanation": "G-Zapfen = mittelwellig (500–600 nm) = Grün."
+    },
+    {
+      "id": "k3-033",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie nennt man Rot, Grün und Blau zusammen?",
+      "options": [
+        "Grundfarben des Lichts",
+        "Grundfarben des Drucks",
+        "Mischfarben",
+        "Zweitfarben"
+      ],
+      "correct": 0,
+      "explanation": "Rot, Grün und Blau (RGB) sind die Grundfarben des Lichts."
+    },
+    {
+      "id": "k3-034",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Stäbchen reagieren auf die Lichtstärke.",
+      "correct": true,
+      "explanation": "Richtig – mit ihnen sehen wir hell und dunkel."
+    },
+    {
+      "id": "k3-035",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Total farbenblinde Menschen können nur Helligkeitsunterschiede unterscheiden.",
+      "correct": true,
+      "explanation": "Richtig – ihnen fehlt das Farbsehen der Zapfen."
+    },
+    {
+      "id": "k3-036",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wo sitzen Stäbchen und Zapfen?",
+      "options": [
+        "In der Netzhaut",
+        "In der Linse",
+        "In der Iris",
+        "Im Glaskörper"
+      ],
+      "correct": 0,
+      "explanation": "Die lichtempfindlichen Sehzellen liegen in der Netzhaut."
+    },
+    {
+      "id": "k3-037",
+      "difficulty": 1,
+      "type": "cloze",
+      "text": "Mit den {{Stäbchen}} sehen wir hell und dunkel, mit den {{Zapfen}} sehen wir Farben.",
+      "distractors": [
+        "Pupillen",
+        "Linsen"
+      ],
+      "explanation": "Stäbchen = Helligkeitssehen, Zapfen = Farbsehen."
+    },
+    {
+      "id": "k3-038",
+      "difficulty": 1,
+      "type": "sort",
+      "question": "Stäbchen oder Zapfen?",
+      "categories": [
+        {
+          "id": "s",
+          "label": "Stäbchen"
+        },
+        {
+          "id": "z",
+          "label": "Zapfen"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Helligkeitssehen",
+          "category": "s"
+        },
+        {
+          "text": "ca. 120 Millionen",
+          "category": "s"
+        },
+        {
+          "text": "Empfindlicher bei wenig Licht",
+          "category": "s"
+        },
+        {
+          "text": "Farbsehen",
+          "category": "z"
+        },
+        {
+          "text": "ca. 6 Millionen",
+          "category": "z"
+        },
+        {
+          "text": "Drei Arten (B, G, R)",
+          "category": "z"
+        }
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "k3-l1",
+      "title": "Licht & Sehen",
+      "subtitle": "Wie entsteht ein Farbeindruck?",
+      "icon": "lightbulb",
+      "grammar": {
+        "title": "Ohne Licht kein Sehen",
+        "text": "• Gegenstände leuchten selbst (Lichtquelle) oder werden beleuchtet und remittieren (= werfen zurück) das Licht. Ein Teil wird absorbiert (= verschluckt).\n• Der Sehvorgang hat drei Abschnitte: (1) Licht fällt direkt oder über einen Gegenstand ins Auge – die Strahlung heißt Farbreiz. (2) Das Auge reagiert, die Sehzellen geben eine Erregung über den Sehnerv weiter. (3) Im Sehzentrum des Gehirns entsteht die Farbempfindung.\n• Licht ist elektromagnetische Strahlung (Schwingungen bestimmter Wellenlänge). Es breitet sich mit 300 000 km/s aus. Die Wellenlänge (λ) ist die Länge einer vollständigen Welle (Wellenberg + Wellental). Weniger Schwingungen pro Sekunde = längere Wellen.\n• Sichtbares Licht: 380–760 nm, vereinfacht 400–700 nm. 1 nm = 1 milliardstel Meter (10⁻⁹ m).\n• Elektromagnetische Wellen sind nicht farbig – den Farbeindruck erzeugt erst das Gehirn.",
+        "examples": [
+          {
+            "en": "Remittieren",
+            "de": "zurückwerfen"
+          },
+          {
+            "en": "Absorbieren",
+            "de": "verschlucken"
+          },
+          {
+            "en": "Farbreiz",
+            "de": "die Strahlung, die ins Auge fällt"
+          }
+        ]
+      },
+      "items": [
+        "k3-001",
+        "k3-002",
+        "k3-003",
+        "k3-004",
+        "k3-005",
+        "k3-006",
+        "k3-007",
+        "k3-008",
+        "k3-009",
+        "k3-010"
+      ]
+    },
+    {
+      "id": "k3-l2",
+      "title": "Das Spektrum",
+      "subtitle": "Von Gammastrahlung bis Radiowellen",
+      "icon": "sun",
+      "grammar": {
+        "title": "Licht als Teil der elektromagnetischen Wellen",
+        "text": "• Reihenfolge von kurz- nach langwellig: Höhenstrahlung – Gammastrahlung – Röntgenstrahlung – UV – sichtbares Licht – Infrarot (Wärmestrahlung) – Mikrowellen – Radar – Mobilfunk – Radiowellen.\n• Infrarot (IR) schließt sich langwellig an das Licht an: Wir empfinden es als Wärmestrahlung.\n• UV (Ultraviolett) liegt kurzwellig neben dem Licht: Längerwellige UV-Strahlen bräunen die Haut. Kürzere bewirken chemische Prozesse (z. B. beim Kopieren von Druckformen), vergilben das Papier und verbrennen die Haut.\n• Röntgen- und Gammastrahlen sind noch kürzer: Sie durchdringen die Haut und schädigen den Körper.\n• Das sichtbare Licht umfasst 400–700 nm: Blau 400–500, Grün 500–600, Rot 600–700 nm.",
+        "examples": [
+          {
+            "en": "Infrarot (IR)",
+            "de": "Wärmestrahlung"
+          },
+          {
+            "en": "UV-Strahlung",
+            "de": "vergilbt Papier, bräunt die Haut"
+          },
+          {
+            "en": "Röntgenstrahlung",
+            "de": "durchdringt die Haut"
+          }
+        ]
+      },
+      "items": [
+        "k3-011",
+        "k3-012",
+        "k3-013",
+        "k3-014",
+        "k3-015",
+        "k3-016",
+        "k3-017",
+        "k3-018",
+        "k3-019"
+      ]
+    },
+    {
+      "id": "k3-l3",
+      "title": "Das Auge",
+      "subtitle": "Linse, Iris, Netzhaut, Sehnerv",
+      "icon": "eye",
+      "grammar": {
+        "title": "Aufbau des Auges",
+        "text": "• Das Auge ist ein optisches System, vergleichbar mit einer einfachen Kamera. Die Linse (bikonvex) erzeugt auf der Netzhaut (Augenrückwand) das optische Abbild.\n• Die Schärfe entsteht durch die Krümmung der Linse (Ringmuskeln): Naheinstellung = stärkere Krümmung (kürzere Brennweite), Ferneinstellung = flache Krümmung (längere Brennweite).\n• Die Iris (Regenbogenhaut) lässt nur eine runde Öffnung frei, die Pupille. Bei großer Helligkeit verengt sie sich, bei geringer wird sie größer – wie die verstellbare Blende einer Kamera.\n• Hinter der Linse füllt der Glaskörper (gallertartig, durchsichtig) den Raum.\n• Die Netzhaut ist die lichtempfindliche Schicht. Sie wandelt Lichtreize in elektrische Impulse um, die der Sehnerv ans Gehirn leitet.\n• Die Sehgrube ist die Stelle des schärfsten Sehens (Durchmesser ca. 1,5 mm). Der blinde Fleck liegt dort, wo der Sehnerv in die Netzhaut mündet – dort sieht man nichts.",
+        "examples": [
+          {
+            "en": "Linse",
+            "de": "erzeugt das Bild auf der Netzhaut"
+          },
+          {
+            "en": "Iris",
+            "de": "Regenbogenhaut – regelt den Lichteinfall"
+          },
+          {
+            "en": "Sehgrube",
+            "de": "Stelle des schärfsten Sehens"
+          }
+        ]
+      },
+      "items": [
+        "k3-020",
+        "k3-021",
+        "k3-022",
+        "k3-023",
+        "k3-024",
+        "k3-025",
+        "k3-026",
+        "k3-027",
+        "k3-028"
+      ]
+    },
+    {
+      "id": "k3-l4",
+      "title": "Stäbchen & Zapfen",
+      "subtitle": "Hell/Dunkel und Farbsehen",
+      "icon": "star",
+      "grammar": {
+        "title": "Sehzellen der Netzhaut",
+        "text": "• Die Netzhaut enthält ca. 120 Millionen Stäbchen und 6 Millionen Zapfen.\n• Stäbchen reagieren auf die Lichtstärke: Hell/Dunkel-Sehen, kein Farbsehen. Sie sind empfindlicher als die Zapfen – deshalb sieht man in der Dämmerung noch, aber ohne Farben.\n• Zapfen reagieren auf die Wellenlängen des Lichts: Farbsehen. Es gibt drei Arten: Die B-Zapfen reagieren auf ca. 400–500 nm (Blau), die G-Zapfen auf 500–600 nm (Grün), die R-Zapfen auf 600–700 nm (Rot).\n• Rot, Grün und Blau sind die Grundfarben des Lichts (RGB).\n• Bei Lichteinwirkung zerfallen Sehfarbstoffe und lösen elektrische Impulse aus. Total Farbenblinde erkennen nur Helligkeitsunterschiede.",
+        "examples": [
+          {
+            "en": "Stäbchen",
+            "de": "ca. 120 Mio. – Hell/Dunkel"
+          },
+          {
+            "en": "Zapfen",
+            "de": "ca. 6 Mio. – Farbsehen"
+          },
+          {
+            "en": "RGB",
+            "de": "Grundfarben des Lichts"
+          }
+        ]
+      },
+      "items": [
+        "k3-029",
+        "k3-030",
+        "k3-031",
+        "k3-032",
+        "k3-033",
+        "k3-034",
+        "k3-035",
+        "k3-036",
+        "k3-037",
+        "k3-038"
+      ]
+    }
+  ]
+}
