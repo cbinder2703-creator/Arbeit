@@ -59,10 +59,10 @@
     {
       "id": "pfad-profi",
       "title": "Pfad-Profi",
-      "rule": "Alle 27 Lektionen geschafft",
+      "rule": "Alle 28 Lektionen geschafft",
       "condition": {
         "kind": "lessonsDone",
-        "count": 27
+        "count": 28
       }
     },
     {
