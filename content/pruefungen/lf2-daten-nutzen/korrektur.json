@@ -1,6 +1,6 @@
 {
   "title": "Arbeitsblätter prüfen",
-  "intro": "Hier steht jede Aufgabe deiner Blätter mit deiner Antwort und der richtigen Lösung. Grün = stimmt · Rot = falsch · Gelb = ungenau · Blau = deine Antwort fehlte, hier ist die Lösung · Grau = nicht sicher. Alles stammt nur aus deinen Blättern. Ich habe Handschrift und Fotos gelesen – prüfe die markierten Stellen kurz im Heft. Zeichenaufgaben konnte ich nicht kontrollieren. Beim Blatt „Wiederholung für die Klassenarbeit“ standen keine Lösungen – dort ist alles eine Musterlösung aus dem Stoff deiner Blätter.",
+  "intro": "Hier steht jede Aufgabe deiner Blätter mit deiner Antwort und der richtigen Lösung. Grün = stimmt · Rot = falsch · Gelb = ungenau · Blau = deine Antwort fehlte, hier ist die Lösung · Grau = nicht sicher. Alles stammt nur aus deinen Blättern. Ich habe Handschrift und Fotos gelesen – prüfe die markierten Stellen kurz im Heft. Zeichenaufgaben konnte ich nicht kontrollieren. Beim Blatt „Wiederholung für die Klassenarbeit“ habe ich deine Handschrift (Seiten 1–3) geprüft; für den Dreisatz gibt es nur meine Musterlösung.",
   "sheets": [
     {
       "id": "ls1",
@@ -479,143 +479,150 @@
     {
       "id": "ka26",
       "title": "Wiederholung für die Klassenarbeit",
-      "subtitle": "Blatt „Wiederholung KA 26“, Aufgaben 1–7 und Dreisatz (ohne Lösungen – Musterlösung ergänzt)",
+      "subtitle": "Blatt „Wiederholung KA 26“, Aufgaben 1–7 mit deinen Antworten; Dreisatz (Seite 4) ohne Foto – Musterlösung",
       "color": "#EAB308",
       "entries": [
         {
           "task": "1a) Schriftgruppen: Tabelle ergänzen",
-          "yours": null,
-          "status": "missing",
-          "correct": "Fraktur (gebrochene Schrift) · Grotesk (Beispiel: Arial) · Schreibschrift · Egyptienne = serifenbetonte Schrift (Beispiel: Rockwell) · Antiqua (Beispiel: Times)",
-          "note": "Die Zeile mit der kursiven Zierschrift habe ich als Schreibschrift gelesen – bitte mit der Schrift auf dem Blatt vergleichen."
+          "yours": "Fraktur, gebrochene Schrift · Schreibschrift, kalligrafische Schrift · Serifenschrift – Antiqua (Grotesk und Serifenbetonte Schrift waren vorgegeben)",
+          "status": "ok",
+          "correct": "Fraktur (gebrochene Schrift) · Grotesk · Schreibschrift (kalligrafische Schrift) · Egyptienne = serifenbetonte Schrift · Antiqua (Serifenschrift)",
+          "note": "Alles stimmt. Die kursive Zierschrift ist also Schreibschrift bzw. kalligrafische Schrift."
         },
         {
           "task": "1b) Welche zwei Schriftgruppen sind am besten lesbar?",
-          "yours": null,
-          "status": "missing",
+          "yours": "Grotesk und Antiqua angekreuzt (bei der serifenbetonten Schrift das Kreuz durchgestrichen)",
+          "status": "ok",
           "correct": "Antiqua und Grotesk.",
-          "note": "Fraktur und Egyptienne sind bei längeren Texten schlecht lesbar, Schreibschriften bei viel Text ungeeignet."
+          "note": "Richtig – Fraktur, Egyptienne und Schreibschrift sind bei längeren Texten schlecht lesbar bzw. ungeeignet."
         },
         {
-          "task": "2a) Serife, Gemeine, Punze, Versalie im Wort „Hamburg“ markieren",
-          "yours": null,
-          "status": "missing",
-          "correct": "Serife: der kleine Abschlussstrich an den Buchstabenenden (z. B. am Fuß von m, u, b). Gemeine: ein Kleinbuchstabe, z. B. das a oder m. Punze: der Innenraum eines Buchstabens, z. B. im a oder b. Versalie: das große H.",
-          "note": "Das Markieren selbst ist eine Zeichenaufgabe – hier steht, worauf du zeigen musst."
+          "task": "2a) Serife, Gemeine, Punze, Versalie markieren",
+          "yours": "Punze (gelb, in a, m, b, u, g) und Versalie (grün, das H) markiert – Serife und Gemeine nicht",
+          "status": "partial",
+          "correct": "Serife: der kleine Abschlussstrich an den Buchstabenenden. Gemeine: ein Kleinbuchstabe, z. B. das a oder m. Punze: der Innenraum eines Buchstabens. Versalie: das große H.",
+          "note": "Punze und Versalie stimmen. Es fehlen noch Serife und Gemeine – markiere sie auch, sonst gibt es dafür keine Punkte."
         },
         {
           "task": "2b) Vier-Linien-System einzeichnen und die Abstände benennen",
-          "yours": null,
-          "status": "missing",
-          "correct": "Von oben nach unten: Oberlinie – Mittellinie – Schriftlinie – Unterlinie. Oberlänge = Teil über der Mittellänge (H-, b-, d-Höhe), Mittellänge = Höhe der Kleinbuchstaben ohne Ober-/Unterlänge, Unterlänge = Teil unter der Schriftlinie (g). Versalhöhe = Höhe der Großbuchstaben.",
-          "note": "Die Namen der Linien (Ober-, Mittel-, Schrift-, Unterlinie) sind Fachwissen, das nicht wörtlich auf deinen Blättern stand."
+          "yours": "Vier Linien gezeichnet; Oberlänge, Mittellänge, Unterlänge, Höhe der Versalien und Schriftlinie beschriftet",
+          "status": "ok",
+          "correct": "Von oben nach unten: Oberlinie – Mittellinie – Schriftlinie – Unterlinie. Oberlänge = Teil über der Mittellänge, Mittellänge = Höhe der Kleinbuchstaben ohne Ober-/Unterlänge, Unterlänge = Teil unter der Schriftlinie. Versalhöhe = Höhe der Großbuchstaben.",
+          "note": "Passt zu den Begriffen auf deinen Blättern. Die Namen der vier Linien selbst (Oberlinie, Mittellinie, Schriftlinie, Unterlinie) sind Fachwissen, das nicht wörtlich auf den Blättern stand."
         },
         {
           "task": "3a) Was bedeutet 4/4 auf der Auftragstasche?",
-          "yours": null,
-          "status": "missing",
-          "correct": "Vorder- und Rückseite werden jeweils vierfarbig bedruckt."
+          "yours": "4 Farben Vorderseite 4/0 · + 4 Farben Rückseite 4/1",
+          "status": "partial",
+          "correct": "Vorder- und Rückseite werden jeweils vierfarbig bedruckt: 4/4 (Vorderseite 4/0 + Rückseite 0/4).",
+          "note": "Die Idee stimmt, aber „4/1“ gibt es nicht: Die zweite Zahl ist die Anzahl der Farben auf der Rückseite, also 4 → 4/4. (Ich lese bei dir „4/1“ – falls dort „0/4“ steht, ist es richtig.)"
         },
         {
           "task": "3b) Mit welchen Druckfarben wird der Auftrag gedruckt?",
-          "yours": null,
-          "status": "missing",
+          "yours": "CMYK – Cyan, Magenta, Yellow, Black",
+          "status": "ok",
           "correct": "Cyan, Magenta, Yellow und Black (Schwarz) – CMYK."
         },
         {
           "task": "4) Typische Adobe-Software für Bild, Grafik, Layout",
-          "yours": null,
-          "status": "missing",
+          "yours": "Bild – Photoshop · Layout – InDesign · Grafik – Illustrator",
+          "status": "ok",
           "correct": "Bild – Photoshop · Grafik – Illustrator · Layout – InDesign."
         },
         {
           "task": "5a) Wellenlängenbereiche des sichtbaren Lichts",
-          "yours": null,
-          "status": "missing",
+          "yours": "400 · 500 · 600 · 700 nm (Nanometer); Weißes Licht = Prisma",
+          "status": "ok",
           "correct": "Blau 400–500 nm · Grün 500–600 nm · Rot 600–700 nm (links UV, rechts Infrarot).",
-          "note": "Die Striche im Bild liegen bei 400, 500, 600 und 700 nm."
+          "note": "Stimmt. Dein Zusatz passt: Ein Prisma zerlegt weißes Licht in die Spektralfarben."
         },
         {
-          "task": "5b) Zusammendruck-Tabelle (Cyan, Magenta, Yellow, Black eintragen)",
-          "yours": null,
-          "status": "missing",
+          "task": "5b) Zusammendruck-Tabelle",
+          "yours": "Schwarz: C, M, Y, K · Rot: M, Y · Grün: C, Y · Blau: C, M · Cyan: C · Magenta: M · Yellow: Y · Weiß: nichts",
+          "status": "ok",
           "correct": "Schwarz (400 %): alle vier Farben · Weiß: keine · Rot: Magenta + Yellow · Grün: Cyan + Yellow · Blau: Cyan + Magenta · Cyan: nur Cyan · Magenta: nur Magenta · Yellow: nur Yellow.",
-          "note": "Schwarz mit 400 % heißt: alle vier Druckfarben übereinander (4 × 100 %). Ob in diesem Modell auch Black bei Schwarz gedruckt wird, steht nicht auf dem Blatt – 400 % spricht dafür."
+          "note": "Alle Kreuze stimmen – auch Schwarz (400 %) mit allen vier Farben."
         },
         {
           "task": "5c) Aufgaben von Stäbchen und Zapfen",
-          "yours": null,
-          "status": "missing",
-          "correct": "Stäbchen: Hell-Dunkel-Sehen, sehr lichtempfindlich (ca. 120 Mio.), sehen in der Dämmerung ohne Farben. Zapfen: Farbsehen, drei Arten (B, G, R), ca. 6 Mio."
+          "yours": "Stäbchen: Hell-/Dunkel sehen · Zapfen: Farben sehen",
+          "status": "ok",
+          "correct": "Stäbchen: Hell-Dunkel-Sehen, sehr lichtempfindlich (ca. 120 Mio.), in der Dämmerung ohne Farben. Zapfen: Farbsehen, drei Arten (B, G, R), ca. 6 Mio.",
+          "note": "Richtig. Für mehr Punkte kannst du die Zusätze (sehr lichtempfindlich, drei Zapfenarten) ergänzen."
         },
         {
           "task": "5d) Additive Farbmischung zeichnen",
-          "yours": null,
-          "status": "missing",
-          "correct": "Drei sich überlappende Kreise (Rot, Grün, Blau) auf schwarzem Grund: Rot + Grün = Gelb · Grün + Blau = Cyan · Blau + Rot = Magenta · alle drei in der Mitte = Weiß."
+          "yours": "Beschriftung: Yellow · Rot, weiß, grün · Magenta, Cyan · „Black“",
+          "status": "partial",
+          "correct": "Drei sich überlappende Kreise Rot, Grün, Blau auf schwarzem Grund: Rot + Grün = Gelb (Yellow) · Grün + Blau = Cyan · Blau + Rot = Magenta · alle drei = Weiß.",
+          "note": "Die Zeichnung selbst konnte ich nicht prüfen. Falls bei dir als dritte Grundfarbe „Black“ steht: Die dritte Grundfarbe ist Blau. Schwarz ist nur der Hintergrund (kein Licht)."
         },
         {
-          "task": "6a) Unterschied Remittieren und Absorbieren (Abbildung)",
-          "yours": null,
-          "status": "missing",
-          "correct": "Remittieren = Licht wird zurückgeworfen (z. B. vom weißen Papier). Absorbieren = Licht wird verschluckt und in Wärme umgewandelt (hier das Blau von der gelben Farbe)."
+          "task": "6a) Unterschied Remittieren und Absorbieren",
+          "yours": "Remittieren – Zurückwerfen (R G) · Absorbieren – Verschlucken (B oder G?)",
+          "status": "partial",
+          "correct": "Remittieren = Licht wird zurückgeworfen (hier Rot und Grün vom weißen Papier). Absorbieren = Licht wird verschluckt (hier das Blau von der gelben Farbe).",
+          "note": "Remittieren stimmt (R G). Beim Absorbieren muss B (Blau) stehen – die gelbe Schicht verschluckt das Blau. Ich lese bei dir (G) oder (B): prüf, dass es ein B ist."
         },
         {
           "task": "6b) Welcher Farbeindruck entsteht im Gehirn?",
-          "yours": null,
-          "status": "missing",
-          "correct": "Gelb – das Grün und das Rot kommen zurück und mischen sich im Auge zu Gelb.",
-          "note": "Auf der Abbildung sind drei Strahlen (Blau, Grün, Rot) auf einer gelben Schicht über weißem Papier."
+          "yours": "R + G = Yellow",
+          "status": "ok",
+          "correct": "Gelb – Rot und Grün werden zurückgeworfen und mischen sich im Auge zu Gelb."
         },
         {
-          "task": "6c) Welche Eigenschaft muss die Farbe haben, damit das Licht bis zum Papier kommt?",
-          "yours": null,
-          "status": "missing",
+          "task": "6c) Welche Eigenschaft muss die Farbe haben?",
+          "yours": "Lasierende Farben / Lasurfarben",
+          "status": "ok",
           "correct": "Sie muss lasierend (durchsichtig wie ein Farbfilter) sein."
         },
         {
           "task": "7a) DIN A4 Querformat in mm",
-          "yours": null,
-          "status": "missing",
+          "yours": "297 mm × 210 mm",
+          "status": "ok",
           "correct": "297 × 210 mm",
-          "note": "Auf dem Blatt steht „DIN4“ – gemeint ist DIN A4."
+          "note": "Auf dem Blatt steht „DIN4“ – du hast es richtig als DIN A4 gelesen."
         },
         {
           "task": "7b) DIN A4 Hochformat in cm",
-          "yours": null,
-          "status": "missing",
+          "yours": "21 cm × 29,7 cm",
+          "status": "ok",
           "correct": "21 × 29,7 cm"
         },
         {
           "task": "7c) Wie viele A6 passen in ein A2?",
-          "yours": null,
-          "status": "missing",
-          "correct": "16 (A2 = 2 × A3 = 4 × A4 = 8 × A5 = 16 × A6)."
+          "yours": "A2 → A6: 4 Schritte · 2⁴ = 2·2·2·2 = 16",
+          "status": "ok",
+          "correct": "16 (A2 → A3 → A4 → A5 → A6: viermal verdoppeln, 2⁴ = 16).",
+          "note": "Stimmt, und mit Rechenweg."
         },
         {
           "task": "7d) Wie viele A5 enthält ein A1?",
-          "yours": null,
-          "status": "missing",
-          "correct": "16 (A1 = 2 × A2 = 4 × A3 = 8 × A4 = 16 × A5)."
+          "yours": "A1 → A5: 4 Schritte · 2⁴ = 16",
+          "status": "ok",
+          "correct": "16 (A1 → A2 → A3 → A4 → A5: viermal verdoppeln).",
+          "note": "Stimmt, und mit Rechenweg."
         },
         {
           "task": "7e) Wie viele A3 enthält ein A1?",
-          "yours": null,
-          "status": "missing",
-          "correct": "4 (A1 = 2 × A2 = 4 × A3)."
+          "yours": "A1 → A3: 2 Schritte · 2² = 4",
+          "status": "ok",
+          "correct": "4 (A1 → A2 → A3: zweimal verdoppeln).",
+          "note": "Stimmt, und mit Rechenweg."
         },
         {
           "task": "7f) Flächenmasse 80 g/m² – Gewicht eines Bogens A3",
-          "yours": null,
-          "status": "missing",
-          "correct": "Etwa 10 g: A3 hat ca. 0,125 m² (ein Achtel von A0 ≈ 1 m²), 0,125 · 80 g = 10 g.",
-          "note": "Genau gerechnet: 0,297 m · 0,420 m ≈ 0,1247 m² → ca. 9,98 g."
+          "yours": "A0 = 1 m² · 3 − 0 = 3 · 2³ = 8 · 80 g/m² : 8 A3/m² = 10 g pro A3 – „Ein A3 Bogen wiegt 10 g“ (erster Versuch durchgestrichen)",
+          "status": "ok",
+          "correct": "10 g: A0 = 1 m², A3 ist drei Stufen kleiner → 2³ = 8 A3 je m² → 80 g : 8 = 10 g.",
+          "note": "Richtig, und der Rechenweg ist da (das Blatt sagt: „ohne Rechenweg keine Punkte“). Zu Recht durchgestrichen: Im ersten Versuch war die Umrechnung mm² → cm² falsch – dafür teilt man durch 100, nicht durch 10 000."
         },
         {
           "task": "Dreisatz 1) 6 kg Offsetfarbe kosten 142,80 € – 86 kg?",
           "yours": null,
           "status": "missing",
-          "correct": "142,80 € : 6 = 23,80 € je kg · 86 = 2.046,80 €."
+          "correct": "142,80 € : 6 = 23,80 € je kg · 86 = 2.046,80 €.",
+          "note": "Von Seite 4 gab es kein Foto. Wenn du es schickst, vergleiche ich es."
         },
         {
           "task": "Dreisatz 2) 1600 Kataloge wiegen 16,4 kg – 8800 Kataloge?",

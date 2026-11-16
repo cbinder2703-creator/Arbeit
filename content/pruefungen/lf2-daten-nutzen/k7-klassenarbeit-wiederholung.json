@@ -45,7 +45,12 @@
     {
       "id": "k7-f08",
       "term": "Flächenmasse",
-      "definition": "Gewicht pro m² (z. B. 80 g/m²). Gewicht eines Bogens = Fläche in m² × Flächenmasse."
+      "definition": "Gewicht pro m² (z. B. 80 g/m²). Gewicht eines Bogens = Fläche in m² × Flächenmasse. Ohne Rechenweg gibt es keine Punkte!"
+    },
+    {
+      "id": "k7-f09",
+      "term": "Schreibschrift",
+      "definition": "Einer Handschrift nachempfunden, auch „kalligrafische Schrift“; bei viel Text ungeeignet."
     }
   ],
   "items": [
@@ -64,7 +69,7 @@
           "right": "Grotesk"
         },
         {
-          "left": "Handschrift-ähnlich wie Brush Script",
+          "left": "Kalligrafisch, Handschrift-ähnlich wie Brush Script",
           "right": "Schreibschrift"
         },
         {
@@ -708,6 +713,20 @@
     },
     {
       "id": "k7-038",
+      "difficulty": 3,
+      "type": "mc",
+      "question": "Du rechnest 124 740 mm² in cm² um. Wodurch teilst du?",
+      "options": [
+        "Durch 100",
+        "Durch 10 000",
+        "Durch 10",
+        "Durch 1 000"
+      ],
+      "correct": 0,
+      "explanation": "1 cm = 10 mm, also 1 cm² = 10 · 10 = 100 mm². 124 740 mm² : 100 = 1 247,4 cm²."
+    },
+    {
+      "id": "k7-039",
       "difficulty": 2,
       "type": "truefalse",
       "statement": "Ein A2 enthält 4 mal A5.",
@@ -715,7 +734,7 @@
       "explanation": "Falsch – A2 = 2 × A3 = 4 × A4 = 8 × A5. Es sind also 8 × A5."
     },
     {
-      "id": "k7-039",
+      "id": "k7-040",
       "difficulty": 3,
       "type": "truefalse",
       "statement": "Ein Bogen A3 mit 80 g/m² wiegt etwa 10 Gramm.",
@@ -731,7 +750,7 @@
       "icon": "type",
       "grammar": {
         "title": "Schrift – das kommt in der Arbeit dran",
-        "text": "• Fünf Schriftgruppen: Grotesk (serifenlos), Egyptienne (serifenbetont), Antiqua (Serifenschrift), Fraktur (gebrochen) und Schreibschrift (Handschrift-ähnlich).\n• Am besten lesbar für längere Texte sind Antiqua und Grotesk. Fraktur, Egyptienne und Schreibschrift sind bei viel Text schlecht lesbar bzw. ungeeignet.\n• Schriftelemente: Serife = häkchenartiges Ende · Gemeine = Kleinbuchstabe · Punze = Innenraum eines Buchstabens · Versalie = Großbuchstabe.\n• Vier-Linien-System von oben nach unten: Oberlinie – Mittellinie – Schriftlinie – Unterlinie. Die Abstände heißen Oberlänge, Mittellänge, Unterlänge; die Versalhöhe ist die Höhe der Großbuchstaben.",
+        "text": "• Fünf Schriftgruppen: Grotesk (serifenlos), Egyptienne (serifenbetont), Antiqua (Serifenschrift), Fraktur (gebrochen) und Schreibschrift (Handschrift-ähnlich, auch „kalligrafische Schrift“).\n• Am besten lesbar für längere Texte sind Antiqua und Grotesk. Fraktur, Egyptienne und Schreibschrift sind bei viel Text schlecht lesbar bzw. ungeeignet.\n• Schriftelemente: Serife = häkchenartiges Ende · Gemeine = Kleinbuchstabe · Punze = Innenraum eines Buchstabens · Versalie = Großbuchstabe.\n• Vier-Linien-System von oben nach unten: Oberlinie – Mittellinie – Schriftlinie – Unterlinie. Die Abstände heißen Oberlänge, Mittellänge, Unterlänge; die Versalhöhe ist die Höhe der Großbuchstaben.",
         "examples": [
           {
             "en": "Antiqua + Grotesk",
@@ -839,7 +858,7 @@
       "icon": "ruler",
       "grammar": {
         "title": "DIN-Formate rechnen",
-        "text": "• DIN A4: Hochformat 210 × 297 mm = 21 × 29,7 cm, Querformat 297 × 210 mm. (Auf dem Blatt steht „DIN4“, gemeint ist DIN A4.)\n• Jedes Format passt zweimal ins nächstgrößere: A1 = 2 × A2 = 4 × A3 = 8 × A4 = 16 × A5 = 32 × A6.\n• A0 hat ca. 1 m². Jedes kleinere Format hat die Hälfte: A1 = 0,5 m², A2 = 0,25 m², A3 = 0,125 m².\n• Gewicht = Fläche × Flächenmasse: A3 bei 80 g/m² → 0,125 m² · 80 g/m² = 10 g.",
+        "text": "• DIN A4: Hochformat 210 × 297 mm = 21 × 29,7 cm, Querformat 297 × 210 mm. (Auf dem Blatt steht „DIN4“, gemeint ist DIN A4.)\n• Jedes Format passt zweimal ins nächstgrößere: A1 = 2 × A2 = 4 × A3 = 8 × A4 = 16 × A5 = 32 × A6.\n• A0 hat ca. 1 m². Jedes kleinere Format hat die Hälfte: A1 = 0,5 m², A2 = 0,25 m², A3 = 0,125 m².\n• Gewicht = Fläche × Flächenmasse: A3 bei 80 g/m² → 0,125 m² · 80 g/m² = 10 g.\n• Wichtig in der Arbeit: ohne Rechenweg keine Punkte! Umrechnen: 1 cm² = 100 mm², 1 m² = 10 000 cm².",
         "examples": [
           {
             "en": "A4 quer",
@@ -864,7 +883,8 @@
         "k7-036",
         "k7-037",
         "k7-038",
-        "k7-039"
+        "k7-039",
+        "k7-040"
       ]
     }
   ]
