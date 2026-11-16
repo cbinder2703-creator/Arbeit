@@ -81,6 +81,31 @@
       "id": "k1-f15",
       "term": "Kontrast (Gestaltung)",
       "definition": "Gegensatz, z. B. fett/fein, groß/klein, breit/schmal, sachlich/verspielt."
+    },
+    {
+      "id": "k1-f16",
+      "term": "Normformate (DIN-Formate)",
+      "definition": "Bezeichnung von der DIN-Norm 476 bzw. ÖNORM (Österreich) und SNV (Schweiz). Drei Grundsätze: A0 = 1 m², Hälfteln (Flächen 2 : 1), Seiten 1 : √2."
+    },
+    {
+      "id": "k1-f17",
+      "term": "Flächen der A-Formate",
+      "definition": "A0 1 m² · A1 ½ m² · A2 ¼ m² · A3 ⅛ m² · A4 1/16 m² · A5 1/32 m² · A6 1/64 m²."
+    },
+    {
+      "id": "k1-f18",
+      "term": "Maße der A-Formate (cm)",
+      "definition": "A0 84,1 × 118,9 · A1 59,4 × 84,1 · A2 42,0 × 59,4 · A3 29,7 × 42,0 · A4 21,0 × 29,7 · A5 14,8 × 21,0 · A6 10,5 × 14,8."
+    },
+    {
+      "id": "k1-f19",
+      "term": "B0 und C0",
+      "definition": "Ausgangsformate der Zusatzreihen: B0 100,0 × 141,4 cm, C0 91,7 × 129,7 cm."
+    },
+    {
+      "id": "k1-f20",
+      "term": "Rohformat (Rohbogen)",
+      "definition": "Um den Beschnitt erweitertes Format, flächenmäßig 5 % größer als das A-Format: A0 86 × 122 cm, A1 61 × 86 cm, A2 43 × 61 cm."
     }
   ],
   "items": [
@@ -704,6 +729,217 @@
       "statement": "Der Steckbrief wird nach der Indikatorenliste durch den Partner bzw. die Partnerin bewertet.",
       "correct": true,
       "explanation": "Richtig – das gehört zur Phase „Kontrollieren“."
+    },
+    {
+      "id": "k1-038",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Fläche hat das Ausgangsformat A0?",
+      "options": [
+        "1 m²",
+        "½ m²",
+        "2 m²",
+        "10 m²"
+      ],
+      "correct": 0,
+      "explanation": "Die Fläche des Ausgangsformats der Vorzugsreihe A beträgt 1 m²."
+    },
+    {
+      "id": "k1-039",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Wie verhalten sich die Flächen zweier aufeinanderfolgender Formate, z. B. A3 und A4?",
+      "options": [
+        "2 : 1",
+        "1 : 2",
+        "4 : 1",
+        "1 : √2"
+      ],
+      "correct": 0,
+      "explanation": "Durch das Hälfteln hat das größere Format immer die doppelte Fläche – 2 : 1."
+    },
+    {
+      "id": "k1-040",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Wie verhalten sich die Seiten aller Normformate zueinander?",
+      "options": [
+        "Wie die Seite eines Quadrates zu dessen Diagonale (1 : √2)",
+        "Wie 1 : 2",
+        "Wie 3 : 4",
+        "Wie 1 : 1"
+      ],
+      "correct": 0,
+      "explanation": "Das Seitenverhältnis ist bei allen Normformaten 1 : √2 (≈ 1 : 1,4142)."
+    },
+    {
+      "id": "k1-041",
+      "difficulty": 2,
+      "type": "cloze",
+      "text": "Die Fläche von A0 beträgt {{1 m²}}. Die Formate entstehen durch fortgesetztes {{Hälfteln}}, die Seiten verhalten sich wie {{1 : √2}}.",
+      "distractors": [
+        "2 m²",
+        "Verdoppeln"
+      ],
+      "explanation": "Die drei Grundsätze der Normformate."
+    },
+    {
+      "id": "k1-042",
+      "difficulty": 2,
+      "type": "pairs",
+      "question": "Format und Fläche",
+      "pairs": [
+        {
+          "left": "A0",
+          "right": "1 m²"
+        },
+        {
+          "left": "A1",
+          "right": "½ m²"
+        },
+        {
+          "left": "A2",
+          "right": "¼ m²"
+        },
+        {
+          "left": "A3",
+          "right": "⅛ m²"
+        },
+        {
+          "left": "A4",
+          "right": "1/16 m²"
+        }
+      ]
+    },
+    {
+      "id": "k1-043",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Welche Fläche hat ein DIN A4?",
+      "options": [
+        "1/16 m²",
+        "⅛ m²",
+        "1/32 m²",
+        "¼ m²"
+      ],
+      "correct": 0,
+      "explanation": "A0 = 1 m², A1 = ½, A2 = ¼, A3 = ⅛, A4 = 1/16 m²."
+    },
+    {
+      "id": "k1-044",
+      "difficulty": 2,
+      "type": "pairs",
+      "question": "Format und Maße in cm",
+      "pairs": [
+        {
+          "left": "A0",
+          "right": "84,1 × 118,9 cm"
+        },
+        {
+          "left": "A1",
+          "right": "59,4 × 84,1 cm"
+        },
+        {
+          "left": "A3",
+          "right": "29,7 × 42,0 cm"
+        },
+        {
+          "left": "A5",
+          "right": "14,8 × 21,0 cm"
+        },
+        {
+          "left": "A6",
+          "right": "10,5 × 14,8 cm"
+        }
+      ]
+    },
+    {
+      "id": "k1-045",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Normen-Institute",
+      "pairs": [
+        {
+          "left": "DIN",
+          "right": "Deutsches Institut für Normung, Berlin"
+        },
+        {
+          "left": "ÖNORM",
+          "right": "Österreichisches Normungsinstitut, Wien"
+        },
+        {
+          "left": "SNV",
+          "right": "Schweizerische Normenvereinigung, Winterthur"
+        }
+      ]
+    },
+    {
+      "id": "k1-046",
+      "difficulty": 2,
+      "type": "pairs",
+      "question": "Ausgangsformate der Reihen",
+      "pairs": [
+        {
+          "left": "A0",
+          "right": "84,1 × 118,9 cm"
+        },
+        {
+          "left": "B0",
+          "right": "100,0 × 141,4 cm"
+        },
+        {
+          "left": "C0",
+          "right": "91,7 × 129,7 cm"
+        }
+      ]
+    },
+    {
+      "id": "k1-047",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Warum arbeitet man in der Druckindustrie mit Rohbogen?",
+      "options": [
+        "Die A-Reihe gibt beschnittene Endformate vor – der Rohbogen enthält den nötigen Beschnitt",
+        "Rohbogen sind billiger",
+        "Die A-Reihe ist zu klein",
+        "Rohbogen sind immer quadratisch"
+      ],
+      "correct": 0,
+      "explanation": "Der Rohbogen ist flächenmäßig um den Beschnitt erweitert und wird danach auf das Endformat geschnitten."
+    },
+    {
+      "id": "k1-048",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Um wie viel sind die Rohformate flächenmäßig größer als die A-Formate?",
+      "options": [
+        "Um 5 %",
+        "Um 50 %",
+        "Um 0,5 %",
+        "Sie sind kleiner"
+      ],
+      "correct": 0,
+      "explanation": "Grundsätzlich sind die Rohformate flächenmäßig 5 % größer als die entsprechenden A-Formate."
+    },
+    {
+      "id": "k1-049",
+      "difficulty": 2,
+      "type": "pairs",
+      "question": "Rohformate",
+      "pairs": [
+        {
+          "left": "A0",
+          "right": "86 × 122 cm"
+        },
+        {
+          "left": "A1",
+          "right": "61 × 86 cm"
+        },
+        {
+          "left": "A2",
+          "right": "43 × 61 cm"
+        }
+      ]
     }
   ],
   "lessons": [
@@ -846,6 +1082,44 @@
         "k1-035",
         "k1-036",
         "k1-037"
+      ]
+    },
+    {
+      "id": "k1-l5",
+      "title": "Normformate (Buch S. 49–50)",
+      "subtitle": "Grundsätze, Flächen, Rohformate",
+      "icon": "ruler",
+      "grammar": {
+        "title": "Normformate (DIN-Formate) – Buchseiten 49 und 50",
+        "text": "• Die Bezeichnung stammt von der DIN-Norm 476 (Deutsches Institut für Normung, Berlin) bzw. von entsprechenden Normen in Österreich (ÖNORM, Wien) und der Schweiz (SNV, Winterthur).\n• Drei Grundsätze: 1. Das Ausgangsformat A0 hat die Fläche 1 m². 2. Die Formate entstehen durch fortgesetztes Hälfteln – die Flächen zweier aufeinanderfolgender Formate verhalten sich wie 2 : 1. 3. Die Seiten aller Normformate verhalten sich wie die Seite eines Quadrates zu dessen Diagonale, also 1 : √2.\n• Maße der Vorzugsreihe A: A0 84,1 × 118,9 cm (1 m²) · A1 59,4 × 84,1 cm (½ m²) · A2 42,0 × 59,4 cm (¼ m²) · A3 29,7 × 42,0 cm (⅛ m²) · A4 21,0 × 29,7 cm (1/16 m²) · A5 14,8 × 21,0 cm (1/32 m²) · A6 10,5 × 14,8 cm (1/64 m²).\n• Zusatzreihen B und C haben andere Ausgangsformate, aber dieselben Grundsätze: B0 100,0 × 141,4 cm · C0 91,7 × 129,7 cm.\n• Die A-Reihe gibt beschnittene Endformate vor. In der Druckindustrie arbeitet man mit Rohbogen, die flächenmäßig um den nötigen Beschnitt erweitert sind – grundsätzlich 5 % größer als die A-Formate. Rohformate: A0 86 × 122 cm · A1 61 × 86 cm · A2 43 × 61 cm.",
+        "examples": [
+          {
+            "en": "A0",
+            "de": "1 m²"
+          },
+          {
+            "en": "Flächen aufeinanderfolgender Formate",
+            "de": "2 : 1"
+          },
+          {
+            "en": "Rohformat",
+            "de": "5 % größer als das A-Format"
+          }
+        ]
+      },
+      "items": [
+        "k1-038",
+        "k1-039",
+        "k1-040",
+        "k1-041",
+        "k1-042",
+        "k1-043",
+        "k1-044",
+        "k1-045",
+        "k1-046",
+        "k1-047",
+        "k1-048",
+        "k1-049"
       ]
     }
   ],

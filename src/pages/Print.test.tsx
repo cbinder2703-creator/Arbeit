@@ -28,10 +28,10 @@ const open = (path: string) =>
   );
 
 describe('Print-Profi – Inhalte', () => {
-  it('ist ein eigenes Spiel (LF2) mit 8 Kapiteln, 27 Lektionen und allen Aufgabentypen', () => {
+  it('ist ein eigenes Spiel (LF2) mit 8 Kapiteln, 28 Lektionen und allen Aufgabentypen', () => {
     expect(pr.meta.gameTitle).toBe('Print-Profi');
     expect(pr.chapters).toHaveLength(8);
-    expect(pr.chapters.flatMap((c) => c.lessons)).toHaveLength(27);
+    expect(pr.chapters.flatMap((c) => c.lessons)).toHaveLength(28);
     expect(items.length).toBeGreaterThan(230);
     for (const t of ['mc', 'truefalse', 'sort', 'pairs', 'order', 'cloze']) expect(items.some((i) => i.type === t)).toBe(true);
     // keine Gerichts-/Vertrags-Aufgaben in LF2
@@ -88,6 +88,27 @@ describe('Print-Profi – Seiten', () => {
     expect(screen.getByRole('link', { name: /Print-Profi/ })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /English Quest/ })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /Azubi-Akademie/ })).toBeInTheDocument();
+  });
+});
+
+describe('Normformate (Buch S. 49–50)', () => {
+  const lesson = pr.chapters[0].lessons.find((l) => l.title.startsWith('Normformate'))!;
+  const its = pr.chapters[0].items.filter((i) => lesson.items.includes(i.id));
+  it('ist die letzte Lektion von K1 (alte Lektions-IDs bleiben stabil) und hat Erklärung + 12 Aufgaben', () => {
+    expect(pr.chapters[0].lessons.at(-1)).toBe(lesson);
+    expect(lesson.id).toBe('k1-l5');
+    expect(its).toHaveLength(12);
+    expect(lesson.grammar?.text).toContain('5 %');
+  });
+  it('Buchwerte: A0 = 1 m², A4 = 1/16 m², Rohformat 5 % größer', () => {
+    const right = (part: string) => {
+      const q = its.find((i) => i.type === 'mc' && i.question.includes(part));
+      return q && q.type === 'mc' ? q.options[q.correct] : undefined;
+    };
+    expect(right('Ausgangsformat A0')).toBe('1 m²');
+    expect(right('Welche Fläche hat ein DIN A4')).toBe('1/16 m²');
+    expect(right('Rohformate flächenmäßig größer')).toBe('Um 5 %');
+    expect(right('A3 und A4')).toBe('2 : 1');
   });
 });
 
