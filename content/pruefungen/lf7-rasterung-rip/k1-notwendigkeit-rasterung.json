@@ -1,0 +1,325 @@
+{
+  "id": "k1",
+  "chapter": 1,
+  "title": "Notwendigkeit der Rasterung",
+  "subtitle": "Halbtöne, Schichtdicke, warum gerastert wird",
+  "pages": "Arbeitsblatt Rasterung S. 1–2",
+  "color": "#0EA5E9",
+  "icon": "layers",
+  "flashcards": [
+    {
+      "id": "k1-f01",
+      "term": "Rasterung",
+      "definition": "Umwandlung von Bildern in Rasterpunkte (Pixel oder Druckpunkte), um Tonwertabstufungen zu erzeugen."
+    },
+    {
+      "id": "k1-f02",
+      "term": "Halbtonbild",
+      "definition": "Bild mit Tonwertabstufungen."
+    },
+    {
+      "id": "k1-f03",
+      "term": "Echte Halbtöne",
+      "definition": "Tonwertabstufungen durch variable Farbschichtdicke – nur im Tiefdruck und beim Inkjet möglich."
+    },
+    {
+      "id": "k1-f04",
+      "term": "Unechte Halbtöne",
+      "definition": "Tonwerte durch Rasterpunkte bei konstanter Farbschichtdicke (Offset, Sieb, Flexo)."
+    },
+    {
+      "id": "k1-f05",
+      "term": "Vollton",
+      "definition": "100 % Tonwert – entsteht durch eine konstante Farbschichtdicke."
+    }
+  ],
+  "items": [
+    {
+      "id": "k1-001",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was ist Rasterung?",
+      "options": [
+        "Die Umwandlung von Bildern in Rasterpunkte (Pixel oder Druckpunkte), um Tonwertabstufungen zu erzeugen",
+        "Das Einfärben einer Druckplatte",
+        "Das Schneiden des Papiers",
+        "Das Speichern eines Bildes als PDF"
+      ],
+      "correct": 0,
+      "explanation": "Rasterung = Bild in Rasterpunkte umwandeln, damit Tonwertabstufungen entstehen."
+    },
+    {
+      "id": "k1-002",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was ist ein Halbtonbild?",
+      "options": [
+        "Ein Bild mit Tonwertabstufungen",
+        "Ein Bild nur in Schwarz und Weiß",
+        "Ein halb so großes Bild",
+        "Ein Bild mit nur zwei Farben"
+      ],
+      "correct": 0,
+      "explanation": "Halbtonbild = Bild mit Tonwertabstufungen."
+    },
+    {
+      "id": "k1-003",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Druckverfahren können echte Halbtöne drucken?",
+      "options": [
+        "Tiefdruck und Inkjet (Tintenstrahl)",
+        "Offsetdruck und Siebdruck",
+        "Flexodruck und Offsetdruck",
+        "Siebdruck und Flexodruck"
+      ],
+      "correct": 0,
+      "explanation": "Nur im Tiefdruck und beim Inkjet kann die Farbe mit unterschiedlicher Schichtdicke übertragen werden."
+    },
+    {
+      "id": "k1-004",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Im Offsetdruck kann die Farbschichtdicke beliebig variiert werden.",
+      "correct": false,
+      "explanation": "Falsch – im Sieb-, Flexo- und Offsetdruck kann die Maschine nur eine bestimmte Farbschichtdicke übertragen."
+    },
+    {
+      "id": "k1-005",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Im Sieb-, Flexo- und Offsetdruck kann die Druckmaschine nur eine bestimmte Farbschichtdicke übertragen.",
+      "correct": true,
+      "explanation": "Richtig – deshalb müssen die Bilder gerastert werden."
+    },
+    {
+      "id": "k1-006",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Warum muss ein Bild für den Offsetdruck gerastert werden?",
+      "options": [
+        "Die Maschine überträgt nur eine bestimmte Farbschichtdicke – Tonwerte von 0 bis 100 % gibt es nur über Rasterpunkte",
+        "Bilder sind sonst zu groß",
+        "Das Papier würde sonst reißen",
+        "Rasterpunkte sparen Farbe"
+      ],
+      "correct": 0,
+      "explanation": "Weil keine unterschiedlichen Schichtdicken möglich sind, werden Tonwerte über Punkte aufgebaut."
+    },
+    {
+      "id": "k1-007",
+      "difficulty": 1,
+      "type": "cloze",
+      "text": "Rasterung wandelt Bilder in {{Rasterpunkte}} um. So entstehen {{Tonwertabstufungen}} von 0 bis 100 %.",
+      "distractors": [
+        "Vektoren",
+        "Schriften"
+      ],
+      "explanation": "Rasterpunkte erzeugen die Tonwertabstufungen."
+    },
+    {
+      "id": "k1-008",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Welche Umwandlung gehört am Computer zur Rasterung?",
+      "options": [
+        "Vektorgrafik → Pixelbild (z. B. in Adobe Illustrator)",
+        "Pixelbild → Text",
+        "Foto → PDF-Datei",
+        "RGB → Graustufen"
+      ],
+      "correct": 0,
+      "explanation": "Am Computer werden Vektorgrafiken in Pixelbilder umgewandelt."
+    },
+    {
+      "id": "k1-009",
+      "difficulty": 2,
+      "type": "pairs",
+      "question": "Verbinden Sie richtig",
+      "pairs": [
+        {
+          "left": "Echte Halbtöne",
+          "right": "Tonwerte durch variable Farbschichtdicke"
+        },
+        {
+          "left": "Frequenzmoduliertes Raster",
+          "right": "Gleich große Punkte in unterschiedlicher Häufung"
+        },
+        {
+          "left": "Amplitudenmoduliertes Raster",
+          "right": "Flächenvariable Punkte, konstante Schichtdicke"
+        },
+        {
+          "left": "Vollton (100 %)",
+          "right": "Konstante Farbschichtdicke"
+        }
+      ]
+    },
+    {
+      "id": "k1-010",
+      "difficulty": 2,
+      "type": "sort",
+      "question": "Echte Halbtöne möglich – oder muss gerastert werden?",
+      "categories": [
+        {
+          "id": "e",
+          "label": "Echte Halbtöne möglich"
+        },
+        {
+          "id": "r",
+          "label": "Muss gerastert werden"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Tiefdruck",
+          "category": "e"
+        },
+        {
+          "text": "Inkjet (Tintenstrahl)",
+          "category": "e"
+        },
+        {
+          "text": "Offsetdruck",
+          "category": "r"
+        },
+        {
+          "text": "Siebdruck",
+          "category": "r"
+        },
+        {
+          "text": "Flexodruck",
+          "category": "r"
+        }
+      ],
+      "explanation": "Nur Tiefdruck und Inkjet können die Schichtdicke variieren."
+    },
+    {
+      "id": "k1-011",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wodurch entsteht der Vollton (100 % Tonwert)?",
+      "options": [
+        "Durch eine konstante Farbschichtdicke",
+        "Durch viele kleine Punkte",
+        "Durch eine variable Schichtdicke",
+        "Durch Weglassen der Farbe"
+      ],
+      "correct": 0,
+      "explanation": "Der Vollton entsteht durch eine konstante Farbschichtdicke."
+    },
+    {
+      "id": "k1-012",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie heißen unechte Halbtöne durch flächenvariable Punkte mit konstanter Farbschichtdicke?",
+      "options": [
+        "Amplitudenmoduliertes Raster",
+        "Frequenzmoduliertes Raster",
+        "Echte Halbtöne",
+        "Hybridraster"
+      ],
+      "correct": 0,
+      "explanation": "Flächenvariable Punkte = AM-Raster."
+    },
+    {
+      "id": "k1-013",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie heißen unechte Halbtöne durch gleich große Punkte in unterschiedlicher Häufung?",
+      "options": [
+        "Frequenzmoduliertes Raster",
+        "Amplitudenmoduliertes Raster",
+        "Echte Halbtöne",
+        "Vollton"
+      ],
+      "correct": 0,
+      "explanation": "Gleich große Punkte, unterschiedliche Häufung = FM-Raster."
+    },
+    {
+      "id": "k1-014",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Beim amplitudenmodulierten Raster ändert sich die Größe der Punkte.",
+      "correct": true,
+      "explanation": "Richtig – die „Amplitude“ (Größe) wird mit dem Tonwert größer."
+    },
+    {
+      "id": "k1-015",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Beim frequenzmodulierten Raster ändert sich die Größe der Punkte.",
+      "correct": false,
+      "explanation": "Falsch – die Punkte sind gleich groß, nur ihre Häufigkeit ändert sich."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "k1-l1",
+      "title": "Warum rastern?",
+      "subtitle": "Tonwerte, Halbtonbild, Druckverfahren",
+      "icon": "layers",
+      "grammar": {
+        "title": "Warum muss ein Bild gerastert werden?",
+        "text": "• Rasterung wandelt Bilder in Rasterpunkte (Pixel oder Druckpunkte) um, damit Tonwertabstufungen entstehen. Am Computer wandelt man z. B. Vektorgrafiken in Pixelbilder um (etwa in Adobe Illustrator), im Druck teilt man Bilder in feine Druckpunkte auf.\n• Ein Halbtonbild ist ein Bild mit Tonwertabstufungen.\n• Echte Halbtöne sind bei den meisten Druckverfahren nicht möglich. Nur im Tiefdruck und beim Inkjet (Tintenstrahldruck) kann die Druckfarbe mit unterschiedlicher Schichtdicke übertragen werden.\n• Im Sieb-, Flexo- und Offsetdruck kann die Maschine nur eine bestimmte Farbschichtdicke auf die Druckform und den Bedruckstoff übertragen. Tonwerte von 0 bis 100 % gibt es dann nur über einen flächenvariablen oder flächenkonstanten Punktaufbau – das Bild muss gerastert werden.",
+        "examples": [
+          {
+            "en": "Rasterung",
+            "de": "Bild wird in Rasterpunkte zerlegt"
+          },
+          {
+            "en": "Halbtonbild",
+            "de": "Bild mit Tonwertabstufungen"
+          },
+          {
+            "en": "Echte Halbtöne",
+            "de": "variable Farbschichtdicke (Tiefdruck, Inkjet)"
+          }
+        ]
+      },
+      "items": [
+        "k1-001",
+        "k1-002",
+        "k1-003",
+        "k1-004",
+        "k1-005",
+        "k1-006",
+        "k1-007",
+        "k1-008"
+      ]
+    },
+    {
+      "id": "k1-l2",
+      "title": "Echte und unechte Halbtöne",
+      "subtitle": "Schichtdicke, flächenvariabel, flächenkonstant",
+      "icon": "target",
+      "grammar": {
+        "title": "Echte und unechte Halbtöne",
+        "text": "• Echte Halbtöne: Tonwertabstufungen entstehen auf dem Bedruckstoff durch eine variable Farbschichtdicke.\n• Der Vollton (100 % Tonwert) entsteht durch eine konstante Farbschichtdicke.\n• Unechte Halbtöne mit konstanter Farbschichtdicke: durch flächenvariable Punkte = amplitudenmoduliertes Raster (AM), oder durch gleich große Punkte in unterschiedlicher Häufung = frequenzmoduliertes Raster (FM).",
+        "examples": [
+          {
+            "en": "Echte Halbtöne",
+            "de": "variable Schichtdicke"
+          },
+          {
+            "en": "AM-Raster",
+            "de": "flächenvariable Punkte"
+          },
+          {
+            "en": "FM-Raster",
+            "de": "gleich große Punkte, unterschiedliche Häufung"
+          }
+        ]
+      },
+      "items": [
+        "k1-009",
+        "k1-010",
+        "k1-011",
+        "k1-012",
+        "k1-013",
+        "k1-014",
+        "k1-015"
+      ]
+    }
+  ]
+}

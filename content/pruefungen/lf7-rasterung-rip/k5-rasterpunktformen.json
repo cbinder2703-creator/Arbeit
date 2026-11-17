@@ -1,0 +1,391 @@
+{
+  "id": "k5",
+  "chapter": 5,
+  "title": "Rasterpunktformen",
+  "subtitle": "Elliptisch, rund, rund-quadratisch, Punktschluss",
+  "pages": "Arbeitsblatt Rasterung S. 9–10",
+  "color": "#EF4444",
+  "icon": "star",
+  "flashcards": [
+    {
+      "id": "k5-f01",
+      "term": "Punktform",
+      "definition": "Die Form des Rasterpunktes soll den Tonwertverlauf für das Auge „ruhig“ machen."
+    },
+    {
+      "id": "k5-f02",
+      "term": "Punktschluss",
+      "definition": "Benachbarte Rasterpunkte berühren sich – es entsteht eine Farbbrücke und ein Tonwertsprung."
+    },
+    {
+      "id": "k5-f03",
+      "term": "Elliptischer Punkt",
+      "definition": "Ideal für den Offsetdruck; Punktschlüsse bei 44 % und 61 %, Tonwertsprung abgemildert."
+    },
+    {
+      "id": "k5-f04",
+      "term": "Runder Punkt (Round)",
+      "definition": "Für den Flexodruck; Punktschluss bei ca. 78 %, danach kissenförmige Löcher."
+    },
+    {
+      "id": "k5-f05",
+      "term": "Rund-quadratischer Punkt",
+      "definition": "Klassischer Offsetpunkt (euklidisch), Punktschlüsse bei 50 %; für technische Motive."
+    }
+  ],
+  "items": [
+    {
+      "id": "k5-001",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Punktform ist die ideale (empfohlene) für den Offsetdruck?",
+      "options": [
+        "Elliptischer Punkt (Smooth Elliptical)",
+        "Runder Punkt (Round)",
+        "Quadratischer Punkt",
+        "Linienraster"
+      ],
+      "correct": 0,
+      "explanation": "Der elliptische Punkt gilt als ideale Punktform für den Offsetdruck."
+    },
+    {
+      "id": "k5-002",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie beginnt der elliptische Punkt im Lichterbereich?",
+      "options": [
+        "Als nahezu kreisrunder Punkt",
+        "Als Quadrat",
+        "Als Linie",
+        "Als Raute"
+      ],
+      "correct": 0,
+      "explanation": "Er beginnt kreisrund und wird zunehmend elliptisch."
+    },
+    {
+      "id": "k5-003",
+      "difficulty": 3,
+      "type": "pairs",
+      "question": "Punktschluss bei welchem Tonwert?",
+      "pairs": [
+        {
+          "left": "Elliptischer Punkt, 1. Punktschluss",
+          "right": "44 %"
+        },
+        {
+          "left": "Elliptischer Punkt, 2. Punktschluss",
+          "right": "61 %"
+        },
+        {
+          "left": "Round-Square",
+          "right": "50 %"
+        },
+        {
+          "left": "Round (Flexo)",
+          "right": "ca. 78 %"
+        }
+      ]
+    },
+    {
+      "id": "k5-004",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was entsteht, wenn sich benachbarte Rasterpunkte gerade berühren?",
+      "options": [
+        "Eine Farbbrücke, die zu einem Tonwertsprung führt",
+        "Ein Moiré",
+        "Ein Vollton",
+        "Nichts"
+      ],
+      "correct": 0,
+      "explanation": "Die Farbbrücke führt zum Tonwertsprung."
+    },
+    {
+      "id": "k5-005",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Was bewirkt der elliptische Punkt beim Tonwertsprung?",
+      "options": [
+        "Der Punktschluss wird auf zwei Bereiche aufgeteilt – der Tonwertsprung wird abgemildert",
+        "Er verdoppelt den Sprung",
+        "Er verhindert jede Berührung der Punkte",
+        "Er verschiebt den Sprung auf 100 %"
+      ],
+      "correct": 0,
+      "explanation": "Zwei Punktschlüsse (44 % und 61 %) mildern den Sprung ab."
+    },
+    {
+      "id": "k5-006",
+      "difficulty": 2,
+      "type": "cloze",
+      "text": "„Smooth Elliptical“ ist der empfohlene {{Rasterpunkt}} für den Offsetdruck. Er beginnt im Lichterbereich als nahezu {{kreisrunder Punkt}}. Berühren sich Rasterpunkte, führt die Farbbrücke zu einem {{Tonwertsprung}}, der beim elliptischen Punkt {{abgemildert}} wird.",
+      "distractors": [
+        "vermeidet",
+        "quadratisch"
+      ],
+      "explanation": "Lückentext zur Punktform „Smooth Elliptical“."
+    },
+    {
+      "id": "k5-007",
+      "difficulty": 2,
+      "type": "truefalse",
+      "statement": "Beim elliptischen Punkt wird der Tonwertsprung ganz vermieden.",
+      "correct": false,
+      "explanation": "Falsch – er wird abgemildert, weil der Punktschluss auf zwei Bereiche verteilt ist."
+    },
+    {
+      "id": "k5-008",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Für welche weiteren Verfahren wird der elliptische Punkt empfohlen?",
+      "options": [
+        "Siebdruck und Hochdruck",
+        "Nur Tiefdruck",
+        "Nur Inkjet",
+        "Für kein weiteres Verfahren"
+      ],
+      "correct": 0,
+      "explanation": "Auch für Siebdruck und Hochdruck."
+    },
+    {
+      "id": "k5-009",
+      "difficulty": 2,
+      "type": "truefalse",
+      "statement": "Rasterpunkte sollten kompakt mit kurzer Randlinie aufgebaut sein, weil die Punktzunahme im Druck mit der Länge der Randlinie wächst.",
+      "correct": true,
+      "explanation": "Richtig – kompakte Punkte lassen sich auch besser belichten und drucken."
+    },
+    {
+      "id": "k5-010",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Für welches Druckverfahren wurde die Punktform „Round“ entwickelt?",
+      "options": [
+        "Flexodruck",
+        "Offsetdruck",
+        "Tiefdruck",
+        "Siebdruck"
+      ],
+      "correct": 0,
+      "explanation": "Round ist für den Flexodruck entwickelt."
+    },
+    {
+      "id": "k5-011",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Bei welchem Tonwert liegt der Punktschluss beim runden Punkt?",
+      "options": [
+        "Ca. 78 %",
+        "50 %",
+        "44 %",
+        "61 %"
+      ],
+      "correct": 0,
+      "explanation": "Round: Punktschluss bei ca. 78 %."
+    },
+    {
+      "id": "k5-012",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Was bleibt beim runden Punkt nach dem Punktschluss?",
+      "options": [
+        "Kissenförmige Löcher",
+        "Runde Löcher",
+        "Rautenförmige Punkte",
+        "Nichts"
+      ],
+      "correct": 0,
+      "explanation": "Nach dem Punktschluss bleiben kissenförmige Löcher."
+    },
+    {
+      "id": "k5-013",
+      "difficulty": 2,
+      "type": "cloze",
+      "text": "Der Flexodruck ist ein Hochdruckverfahren mit {{elastischen Druckformen}}, die die Rasterpunkte „breitquetschen“. Durch den späten Punktschluss wird der sonst entstehende Tonwertsprung {{vermieden}}.",
+      "distractors": [
+        "abgemildert",
+        "Druckereien"
+      ],
+      "explanation": "Lückentext zum runden Punkt."
+    },
+    {
+      "id": "k5-014",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Warum ist die Punktzunahme im Flexodruck größer als im Offsetdruck?",
+      "options": [
+        "Elastische Druckformen quetschen die Rasterpunkte breit",
+        "Das Papier ist glatter",
+        "Die Farbe ist dünner",
+        "Die Maschine ist schneller"
+      ],
+      "correct": 0,
+      "explanation": "Elastische Druckformen führen zu einer deutlich größeren Punktzunahme."
+    },
+    {
+      "id": "k5-015",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wofür wird der Flexodruck überwiegend eingesetzt?",
+      "options": [
+        "Für Verpackungen, Plastiktüten und Etiketten",
+        "Für Zeitungen",
+        "Für Kunstdrucke",
+        "Für Visitenkarten"
+      ],
+      "correct": 0,
+      "explanation": "Verpackungen, Plastiktüten, Etiketten."
+    },
+    {
+      "id": "k5-016",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie ist die Form des Round-Square-Punktes im Lichterbereich?",
+      "options": [
+        "Nahezu kreisrund (wird dann zunehmend quadratisch)",
+        "Quadratisch",
+        "Linienförmig",
+        "Elliptisch"
+      ],
+      "correct": 0,
+      "explanation": "Er beginnt kreisrund und wird quadratisch."
+    },
+    {
+      "id": "k5-017",
+      "difficulty": 2,
+      "type": "cloze",
+      "text": "Der Round-Square-Punkt beginnt als nahezu kreisrunder Punkt und wird dann zunehmend {{quadratisch}}. Die {{Druckereien}} scheuen den Aufwand einer Umstellung der Produktion.",
+      "distractors": [
+        "elliptisch",
+        "Rasterpunkt"
+      ],
+      "explanation": "Lückentext zum Round-Square-Punkt."
+    },
+    {
+      "id": "k5-018",
+      "difficulty": 2,
+      "type": "sort",
+      "question": "Zu welcher Punktform gehört die Aussage?",
+      "categories": [
+        {
+          "id": "e",
+          "label": "Elliptisch"
+        },
+        {
+          "id": "r",
+          "label": "Rund (Flexo)"
+        },
+        {
+          "id": "q",
+          "label": "Rund-quadratisch"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Punktschlüsse bei 44 % und 61 %",
+          "category": "e"
+        },
+        {
+          "text": "Ideale Form für den Offsetdruck",
+          "category": "e"
+        },
+        {
+          "text": "Punktschluss bei ca. 78 %",
+          "category": "r"
+        },
+        {
+          "text": "Für den Flexodruck entwickelt",
+          "category": "r"
+        },
+        {
+          "text": "Kissenförmige Löcher nach dem Punktschluss",
+          "category": "r"
+        },
+        {
+          "text": "Punktschlüsse bei 50 %",
+          "category": "q"
+        },
+        {
+          "text": "Vom Glasgravurraster abgeleitet",
+          "category": "q"
+        },
+        {
+          "text": "Gern für technische Motive (Stahl, Porzellan)",
+          "category": "q"
+        }
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "k5-l1",
+      "title": "Elliptischer Punkt",
+      "subtitle": "Offset-Standard, Punktschluss, Tonwertsprung",
+      "icon": "star",
+      "grammar": {
+        "title": "Der elliptische Punkt („Smooth Elliptical“)",
+        "text": "• Die Punktform soll dafür sorgen, dass ein Tonwertverlauf zwischen hellster und dunkelster Stelle für das Auge „ruhig“ verläuft. Daneben gibt es Effektraster wie das Linienraster.\n• Der elliptische Punkt ist die empfohlene (ideale) Punktform für den Offsetdruck, auch für Siebdruck und Hochdruck. Er beginnt in den Lichtern als nahezu kreisrunder Punkt, wird zunehmend elliptisch und im Bereich des ersten Punktschlusses bei 44 % etwa rautenförmig. Nach dem zweiten Punktschluss bei 61 % entstehen erst rautenförmige, dann elliptische und in der Bildtiefe kreisrunde Löcher.\n• Sobald sich benachbarte Rasterpunkte berühren, entsteht im Druck eine Farbbrücke, die zu einem Tonwertsprung führt. Beim elliptischen Punkt wird der Punktschluss auf zwei Bereiche aufgeteilt – der Tonwertsprung wird abgemildert.",
+        "examples": [
+          {
+            "en": "Elliptischer Punkt",
+            "de": "ideal für den Offsetdruck"
+          },
+          {
+            "en": "1. / 2. Punktschluss",
+            "de": "44 % und 61 %"
+          },
+          {
+            "en": "Tonwertsprung",
+            "de": "durch Farbbrücke beim Punktschluss"
+          }
+        ]
+      },
+      "items": [
+        "k5-001",
+        "k5-002",
+        "k5-003",
+        "k5-004",
+        "k5-005",
+        "k5-006",
+        "k5-007",
+        "k5-008",
+        "k5-009"
+      ]
+    },
+    {
+      "id": "k5-l2",
+      "title": "Rund & rund-quadratisch",
+      "subtitle": "Flexodruck, Glasgravurraster, Lückentexte",
+      "icon": "star",
+      "grammar": {
+        "title": "Runder und rund-quadratischer Punkt",
+        "text": "• Runder Punkt („Round“): für den Flexodruck entwickelt, durchgehend rund, Punktschluss bei ca. 78 %. Danach bleiben kissenförmige Löcher. Der Flexodruck ist ein Hochdruckverfahren mit elastischen Druckformen, die die Rasterpunkte „breitquetschen“ – die Punktzunahme ist deutlich größer als im Offsetdruck. Weil der Punktschluss so spät liegt, wird der Tonwertsprung vermieden. Flexo: Verpackungen, Plastiktüten, Etiketten.\n• Rund-quadratischer Punkt („Round-Square“): die klassische, vom Glasgravurraster abgeleitete Punktform für den Offsetdruck (in PostScript: euklidischer Punkt). Er beginnt nahezu kreisrund, wird zunehmend quadratisch, in der Bildtiefe entstehen runde Löcher. Die Punktschlüsse liegen bei 50 % und sind leicht versetzt, so dass der Tonwertsprung etwas gestreckt wird. Gern für technische Motive (Stahl, Porzellan); wird noch in eingefahrenen Prozessen verwendet, weil Druckereien den Umstellungsaufwand scheuen.",
+        "examples": [
+          {
+            "en": "Round",
+            "de": "Flexodruck, Punktschluss ca. 78 %"
+          },
+          {
+            "en": "Round-Square",
+            "de": "Punktschluss 50 %"
+          },
+          {
+            "en": "Euklidischer Punkt",
+            "de": "PostScript-Name für Round-Square"
+          }
+        ]
+      },
+      "items": [
+        "k5-010",
+        "k5-011",
+        "k5-012",
+        "k5-013",
+        "k5-014",
+        "k5-015",
+        "k5-016",
+        "k5-017",
+        "k5-018"
+      ]
+    }
+  ]
+}
