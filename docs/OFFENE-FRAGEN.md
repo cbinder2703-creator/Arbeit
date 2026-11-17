@@ -24,10 +24,10 @@ Noch offen:
 - Aufgabe 6a: Bei „Absorbieren“ ist auf dem Foto (G) oder (B) zu lesen; richtig ist B (Blau).
 - Seite 4 (Dreisatz) wurde nicht fotografiert – dort gilt nur die Musterlösung.
 
-## Raster-Meister (LF7)
+## Raster-Meister (LF2)
 
 - **Rasterwinkel:** Das Arbeitsblatt nennt Yellow 0°, Cyan 15°, Schwarz 45°, Magenta 75° (DIN 16 547). Die Photoshop-Anleitung (Schritte 7 und 8) nutzt Cyan 105°, Magenta 165°, Gelb 0°, Schwarz 45°. Welche in der Prüfung gelten soll, ist offen.
 - **Merkmalstabelle Rastermodulation:** „Hohe Prozesssicherheit und gute Wiederholbarkeit“ (AM) und „Fotorealistisches Ergebnis auch bei schlechteren Papiersorten“ (FM) stehen nicht wörtlich im Text.
 - **Moiré, zwei Ursachen:** Im Text steht nur „keine Winkelabstände der Punktreihen“.
 - **Fotos und Zeichenaufgaben** (Rasterzähler, Druckverfahren an Abbildungen, Rastermodulation bestimmen, Punktformen beschreiben) konnten nicht gelöst werden.
-- **Prüfungstermin** für LF7 fehlt (`examDate` ist leer).
+- **Prüfungstermin** für Raster-Meister (LF2) fehlt (`examDate` ist leer).

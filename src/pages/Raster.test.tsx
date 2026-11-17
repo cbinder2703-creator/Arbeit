@@ -8,7 +8,7 @@ import { useSettings } from '@/store/settings';
 import { allModes } from '@/modes/registry';
 import { isModeAvailable } from '@/engine/session';
 
-const PID = 'lf7-rasterung-rip';
+const PID = 'lf2-rasterung-rip';
 const pr = getPruefung(PID)!;
 const items = pr.chapters.flatMap((c) => c.items);
 
@@ -23,7 +23,7 @@ const right = (part: string) => {
   return q && q.type === 'mc' ? q.options[q.correct] : undefined;
 };
 
-describe('Raster-Meister (LF7) – Inhalte', () => {
+describe('Raster-Meister (LF2) – Inhalte', () => {
   it('ist ein eigenes Spiel ohne Prüfungstermin mit 7 Kapiteln und 14 Lektionen', () => {
     expect(pr.meta.gameTitle).toBe('Raster-Meister');
     expect(pr.meta.examDate).toBeNull();
