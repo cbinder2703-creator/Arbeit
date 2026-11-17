@@ -122,7 +122,7 @@ export default function Game({ items, onAnswer, onFinish, onClose, score }: Mode
             <h2 className="font-display text-lg">Mikrofon benutzen?</h2>
             <p className="mt-1 text-[15px] leading-snug">
               Zum Prüfen deiner Aussprache nutzt dein Browser seine Spracherkennung. Dabei wird deine Aufnahme zur Auswertung an den
-              Hersteller des Browsers geschickt (z. B. Google oder Apple). AzubiQuest selbst speichert keine Aufnahmen.
+              Hersteller des Browsers geschickt (z. B. Google oder Apple). Lerndruck selbst speichert keine Aufnahmen.
             </p>
             <div className="mt-3 flex flex-col gap-2 sm:flex-row">
               <Button variant="theme" onClick={() => useSettings.getState().set({ speechConsent: true })}>

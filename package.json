@@ -2,7 +2,7 @@
   "name": "azubiquest",
   "version": "1.0.0",
   "private": true,
-  "description": "AzubiQuest – Lernspiele für Berufsschüler. Jede Prüfung ist ein eigenes Spiel.",
+  "description": "Lerndruck – Lernspiele für Berufsschüler. Jede Prüfung ist ein eigenes Spiel.",
   "type": "module",
   "scripts": {
     "dev": "vite",
