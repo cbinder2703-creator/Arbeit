@@ -74,7 +74,7 @@ function AuthForm() {
             <Icon name="rocket" size={26} />
           </span>
           <div>
-            <h1 className="text-3xl leading-none">AzubiQuest</h1>
+            <h1 className="text-3xl leading-none">Lerndruck</h1>
             <p className="mt-1 text-sm text-mute">{reg ? 'Konto erstellen' : 'Willkommen zurück'}</p>
           </div>
         </div>

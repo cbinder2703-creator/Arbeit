@@ -8,11 +8,11 @@ const NAV = [
 
 function Logo() {
   return (
-    <Link to="/" className="tap flex items-center gap-2.5" aria-label="AzubiQuest – Startseite">
+    <Link to="/" className="tap flex items-center gap-2.5" aria-label="Lerndruck – Startseite">
       <span className="grid h-10 w-10 place-items-center rounded-xl bg-xp text-[#1a1400]">
         <Icon name="rocket" size={22} />
       </span>
-      <span className="font-display text-xl">AzubiQuest</span>
+      <span className="font-display text-xl">Lerndruck</span>
     </Link>
   );
 }

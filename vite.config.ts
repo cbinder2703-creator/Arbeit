@@ -18,8 +18,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'icon.svg', 'apple-touch-icon.png'],
       manifest: {
-        name: 'AzubiQuest',
-        short_name: 'AzubiQuest',
+        name: 'Lerndruck',
+        short_name: 'Lerndruck',
         description: 'Lernspiele für Berufsschüler – jede Prüfung ist ein eigenes Spiel.',
         lang: 'de',
         start_url: '/',
