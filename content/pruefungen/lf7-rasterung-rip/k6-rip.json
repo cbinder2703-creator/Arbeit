@@ -1,0 +1,357 @@
+{
+  "id": "k6",
+  "chapter": 6,
+  "title": "Was macht ein RIP?",
+  "subtitle": "Belichter, REL, Rasterzelle, Belichterauflösung",
+  "pages": "Arbeitsblatt Rasterung S. 11–12",
+  "color": "#14B8A6",
+  "icon": "cpu",
+  "flashcards": [
+    {
+      "id": "k6-f01",
+      "term": "RIP (Raster Image Prozessor)",
+      "definition": "Rechnet die Druckinformation in Bitmaps (0 oder 1) um; bei „1“ wird ein REL belichtet."
+    },
+    {
+      "id": "k6-f02",
+      "term": "Belichter",
+      "definition": "Gerät, dessen Laserstrahl (Schrittmotor) Pixel auf die Druckplatte schreibt; 3000 dpi oder mehr."
+    },
+    {
+      "id": "k6-f03",
+      "term": "REL (Recorderelement)",
+      "definition": "Kleinstes adressierbare Pixel des Belichters."
+    },
+    {
+      "id": "k6-f04",
+      "term": "dot (Belichterpixel)",
+      "definition": "Durch die Belichtung adressiertes Recorderelement."
+    },
+    {
+      "id": "k6-f05",
+      "term": "Rasterzelle",
+      "definition": "Quadratische (virtuelle) Zelle aus RELs (z. B. 16 × 16 = 256), in der der Rasterpunkt von der Mitte aus aufgebaut wird."
+    },
+    {
+      "id": "k6-f06",
+      "term": "Belichterauflösung",
+      "definition": "Rasterweite × 16: 60 L/cm → 960 L/cm ≈ 2.438 dpi."
+    }
+  ],
+  "items": [
+    {
+      "id": "k6-001",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wofür steht RIP?",
+      "options": [
+        "Raster Image Prozessor",
+        "Rapid Image Print",
+        "Raster Inkjet Printer",
+        "Rotes Intensiv-Papier"
+      ],
+      "correct": 0,
+      "explanation": "RIP = Raster Image Prozessor."
+    },
+    {
+      "id": "k6-002",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was macht der RIP mit der Druckinformation?",
+      "options": [
+        "Er rechnet sie in Bitmaps (0 oder 1) um",
+        "Er druckt sie aus",
+        "Er speichert sie als Foto",
+        "Er löscht sie"
+      ],
+      "correct": 0,
+      "explanation": "Der RIP erzeugt Bitmaps mit der Information 0 oder 1."
+    },
+    {
+      "id": "k6-003",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was passiert, wenn in der Bitmap eine „1“ steht?",
+      "options": [
+        "Das Recorderelement (REL) wird belichtet",
+        "Nichts",
+        "Das Papier wird geschnitten",
+        "Die Farbe wird gemischt"
+      ],
+      "correct": 0,
+      "explanation": "Bei „1“ wird ein REL belichtet."
+    },
+    {
+      "id": "k6-004",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Was ist ein Recorderelement (REL)?",
+      "options": [
+        "Das kleinste adressierbare Pixel des Belichters",
+        "Ein ganzer Rasterpunkt",
+        "Ein Papierbogen",
+        "Eine Druckplatte"
+      ],
+      "correct": 0,
+      "explanation": "REL = kleinstes adressierbares Pixel."
+    },
+    {
+      "id": "k6-005",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Was ist ein Belichterpixel (dot)?",
+      "options": [
+        "Ein durch die Belichtung adressiertes Recorderelement",
+        "Ein Foto",
+        "Eine Druckfarbe",
+        "Ein Schriftzeichen"
+      ],
+      "correct": 0,
+      "explanation": "Ist ein REL durch die Belichtung adressiert, entsteht ein Belichterpixel (dot)."
+    },
+    {
+      "id": "k6-006",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wodurch wird der Laserstrahl des Belichters gesteuert?",
+      "options": [
+        "Durch einen Schrittmotor – er kann nur ganz bestimmte Positionen ansteuern",
+        "Von Hand",
+        "Durch Wasser",
+        "Durch einen Tintenstrahl"
+      ],
+      "correct": 0,
+      "explanation": "Ein Schrittmotor steuert den Laserstrahl."
+    },
+    {
+      "id": "k6-007",
+      "difficulty": 1,
+      "type": "order",
+      "question": "Bring den Weg zum Rasterpunkt in die richtige Reihenfolge.",
+      "steps": [
+        "Daten der Druckseite (z. B. als PDF-Datei)",
+        "Der RIP rechnet die Daten in eine Bitmap um",
+        "Der Laser des Belichters schreibt Pixel (dots)",
+        "Auf der Druckplatte entsteht der Rasterpunkt in der Rasterzelle"
+      ],
+      "explanation": "PDF → RIP → Bitmap → Belichter → Rasterpunkt."
+    },
+    {
+      "id": "k6-008",
+      "difficulty": 1,
+      "type": "cloze",
+      "text": "Der {{RIP}} rechnet die Druckinformation in {{Bitmaps}} um. Steht dort eine {{1}}, wird ein REL belichtet.",
+      "distractors": [
+        "0",
+        "Vektoren"
+      ],
+      "explanation": "RIP → Bitmap → REL belichten."
+    },
+    {
+      "id": "k6-009",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Welche Auflösung hat ein Drucker bei geringer und ein Belichter bei hoher Auflösung?",
+      "options": [
+        "300 dpi (Drucker) und 3000 dpi oder mehr (Belichter)",
+        "30 dpi und 300 dpi",
+        "72 dpi und 144 dpi",
+        "3000 dpi (Drucker) und 300 dpi (Belichter)"
+      ],
+      "correct": 0,
+      "explanation": "Drucker 300 dpi, Belichter 3000 dpi oder mehr."
+    },
+    {
+      "id": "k6-010",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie wird eine Rasterzelle beim AM-Raster gefüllt?",
+      "options": [
+        "Systematisch von der Mitte aus, bis der gewünschte Tonwert erreicht ist",
+        "Zufällig",
+        "Von außen nach innen",
+        "Zeilenweise von oben"
+      ],
+      "correct": 0,
+      "explanation": "Von der Mitte aus, je größer der Tonwert, desto mehr wird gefüllt."
+    },
+    {
+      "id": "k6-011",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie viele RELs werden belichtet, wenn eine Vorlagenstelle schwarz ist?",
+      "options": [
+        "Alle 256",
+        "128",
+        "16",
+        "1"
+      ],
+      "correct": 0,
+      "explanation": "Bei Schwarz werden alle 256 RELs der Rasterzelle belichtet."
+    },
+    {
+      "id": "k6-012",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Wie viele Rasterelemente liegen auf einer Seitenlänge der Rasterzelle (256 Graustufen, quadratisch)?",
+      "options": [
+        "16",
+        "256",
+        "32",
+        "8"
+      ],
+      "correct": 0,
+      "explanation": "16 × 16 = 256."
+    },
+    {
+      "id": "k6-013",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Ein 60er Raster (60 L/cm) braucht einen Belichter mit …",
+      "options": [
+        "960 L/cm (60 × 16)",
+        "60 L/cm",
+        "256 L/cm",
+        "3.840 L/cm"
+      ],
+      "correct": 0,
+      "explanation": "60 × 16 = 960 L/cm."
+    },
+    {
+      "id": "k6-014",
+      "difficulty": 3,
+      "type": "mc",
+      "question": "Wie viel dpi sind 960 L/cm (1 Inch = 2,54 cm)?",
+      "options": [
+        "Ca. 2.438 dpi",
+        "Ca. 378 dpi",
+        "Ca. 960 dpi",
+        "Ca. 24.384 dpi"
+      ],
+      "correct": 0,
+      "explanation": "960 × 2,54 ≈ 2.438 dpi."
+    },
+    {
+      "id": "k6-015",
+      "difficulty": 3,
+      "type": "mc",
+      "question": "Ein 80er Raster (80 L/cm): Welche Belichterauflösung in L/cm ist nötig?",
+      "options": [
+        "1.280 L/cm (80 × 16)",
+        "80 L/cm",
+        "256 L/cm",
+        "5.120 L/cm"
+      ],
+      "correct": 0,
+      "explanation": "80 × 16 = 1.280 L/cm."
+    },
+    {
+      "id": "k6-016",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "In einer Rasterzelle mit 256 REL sind 256 Graustufen darstellbar.",
+      "correct": true,
+      "explanation": "Richtig – die Graustufen werden aus den 256 kleinsten Rasterelementen aufgebaut."
+    },
+    {
+      "id": "k6-017",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Was ist eine Rasterzelle?",
+      "options": [
+        "Eine quadratische (virtuelle) Zelle aus kleinsten Rasterelementen, in der ein Rasterpunkt aufgebaut wird",
+        "Ein Papierformat",
+        "Eine Druckplatte",
+        "Ein Farbkasten"
+      ],
+      "correct": 0,
+      "explanation": "Die Rasterzelle besteht aus RELs."
+    },
+    {
+      "id": "k6-018",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Je größer der Rastertonwert, desto …",
+      "options": [
+        "mehr wird die Rasterzelle gefüllt",
+        "kleiner wird die Zelle",
+        "weniger REL werden belichtet",
+        "dünner wird der Laser"
+      ],
+      "correct": 0,
+      "explanation": "Mehr Tonwert = mehr belichtete RELs in der Zelle."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "k6-l1",
+      "title": "Was macht ein RIP?",
+      "subtitle": "Bitmap, Belichter, REL, dot",
+      "icon": "cpu",
+      "grammar": {
+        "title": "Wie ein Rasterpunkt entsteht",
+        "text": "• RIP = Raster Image Prozessor. Er rechnet die Druckinformation in Bitmaps (Information 0 oder 1) um. Immer wenn eine „1“ steht, wird ein REL belichtet.\n• Der Laserstrahl des Belichters (zur Druckformherstellung) wird von einem Schrittmotor gesteuert und kann nur ganz bestimmte Positionen ansteuern. Auf der Druckplatte werden so Millionen Pixel geschrieben (Belichtermatrix).\n• Das kleinste adressierbare Pixel heißt Recorderelement (REL). Ist es durch die Belichtung adressiert, entsteht ein Belichterpixel (dot).\n• Auflösung: ein Drucker z. B. 300 dpi, ein Belichter 3000 dpi oder mehr.",
+        "examples": [
+          {
+            "en": "RIP",
+            "de": "Raster Image Prozessor"
+          },
+          {
+            "en": "REL",
+            "de": "Recorderelement – kleinstes adressierbares Pixel"
+          },
+          {
+            "en": "dot",
+            "de": "belichtetes Belichterpixel"
+          }
+        ]
+      },
+      "items": [
+        "k6-001",
+        "k6-002",
+        "k6-003",
+        "k6-004",
+        "k6-005",
+        "k6-006",
+        "k6-007",
+        "k6-008",
+        "k6-009"
+      ]
+    },
+    {
+      "id": "k6-l2",
+      "title": "Rasterzelle & Belichter-Rechnung",
+      "subtitle": "256 REL, 16 × 16, 960 L/cm, dpi",
+      "icon": "ruler",
+      "grammar": {
+        "title": "Rasterzelle und Belichterauflösung",
+        "text": "• Beim konventionellen AM-Raster wird die Rasterzelle systematisch von der Mitte aus gefüllt, bis der gewünschte Tonwert erreicht ist. Je größer der Rastertonwert, desto mehr wird die Zelle gefüllt. Bei Schwarz werden alle 256 RELs der Rasterzelle belichtet.\n• Die Tonwerte von 1 % bis 100 % werden durch 256 Graustufen wiedergegeben, aufgebaut aus kleinsten Rasterelementen in einer quadratischen (virtuellen) Rasterzelle: 16 × 16 = 256.\n• Beispiel: Ein 60er Raster (60 L/cm) braucht 60 × 16 = 960 L/cm Belichterauflösung. Mit 1 Inch = 2,54 cm sind das 960 × 2,54 ≈ 2.438 dpi.",
+        "examples": [
+          {
+            "en": "Rasterzelle",
+            "de": "16 × 16 = 256 REL"
+          },
+          {
+            "en": "60 L/cm",
+            "de": "960 L/cm Belichterauflösung"
+          },
+          {
+            "en": "960 L/cm",
+            "de": "ca. 2.438 dpi"
+          }
+        ]
+      },
+      "items": [
+        "k6-010",
+        "k6-011",
+        "k6-012",
+        "k6-013",
+        "k6-014",
+        "k6-015",
+        "k6-016",
+        "k6-017",
+        "k6-018"
+      ]
+    }
+  ]
+}

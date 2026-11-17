@@ -1,0 +1,468 @@
+{
+  "id": "k3",
+  "chapter": 3,
+  "title": "Rasterweite",
+  "subtitle": "l/cm, lpi, Druckverfahren, Papier",
+  "pages": "Arbeitsblatt Rasterung S. 5–6",
+  "color": "#10B981",
+  "icon": "ruler",
+  "flashcards": [
+    {
+      "id": "k3-f01",
+      "term": "Rasterweite",
+      "definition": "Anzahl der Punktreihen (Linien) pro Zentimeter, z. B. 60 l/cm; je mehr, desto feiner."
+    },
+    {
+      "id": "k3-f02",
+      "term": "lpc / l/cm und lpi",
+      "definition": "Linien pro Zentimeter bzw. pro Inch; 1 Inch = 2,54 cm, 60 l/cm ≈ 152 lpi."
+    },
+    {
+      "id": "k3-f03",
+      "term": "Rasterpunkte pro cm²",
+      "definition": "Rasterweite zum Quadrat: 60 l/cm → 60 × 60 = 3.600 Punkte je cm²."
+    },
+    {
+      "id": "k3-f04",
+      "term": "Raue und gestrichene Papiere",
+      "definition": "Raue Papiere (Zeitung): grobe Raster 40–48 l/cm. Gestrichene Papiere: 60 bis 120 l/cm."
+    },
+    {
+      "id": "k3-f05",
+      "term": "Rasterweiten der Druckverfahren",
+      "definition": "Siebdruck 10–40 · Flexodruck 40–60 · Tiefdruck um 70 · Offset Zeitung 34–48, Bilderdruck 70–80 oder mehr (lpc)."
+    }
+  ],
+  "items": [
+    {
+      "id": "k3-001",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was gibt die Rasterweite an?",
+      "options": [
+        "Die Anzahl der Punktreihen (Linien) auf einem Zentimeter",
+        "Die Größe eines Rasterpunktes",
+        "Die Breite des Papiers",
+        "Den Winkel der Punkte"
+      ],
+      "correct": 0,
+      "explanation": "Rasterweite = Punktreihen pro cm."
+    },
+    {
+      "id": "k3-002",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wann ist ein Raster feiner?",
+      "options": [
+        "Je mehr Punktreihen auf einem Zentimeter liegen",
+        "Je weniger Punktreihen auf einem Zentimeter liegen",
+        "Je größer die Punkte sind",
+        "Je dunkler das Papier ist"
+      ],
+      "correct": 0,
+      "explanation": "Mehr Punktreihen pro cm = feineres Raster."
+    },
+    {
+      "id": "k3-003",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "In welcher Richtung wird die Rasterweite ausgezählt?",
+      "options": [
+        "In Richtung der Punktreihe mit dem kürzeren Punktabstand",
+        "Immer waagrecht",
+        "Immer diagonal",
+        "In Richtung des längeren Abstands"
+      ],
+      "correct": 0,
+      "explanation": "Gezählt wird in Richtung des kürzeren Punktabstands."
+    },
+    {
+      "id": "k3-004",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was bedeutet ein „60er Raster“?",
+      "options": [
+        "60 Punkte bzw. Linien pro cm (60 l/cm, 60 lpc)",
+        "60 Punkte pro Zoll",
+        "60 Punkte pro mm",
+        "60 % Tonwert"
+      ],
+      "correct": 0,
+      "explanation": "60er Raster = 60 l/cm = 60 lpc."
+    },
+    {
+      "id": "k3-005",
+      "difficulty": 3,
+      "type": "mc",
+      "question": "Wie viele Rasterpunkte pro cm² hat ein 60er Raster?",
+      "options": [
+        "3.600",
+        "120",
+        "360",
+        "60"
+      ],
+      "correct": 0,
+      "explanation": "60 Punkte je cm in der Breite und 60 in der Höhe: 60 × 60 = 3.600."
+    },
+    {
+      "id": "k3-006",
+      "difficulty": 3,
+      "type": "mc",
+      "question": "Wie viele Rasterpunkte pro cm² hat ein 40er Raster?",
+      "options": [
+        "1.600",
+        "80",
+        "400",
+        "160"
+      ],
+      "correct": 0,
+      "explanation": "40 × 40 = 1.600."
+    },
+    {
+      "id": "k3-007",
+      "difficulty": 3,
+      "type": "mc",
+      "question": "Ein Raster hat 60 l/cm. Wie viel ist das in lpi (1 Inch = 2,54 cm)?",
+      "options": [
+        "Ca. 152 lpi",
+        "Ca. 24 lpi",
+        "Ca. 60 lpi",
+        "Ca. 600 lpi"
+      ],
+      "correct": 0,
+      "explanation": "60 × 2,54 = 152,4 lpi."
+    },
+    {
+      "id": "k3-008",
+      "difficulty": 3,
+      "type": "mc",
+      "question": "Ein Raster hat 150 lpi. Wie viele l/cm sind das ungefähr?",
+      "options": [
+        "Ca. 59 l/cm",
+        "Ca. 381 l/cm",
+        "Ca. 150 l/cm",
+        "Ca. 15 l/cm"
+      ],
+      "correct": 0,
+      "explanation": "150 : 2,54 ≈ 59 l/cm."
+    },
+    {
+      "id": "k3-009",
+      "difficulty": 1,
+      "type": "pairs",
+      "question": "Einheiten",
+      "pairs": [
+        {
+          "left": "lpc / l/cm",
+          "right": "Linien pro Zentimeter"
+        },
+        {
+          "left": "lpi",
+          "right": "Linien pro Inch"
+        },
+        {
+          "left": "1 Inch",
+          "right": "2,54 cm"
+        }
+      ]
+    },
+    {
+      "id": "k3-010",
+      "difficulty": 1,
+      "type": "cloze",
+      "text": "Die Rasterweite wird in {{l/cm}} (lpc) angegeben. Je {{mehr}} Punktreihen pro Zentimeter, desto {{feiner}} ist das Raster.",
+      "distractors": [
+        "weniger",
+        "gröber"
+      ],
+      "explanation": "Mehr Punktreihen = feiner."
+    },
+    {
+      "id": "k3-011",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche zwei Faktoren beeinflussen die Auswahl der Rasterweite?",
+      "options": [
+        "Oberflächenbeschaffenheit des Bedruckstoffs und Druckverfahren",
+        "Schriftgröße und Papierformat",
+        "Farbe und Dateiname",
+        "Auflagenhöhe und Datum"
+      ],
+      "correct": 0,
+      "explanation": "Bedruckstoff-Oberfläche und Druckverfahren."
+    },
+    {
+      "id": "k3-012",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Warum eignen sich für raues Zeitungspapier nur grobe Raster (40–48 l/cm)?",
+      "options": [
+        "Das Papier saugt Farbe stark auf – bei feineren Rastern würden die Punkte zulaufen",
+        "Das Papier ist zu hell",
+        "Das Papier ist zu glatt",
+        "Zeitungen sind immer einfarbig"
+      ],
+      "correct": 0,
+      "explanation": "Bei zu feinen Rastern könnten die Punkte „zulaufen“."
+    },
+    {
+      "id": "k3-013",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Rasterweiten verwendet man heute für gestrichene Papiere?",
+      "options": [
+        "60 bis 120 l/cm",
+        "10 bis 40 l/cm",
+        "34 bis 48 l/cm",
+        "200 bis 300 l/cm"
+      ],
+      "correct": 0,
+      "explanation": "Gestrichene Papiere lassen feinere Raster zu: 60–120 l/cm."
+    },
+    {
+      "id": "k3-014",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Rasterweite ist im hochwertigen Bilderdruck (Offset) üblich?",
+      "options": [
+        "70–80 lpc oder mehr",
+        "34–48 lpc",
+        "10–40 lpc",
+        "5 lpc"
+      ],
+      "correct": 0,
+      "explanation": "Besonders bei Kunstdrucken oder Magazinen werden hohe Rasterweiten eingesetzt."
+    },
+    {
+      "id": "k3-015",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Rasterweite ist im Zeitungsdruck oft üblich?",
+      "options": [
+        "34–48 lpc",
+        "70–80 lpc",
+        "100–120 lpc",
+        "10–20 lpc"
+      ],
+      "correct": 0,
+      "explanation": "Im Zeitungsdruck oft nur 34–48 lpc."
+    },
+    {
+      "id": "k3-016",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Rasterweite nutzt der Tiefdruck?",
+      "options": [
+        "Um 70 lpc",
+        "10 bis 40 lpc",
+        "40 bis 60 lpc",
+        "300 lpc"
+      ],
+      "correct": 0,
+      "explanation": "Tiefdruck: gleichmäßige Rasterstruktur um 70 lpc."
+    },
+    {
+      "id": "k3-017",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Rasterweiten sind im Flexodruck üblich?",
+      "options": [
+        "40 bis 60 lpc",
+        "70 lpc",
+        "10 bis 40 lpc",
+        "120 lpc"
+      ],
+      "correct": 0,
+      "explanation": "Flexodruck: 40 bis 60 lpc."
+    },
+    {
+      "id": "k3-018",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Siebdruck verwendet besonders feine Rasterweiten.",
+      "correct": false,
+      "explanation": "Falsch – Siebdruck nutzt relativ niedrige Rasterweiten (10 bis 40 lpc)."
+    },
+    {
+      "id": "k3-019",
+      "difficulty": 2,
+      "type": "pairs",
+      "question": "Druckverfahren und Rasterweite",
+      "pairs": [
+        {
+          "left": "Siebdruck",
+          "right": "10–40 lpc"
+        },
+        {
+          "left": "Flexodruck",
+          "right": "40–60 lpc"
+        },
+        {
+          "left": "Tiefdruck",
+          "right": "um 70 lpc"
+        },
+        {
+          "left": "Offset (hochwertiger Bilderdruck)",
+          "right": "70–80 lpc oder mehr"
+        }
+      ]
+    },
+    {
+      "id": "k3-020",
+      "difficulty": 2,
+      "type": "sort",
+      "question": "Zu welchem Verfahren passt die Aussage?",
+      "categories": [
+        {
+          "id": "t",
+          "label": "Tiefdruck"
+        },
+        {
+          "id": "f",
+          "label": "Flexodruck"
+        },
+        {
+          "id": "s",
+          "label": "Siebdruck"
+        },
+        {
+          "id": "o",
+          "label": "Offsetdruck"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Gleichmäßige Rasterstruktur",
+          "category": "t"
+        },
+        {
+          "text": "Saugfähige Stoffe wie Wellpappe erfordern niedrigere Rasterweiten",
+          "category": "f"
+        },
+        {
+          "text": "Textildruck und Werbetechnik",
+          "category": "s"
+        },
+        {
+          "text": "Gröbere Raster für den Farbauftrag auf unebenen Oberflächen",
+          "category": "s"
+        },
+        {
+          "text": "Je nach Papierqualität sehr hohe Rasterweiten möglich",
+          "category": "o"
+        },
+        {
+          "text": "Zeitungsdruck mit 34–48 lpc",
+          "category": "o"
+        }
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "k3-l1",
+      "title": "Rasterweite verstehen & rechnen",
+      "subtitle": "l/cm, lpi, Punkte pro cm²",
+      "icon": "ruler",
+      "grammar": {
+        "title": "Rasterweite",
+        "text": "• Die Rasterweite gibt die Anzahl der Punktreihen (Linien) auf einer Strecke von einem Zentimeter an. Ein 60er Raster hat 60 Punkte bzw. Linien pro cm (60 l/cm = 60 lpc).\n• Je mehr Punktreihen auf einem Zentimeter liegen, desto feiner ist das Raster. Ausgezählt wird in Richtung der Punktreihe mit dem kürzeren Punktabstand.\n• Umrechnen: 1 Inch = 2,54 cm, also lpi = l/cm × 2,54 (60 l/cm ≈ 152 lpi). Rasterpunkte pro cm² = (l/cm)² (60er Raster: 60 × 60 = 3.600).",
+        "examples": [
+          {
+            "en": "60 l/cm",
+            "de": "60 Punktreihen pro Zentimeter"
+          },
+          {
+            "en": "lpi",
+            "de": "Linien pro Inch (1 Inch = 2,54 cm)"
+          },
+          {
+            "en": "60er Raster",
+            "de": "3.600 Punkte pro cm²"
+          }
+        ]
+      },
+      "items": [
+        "k3-001",
+        "k3-002",
+        "k3-003",
+        "k3-004",
+        "k3-005",
+        "k3-006",
+        "k3-007",
+        "k3-008",
+        "k3-009",
+        "k3-010"
+      ]
+    },
+    {
+      "id": "k3-l2",
+      "title": "Rasterweite & Druckverfahren",
+      "subtitle": "Papier, Offset, Tiefdruck, Flexo, Sieb",
+      "icon": "printer",
+      "grammar": {
+        "title": "Welche Rasterweite für welches Verfahren?",
+        "text": "• Die Wahl der Rasterweite hängt von der Oberflächenbeschaffenheit des Bedruckstoffs und vom Druckverfahren ab.\n• Raue Papiere wie Zeitungspapier: nur grobe Raster (40–48 l/cm), weil das Papier Farbe stark aufsaugt – bei feineren Rastern könnten die Punkte „zulaufen“. Gestrichene Papiere: 60 bis 120 l/cm.\n• Offsetdruck: Zeitungsdruck oft nur 34–48 lpc, hochwertiger Bilderdruck 70–80 lpc oder mehr. Tiefdruck: gleichmäßige Rasterstruktur, um 70 lpc (Verpackungsdruck, große Auflagen). Flexodruck: 40 bis 60 lpc (saugfähige Stoffe wie Wellpappe niedriger). Siebdruck: 10 bis 40 lpc (Textildruck, Werbetechnik, unebene Oberflächen).",
+        "examples": [
+          {
+            "en": "Zeitungspapier",
+            "de": "grobes Raster 40–48 l/cm"
+          },
+          {
+            "en": "Gestrichenes Papier",
+            "de": "60 bis 120 l/cm"
+          },
+          {
+            "en": "Siebdruck",
+            "de": "10 bis 40 lpc"
+          }
+        ]
+      },
+      "items": [
+        "k3-011",
+        "k3-012",
+        "k3-013",
+        "k3-014",
+        "k3-015",
+        "k3-016",
+        "k3-017",
+        "k3-018",
+        "k3-019",
+        "k3-020"
+      ]
+    }
+  ],
+  "charts": {
+    "rasterweite": {
+      "title": "Übliche Rasterweite – oberer Wert (l/cm)",
+      "unit": "l/cm",
+      "source": "Arbeitsblatt Rasterung, Kapitel Rasterweite",
+      "values": [
+        [
+          "Siebdruck",
+          40
+        ],
+        [
+          "Zeitungsdruck",
+          48
+        ],
+        [
+          "Flexodruck",
+          60
+        ],
+        [
+          "Tiefdruck (um 70)",
+          70
+        ],
+        [
+          "Hochwertiger Bilderdruck (Offset)",
+          80
+        ],
+        [
+          "Gestrichene Papiere",
+          120
+        ]
+      ]
+    }
+  }
+}

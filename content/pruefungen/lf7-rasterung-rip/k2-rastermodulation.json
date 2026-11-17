@@ -1,0 +1,407 @@
+{
+  "id": "k2",
+  "chapter": 2,
+  "title": "Rastermodulation",
+  "subtitle": "AM-, FM- und Hybridraster",
+  "pages": "Arbeitsblatt Rasterung S. 3–4",
+  "color": "#F59E0B",
+  "icon": "target",
+  "flashcards": [
+    {
+      "id": "k2-f01",
+      "term": "AM-Raster",
+      "definition": "Amplitudenmoduliert: kompakte Punkte in gleichen Abständen, die mit dem Tonwert größer werden; Farbauszüge müssen gewinkelt werden."
+    },
+    {
+      "id": "k2-f02",
+      "term": "FM-Raster",
+      "definition": "Frequenzmoduliert: viele kleine, gleich große, fein verteilte Punkte; mit dem Tonwert steigt die Zahl; kaum Moiré, keine Winkelung."
+    },
+    {
+      "id": "k2-f03",
+      "term": "Hybridraster",
+      "definition": "Auch stochastisches oder crossmoduliertes Raster: AM in den Mitteltönen, FM in Lichtern und Tiefen; nur auf glatten Bedruckstoffen."
+    },
+    {
+      "id": "k2-f04",
+      "term": "Amplitude und Frequenz",
+      "definition": "Amplitude = Punktgröße, Frequenz = Anzahl/Häufung der Punkte."
+    }
+  ],
+  "items": [
+    {
+      "id": "k2-001",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie nennt man ein Raster aus kompakten, in gleichen Abständen angeordneten Punkten, die mit dem Tonwert größer werden?",
+      "options": [
+        "Amplitudenmoduliertes Raster (AM)",
+        "Frequenzmoduliertes Raster (FM)",
+        "Hybridraster",
+        "Linienraster"
+      ],
+      "correct": 0,
+      "explanation": "AM-Raster: Die Amplitude (Punktgröße) wächst, die Frequenz bleibt konstant."
+    },
+    {
+      "id": "k2-002",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Was bleibt beim AM-Raster mit zunehmendem Tonwert konstant?",
+      "options": [
+        "Die Frequenz (der Punktabstand)",
+        "Die Punktgröße",
+        "Die Anzahl der Punkte",
+        "Der Rasterwinkel verschwindet"
+      ],
+      "correct": 0,
+      "explanation": "Beim AM-Raster ändert sich die Größe, nicht der Abstand."
+    },
+    {
+      "id": "k2-003",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Was bleibt beim FM-Raster mit zunehmendem Tonwert konstant?",
+      "options": [
+        "Die Rasterpunktgröße",
+        "Die Anzahl der Punkte",
+        "Der Abstand der Punkte",
+        "Der Winkel"
+      ],
+      "correct": 0,
+      "explanation": "Beim FM-Raster sind alle Punkte gleich groß."
+    },
+    {
+      "id": "k2-004",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Was passiert beim FM-Raster, wenn der Tonwert steigt?",
+      "options": [
+        "Die Zahl der Punkte (Frequenz) steigt, bis sie sich berühren und zusammenwachsen",
+        "Die Punkte werden größer",
+        "Die Punkte werden eckig",
+        "Die Punkte verschwinden"
+      ],
+      "correct": 0,
+      "explanation": "Mehr Punkte, bis sie zusammenwachsen."
+    },
+    {
+      "id": "k2-005",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Beim AM-Raster müssen die Farbauszüge unterschiedlich gewinkelt werden, weil sonst Moiré entsteht.",
+      "correct": true,
+      "explanation": "Richtig."
+    },
+    {
+      "id": "k2-006",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Beim FM-Raster ist eine Winkelung notwendig.",
+      "correct": false,
+      "explanation": "Falsch – Eine Winkelung ist beim FM-Raster nicht notwendig, Moiré ist kaum sichtbar."
+    },
+    {
+      "id": "k2-007",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "FM-Raster eignen sich gut für den Druck von mehr als vier Farben.",
+      "correct": true,
+      "explanation": "Richtig – weil keine Winkelung nötig ist."
+    },
+    {
+      "id": "k2-008",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "FM-Raster geben Bilder weniger detailreich wieder als AM-Raster.",
+      "correct": false,
+      "explanation": "Falsch – FM-Raster können Bilder detailreicher wiedergeben."
+    },
+    {
+      "id": "k2-009",
+      "difficulty": 2,
+      "type": "sort",
+      "question": "AM oder FM?",
+      "categories": [
+        {
+          "id": "a",
+          "label": "AM-Raster"
+        },
+        {
+          "id": "f",
+          "label": "FM-Raster"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Kompakte Punkte in gleichen Abständen",
+          "category": "a"
+        },
+        {
+          "text": "Farbauszüge müssen gewinkelt werden",
+          "category": "a"
+        },
+        {
+          "text": "Mitteltöne: einheitliche Flächen sauber und glatt",
+          "category": "a"
+        },
+        {
+          "text": "Vielzahl kleiner, fein verteilter Punkte",
+          "category": "f"
+        },
+        {
+          "text": "Punktgröße konstant",
+          "category": "f"
+        },
+        {
+          "text": "Moiré kaum sichtbar",
+          "category": "f"
+        },
+        {
+          "text": "Winkelung nicht notwendig",
+          "category": "f"
+        },
+        {
+          "text": "Bilder detailreicher",
+          "category": "f"
+        }
+      ]
+    },
+    {
+      "id": "k2-010",
+      "difficulty": 1,
+      "type": "cloze",
+      "text": "Beim AM-Raster wird die {{Amplitude}} (Punktgröße) größer, die {{Frequenz}} bleibt konstant.",
+      "distractors": [
+        "Winkelung",
+        "Farbe"
+      ],
+      "explanation": "AM = Amplitude wächst, Frequenz konstant."
+    },
+    {
+      "id": "k2-011",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie heißt die Kombination aus AM- und FM-Raster?",
+      "options": [
+        "Hybridraster (stochastisches / crossmoduliertes Raster)",
+        "Linienraster",
+        "Vollton-Raster",
+        "Effektraster"
+      ],
+      "correct": 0,
+      "explanation": "Hybrid-, stochastische und crossmodulierte Raster sind dasselbe."
+    },
+    {
+      "id": "k2-012",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was ist ein Hybridraster im Mitteltonbereich?",
+      "options": [
+        "Ein konventionelles (AM-)Raster",
+        "Ein FM-Raster",
+        "Gar kein Raster",
+        "Ein Linienraster"
+      ],
+      "correct": 0,
+      "explanation": "In den Mitteltönen konventionell, in Lichtern und Tiefen FM."
+    },
+    {
+      "id": "k2-013",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Was passiert beim Hybridraster in den Lichtern und Tiefen?",
+      "options": [
+        "Es wandelt sich fließend zu einem frequenzmodulierten Raster",
+        "Es bleibt ein AM-Raster",
+        "Es wird zum Vollton",
+        "Die Punkte werden eckig"
+      ],
+      "correct": 0,
+      "explanation": "Dadurch ist die Wiedergabe in Lichtern und Tiefen stabil und glatt."
+    },
+    {
+      "id": "k2-014",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Auf welchen Bedruckstoffen kann man ein Hybridraster nur anwenden?",
+      "options": [
+        "Auf glatten Bedruckstoffen wie gestrichenen Papieren",
+        "Auf Zeitungspapier",
+        "Auf Wellpappe",
+        "Auf allen Bedruckstoffen"
+      ],
+      "correct": 0,
+      "explanation": "Hybridraster brauchen glatte Bedruckstoffe."
+    },
+    {
+      "id": "k2-015",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Beim Hybridraster ist ein Moiré kaum sichtbar.",
+      "correct": true,
+      "explanation": "Richtig."
+    },
+    {
+      "id": "k2-016",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Hybridraster funktionieren auch auf rauem Zeitungspapier.",
+      "correct": false,
+      "explanation": "Falsch – nur auf glatten Bedruckstoffen wie gestrichenen Papieren."
+    },
+    {
+      "id": "k2-017",
+      "difficulty": 2,
+      "type": "sort",
+      "question": "AM, FM oder Hybrid?",
+      "categories": [
+        {
+          "id": "a",
+          "label": "AM-Raster"
+        },
+        {
+          "id": "f",
+          "label": "FM-Raster"
+        },
+        {
+          "id": "h",
+          "label": "Hybridraster"
+        }
+      ],
+      "cards": [
+        {
+          "text": "Farbauszüge müssen gewinkelt werden",
+          "category": "a"
+        },
+        {
+          "text": "Punkte mit variabler Größe und identischem Abstand",
+          "category": "a"
+        },
+        {
+          "text": "Gleich große Punkte, verschiedene Häufigkeit",
+          "category": "f"
+        },
+        {
+          "text": "Winkelung nicht notwendig",
+          "category": "f"
+        },
+        {
+          "text": "Nur auf glatten Bedruckstoffen",
+          "category": "h"
+        },
+        {
+          "text": "Mitteltöne konventionell, Lichter und Tiefen FM",
+          "category": "h"
+        }
+      ]
+    },
+    {
+      "id": "k2-018",
+      "difficulty": 2,
+      "type": "pairs",
+      "question": "Raster und Merkmal",
+      "pairs": [
+        {
+          "left": "AM-Raster",
+          "right": "Punkte wachsen mit dem Tonwert, Frequenz konstant"
+        },
+        {
+          "left": "FM-Raster",
+          "right": "Punkte gleich groß, Zahl der Punkte steigt"
+        },
+        {
+          "left": "Hybridraster",
+          "right": "Mitteltöne AM, Lichter und Tiefen FM"
+        }
+      ]
+    },
+    {
+      "id": "k2-019",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Warum ist beim AM-Raster eine Winkelung nötig?",
+      "options": [
+        "Sonst würde es zur Moiré-Bildung kommen",
+        "Sonst würden die Punkte verschwinden",
+        "Sonst wird das Papier nass",
+        "Sonst wird die Platte zu hell"
+      ],
+      "correct": 0,
+      "explanation": "Ohne Winkelung der Farbauszüge entsteht Moiré."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "k2-l1",
+      "title": "AM- und FM-Raster",
+      "subtitle": "Amplitude, Frequenz, Moiré",
+      "icon": "target",
+      "grammar": {
+        "title": "AM- und FM-Raster",
+        "text": "• Amplitudenmodulierte Raster (AM): kompakte, in gleichen Abständen angeordnete Rasterpunkte. Mit zunehmendem Tonwert werden die Punkte größer (die „Amplitude“), die Frequenz bleibt konstant. Weil sonst Moiré entsteht, müssen die Farbauszüge unterschiedlich gewinkelt werden. In den Mitteltönen gibt ein AM-Raster einheitliche Farbflächen sauber und glatt wieder. Es ist die geläufigste Rasterart.\n• Frequenzmodulierte Raster (FM): eine Vielzahl kleiner, fein verteilter Punkte. Die Punktgröße bleibt konstant; mit zunehmendem Tonwert steigt die Zahl der Punkte (die Frequenz), bis sie sich berühren und zusammenwachsen. Moiré ist kaum sichtbar, eine Winkelung ist nicht notwendig. Gut für mehr als vier Farben und detailreicher als AM.",
+        "examples": [
+          {
+            "en": "AM-Raster",
+            "de": "Punkte wachsen, Frequenz konstant"
+          },
+          {
+            "en": "FM-Raster",
+            "de": "Punkte gleich groß, Zahl steigt"
+          },
+          {
+            "en": "Moiré",
+            "de": "störendes Muster – bei AM durch Winkelung vermeiden"
+          }
+        ]
+      },
+      "items": [
+        "k2-001",
+        "k2-002",
+        "k2-003",
+        "k2-004",
+        "k2-005",
+        "k2-006",
+        "k2-007",
+        "k2-008",
+        "k2-009",
+        "k2-010"
+      ]
+    },
+    {
+      "id": "k2-l2",
+      "title": "Hybridraster & Vergleich",
+      "subtitle": "Stochastisch, crossmoduliert",
+      "icon": "layers",
+      "grammar": {
+        "title": "Hybridraster und Vergleich",
+        "text": "• Hybridraster (auch stochastische oder crossmodulierte Raster) kombinieren AM und FM: Im Mitteltonbereich ist es ein konventionelles Raster, in den Lichtern und Tiefen wandelt es sich fließend zu einem FM-Raster. So erreicht man dort eine stabile, glatte Wiedergabe.\n• Hybridraster können nur auf glatten Bedruckstoffen wie gestrichenen Papieren angewendet werden. Ein Moiré ist kaum sichtbar.",
+        "examples": [
+          {
+            "en": "Hybridraster",
+            "de": "AM in den Mitteltönen, FM in Lichtern und Tiefen"
+          },
+          {
+            "en": "Einschränkung",
+            "de": "nur auf glatten Bedruckstoffen"
+          },
+          {
+            "en": "Moiré",
+            "de": "kaum sichtbar"
+          }
+        ]
+      },
+      "items": [
+        "k2-011",
+        "k2-012",
+        "k2-013",
+        "k2-014",
+        "k2-015",
+        "k2-016",
+        "k2-017",
+        "k2-018",
+        "k2-019"
+      ]
+    }
+  ]
+}

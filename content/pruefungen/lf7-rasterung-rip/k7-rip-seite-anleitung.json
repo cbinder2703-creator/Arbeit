@@ -1,0 +1,370 @@
+{
+  "id": "k7",
+  "chapter": 7,
+  "title": "RIP-Seite: Photoshop-Übung",
+  "subtitle": "Anleitung: vom Porträt zum Raster in 10 Schritten",
+  "pages": "Anleitung RIP-Seite",
+  "color": "#EC4899",
+  "icon": "printer",
+  "flashcards": [
+    {
+      "id": "k7-f01",
+      "term": "RIP-Seite",
+      "definition": "Übung: Porträt (35 × 45 mm, 300 ppi) wird in CMYK getrennt, gerastert und in eine InDesign-Seite eingefügt."
+    },
+    {
+      "id": "k7-f02",
+      "term": "Kanäle teilen",
+      "definition": "Photoshop: Kanäle-Palette → Erweiterungsmenü; erzeugt 4 Graustufenbilder (Raster C, M, Y, K)."
+    },
+    {
+      "id": "k7-f03",
+      "term": "Bitmap-Modus",
+      "definition": "Photoshop: Bild → Modus → Bitmap; hier mit Ausgabe 800 Pixel/Zoll und Methode Halbtonraster."
+    },
+    {
+      "id": "k7-f04",
+      "term": "Halbtonraster",
+      "definition": "Bitmap-Methode für AM-Raster (Rasterweite, Form, Winkel einstellbar)."
+    },
+    {
+      "id": "k7-f05",
+      "term": "Diffusion-Dither",
+      "definition": "Bitmap-Methode für das FM-Raster; Ausgabe 300 Pixel/Zoll."
+    }
+  ],
+  "items": [
+    {
+      "id": "k7-001",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie groß und mit welcher Auflösung ist die Bilddatei der RIP-Seite?",
+      "options": [
+        "35 × 45 mm, 300 ppi",
+        "45 × 35 mm, 72 ppi",
+        "210 × 297 mm, 300 ppi",
+        "35 × 45 cm, 150 ppi"
+      ],
+      "correct": 0,
+      "explanation": "Die Datei muss genau 35 × 45 mm groß sein und 300 ppi haben."
+    },
+    {
+      "id": "k7-002",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Die Datei muss nicht genau 35 × 45 mm groß sein – die Übungen funktionieren trotzdem.",
+      "correct": false,
+      "explanation": "Falsch – sonst funktionieren viele der folgenden Übungen nicht richtig."
+    },
+    {
+      "id": "k7-003",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie wandelt man das Bild von RGB in CMYK um?",
+      "options": [
+        "Photoshop: Menü Bild → Modus → CMYK",
+        "Datei → Speichern unter",
+        "Filter → Weichzeichner",
+        "Ebene → Neue Ebene"
+      ],
+      "correct": 0,
+      "explanation": "Im Menü Bild unter Modus."
+    },
+    {
+      "id": "k7-004",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie heißt die CMYK-Kopie (composite = zusammengesetzt)?",
+      "options": [
+        "CMYK Composite",
+        "Einfarbig C",
+        "Raster K",
+        "AM-Raster"
+      ],
+      "correct": 0,
+      "explanation": "Die Kopie heißt „CMYK Composite“."
+    },
+    {
+      "id": "k7-005",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche vier Kopien erzeugt man von der Bilddatei?",
+      "options": [
+        "Einfarbig C, Einfarbig M, Einfarbig Y, Einfarbig K",
+        "Raster C, Raster M, Raster Y, Raster K",
+        "Rot, Grün, Blau, Schwarz",
+        "AM, FM, Hybrid, Vollton"
+      ],
+      "correct": 0,
+      "explanation": "Die Kopien heißen Einfarbig C, M, Y und K."
+    },
+    {
+      "id": "k7-006",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Wie entfärbt man in den Einfarbig-Bildern die nicht benötigten Kanäle?",
+      "options": [
+        "Im Gradationskurven-Dialog (Strg+M) das obere Ende der 45°-Linie jedes anderen Kanals ganz nach unten ziehen",
+        "Mit dem Radiergummi",
+        "Durch Löschen der Datei",
+        "Mit dem Filter „Rauschen“"
+      ],
+      "correct": 0,
+      "explanation": "Für jeden Kanal, der nicht dem Bildnamen entspricht."
+    },
+    {
+      "id": "k7-007",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie erhält man vier Graustufen-Bilder der Kanäle?",
+      "options": [
+        "Kanäle-Palette → Erweiterungsmenü → „Kanäle teilen“",
+        "Datei → Drucken",
+        "Bild → Bildgröße",
+        "Ebene → Duplizieren"
+      ],
+      "correct": 0,
+      "explanation": "„Kanäle teilen“ erzeugt 4 Graustufen-Bilder."
+    },
+    {
+      "id": "k7-008",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie werden die geteilten Kanäle abgespeichert?",
+      "options": [
+        "Als „Raster C“, „Raster M“ usw.",
+        "Als „Bild 1“, „Bild 2“ usw.",
+        "Als „Kanal.jpg“",
+        "Ohne Namen"
+      ],
+      "correct": 0,
+      "explanation": "Raster C, Raster M, Raster Y, Raster K."
+    },
+    {
+      "id": "k7-009",
+      "difficulty": 2,
+      "type": "order",
+      "question": "Bring die Schritte der Anleitung (1 bis 6) in die richtige Reihenfolge.",
+      "steps": [
+        "Porträtfoto machen und auf den Server kopieren",
+        "Neue Datei 35 × 45 mm, 300 ppi anlegen und Foto einfügen",
+        "In CMYK umwandeln (CMYK Composite)",
+        "Vier Kopien „Einfarbig C/M/Y/K“ erzeugen",
+        "In den Kopien die nicht benötigten Kanäle entfärben",
+        "Kanäle teilen und als Raster C/M/Y/K speichern"
+      ],
+      "explanation": "Das sind die Schritte 1 bis 6 der Anleitung."
+    },
+    {
+      "id": "k7-010",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Mit welchen Einstellungen wird in Schritt 7 gerastert (Bitmap)?",
+      "options": [
+        "Ausgabe 800 Pixel/Zoll, Halbtonraster, 40 Linien/Zoll, Form Quadrat",
+        "300 Pixel/Zoll, Diffusion-Dither",
+        "800 Pixel/Zoll, 80 Linien/Zoll, Ellipse",
+        "72 Pixel/Zoll, Muster"
+      ],
+      "correct": 0,
+      "explanation": "So steht es in Schritt 7 der Anleitung."
+    },
+    {
+      "id": "k7-011",
+      "difficulty": 2,
+      "type": "pairs",
+      "question": "Rasterwinkel laut Anleitung (Schritt 7)",
+      "pairs": [
+        {
+          "left": "Cyan",
+          "right": "105°"
+        },
+        {
+          "left": "Magenta",
+          "right": "165°"
+        },
+        {
+          "left": "Gelb (Y)",
+          "right": "0°"
+        },
+        {
+          "left": "Schwarz (K)",
+          "right": "45°"
+        }
+      ]
+    },
+    {
+      "id": "k7-012",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Rasterweite und Form gelten in Schritt 8 (Dateien mit „_80“)?",
+      "options": [
+        "80 Linien/Zoll, Ellipse",
+        "40 Linien/Zoll, Quadrat",
+        "60 Linien/Zoll, Rund",
+        "80 Linien/Zoll, Linie"
+      ],
+      "correct": 0,
+      "explanation": "Schritt 8: 80 Linien/Zoll, Form Ellipse."
+    },
+    {
+      "id": "k7-013",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Methode wählt man bei der Raster-Simulation (AM)?",
+      "options": [
+        "Halbtonraster",
+        "Diffusion-Dither",
+        "Schwellenwert",
+        "Muster-Dither"
+      ],
+      "correct": 0,
+      "explanation": "Halbtonraster erzeugt AM-Raster."
+    },
+    {
+      "id": "k7-014",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Wie entstehen „AM-Raster“ und „FM-Raster“ aus der Datei „Einfarbig K“?",
+      "options": [
+        "Zwei Kopien, die erst in Graustufen, dann in Bitmap umgewandelt werden",
+        "Zwei Kopien, die zu RGB werden",
+        "Ein Foto wird gedruckt",
+        "Eine Kopie wird zerschnitten"
+      ],
+      "correct": 0,
+      "explanation": "Menü Bild → Modus: Graustufen, dann Bitmap."
+    },
+    {
+      "id": "k7-015",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Welche Einstellungen hat das „AM-Raster“?",
+      "options": [
+        "800 Pixel/Zoll, Halbtonraster, 40 Linien/Zoll, 45°",
+        "300 Pixel/Zoll, Diffusion-Dither",
+        "800 Pixel/Zoll, 80 Linien/Zoll, 105°",
+        "72 Pixel/Zoll, 15°"
+      ],
+      "correct": 0,
+      "explanation": "Wie beim K-Raster."
+    },
+    {
+      "id": "k7-016",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Welche Einstellungen hat das „FM-Raster“?",
+      "options": [
+        "Ausgabe 300 Pixel/Zoll, Methode Diffusion-Dither",
+        "800 Pixel/Zoll, Halbtonraster, 40 Linien/Zoll",
+        "800 Pixel/Zoll, 45°",
+        "72 Pixel/Zoll, Muster"
+      ],
+      "correct": 0,
+      "explanation": "Diffusion-Dither statt Halbtonraster."
+    },
+    {
+      "id": "k7-017",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Beim FM-Raster wählt man als Methode „Halbtonraster“.",
+      "correct": false,
+      "explanation": "Falsch – beim FM-Raster nimmt man „Diffusion-Dither“ (300 Pixel/Zoll)."
+    },
+    {
+      "id": "k7-018",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Für das AM-Raster gelten dieselben Einstellungen wie für das K-Raster (800 Pixel/Zoll, Halbtonraster, 40 Linien/Zoll, 45°).",
+      "correct": true,
+      "explanation": "Richtig – so steht es in Schritt 10."
+    },
+    {
+      "id": "k7-019",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wohin kommen am Ende das Composite- und die Rasterbilder?",
+      "options": [
+        "In die InDesign-Datei der RIP-Seite – danach ausdrucken",
+        "In den Papierkorb",
+        "In eine Excel-Tabelle",
+        "Ins Fotostudio"
+      ],
+      "correct": 0,
+      "explanation": "Die Bilder werden in die InDesign-Datei eingefügt und ausgedruckt."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "k7-l1",
+      "title": "Vom Foto zum Raster",
+      "subtitle": "Schritte 1–6: Größe, CMYK, Einfarbig, Kanäle teilen",
+      "icon": "printer",
+      "grammar": {
+        "title": "RIP-Seite – Schritte 1 bis 6",
+        "text": "• 1: Porträtfoto machen und auf den Server kopieren. 2: In Photoshop eine neue Datei genau 35 × 45 mm mit 300 ppi anlegen, Porträt einfügen – die Maße müssen stimmen, sonst funktionieren die Übungen nicht.\n• 3: Kopie „CMYK Composite“: Modus RGB → CMYK (Menü Bild: Modus). 4: Vier Kopien „Einfarbig C/M/Y/K“.\n• 5: In jedem Einfarbig-Bild die nicht benötigten Kanäle entfärben: Gradationskurven (Strg+M), für jeden Kanal, der nicht dem Bildnamen entspricht, das obere Ende der 45°-Linie ganz nach unten ziehen.\n• 6: Composite-Bild öffnen, Kanäle-Palette → Erweiterungsmenü → „Kanäle teilen“. Es entstehen 4 Graustufen-Bilder, gespeichert als „Raster C“, „Raster M“ usw.",
+        "examples": [
+          {
+            "en": "35 × 45 mm",
+            "de": "300 ppi – Maße müssen genau stimmen"
+          },
+          {
+            "en": "Kanäle teilen",
+            "de": "4 Graustufenbilder Raster C/M/Y/K"
+          },
+          {
+            "en": "CMYK Composite",
+            "de": "zusammengesetztes CMYK-Bild"
+          }
+        ]
+      },
+      "items": [
+        "k7-001",
+        "k7-002",
+        "k7-003",
+        "k7-004",
+        "k7-005",
+        "k7-006",
+        "k7-007",
+        "k7-008",
+        "k7-009"
+      ]
+    },
+    {
+      "id": "k7-l2",
+      "title": "Raster-Simulation & AM/FM",
+      "subtitle": "Schritte 7–10: Bitmap, Halbtonraster, Diffusion-Dither",
+      "icon": "target",
+      "grammar": {
+        "title": "RIP-Seite – Schritte 7 bis 10",
+        "text": "• 7: Jedes Raster-Bild in eine Raster-Simulation umwandeln: Menü Bild → Modus → Bitmap, Ausgabe 800 Pixel/Zoll, Methode „Halbtonraster“, Rasterweite 40 Linien/Zoll, Form Quadrat. Rasterwinkel laut Anleitung: Cyan 105°, Magenta 165°, Gelb (Y) 0°, Schwarz (K) 45°.\n• 8: Dasselbe mit 80 Linien/Zoll und Form Ellipse (gleiche Winkel), Dateien mit „_80“ speichern.\n• 9: Composite-Bild und Rasterbilder in die InDesign-Datei einfügen.\n• 10: Von „Einfarbig K“ zwei Kopien „AM-Raster“ und „FM-Raster“: erst in Graustufen, dann in Bitmap umwandeln. AM-Raster: 800 Pixel/Zoll, Halbtonraster, 40 Linien/Zoll, 45°. FM-Raster: Ausgabe 300 Pixel/Zoll, Methode „Diffusion-Dither“. Beide in die runden Vergrößerungsansichten setzen und ausdrucken.",
+        "examples": [
+          {
+            "en": "Halbtonraster",
+            "de": "Methode für AM-Raster"
+          },
+          {
+            "en": "Diffusion-Dither",
+            "de": "Methode für FM-Raster, 300 Pixel/Zoll"
+          },
+          {
+            "en": "40 Linien/Zoll",
+            "de": "Rasterweite in Schritt 7 und beim AM-Raster"
+          }
+        ]
+      },
+      "items": [
+        "k7-010",
+        "k7-011",
+        "k7-012",
+        "k7-013",
+        "k7-014",
+        "k7-015",
+        "k7-016",
+        "k7-017",
+        "k7-018",
+        "k7-019"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "id": "k4",
+  "chapter": 4,
+  "title": "Rasterwinkelung & Moiré",
+  "subtitle": "45°, DIN 16 547, Farbzuordnung, Moiré",
+  "pages": "Arbeitsblatt Rasterung S. 7–8",
+  "color": "#A855F7",
+  "icon": "palette",
+  "flashcards": [
+    {
+      "id": "k4-f01",
+      "term": "Rasterwinkelung",
+      "definition": "Lage der Punktreihe, bezogen auf die Senkrechte."
+    },
+    {
+      "id": "k4-f02",
+      "term": "45°-Winkelung",
+      "definition": "Optimal bei einfarbigen Bildern – die Punktzerlegung fällt dem Auge am wenigsten auf."
+    },
+    {
+      "id": "k4-f03",
+      "term": "DIN 16 547",
+      "definition": "Norm für die Winkelungen im Vierfarbendruck: 0°, 15°, 45°, 75°."
+    },
+    {
+      "id": "k4-f04",
+      "term": "Winkel in der Praxis",
+      "definition": "Yellow 0° · Cyan 15° · Schwarz 45° · Magenta 75°."
+    },
+    {
+      "id": "k4-f05",
+      "term": "Moiré",
+      "definition": "Störendes geometrisches Muster, wenn Rasterpunktreihen keinen Winkelabstand haben."
+    },
+    {
+      "id": "k4-f06",
+      "term": "Flexo: 7,5° dazu",
+      "definition": "Im Flexodruck oft 7,5° zu den Winkeln addiert (Schwarz dann 52,5°), gegen Moiré durch die Rasterwalze."
+    }
+  ],
+  "items": [
+    {
+      "id": "k4-001",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Was bezeichnet die Rasterwinkelung?",
+      "options": [
+        "Die Lage der Punktreihe, bezogen auf die Senkrechte",
+        "Die Größe der Punkte",
+        "Die Dicke der Farbschicht",
+        "Die Anzahl der Punkte pro cm"
+      ],
+      "correct": 0,
+      "explanation": "Rasterwinkelung = Lage der Punktreihe zur Senkrechten."
+    },
+    {
+      "id": "k4-002",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Winkelung ist bei einfarbigen Abbildungen optimal?",
+      "options": [
+        "45°",
+        "0°",
+        "90°",
+        "15°"
+      ],
+      "correct": 0,
+      "explanation": "Bei 45° fällt die Punktzerlegung dem Auge am wenigsten auf."
+    },
+    {
+      "id": "k4-003",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Bei 30° zwischen Senkrechter und Punktreihe spricht man von einer 30°-Winkelung.",
+      "correct": true,
+      "explanation": "Richtig."
+    },
+    {
+      "id": "k4-004",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche vier Winkelungen legt die DIN-Norm 16 547 für den Vierfarbendruck fest?",
+      "options": [
+        "0°, 15°, 45°, 75°",
+        "0°, 30°, 60°, 90°",
+        "15°, 30°, 45°, 60°",
+        "0°, 45°, 90°, 135°"
+      ],
+      "correct": 0,
+      "explanation": "DIN 16 547: 0°, 15°, 45°, 75°."
+    },
+    {
+      "id": "k4-005",
+      "difficulty": 2,
+      "type": "pairs",
+      "question": "Farbe und Winkel (Praxis)",
+      "pairs": [
+        {
+          "left": "Yellow",
+          "right": "0°"
+        },
+        {
+          "left": "Cyan",
+          "right": "15°"
+        },
+        {
+          "left": "Schwarz",
+          "right": "45°"
+        },
+        {
+          "left": "Magenta",
+          "right": "75°"
+        }
+      ]
+    },
+    {
+      "id": "k4-006",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Farbe liegt in der Praxis auf 45°?",
+      "options": [
+        "Schwarz",
+        "Cyan",
+        "Magenta",
+        "Yellow"
+      ],
+      "correct": 0,
+      "explanation": "Schwarz = 45°."
+    },
+    {
+      "id": "k4-007",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Welche Farbe liegt in der Praxis auf 75°?",
+      "options": [
+        "Magenta",
+        "Cyan",
+        "Yellow",
+        "Schwarz"
+      ],
+      "correct": 0,
+      "explanation": "Magenta = 75°."
+    },
+    {
+      "id": "k4-008",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Warum addiert man im Flexodruck oft 7,5° zu den Winkeln?",
+      "options": [
+        "Um Moiré durch die zusätzliche Winkelung der Rasterwalze zu vermeiden",
+        "Um schneller zu drucken",
+        "Um Farbe zu sparen",
+        "Weil sonst die Platte reißt"
+      ],
+      "correct": 0,
+      "explanation": "Die Rasterwalze bringt eine zusätzliche Winkelung mit."
+    },
+    {
+      "id": "k4-009",
+      "difficulty": 2,
+      "type": "mc",
+      "question": "Auf welchem Winkel liegt Schwarz im Flexodruck mit 7,5°-Zuschlag?",
+      "options": [
+        "52,5°",
+        "45°",
+        "37,5°",
+        "7,5°"
+      ],
+      "correct": 0,
+      "explanation": "45° + 7,5° = 52,5°."
+    },
+    {
+      "id": "k4-010",
+      "difficulty": 1,
+      "type": "order",
+      "question": "Bring die Winkelungen des Vierfarbendrucks (DIN 16 547) vom kleinsten zum größten Winkel.",
+      "steps": [
+        "0°",
+        "15°",
+        "45°",
+        "75°"
+      ],
+      "explanation": "0° (Yellow) – 15° (Cyan) – 45° (Schwarz) – 75° (Magenta)."
+    },
+    {
+      "id": "k4-011",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie heißt das störende geometrische Muster bei falsch gewinkelten Rastern?",
+      "options": [
+        "Moiré",
+        "Vollton",
+        "Rosette",
+        "Tonwertsprung"
+      ],
+      "correct": 0,
+      "explanation": "Das ist der Moiré-Effekt."
+    },
+    {
+      "id": "k4-012",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wann entsteht bei mehrfarbigen Bildern ein Moiré?",
+      "options": [
+        "Wenn die Rasterpunktreihen zueinander keinen Winkelabstand bilden",
+        "Wenn das Papier zu dunkel ist",
+        "Wenn zu wenig Farbe gedruckt wird",
+        "Wenn die Datei zu groß ist"
+      ],
+      "correct": 0,
+      "explanation": "Ohne Winkelabstand der Punktreihen entsteht ein Moiré."
+    },
+    {
+      "id": "k4-013",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Wie vermeidet man Moiré im Vierfarbendruck mit AM-Rastern?",
+      "options": [
+        "Die Farbauszüge unterschiedlich winkeln",
+        "Alle Farben im gleichen Winkel drucken",
+        "Nur Schwarz drucken",
+        "Das Papier wechseln"
+      ],
+      "correct": 0,
+      "explanation": "Unterschiedliche Winkelung der Farbauszüge."
+    },
+    {
+      "id": "k4-014",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Bei FM-Rastern ist ein Moiré kaum sichtbar.",
+      "correct": true,
+      "explanation": "Richtig – eine Winkelung ist dort nicht notwendig."
+    },
+    {
+      "id": "k4-015",
+      "difficulty": 1,
+      "type": "truefalse",
+      "statement": "Werden alle vier Farbauszüge im gleichen Winkel gedruckt, gibt es kein Moiré.",
+      "correct": false,
+      "explanation": "Falsch – gerade dann entsteht Moiré. Die Winkel müssen sich unterscheiden."
+    },
+    {
+      "id": "k4-016",
+      "difficulty": 2,
+      "type": "cloze",
+      "text": "Bei mehrfarbigen Bildern müssen die Punktreihen einen {{Winkelabstand}} bilden, damit kein {{Moiré}} entsteht. Bei einfarbigen Bildern ist {{45°}} optimal.",
+      "distractors": [
+        "0°",
+        "Vollton"
+      ],
+      "explanation": "Winkelabstand verhindert Moiré; 45° ist bei einer Farbe optimal."
+    },
+    {
+      "id": "k4-017",
+      "difficulty": 1,
+      "type": "mc",
+      "question": "Warum ist 45° bei einfarbigen Abbildungen optimal?",
+      "options": [
+        "Die Punktzerlegung fällt dem Auge am wenigsten auf",
+        "Dort wird die meiste Farbe gespart",
+        "Das Papier bleibt dann gerader",
+        "Dort entsteht erst ein Moiré"
+      ],
+      "correct": 0,
+      "explanation": "Bei 45° fällt die Punktzerlegung am wenigsten auf."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "k4-l1",
+      "title": "Rasterwinkelung",
+      "subtitle": "0°, 15°, 45°, 75° – wer liegt wo?",
+      "icon": "palette",
+      "grammar": {
+        "title": "Rasterwinkelung",
+        "text": "• Die Lage der Punktreihe, bezogen auf die Senkrechte, heißt Rasterwinkelung (30° zwischen Senkrechter und Punktreihe = 30°-Winkelung).\n• Bei einfarbigen Abbildungen fällt die Punktzerlegung dem Auge bei 45° am wenigsten auf – 45° ist optimal.\n• Im Vierfarbendruck legt die DIN-Norm 16 547 die Winkelungen 0°, 15°, 45°, 75° fest. In der Praxis: Yellow = 0°, Cyan = 15°, Schwarz = 45°, Magenta = 75°.\n• Im Flexodruck addiert man häufig 7,5° zu den Winkeln, um Moiré durch die zusätzliche Winkelung der Rasterwalze zu vermeiden. Schwarz liegt dann auf 52,5°.",
+        "examples": [
+          {
+            "en": "45°",
+            "de": "optimal bei einfarbigen Bildern"
+          },
+          {
+            "en": "DIN 16 547",
+            "de": "0°, 15°, 45°, 75°"
+          },
+          {
+            "en": "Praxis",
+            "de": "Y 0° · C 15° · K 45° · M 75°"
+          }
+        ]
+      },
+      "items": [
+        "k4-001",
+        "k4-002",
+        "k4-003",
+        "k4-004",
+        "k4-005",
+        "k4-006",
+        "k4-007",
+        "k4-008",
+        "k4-009",
+        "k4-010"
+      ]
+    },
+    {
+      "id": "k4-l2",
+      "title": "Moiré",
+      "subtitle": "Störendes Muster und wie man es vermeidet",
+      "icon": "eye",
+      "grammar": {
+        "title": "Moiré",
+        "text": "• Bei mehrfarbigen Bildern müssen die Punktreihen der Farben zueinander einen Winkelabstand bilden. Sonst entsteht ein störendes geometrisches Muster, das Moiré (Moiré-Effekt).\n• Bei AM-Rastern müssen die Farbauszüge deshalb unterschiedlich gewinkelt werden. Bei FM-Rastern ist ein Moiré kaum sichtbar.",
+        "examples": [
+          {
+            "en": "Moiré",
+            "de": "störendes geometrisches Muster"
+          },
+          {
+            "en": "Ursache",
+            "de": "Punktreihen ohne Winkelabstand"
+          },
+          {
+            "en": "Vermeiden",
+            "de": "Farbauszüge unterschiedlich winkeln"
+          }
+        ]
+      },
+      "items": [
+        "k4-011",
+        "k4-012",
+        "k4-013",
+        "k4-014",
+        "k4-015",
+        "k4-016",
+        "k4-017"
+      ]
+    }
+  ]
+}

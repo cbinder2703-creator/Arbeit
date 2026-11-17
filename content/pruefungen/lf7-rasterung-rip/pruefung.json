@@ -1,0 +1,86 @@
+{
+  "id": "lf7-rasterung-rip",
+  "title": "LF7 – Rasterung und RIP",
+  "gameTitle": "Raster-Meister",
+  "tagline": "Rasterpunkte, Winkel und RIP – vom Tonwert zum Druckpunkt",
+  "subject": "Mediengestaltung Digital und Print – LF7",
+  "pages": "LF 7.04",
+  "examDate": null,
+  "color": "#0284C7",
+  "accent": "#F59E0B",
+  "icon": "cpu",
+  "theme": "raster",
+  "chapters": [
+    "k1-notwendigkeit-rasterung.json",
+    "k2-rastermodulation.json",
+    "k3-rasterweite.json",
+    "k4-rasterwinkelung-moire.json",
+    "k5-rasterpunktformen.json",
+    "k6-rip.json",
+    "k7-rip-seite-anleitung.json"
+  ],
+  "modes": "auto",
+  "finalExam": {
+    "title": "Abschlusstest",
+    "questions": 25,
+    "unlockAtPercent": 50
+  },
+  "badges": [
+    {
+      "id": "zuordner",
+      "title": "Zuordnungs-Profi",
+      "rule": "6 Zuordnungs-Aufgaben richtig",
+      "condition": {
+        "kind": "typeCorrect",
+        "type": "pairs",
+        "count": 6
+      }
+    },
+    {
+      "id": "sortierer",
+      "title": "Sortier-Profi",
+      "rule": "5 Sortier-Aufgaben richtig",
+      "condition": {
+        "kind": "typeCorrect",
+        "type": "sort",
+        "count": 5
+      }
+    },
+    {
+      "id": "pfad-profi",
+      "title": "Pfad-Profi",
+      "rule": "Alle 14 Lektionen geschafft",
+      "condition": {
+        "kind": "lessonsDone",
+        "count": 14
+      }
+    },
+    {
+      "id": "aufsteiger",
+      "title": "Aufsteiger",
+      "rule": "Level 3 erreicht",
+      "condition": {
+        "kind": "level",
+        "level": 3
+      }
+    },
+    {
+      "id": "test-bestanden",
+      "title": "Bestanden!",
+      "rule": "Abschlusstest mit Note 4 oder besser",
+      "condition": {
+        "kind": "finalGrade",
+        "maxGrade": 4
+      }
+    },
+    {
+      "id": "einser",
+      "title": "Einser-Kandidat",
+      "rule": "Abschlusstest mit Note 1",
+      "condition": {
+        "kind": "finalGrade",
+        "maxGrade": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "title": "Arbeitsblätter prüfen",
+  "intro": "Hier stehen die Aufgaben aus deinen Blättern mit der Lösung. Blau = auf dem Blatt gab es keine Lösung, hier ist sie · Grau = aus dem Text abgeleitet, nicht sicher. Alles stammt nur aus deinen Blättern. Zeichen-, Mal- und Messaufgaben mit Bildern konnte ich nicht kontrollieren.",
+  "sheets": [
+    {
+      "id": "aufgaben",
+      "title": "Aufgaben Rasterung (PDF)",
+      "subtitle": "Lösungen zu den Aufgaben im Arbeitsblatt – ohne deine Antworten, aus den Texten erarbeitet",
+      "color": "#0284C7",
+      "entries": [
+        {
+          "task": "1. Notwendigkeit: Verbinden Sie richtig (A bis D)",
+          "yours": null,
+          "status": "missing",
+          "correct": "A = frequenzmoduliertes Raster (gleich große Punkte, unterschiedliche Häufung) · B = echte Halbtöne (variable Farbschichtdicke) · C = Vollton (konstante Farbschichtdicke) · D = amplitudenmoduliertes Raster (flächenvariable Punkte).",
+          "note": "Die Fachbegriffe stehen in Klammern bei A, B und D im Blatt. Welche Abbildung 1–4 zu welchem Buchstaben gehört, habe ich nach den Bildern gelesen: Bild 2 (Keil) = B, Bild 3 (wachsende Punkte) = D, Bild 4 (gleich große Punkte) = A, Bild 1 = C."
+        },
+        {
+          "task": "2. Rastermodulation: Merkmale ankreuzen",
+          "yours": null,
+          "status": "unsure",
+          "correct": "AM: Farbauszüge müssen gewinkelt werden · Punkte variable Größe, identischer Abstand · Gleichmäßigkeit in den Mitteltönen bei einheitlichen Flächen · (Hohe Prozesssicherheit und gute Wiederholbarkeit). FM: Keine bzw. kaum Moiré-Bildung · Punkte gleich groß, verschiedene Häufigkeit · (Fotorealistisches Ergebnis auch bei schlechteren Papieren). Hybrid: Keine bzw. kaum Moiré-Bildung · Optimum in Lichtern, Tiefen und Mitteltönen · Nicht auf allen Bedruckstoffen einsetzbar (muss glatt sein).",
+          "note": "Die meisten Zeilen stehen wörtlich im Text. Bei „Hohe Prozesssicherheit“ (AM, weil die geläufigste Rasterart) und „Fotorealistisch auch bei schlechteren Papieren“ (FM) bin ich nicht sicher – im Text steht dazu nichts Genaues."
+        },
+        {
+          "task": "3. Rasterweite: Zwei Faktoren für die Auswahl",
+          "yours": null,
+          "status": "missing",
+          "correct": "Die Oberflächenbeschaffenheit des Bedruckstoffs (z. B. raues Zeitungspapier ↔ gestrichenes Papier) und das Druckverfahren."
+        },
+        {
+          "task": "3. Rasterweite: lpcm, lpi und Rasterpunkte pro cm² ermitteln",
+          "yours": null,
+          "status": "missing",
+          "correct": "lpi = l/cm × 2,54 · Rasterpunkte pro cm² = (l/cm)². Beispiel: 60 l/cm = ca. 152 lpi, das sind 3.600 Rasterpunkte pro cm².",
+          "note": "Welche Rasterweite das Bild im Blatt hat, konnte ich nicht ablesen – setze deinen gemessenen Wert in die Formeln ein."
+        },
+        {
+          "task": "4. Rasterwinkelung: Farben den Winkeln zuordnen",
+          "yours": null,
+          "status": "missing",
+          "correct": "Yellow = 0° · Cyan = 15° · Schwarz = 45° · Magenta = 75° (DIN 16 547: 0°, 15°, 45°, 75°).",
+          "note": "So steht es im Text des Blattes. Die Photoshop-Anleitung der RIP-Seite nennt andere Zahlen (siehe unten)."
+        },
+        {
+          "task": "4. Moiré: Wie heißt die Erscheinung?",
+          "yours": null,
+          "status": "missing",
+          "correct": "Moiré (Moiré-Effekt)."
+        },
+        {
+          "task": "4. Moiré: Zwei Ursachen",
+          "yours": null,
+          "status": "unsure",
+          "correct": "Die Punktreihen der übereinander gedruckten Raster bilden keinen (zu kleinen) Winkelabstand · die Farbauszüge sind falsch oder gar nicht gewinkelt.",
+          "note": "Im Text steht nur die erste Ursache (kein Winkelabstand). Eine zweite Ursache habe ich daraus abgeleitet – bitte im Unterricht gegenprüfen."
+        },
+        {
+          "task": "4. Moiré: Welche Winkelung ist weniger störend?",
+          "yours": null,
+          "status": "missing",
+          "correct": "Bei einer Farbe die 45°-Winkelung (fällt dem Auge am wenigsten auf).",
+          "note": "Welche der abgebildeten Winkelungen das ist, musst du am Bild entscheiden."
+        },
+        {
+          "task": "5. Rasterpunktformen: Tonwerte, bei denen sich die Punkte berühren",
+          "yours": null,
+          "status": "missing",
+          "correct": "Elliptisch: 44 % und 61 % · Round-Square: 50 % · Round (Flexo): ca. 78 %."
+        },
+        {
+          "task": "5. Rasterpunktformen: Welcher Verlauf erscheint am ruhigsten?",
+          "yours": null,
+          "status": "unsure",
+          "correct": "Der elliptische Punkt – der Punktschluss ist auf zwei Bereiche (44 % und 61 %) verteilt, der Tonwertsprung wird abgemildert.",
+          "note": "Das ist aus dem Text abgeleitet. Welcher der drei Verläufe im Blatt der elliptische ist, siehst du an der Form der Punkte."
+        },
+        {
+          "task": "5. Lückentext: Elliptischer Punkt",
+          "yours": null,
+          "status": "missing",
+          "correct": "Rasterpunkt · kreisrunder Punkt · Tonwertsprung · abgemildert."
+        },
+        {
+          "task": "5. Lückentext: Runder Punkt",
+          "yours": null,
+          "status": "missing",
+          "correct": "elastischen Druckformen · vermieden."
+        },
+        {
+          "task": "5. Lückentext: Rund-quadratischer Punkt",
+          "yours": null,
+          "status": "missing",
+          "correct": "quadratisch · Druckereien."
+        },
+        {
+          "task": "6. RIP: Abkürzung ausschreiben",
+          "yours": null,
+          "status": "missing",
+          "correct": "RIP = Raster Image Prozessor."
+        },
+        {
+          "task": "6. RIP: Rasterzelle, dot, REL erklären",
+          "yours": null,
+          "status": "missing",
+          "correct": "Rasterzelle: quadratische (virtuelle) Zelle aus kleinsten Rasterelementen, in der ein Rasterpunkt aufgebaut wird. · dot: Belichterpixel – ein durch die Belichtung adressiertes Recorderelement. · REL: Recorderelement, das kleinste adressierbare Pixel des Belichters."
+        },
+        {
+          "task": "6. RIP: Rasterelemente auf einer Seitenlänge der Rasterzelle",
+          "yours": null,
+          "status": "missing",
+          "correct": "16 (16 × 16 = 256)."
+        },
+        {
+          "task": "6. RIP: Belichterauflösung für 60 L/cm",
+          "yours": null,
+          "status": "missing",
+          "correct": "60 × 16 = 960 L/cm, das sind 960 × 2,54 ≈ 2.438 dpi."
+        }
+      ]
+    },
+    {
+      "id": "rip",
+      "title": "Anleitung RIP-Seite",
+      "subtitle": "Photoshop-Übung (10 Schritte) und InDesign-Vorlage",
+      "color": "#EC4899",
+      "entries": [
+        {
+          "task": "Rasterwinkel in Schritt 7 und 8",
+          "yours": null,
+          "status": "unsure",
+          "correct": "Laut Anleitung: Cyan 105° · Magenta 165° · Gelb (Y) 0° · Schwarz (K) 45°.",
+          "note": "Das weicht von den Zahlen im Text des Arbeitsblatts ab (Gelb 0°, Cyan 15°, Schwarz 45°, Magenta 75°). Wahrscheinlich sind es zwei verschiedene Einstellungen – bitte im Unterricht fragen, welche gelten soll."
+        },
+        {
+          "task": "Die Vorlage „Uebersicht_RIP.indd“",
+          "yours": null,
+          "status": "missing",
+          "correct": "Das ist die InDesign-Seite („RIP – Raster Image Prozessor“), in die du Composite-Bild und Rasterbilder einsetzt. Sie enthält Bilder von Rastern (C, M, Y, K, FM, AM) und Platz für die Rasterpunktformen.",
+          "note": "Die Datei kann nur in InDesign geöffnet werden."
+        }
+      ]
+    }
+  ]
+}
